@@ -8,17 +8,18 @@
   --cubs-red:    #CC3433;
   --cubs-red-d:  #a72827;
 
-  --bg:        #f4f6fb;
+  --bg:        #ffffff;
+  --pinstripe: rgba(14,51,134,.085);
   --surface:   #ffffff;
-  --surface-2: #eef1f8;
-  --line:      #dfe4ef;
-  --line-soft: #eaeef6;
-  --text:      #10162a;
-  --text-2:    #5a6480;
-  --text-3:    #8d96ae;
+  --surface-2: #eef2fa;
+  --line:      #d6ddee;
+  --line-soft: #e7ecf7;
+  --text:      #0d1730;
+  --text-2:    #55617e;
+  --text-3:    #8a94ac;
 
   --good:      #0f7a4d;
-  --good-bg:   #e8f6ef;
+  --good-bg:   #e9f7f0;
   --good-line: #b6e0cb;
 
   --shadow-sm: 0 1px 2px rgba(14,51,134,.07);
@@ -28,46 +29,52 @@
 }
 
 @media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
-  --cubs-blue:   #4d7fe8;
-  --cubs-blue-d: #16255c;
-  --cubs-blue-l: #6f99f0;
-  --cubs-red:    #f2615f;
+  --cubs-blue:   #6f9bf5;
+  --cubs-blue-d: #06163a;
+  --cubs-blue-l: #9dbcfa;
+  --cubs-red:    #ff6b68;
   --cubs-red-d:  #cc3433;
 
-  --bg:        #0b1020;
-  --surface:   #141b30;
-  --surface-2: #1c2440;
-  --line:      #27314f;
-  --line-soft: #1e2740;
-  --text:      #e9edf8;
-  --text-2:    #a3adc8;
-  --text-3:    #6f7996;
+  --bg:        #06163a;
+  --pinstripe: transparent;
+  --surface:   #0f2a68;
+  --surface-2: #17387f;
+  --line:      #24479b;
+  --line-soft: #1a3572;
+  --text:      #f2f6ff;
+  --text-2:    #b3c6ee;
+  --text-3:    #7d93c7;
 
-  --good:      #3ed894;
-  --good-bg:   #102e22;
-  --good-line: #1d5540;
+  --good:      #4ade80;
+  --good-bg:   #10315f;
+  --good-line: #1f6b4d;
 
-  --shadow-sm: 0 1px 2px rgba(0,0,0,.4);
-  --shadow-md: 0 4px 14px rgba(0,0,0,.45);
-  --shadow-lg: 0 10px 30px rgba(0,0,0,.55);
+  --shadow-sm: 0 1px 2px rgba(0,0,0,.35);
+  --shadow-md: 0 4px 16px rgba(0,0,0,.45);
+  --shadow-lg: 0 12px 34px rgba(0,0,0,.6);
 }}
 
 :root[data-theme="dark"]{
-  --cubs-blue:#4d7fe8; --cubs-blue-d:#16255c; --cubs-blue-l:#6f99f0;
-  --cubs-red:#f2615f;  --cubs-red-d:#cc3433;
-  --bg:#0b1020; --surface:#141b30; --surface-2:#1c2440;
-  --line:#27314f; --line-soft:#1e2740;
-  --text:#e9edf8; --text-2:#a3adc8; --text-3:#6f7996;
-  --good:#3ed894; --good-bg:#102e22; --good-line:#1d5540;
-  --shadow-sm:0 1px 2px rgba(0,0,0,.4);
-  --shadow-md:0 4px 14px rgba(0,0,0,.45);
-  --shadow-lg:0 10px 30px rgba(0,0,0,.55);
+  --cubs-blue:#6f9bf5; --cubs-blue-d:#06163a; --cubs-blue-l:#9dbcfa;
+  --cubs-red:#ff6b68;  --cubs-red-d:#cc3433;
+  --bg:#06163a; --pinstripe:transparent;
+  --surface:#0f2a68; --surface-2:#17387f;
+  --line:#24479b; --line-soft:#1a3572;
+  --text:#f2f6ff; --text-2:#b3c6ee; --text-3:#7d93c7;
+  --good:#4ade80; --good-bg:#10315f; --good-line:#1f6b4d;
+  --shadow-sm:0 1px 2px rgba(0,0,0,.35);
+  --shadow-md:0 4px 16px rgba(0,0,0,.45);
+  --shadow-lg:0 12px 34px rgba(0,0,0,.6);
 }
 
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html{-webkit-text-size-adjust:100%}
 body{
-  margin:0;background:var(--bg);color:var(--text);
+  margin:0;color:var(--text);
+  /* Home whites: fine blue pinstripes on the page, clean solid cards on top. */
+  background-color:var(--bg);
+  background-image:repeating-linear-gradient(
+    90deg, var(--pinstripe) 0 1px, transparent 1px 13px);
   font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   padding-bottom:calc(28px + env(safe-area-inset-bottom));
   overflow-x:hidden;
@@ -81,9 +88,14 @@ body{
   color:#fff;padding:calc(20px + env(safe-area-inset-top)) 0 22px;
   position:relative;overflow:hidden;
 }
+.masthead::before{ /* pinstripes across the blue */
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:repeating-linear-gradient(
+    90deg, rgba(255,255,255,.10) 0 1px, transparent 1px 13px);
+}
 .masthead::after{ /* baseball-stitch arc */
   content:"";position:absolute;right:-70px;top:-70px;width:230px;height:230px;
-  border:3px dashed rgba(204,52,51,.5);border-radius:50%;
+  border:3px dashed rgba(204,52,51,.55);border-radius:50%;
 }
 .masthead .wrap{position:relative;z-index:1}
 .brandline{
@@ -208,7 +220,8 @@ li.saving{opacity:.5}
   color:var(--text-2);background:var(--surface-2);border-radius:5px;padding:2px 7px;
   font-variant-numeric:tabular-nums;letter-spacing:.02em;
 }
-li.owned .set{color:var(--good)}
+li.owned .set{color:var(--text)}
+li.owned .num{font-weight:700}
 li.owned .num{background:color-mix(in srgb,var(--good) 13%,transparent);color:var(--good)}
 
 .box{
