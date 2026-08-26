@@ -1,26 +1,43 @@
--- Least-privilege database users for the Mark Grace tracker.
--- Run as an admin account, AFTER schema.sql:
---   mysql -u root -p markgrace < grants.sql
--- Change both passwords first.
+-- Privileges for the Mark Grace tracker.
+--
+-- Assumes the two accounts ALREADY EXIST (created in cPanel or by hand):
+--   otbdesig_gracey  -> the web app
+--   otbdesig_harper  -> the command-line importer
+--
+-- Run as an admin account, AFTER schema.sql. Replace DBNAME with your
+-- actual database (cPanel usually prefixes it, e.g. otbdesig_markgrace).
+--
+-- Use --force: the REVOKE lines below error with 1141 ("no such grant")
+-- when there is nothing to revoke, which would otherwise abort the script.
+--
+--   mysql --force -u ADMIN -p DBNAME < grants.sql
+--
+-- No passwords appear in this file. Set those where the accounts were made.
 
--- 1. The web app. Reads cards and flips the `owned` flag — nothing else.
---    Cannot INSERT, DELETE, or alter the schema. This is the account that
---    goes in config.php under 'db', and the only one exposed to the web.
-CREATE USER IF NOT EXISTS 'markgrace_app'@'localhost'
-    IDENTIFIED BY 'CHANGE_ME_APP';
-GRANT SELECT ON markgrace.cards TO 'markgrace_app'@'localhost';
--- Column-level: the app may only flip these two fields. Even a fully
--- compromised web request cannot rewrite a card's name, number or image.
-GRANT UPDATE (owned, acquired_at, note) ON markgrace.cards TO 'markgrace_app'@'localhost';
+-- ---------------------------------------------------------------------
+-- Step 1: strip any blanket privileges.
+-- cPanel grants ALL PRIVILEGES when you attach a user to a database, which
+-- would make the narrow grants below meaningless. Error 1141 here is
+-- harmless — it just means there was nothing to take away.
+-- ---------------------------------------------------------------------
+REVOKE ALL PRIVILEGES ON DBNAME.* FROM 'otbdesig_gracey'@'localhost';
+REVOKE ALL PRIVILEGES ON DBNAME.* FROM 'otbdesig_harper'@'localhost';
 
--- 2. The importer. Used only by `php seed.php` from the command line,
---    which needs INSERT to add cards that aren't in the table yet.
---    Goes in config.php under 'db_admin'. Never used by a web request.
-CREATE USER IF NOT EXISTS 'markgrace_seed'@'localhost'
-    IDENTIFIED BY 'CHANGE_ME_SEED';
-GRANT SELECT, INSERT, UPDATE ON markgrace.cards TO 'markgrace_seed'@'localhost';
+-- ---------------------------------------------------------------------
+-- Step 2: grant only what each account actually needs.
+-- ---------------------------------------------------------------------
+
+-- The web app. Reads cards and flips ownership — nothing else. Cannot
+-- INSERT, DELETE, drop tables, or rewrite a card's name, number or image.
+GRANT SELECT ON DBNAME.cards TO 'otbdesig_gracey'@'localhost';
+GRANT UPDATE (owned, acquired_at, note) ON DBNAME.cards TO 'otbdesig_gracey'@'localhost';
+
+-- The importer. Used only by `php seed.php` from the command line, which
+-- needs INSERT to add cards not yet in the table.
+GRANT SELECT, INSERT, UPDATE ON DBNAME.cards TO 'otbdesig_harper'@'localhost';
 
 FLUSH PRIVILEGES;
 
--- Neither account can DROP, TRUNCATE, or touch any other database.
--- Schema changes stay with your admin account, applied by hand.
+-- Verify afterwards — gracey must NOT show INSERT, DELETE or DROP:
+--   SHOW GRANTS FOR 'otbdesig_gracey'@'localhost';
+--   SHOW GRANTS FOR 'otbdesig_harper'@'localhost';
