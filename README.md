@@ -38,6 +38,9 @@ TCDB lists 5,411 Mark Grace cards total, so this is a work in progress.
    ```bash
    php seed.php
    ```
+   No shell access, or the importer account won't authenticate? Import
+   `cards-insert.sql` through phpMyAdmin instead — same data, same
+   re-run safety, and it needs no extra database account.
    Prints how many cards it imported. Safe to re-run — it refreshes card
    details but never overwrites an `owned` flag you've already set.
 
@@ -141,6 +144,7 @@ Screen**. It opens full-screen like an app.
 | `schema.sql` | Table definition |
 | `grants.sql` | Least-privilege database users |
 | `seed.php` | One-time import of `data/cards.json` |
+| `cards-insert.sql` | Same data as plain SQL, for phpMyAdmin |
 | `data/cards.json` | The card list |
 | `img/` | Card thumbnails (38 files) |
 
