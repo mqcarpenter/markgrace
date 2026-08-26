@@ -1,43 +1,51 @@
 -- Privileges for the Mark Grace tracker.
 --
--- Assumes the two accounts ALREADY EXIST (created in cPanel or by hand):
+-- Accounts are assumed to ALREADY EXIST (cPanel-created):
 --   otbdesig_gracey  -> the web app
 --   otbdesig_harper  -> the command-line importer
 --
--- Run as an admin account, AFTER schema.sql. Replace DBNAME with your
--- actual database (cPanel usually prefixes it, e.g. otbdesig_markgrace).
+-- Replace DBNAME below with your database, then run as an admin account
+-- AFTER schema.sql:
 --
--- Use --force: the REVOKE lines below error with 1141 ("no such grant")
--- when there is nothing to revoke, which would otherwise abort the script.
+--   mysql -u ADMIN -p DBNAME < grants.sql
 --
---   mysql --force -u ADMIN -p DBNAME < grants.sql
+-- No passwords appear in this file. Those live only in config.php.
 --
--- No passwords appear in this file. Set those where the accounts were made.
+-- =====================================================================
+-- STOP — READ THIS IF YOU ARE SHARING A DATABASE WITH ANOTHER APP
+-- =====================================================================
+-- This file only ADDS privileges. It deliberately does NOT revoke
+-- anything, because revoking is destructive when the database is shared.
+--
+-- If DBNAME is a WordPress database (a name like otbdesig_wp298 usually
+-- is), and either account is the one WordPress connects with, then
+-- revoking its privileges TAKES THE SITE DOWN.
+--
+-- Check before touching privileges:
+--   grep DB_USER /path/to/wp-config.php
+--
+-- If that prints otbdesig_gracey or otbdesig_harper, do not revoke from
+-- that account, and see "Sharing with WordPress" in the README.
+-- =====================================================================
 
--- ---------------------------------------------------------------------
--- Step 1: strip any blanket privileges.
--- cPanel grants ALL PRIVILEGES when you attach a user to a database, which
--- would make the narrow grants below meaningless. Error 1141 here is
--- harmless — it just means there was nothing to take away.
--- ---------------------------------------------------------------------
-REVOKE ALL PRIVILEGES ON DBNAME.* FROM 'otbdesig_gracey'@'localhost';
-REVOKE ALL PRIVILEGES ON DBNAME.* FROM 'otbdesig_harper'@'localhost';
-
--- ---------------------------------------------------------------------
--- Step 2: grant only what each account actually needs.
--- ---------------------------------------------------------------------
-
--- The web app. Reads cards and flips ownership — nothing else. Cannot
--- INSERT, DELETE, drop tables, or rewrite a card's name, number or image.
 GRANT SELECT ON DBNAME.cards TO 'otbdesig_gracey'@'localhost';
 GRANT UPDATE (owned, acquired_at, note) ON DBNAME.cards TO 'otbdesig_gracey'@'localhost';
 
--- The importer. Used only by `php seed.php` from the command line, which
--- needs INSERT to add cards not yet in the table.
 GRANT SELECT, INSERT, UPDATE ON DBNAME.cards TO 'otbdesig_harper'@'localhost';
 
 FLUSH PRIVILEGES;
 
--- Verify afterwards — gracey must NOT show INSERT, DELETE or DROP:
+-- Verify:
 --   SHOW GRANTS FOR 'otbdesig_gracey'@'localhost';
 --   SHOW GRANTS FOR 'otbdesig_harper'@'localhost';
+--
+-- ---------------------------------------------------------------------
+-- OPTIONAL, and only on a database used by nothing but this tracker.
+-- These make the narrow grants above meaningful by removing any blanket
+-- ALL PRIVILEGES that cPanel attached. Run them BY HAND, one at a time,
+-- never on a shared or WordPress database. Error 1141 just means there
+-- was nothing to revoke.
+--
+--   REVOKE ALL PRIVILEGES ON DBNAME.* FROM 'otbdesig_gracey'@'localhost';
+--   REVOKE ALL PRIVILEGES ON DBNAME.* FROM 'otbdesig_harper'@'localhost';
+-- ---------------------------------------------------------------------

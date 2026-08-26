@@ -76,6 +76,35 @@ A strictly read-only account will not work for the app itself — marking a card
 owned is a write. If you later want a public *view-only* page, a third account
 with just `SELECT` is the right way to build it.
 
+### Sharing a database with WordPress
+
+If you install the `cards` table into an existing WordPress database (a name
+like `otbdesig_wp298`), two things matter:
+
+**Never revoke privileges from the WordPress database user.** WordPress needs
+broad rights on its own database. Revoking them takes the site down. Check who
+it connects as before touching anything:
+
+```bash
+grep DB_USER /path/to/wp-config.php
+```
+
+If that name matches either tracker account, skip the optional REVOKE lines in
+`grants.sql` entirely.
+
+**Least privilege is weakened by sharing.** If cPanel already granted the app
+account ALL PRIVILEGES on the WordPress database, the narrow grants add nothing
+— the account can still drop `wp_posts`. Column-level restrictions only mean
+something on a database where that account has nothing else.
+
+**The cleaner option is a separate database.** Create `otbdesig_markgrace` in
+cPanel, attach both accounts to it, and point `config.php` there. The tracker
+uses exactly one table, so the cost is one database slot, and it keeps a public
+page's credentials away from your WordPress content.
+
+The `cards` table itself is safe to co-locate — the name can't collide with
+WordPress's `wp_`-prefixed tables.
+
 ---
 
 ## Locking it down
