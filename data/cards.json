@@ -1,0 +1,1484 @@
+[
+ {
+  "year": "1986",
+  "title": "1986 \u2014 Minor League (Peoria Chiefs)",
+  "cards": [
+   {
+    "id": "1986-nno-1986-procards-peoria-chiefs",
+    "year": "1986",
+    "num": "NNO",
+    "set": "1986 ProCards Peoria Chiefs",
+    "img": "68117_5000674.jpg",
+    "seed": false
+   }
+  ]
+ },
+ {
+  "year": "1987",
+  "title": "1987 \u2014 Minor League",
+  "cards": [
+   {
+    "id": "1987-332-1987-procards",
+    "year": "1987",
+    "num": "#332",
+    "set": "1987 ProCards",
+    "img": "60237_3554991.jpg",
+    "seed": false
+   }
+  ]
+ },
+ {
+  "year": "1988",
+  "title": "1988 \u2014 Rookie Year (MLB debut)",
+  "cards": [
+   {
+    "id": "1988-40-1988-donruss-rated-rookie-true-rc",
+    "year": "1988",
+    "num": "#40",
+    "set": "1988 Donruss \"Rated Rookie\" (true RC)",
+    "img": "119_44040Rep.jpg",
+    "seed": true
+   },
+   {
+    "id": "1988-1-1988-donruss-rookies-boxed-set",
+    "year": "1988",
+    "num": "#1",
+    "set": "1988 Donruss Rookies (boxed set)",
+    "img": null,
+    "seed": true
+   },
+   {
+    "id": "1988-641-1988-fleer-major-league-prospects-true-rc-shared-w-darrin-jackson",
+    "year": "1988",
+    "num": "#641",
+    "set": "1988 Fleer \"Major League Prospects\" (true RC, shared w/ Darrin Jackson)",
+    "img": "121_50846Rep.jpg",
+    "seed": true
+   },
+   {
+    "id": "1988-u-77-1988-fleer-update",
+    "year": "1988",
+    "num": "#U-77",
+    "set": "1988 Fleer Update",
+    "img": "122_50977Rep.jpg",
+    "seed": true
+   },
+   {
+    "id": "1988-42t-1988-topps-traded",
+    "year": "1988",
+    "num": "#42T",
+    "set": "1988 Topps Traded",
+    "img": "126_54692Rep.jpg",
+    "seed": true
+   },
+   {
+    "id": "1988-14-1988-cmc-iowa-cubs-aaa-minor-league",
+    "year": "1988",
+    "num": "#14",
+    "set": "1988 CMC Iowa Cubs (AAA minor league)",
+    "img": "65960_14.jpg",
+    "seed": false
+   },
+   {
+    "id": "1988-3-1988-baseball-stars-series-2-unlicensed",
+    "year": "1988",
+    "num": "#3",
+    "set": "1988 Baseball Stars Series 2 (unlicensed)",
+    "img": "118895_2074570672.jpg",
+    "seed": false
+   },
+   {
+    "id": "1988-9-1988-baseball-stars-series-4-unlicensed",
+    "year": "1988",
+    "num": "#9",
+    "set": "1988 Baseball Stars Series 4 (unlicensed)",
+    "img": "118553_2074550137.jpg",
+    "seed": false
+   },
+   {
+    "id": "1988-17-1988-baseball-s-best-series-ii-unlicensed",
+    "year": "1988",
+    "num": "#17",
+    "set": "1988 Baseball's Best Series II (unlicensed)",
+    "img": "72825_17.jpg",
+    "seed": false
+   },
+   {
+    "id": "1988-3-1988-class-of-88-unlicensed",
+    "year": "1988",
+    "num": "#3",
+    "set": "1988 Class of '88 (unlicensed)",
+    "img": "9988_3.jpg",
+    "seed": false
+   },
+   {
+    "id": "1988-26-1988-class-of-88-unlicensed",
+    "year": "1988",
+    "num": "#26",
+    "set": "1988 Class of '88 (unlicensed)",
+    "img": "9988_429526.jpg",
+    "seed": false
+   },
+   {
+    "id": "1988-nno-1988-david-berg-chicago-cubs-sga-stadium-giveaway",
+    "year": "1988",
+    "num": "NNO",
+    "set": "1988 David Berg Chicago Cubs SGA (stadium giveaway)",
+    "img": "116819_7997843.jpg",
+    "seed": false
+   },
+   {
+    "id": "1988-4-1988-donruss-baseball-s-best",
+    "year": "1988",
+    "num": "#4",
+    "set": "1988 Donruss Baseball's Best",
+    "img": "6627_4.jpg",
+    "seed": false
+   },
+   {
+    "id": "1988-4-1988-san-diego-state-university-50th-anniversary",
+    "year": "1988",
+    "num": "#4",
+    "set": "1988 San Diego State University 50th Anniversary",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1988-42t-1988-topps-traded-tiffany-parallel",
+    "year": "1988",
+    "num": "#42T",
+    "set": "1988 Topps Traded Tiffany (parallel)",
+    "img": "126_54692Rep.jpg",
+    "seed": false
+   },
+   {
+    "id": "1988-641-1988-fleer-glossy-parallel",
+    "year": "1988",
+    "num": "#641",
+    "set": "1988 Fleer Glossy (parallel)",
+    "img": "121_50846Rep.jpg",
+    "seed": false
+   },
+   {
+    "id": "1988-80t-1988-score-traded-rookies",
+    "year": "1988",
+    "num": "#80T",
+    "set": "1988 Score Traded/Rookies",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1988-80t-1988-score-glossy-traded-rookies-parallel",
+    "year": "1988",
+    "num": "#80T",
+    "set": "1988 Score Glossy Traded/Rookies (parallel)",
+    "img": null,
+    "seed": false
+   }
+  ]
+ },
+ {
+  "year": "1989",
+  "title": "1989",
+  "cards": [
+   {
+    "id": "1989-465-1989-topps",
+    "year": "1989",
+    "num": "#465",
+    "set": "1989 Topps",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1989-1-1989-topps-kmart-dream-team",
+    "year": "1989",
+    "num": "#1",
+    "set": "1989 Topps Kmart Dream Team",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1989-255-1989-donruss",
+    "year": "1989",
+    "num": "#255",
+    "set": "1989 Donruss",
+    "img": "128_45405Rep.jpg",
+    "seed": false
+   },
+   {
+    "id": "1989-426-1989-fleer",
+    "year": "1989",
+    "num": "#426",
+    "set": "1989 Fleer",
+    "img": "130_426.jpg",
+    "seed": false
+   },
+   {
+    "id": "1989-11-1989-topps-rookies",
+    "year": "1989",
+    "num": "#11",
+    "set": "1989 Topps Rookies",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1989-12-1989-bazooka",
+    "year": "1989",
+    "num": "#12",
+    "set": "1989 Bazooka",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1989-12-1989-toys-r-us-rookies",
+    "year": "1989",
+    "num": "#12",
+    "set": "1989 Toys \"R\" Us Rookies",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1989-13-1989-classic",
+    "year": "1989",
+    "num": "#13",
+    "set": "1989 Classic",
+    "img": "8446_441223.jpg",
+    "seed": false
+   },
+   {
+    "id": "1989-140-1989-upper-deck",
+    "year": "1989",
+    "num": "#140",
+    "set": "1989 Upper Deck",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1989-15-1989-topps-coins",
+    "year": "1989",
+    "num": "#15",
+    "set": "1989 Topps Coins",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1989-155-1989-classic-travel-update-2-purple-parallel",
+    "year": "1989",
+    "num": "#155",
+    "set": "1989 Classic Travel Update 2 (Purple, parallel)",
+    "img": "8446_155.jpg",
+    "seed": false
+   },
+   {
+    "id": "1989-17-1989-donruss-diamond-kings-insert",
+    "year": "1989",
+    "num": "#17",
+    "set": "1989 Donruss Diamond Kings (insert)",
+    "img": "128_45167Rep.jpg",
+    "seed": false
+   },
+   {
+    "id": "1989-189-1989-topps-big-series-2",
+    "year": "1989",
+    "num": "#189",
+    "set": "1989 Topps Big Series 2",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1989-29-1989-topps-all-star-glossy-send-in",
+    "year": "1989",
+    "num": "#29",
+    "set": "1989 Topps All-Star Glossy \"Send In\"",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1989-291-1989-bowman",
+    "year": "1989",
+    "num": "#291",
+    "set": "1989 Bowman",
+    "img": "127_63191Rep.jpg",
+    "seed": false
+   },
+   {
+    "id": "1989-291-1989-bowman-tiffany-parallel",
+    "year": "1989",
+    "num": "#291",
+    "set": "1989 Bowman Tiffany (parallel)",
+    "img": "127_63191Rep.jpg",
+    "seed": false
+   },
+   {
+    "id": "1989-324-1989-topps-stickers",
+    "year": "1989",
+    "num": "#324",
+    "set": "1989 Topps Stickers",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1989-362-1989-score",
+    "year": "1989",
+    "num": "#362",
+    "set": "1989 Score",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1989-465-1989-topps-tiffany-parallel",
+    "year": "1989",
+    "num": "#465",
+    "set": "1989 Topps Tiffany (parallel)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1989-50-1989-topps-stickers",
+    "year": "1989",
+    "num": "#50",
+    "set": "1989 Topps Stickers",
+    "img": null,
+    "seed": false
+   }
+  ]
+ },
+ {
+  "year": "1990",
+  "title": "1990",
+  "cards": [
+   {
+    "id": "1990-240-1990-topps",
+    "year": "1990",
+    "num": "#240",
+    "set": "1990 Topps",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1990-240-1990-o-pee-chee",
+    "year": "1990",
+    "num": "#240",
+    "set": "1990 O-Pee-Chee",
+    "img": "8710_508730.jpg",
+    "seed": false
+   },
+   {
+    "id": "1990-577-1990-donruss",
+    "year": "1990",
+    "num": "#577",
+    "set": "1990 Donruss",
+    "img": "138_60690Rep.jpg",
+    "seed": false
+   },
+   {
+    "id": "1990-150-1990-score",
+    "year": "1990",
+    "num": "#150",
+    "set": "1990 Score",
+    "img": "144_66351Rep.jpg",
+    "seed": true
+   },
+   {
+    "id": "1990-128-1990-upper-deck",
+    "year": "1990",
+    "num": "#128",
+    "set": "1990 Upper Deck",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1990-29-1990-bowman",
+    "year": "1990",
+    "num": "#29",
+    "set": "1990 Bowman",
+    "img": "137_29.jpg",
+    "seed": false
+   },
+   {
+    "id": "1990-32-1990-fleer",
+    "year": "1990",
+    "num": "#32",
+    "set": "1990 Fleer",
+    "img": "140_32.jpg",
+    "seed": true
+   },
+   {
+    "id": "1990-1990-star-silver-limited-edition",
+    "year": "1990",
+    "num": "\u2014",
+    "set": "1990 Star (Silver, limited edition)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1990-1990-classic-blue",
+    "year": "1990",
+    "num": "\u2014",
+    "set": "1990 Classic Blue",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1990-1990-classic-update",
+    "year": "1990",
+    "num": "\u2014",
+    "set": "1990 Classic Update",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1990-31-1990-collect-a-books",
+    "year": "1990",
+    "num": "#31",
+    "set": "1990 Collect-A-Books",
+    "img": "9101_31.jpg",
+    "seed": false
+   },
+   {
+    "id": "1990-1990-procards-minor-league-if-applicable",
+    "year": "1990",
+    "num": "\u2014",
+    "set": "1990 ProCards (minor league, if applicable)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1990-12-1990-topps-all-star-glossy-send-in",
+    "year": "1990",
+    "num": "#12",
+    "set": "1990 Topps All-Star Glossy \"Send In\"",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1990-19-1990-post-cereal",
+    "year": "1990",
+    "num": "#19",
+    "set": "1990 Post Cereal",
+    "img": "10077_19.jpg",
+    "seed": false
+   },
+   {
+    "id": "1990-240-1990-topps-tiffany-parallel",
+    "year": "1990",
+    "num": "#240",
+    "set": "1990 Topps Tiffany (parallel)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1990-29-1990-bowman-tiffany-parallel",
+    "year": "1990",
+    "num": "#29",
+    "set": "1990 Bowman Tiffany (parallel)",
+    "img": "137_29.jpg",
+    "seed": false
+   },
+   {
+    "id": "1990-32-1990-fleer-printed-in-canada-parallel",
+    "year": "1990",
+    "num": "#32",
+    "set": "1990 Fleer \"Printed in Canada\" (parallel)",
+    "img": "140_32.jpg",
+    "seed": false
+   },
+   {
+    "id": "1990-6-1990-fleer-league-standouts-insert",
+    "year": "1990",
+    "num": "#6",
+    "set": "1990 Fleer League Standouts (insert)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1990-60-1990-score-superstars-insert",
+    "year": "1990",
+    "num": "#60",
+    "set": "1990 Score Superstars (insert)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1990-8-1990-classic-possible-overlap-w-classic-blue-row-above-verify-before-buying-both",
+    "year": "1990",
+    "num": "#8",
+    "set": "1990 Classic (possible overlap w/ \"Classic Blue\" row above \u2014 verify before buying both)",
+    "img": null,
+    "seed": false
+   }
+  ]
+ },
+ {
+  "year": "1991",
+  "title": "1991",
+  "cards": [
+   {
+    "id": "1991-520-1991-topps",
+    "year": "1991",
+    "num": "#520",
+    "set": "1991 Topps",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1991-520-1991-o-pee-chee",
+    "year": "1991",
+    "num": "#520",
+    "set": "1991 O-Pee-Chee",
+    "img": "8712_505855Rep.jpg",
+    "seed": false
+   },
+   {
+    "id": "1991-199-1991-donruss",
+    "year": "1991",
+    "num": "#199",
+    "set": "1991 Donruss",
+    "img": "152_199.jpg",
+    "seed": false
+   },
+   {
+    "id": "1991-422-1991-fleer",
+    "year": "1991",
+    "num": "#422",
+    "set": "1991 Fleer",
+    "img": "155_422.jpg",
+    "seed": false
+   },
+   {
+    "id": "1991-175-1991-score",
+    "year": "1991",
+    "num": "#175",
+    "set": "1991 Score",
+    "img": "160_75025Rep.jpg",
+    "seed": false
+   },
+   {
+    "id": "1991-91-1991-score-100-superstars-insert",
+    "year": "1991",
+    "num": "#91",
+    "set": "1991 Score 100 Superstars (insert)",
+    "img": "27864_91.jpg",
+    "seed": false
+   },
+   {
+    "id": "1991-99-1991-upper-deck",
+    "year": "1991",
+    "num": "#99",
+    "set": "1991 Upper Deck",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1991-134-1991-upper-deck-2nd-card-checklist",
+    "year": "1991",
+    "num": "#134",
+    "set": "1991 Upper Deck (2nd card/checklist)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1991-433-1991-bowman",
+    "year": "1991",
+    "num": "#433",
+    "set": "1991 Bowman",
+    "img": "151_433.jpg",
+    "seed": false
+   },
+   {
+    "id": "1991-61-1991-ultra",
+    "year": "1991",
+    "num": "#61",
+    "set": "1991 Ultra",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1991-170-1991-leaf",
+    "year": "1991",
+    "num": "#170",
+    "set": "1991 Leaf",
+    "img": "158_74420Rep.jpg",
+    "seed": false
+   },
+   {
+    "id": "1991-290-1991-stadium-club",
+    "year": "1991",
+    "num": "#290",
+    "set": "1991 Stadium Club",
+    "img": "165_17269565.jpg",
+    "seed": false
+   },
+   {
+    "id": "1991-22-1991-post-cereal",
+    "year": "1991",
+    "num": "#22",
+    "set": "1991 Post (cereal)",
+    "img": "9091_22.jpg",
+    "seed": false
+   },
+   {
+    "id": "1991-t27-1991-classic-traded-update",
+    "year": "1991",
+    "num": "#T27",
+    "set": "1991 Classic (Traded/Update)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1991-105-1991-classic-collector-s-edition",
+    "year": "1991",
+    "num": "#105",
+    "set": "1991 Classic Collector's Edition",
+    "img": "8454_105.jpg",
+    "seed": false
+   },
+   {
+    "id": "1991-157-1991-studio",
+    "year": "1991",
+    "num": "#157",
+    "set": "1991 Studio",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1991-20-1991-line-drive-collect-a-books",
+    "year": "1991",
+    "num": "#20",
+    "set": "1991 Line Drive Collect-A-Books",
+    "img": "86265_6236546.jpg",
+    "seed": false
+   }
+  ]
+ },
+ {
+  "year": "1992",
+  "title": "1992",
+  "cards": [
+   {
+    "id": "1992-140-1992-topps",
+    "year": "1992",
+    "num": "#140",
+    "set": "1992 Topps",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1992-140-1992-o-pee-chee",
+    "year": "1992",
+    "num": "#140",
+    "set": "1992 O-Pee-Chee",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1992-281-1992-donruss",
+    "year": "1992",
+    "num": "#281",
+    "set": "1992 Donruss",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1992-381-1992-fleer",
+    "year": "1992",
+    "num": "#381",
+    "set": "1992 Fleer",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1992-445-1992-score",
+    "year": "1992",
+    "num": "#445",
+    "set": "1992 Score",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1992-143-1992-upper-deck",
+    "year": "1992",
+    "num": "#143",
+    "set": "1992 Upper Deck",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1992-26-1992-leaf",
+    "year": "1992",
+    "num": "#26",
+    "set": "1992 Leaf",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1992-26-1992-leaf-black-gold-parallel",
+    "year": "1992",
+    "num": "#26",
+    "set": "1992 Leaf Black Gold (parallel)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1992-174-1992-stadium-club",
+    "year": "1992",
+    "num": "#174",
+    "set": "1992 Stadium Club",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1992-14-1992-studio",
+    "year": "1992",
+    "num": "#14",
+    "set": "1992 Studio",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1992-114-1992-triple-play",
+    "year": "1992",
+    "num": "#114",
+    "set": "1992 Triple Play",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1992-175-1992-ultra",
+    "year": "1992",
+    "num": "#175",
+    "set": "1992 Ultra",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1992-182-1992-panini-stickers",
+    "year": "1992",
+    "num": "#182",
+    "set": "1992 Panini Stickers",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1992-29-1992-classic-collector-s-edition",
+    "year": "1992",
+    "num": "#29",
+    "set": "1992 Classic Collector's Edition",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1992-4-1992-topps-kids",
+    "year": "1992",
+    "num": "#4",
+    "set": "1992 Topps Kids",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1992-5-1992-cracker-jack-donruss-series-2",
+    "year": "1992",
+    "num": "#5",
+    "set": "1992 Cracker Jack / Donruss Series 2",
+    "img": null,
+    "seed": false
+   }
+  ]
+ },
+ {
+  "year": "1993",
+  "title": "1993",
+  "cards": [
+   {
+    "id": "1993-440-1993-bowman",
+    "year": "1993",
+    "num": "#440",
+    "set": "1993 Bowman",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1993-15-1993-upper-deck-unconfirmed-not-on-baseball-almanac-list-verify-before-buying",
+    "year": "1993",
+    "num": "#15",
+    "set": "1993 Upper Deck (unconfirmed \u2014 not on Baseball Almanac list, verify before buying)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1993-11-1993-triple-play-little-hotshots-insert",
+    "year": "1993",
+    "num": "#11",
+    "set": "1993 Triple Play \"Little Hotshots\" (insert)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1993-12-1993-score-select-stat-leaders-insert",
+    "year": "1993",
+    "num": "#12",
+    "set": "1993 Score Select Stat Leaders (insert)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1993-14-1993-flair",
+    "year": "1993",
+    "num": "#14",
+    "set": "1993 Flair",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1993-20-1993-fleer",
+    "year": "1993",
+    "num": "#20",
+    "set": "1993 Fleer",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1993-211-1993-triple-play",
+    "year": "1993",
+    "num": "#211",
+    "set": "1993 Triple Play",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1993-27-1993-pacific-jugadores-calientes",
+    "year": "1993",
+    "num": "#27",
+    "set": "1993 Pacific Jugadores Calientes",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1993-42-1993-studio",
+    "year": "1993",
+    "num": "#42",
+    "set": "1993 Studio",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1993-483-1993-upper-deck-national-league-team-stars",
+    "year": "1993",
+    "num": "#483",
+    "set": "1993 Upper Deck (National League Team Stars)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1993-50-1993-score",
+    "year": "1993",
+    "num": "#50",
+    "set": "1993 Score",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1993-532-1993-donruss",
+    "year": "1993",
+    "num": "#532",
+    "set": "1993 Donruss",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1993-573-1993-upper-deck",
+    "year": "1993",
+    "num": "#573",
+    "set": "1993 Upper Deck",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1993-715-1993-donruss-checklist-card",
+    "year": "1993",
+    "num": "#715",
+    "set": "1993 Donruss (Checklist Card)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1993-73-1993-topps-finest",
+    "year": "1993",
+    "num": "#73",
+    "set": "1993 Topps Finest",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1993-73-1993-topps-finest-refractors-parallel",
+    "year": "1993",
+    "num": "#73",
+    "set": "1993 Topps Finest Refractors (parallel)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1993-81-1993-upper-deck-fun-pack-insert",
+    "year": "1993",
+    "num": "#81",
+    "set": "1993 Upper Deck Fun Pack (insert)",
+    "img": null,
+    "seed": false
+   }
+  ]
+ },
+ {
+  "year": "1994",
+  "title": "1994",
+  "cards": [
+   {
+    "id": "1994-14-1994-post-cereal",
+    "year": "1994",
+    "num": "#14",
+    "set": "1994 Post Cereal",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1994-358-1994-donruss",
+    "year": "1994",
+    "num": "#358",
+    "set": "1994 Donruss",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1994-390-1994-topps-finest",
+    "year": "1994",
+    "num": "#390",
+    "set": "1994 Topps Finest",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1994-42-1994-score",
+    "year": "1994",
+    "num": "#42",
+    "set": "1994 Score",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1994-42-1994-score-gold-rush-parallel",
+    "year": "1994",
+    "num": "#42",
+    "set": "1994 Score Gold Rush (parallel)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1994-440-1994-upper-deck",
+    "year": "1994",
+    "num": "#440",
+    "set": "1994 Upper Deck",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1994-6-1994-score-tombstone-pizza-super-pro-series",
+    "year": "1994",
+    "num": "#6",
+    "set": "1994 Score Tombstone Pizza Super-Pro Series",
+    "img": null,
+    "seed": false
+   }
+  ]
+ },
+ {
+  "year": "1995",
+  "title": "1995",
+  "cards": [
+   {
+    "id": "1995-35-1995-topps-d3-dimension-iii",
+    "year": "1995",
+    "num": "#35",
+    "set": "1995 Topps D3 (Dimension III)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1995-415-1995-fleer",
+    "year": "1995",
+    "num": "#415",
+    "set": "1995 Fleer",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1995-61-1995-topps-cyberstats",
+    "year": "1995",
+    "num": "#61",
+    "set": "1995 Topps CyberStats",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1995-65-1995-topps-finest",
+    "year": "1995",
+    "num": "#65",
+    "set": "1995 Topps Finest",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1995-70-1995-zenith",
+    "year": "1995",
+    "num": "#70",
+    "set": "1995 Zenith",
+    "img": null,
+    "seed": true
+   },
+   {
+    "id": "1995-71-1995-bazooka",
+    "year": "1995",
+    "num": "#71",
+    "set": "1995 Bazooka",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1995-90-1995-topps",
+    "year": "1995",
+    "num": "#90",
+    "set": "1995 Topps",
+    "img": null,
+    "seed": false
+   }
+  ]
+ },
+ {
+  "year": "1996",
+  "title": "1996",
+  "cards": [
+   {
+    "id": "1996-48-1996-bazooka",
+    "year": "1996",
+    "num": "#48",
+    "set": "1996 Bazooka",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1996-55-1996-topps",
+    "year": "1996",
+    "num": "#55",
+    "set": "1996 Topps",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1996-73-1996-zenith",
+    "year": "1996",
+    "num": "#73",
+    "set": "1996 Zenith",
+    "img": null,
+    "seed": false
+   }
+  ]
+ },
+ {
+  "year": "1997",
+  "title": "1997",
+  "cards": [
+   {
+    "id": "1997-1997-pacific-crown-collection-circa-green-grace-insert-card-not-yet-read-off-the-card",
+    "year": "1997",
+    "num": "\u2014",
+    "set": "1997 Pacific Crown Collection Circa (green \"GRACE\" insert, card # not yet read off the card)",
+    "img": null,
+    "seed": true
+   }
+  ]
+ },
+ {
+  "year": "1998",
+  "title": "1998",
+  "cards": [
+   {
+    "id": "1998-112-1998-pacific-aurora",
+    "year": "1998",
+    "num": "#112",
+    "set": "1998 Pacific Aurora",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1998-36-1998-zenith",
+    "year": "1998",
+    "num": "#36",
+    "set": "1998 Zenith",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1998-44-1998-fleer-tradition",
+    "year": "1998",
+    "num": "#44",
+    "set": "1998 Fleer Tradition",
+    "img": null,
+    "seed": false
+   }
+  ]
+ },
+ {
+  "year": "1999",
+  "title": "1999",
+  "cards": [
+   {
+    "id": "1999-33-1999-pacific-aurora",
+    "year": "1999",
+    "num": "#33",
+    "set": "1999 Pacific Aurora",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1999-33-1999-pacific-aurora-red-parallel-set",
+    "year": "1999",
+    "num": "#33",
+    "set": "1999 Pacific Aurora (Red Parallel Set)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1999-33-1999-pacific-aurora-opening-day-parallel-set",
+    "year": "1999",
+    "num": "#33",
+    "set": "1999 Pacific Aurora (Opening Day Parallel Set)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1999-64-1999-bowman",
+    "year": "1999",
+    "num": "#64",
+    "set": "1999 Bowman",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "1999-79-1999-victory",
+    "year": "1999",
+    "num": "#79",
+    "set": "1999 Victory",
+    "img": null,
+    "seed": false
+   }
+  ]
+ },
+ {
+  "year": "2000",
+  "title": "2000",
+  "cards": [
+   {
+    "id": "2000-190-2000-skybox",
+    "year": "2000",
+    "num": "#190",
+    "set": "2000 Skybox",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "2000-190-2000-skybox-star-ruby-parallel",
+    "year": "2000",
+    "num": "#190",
+    "set": "2000 Skybox Star Ruby (parallel)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "2000-190-2000-skybox-star-ruby-extreme-parallel",
+    "year": "2000",
+    "num": "#190",
+    "set": "2000 Skybox Star Ruby Extreme (parallel)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "2000-25-2000-pacific-aurora",
+    "year": "2000",
+    "num": "#25",
+    "set": "2000 Pacific Aurora",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "2000-25-2000-pacific-aurora-premiere-date-parallel-set",
+    "year": "2000",
+    "num": "#25",
+    "set": "2000 Pacific Aurora (Premiere Date Parallel Set)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "2000-30-2000-topps",
+    "year": "2000",
+    "num": "#30",
+    "set": "2000 Topps",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "2000-30-2000-topps-chrome",
+    "year": "2000",
+    "num": "#30",
+    "set": "2000 Topps Chrome",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "2000-30-2000-topps-chrome-refractors-parallel",
+    "year": "2000",
+    "num": "#30",
+    "set": "2000 Topps Chrome Refractors (parallel)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "2000-54-2000-skybox-metal",
+    "year": "2000",
+    "num": "#54",
+    "set": "2000 Skybox Metal",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "2000-57-2000-pacific-vanguard",
+    "year": "2000",
+    "num": "#57",
+    "set": "2000 Pacific Vanguard",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "2000-57-2000-pacific-vanguard-green-parallel",
+    "year": "2000",
+    "num": "#57",
+    "set": "2000 Pacific Vanguard (Green, parallel)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "2000-57-2000-pacific-vanguard-gold-parallel",
+    "year": "2000",
+    "num": "#57",
+    "set": "2000 Pacific Vanguard (Gold, parallel)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "2000-57-2000-pacific-vanguard-purple-parallel",
+    "year": "2000",
+    "num": "#57",
+    "set": "2000 Pacific Vanguard (Purple, parallel)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "2000-85-2000-victory",
+    "year": "2000",
+    "num": "#85",
+    "set": "2000 Victory",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "2000-90-2000-victory-team-card",
+    "year": "2000",
+    "num": "#90",
+    "set": "2000 Victory (Team Card)",
+    "img": null,
+    "seed": false
+   }
+  ]
+ },
+ {
+  "year": "2001",
+  "title": "2001",
+  "cards": [
+   {
+    "id": "2001-38-2001-absolute-memorabilia-in-scope-confirmed-non-relic-per-your-photo",
+    "year": "2001",
+    "num": "#38",
+    "set": "2001 Absolute Memorabilia (in scope \u2014 confirmed non-relic per your photo)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "2001-38-2001-absolute-memorabilia-spectrum-parallel-in-scope-confirmed-non-relic-per-your-photo",
+    "year": "2001",
+    "num": "#38",
+    "set": "2001 Absolute Memorabilia Spectrum Parallel (in scope \u2014 confirmed non-relic per your photo)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "2001-2001-topps-insert-who-would-have-thought-dual-player-card-gold-border-number-not-yet-read-off-the-card",
+    "year": "2001",
+    "num": "\u2014",
+    "set": "2001 Topps insert, \"Who Would Have Thought\" (dual-player card, gold border \u2014 number not yet read off the card)",
+    "img": null,
+    "seed": true
+   },
+   {
+    "id": "2001-2001-fleer-focus-jersey-edition-diamondbacks-year-is-a-guess-from-design-not-confirmed",
+    "year": "2001",
+    "num": "\u2014",
+    "set": "2001(?) Fleer Focus \"Jersey Edition\" \u2014 Diamondbacks (year is a guess from design, not confirmed)",
+    "img": null,
+    "seed": true
+   }
+  ]
+ },
+ {
+  "year": "2002",
+  "title": "2002",
+  "cards": [
+   {
+    "id": "2002-566-2002-topps-total",
+    "year": "2002",
+    "num": "#566",
+    "set": "2002 Topps Total",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "2002-63-2002-leaf-certified",
+    "year": "2002",
+    "num": "#63",
+    "set": "2002 Leaf Certified",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "2002-9-2002-absolute-memorabilia-in-scope-confirmed-non-relic-per-your-photo",
+    "year": "2002",
+    "num": "#9",
+    "set": "2002 Absolute Memorabilia (in scope \u2014 confirmed non-relic per your photo)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "2002-2002-fleer-platinum-diamondbacks-black-uniform-number-not-yet-read-off-the-card",
+    "year": "2002",
+    "num": "\u2014",
+    "set": "2002 Fleer Platinum \u2014 Diamondbacks, black uniform (number not yet read off the card)",
+    "img": null,
+    "seed": true
+   }
+  ]
+ },
+ {
+  "year": "2003",
+  "title": "2003",
+  "cards": [
+   {
+    "id": "2003-145-2003-absolute-memorabilia-in-scope-confirmed-non-relic-per-your-photo",
+    "year": "2003",
+    "num": "#145",
+    "set": "2003 Absolute Memorabilia (in scope \u2014 confirmed non-relic per your photo)",
+    "img": null,
+    "seed": false
+   }
+  ]
+ },
+ {
+  "year": "2004",
+  "title": "2004 \u2014 Retired-player reissues (final playing year was 2003)",
+  "cards": [
+   {
+    "id": "2004-103-2004-leaf",
+    "year": "2004",
+    "num": "#103",
+    "set": "2004 Leaf",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "2004-152-2004-donruss-diamond-kings-insert",
+    "year": "2004",
+    "num": "#152",
+    "set": "2004 Donruss Diamond Kings (insert)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "2004-2-2004-donruss-diamond-kings-timeline-insert",
+    "year": "2004",
+    "num": "#2",
+    "set": "2004 Donruss Diamond Kings Timeline (insert)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "2004-220-2004-donruss-2-copies-owned-per-photo",
+    "year": "2004",
+    "num": "#220",
+    "set": "2004 Donruss (2 copies owned, per photo)",
+    "img": null,
+    "seed": true
+   },
+   {
+    "id": "2004-220-2004-donruss-black-press-proofs-parallel",
+    "year": "2004",
+    "num": "#220",
+    "set": "2004 Donruss Black Press Proofs (parallel)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "2004-220-2004-donruss-career-stat-line-insert",
+    "year": "2004",
+    "num": "#220",
+    "set": "2004 Donruss Career Stat Line (insert)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "2004-220-2004-donruss-season-stat-line-insert",
+    "year": "2004",
+    "num": "#220",
+    "set": "2004 Donruss Season Stat Line (insert)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "2004-25-2004-donruss-diamond-kings-heritage-collection-insert",
+    "year": "2004",
+    "num": "#25",
+    "set": "2004 Donruss Diamond Kings Heritage Collection (insert)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "2004-253-2004-leaf",
+    "year": "2004",
+    "num": "#253",
+    "set": "2004 Leaf",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "2004-63-2004-donruss-diamond-kings-insert",
+    "year": "2004",
+    "num": "#63",
+    "set": "2004 Donruss Diamond Kings (insert)",
+    "img": null,
+    "seed": false
+   },
+   {
+    "id": "2004-8-2004-donruss-diamond-kings-team-timeline-insert",
+    "year": "2004",
+    "num": "#8",
+    "set": "2004 Donruss Diamond Kings Team Timeline (insert)",
+    "img": null,
+    "seed": false
+   }
+  ]
+ }
+]
