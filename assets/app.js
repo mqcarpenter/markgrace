@@ -4,11 +4,40 @@
 
   var API = 'api/';
   var DATA = [];                       // sections from the server
-  var fStatus = 'all', fYear = 'all', fQ = '';
+  var fStatus = 'all', fYear = 'all', fQ = '', fType = 'all';
+  // The list is ~2,500 cards. Rebuilding every row on each keystroke or chip
+  // tap locks the main thread for seconds on a phone, so render a window of
+  // them and let the user ask for the rest.
+  var PAGE = 300, showAll = false;
   var list  = document.getElementById('list');
   var toast = document.getElementById('toast');
   var CHECK = '<svg viewBox="0 0 16 16" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 8.5l3.5 3.5 7.5-7.5"/></svg>';
   var tid;
+
+  // Relics, autos and parallels stay in the list — they're just labelled.
+  // Brand mark. If you drop a real logo at img/brands/<slug>.png it is used
+  // automatically; otherwise the brand shows as a coloured wordmark chip.
+  var BRAND_LOGOS = window.MG_BRAND_LOGOS || {};
+  function brandMark(c) {
+    if (!c.brand) return '';
+    var slug = c.brandSlug || '';
+    if (BRAND_LOGOS[slug]) {
+      return '<img class="brandlogo" src="img/brands/' + esc(slug) + '.png" alt="' +
+             esc(c.brand) + '" loading="lazy">';
+    }
+    return '<span class="brand b-' + esc(slug) + '">' + esc(c.brand) + '</span>';
+  }
+
+  function badges(c) {
+    var out = '';
+    if (c.auto)     out += '<span class="tag t-auto">AUTO</span>';
+    if (c.relic)    out += '<span class="tag t-relic">RELIC</span>';
+    if (c.parallel) out += '<span class="tag t-par">PARALLEL</span>';
+    if (c.insert)   out += '<span class="tag t-ins">INSERT</span>';
+    var sn = (c.tags || '').split(',').filter(function (t) { return /^SN\d+$/.test(t); })[0];
+    if (sn) out += '<span class="tag t-sn">/' + esc(sn.slice(2)) + '</span>';
+    return out;
+  }
 
   function esc(s) {
     return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) {
@@ -33,35 +62,60 @@
 
   /* ---------- rendering ---------- */
   function render() {
-    var q = fQ.trim().toLowerCase(), shown = 0, out = [];
+    var q = fQ.trim().toLowerCase(), shown = 0, matched = 0, out = [];
+    var budget = showAll ? Infinity : PAGE;
     DATA.forEach(function (sec) {
       if (fYear !== 'all' && sec.year !== fYear) return;
       var rows = sec.cards.filter(function (c) {
         if (fStatus === 'owned'  && !c.owned) return false;
         if (fStatus === 'needed' &&  c.owned) return false;
+        if (!typeOk(c)) return false;
         if (q && (sec.year + ' ' + c.num + ' ' + c.set).toLowerCase().indexOf(q) < 0) return false;
         return true;
       });
       if (!rows.length) return;
-      shown += rows.length;
+      matched += rows.length;
+      if (shown >= budget) return;                    // counted, not drawn
+      var slice = rows.slice(0, budget - shown);
+      shown += slice.length;
       var oc = sec.cards.filter(function (c) { return c.owned; }).length;
       out.push('<h2 class="yr" data-sec="' + esc(sec.title) + '"><span>' + esc(sec.title) +
                '</span><em>' + oc + ' / ' + sec.cards.length + '</em></h2><ul>');
-      rows.forEach(function (c) {
+      slice.forEach(function (c) {
         out.push(
           '<li class="' + (c.owned ? 'owned' : '') + '" data-id="' + esc(c.id) +
             '" role="button" tabindex="0" aria-pressed="' + (c.owned ? 'true' : 'false') + '">' +
           (c.img ? '<img class="thumb" loading="lazy" alt="" src="img/' + esc(c.img) + '">'
                  : '<div class="noimg">no img</div>') +
           '<div class="meta"><div class="set">' + esc(c.set) + '</div>' +
-          '<div class="num">' + esc(c.num) + '</div></div>' +
+          '<div class="tagrow">' + brandMark(c) + '<span class="num">' + esc(c.num) + '</span>' + badges(c) + '</div></div>' +
           '<div class="box">' + CHECK + '</div></li>');
       });
       out.push('</ul>');
     });
+    if (matched > shown) {
+      out.push('<div class="more"><div>Showing ' + shown.toLocaleString() +
+               ' of ' + matched.toLocaleString() + ' matching cards.</div>' +
+               '<button type="button" id="showAll">Show all ' + matched.toLocaleString() + '</button>' +
+               '<div class="hint">Searching or picking a year is faster than loading everything.</div></div>');
+    }
     list.innerHTML = out.join('');
+    var btn = document.getElementById('showAll');
+    if (btn) btn.addEventListener('click', function () { showAll = true; render(); });
     document.getElementById('empty').classList.toggle('hide', shown > 0);
     stats();
+  }
+
+  // Relics, autos and parallels are never hidden by default — this only
+  // narrows the view when the user picks a type chip.
+  function typeOk(c) {
+    switch (fType) {
+      case 'cards':    return !c.auto && !c.relic;
+      case 'auto':     return c.auto;
+      case 'relic':    return c.relic;
+      case 'parallel': return c.parallel;
+      default:         return true;      // 'all'
+    }
   }
 
   function stats() {
@@ -137,16 +191,25 @@
     if (li) { e.preventDefault(); toggle(li); }
   });
   document.getElementById('q').addEventListener('input', function (e) {
-    fQ = e.target.value; render();
+    showAll = false; fQ = e.target.value; render();
   });
   document.getElementById('statusChips').addEventListener('click', function (e) {
     var b = e.target.closest('.chip'); if (!b) return;
-    fStatus = b.dataset.f;
+    showAll = false; fStatus = b.dataset.f;
     [].forEach.call(this.querySelectorAll('.chip'), function (c) {
       c.setAttribute('aria-pressed', c === b ? 'true' : 'false');
     });
     render();
   });
+  document.getElementById('typeChips').addEventListener('click', function (e) {
+    var b = e.target.closest('.chip'); if (!b) return;
+    showAll = false; fType = b.dataset.t;
+    [].forEach.call(this.querySelectorAll('.chip'), function (c) {
+      c.setAttribute('aria-pressed', c === b ? 'true' : 'false');
+    });
+    render();
+  });
+
   document.getElementById('theme').addEventListener('click', function () {
     var cur = document.documentElement.getAttribute('data-theme');
     var dark = cur ? cur === 'dark' : matchMedia('(prefers-color-scheme:dark)').matches;
@@ -167,7 +230,7 @@
     yc.innerHTML = h;
     yc.onclick = function (e) {
       var b = e.target.closest('.chip'); if (!b) return;
-      fYear = b.dataset.y;
+      showAll = false; fYear = b.dataset.y;
       [].forEach.call(yc.querySelectorAll('.chip'), function (c) {
         c.setAttribute('aria-pressed', c === b ? 'true' : 'false');
       });

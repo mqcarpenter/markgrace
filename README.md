@@ -6,7 +6,7 @@ owned; the state lives in MySQL, so every device sees the same collection.
 **Scope:** base cards, inserts and parallels — no autographs, no relics.
 Minor league and oddball/team-issued cards are included.
 
-Currently tracking **171 cards (1986–2004)**, 13 marked owned.
+Currently tracking **2,497 cards (1982–2015)**, 13 marked owned.
 TCDB lists 5,411 Mark Grace cards total, so this is a work in progress.
 
 ---
@@ -156,11 +156,13 @@ install will silently not happen. The bundled `.htaccess` handles both.
 | `api/index.php` | JSON endpoints |
 | `db.php` | Config loading, PDO connection, auth helpers |
 | `schema.sql` | Table definition |
+| `migrate-002-card-types.sql` | Adds auto/relic/parallel/insert flags |
+| `migrate-003-brand.sql` | Adds brand columns |
 | `grants.sql` | Least-privilege database users |
 | `seed.php` | One-time import of `data/cards.json` |
 | `cards-insert.sql` | Same data as plain SQL, for phpMyAdmin |
 | `data/cards.json` | The card list |
-| `img/` | Card thumbnails (38 files) |
+| `img/` | Card images (294 files) |
 | `icons/` | App icons for the home screen |
 | `manifest.json` | Install metadata (name, icons, standalone) |
 | `sw.js` | Offline shell |
@@ -177,16 +179,31 @@ install will silently not happen. The bundled `.htaccess` handles both.
 
 ---
 
+## Card types and brands
+
+Every card is included — autographs, relics and parallels among them. They
+aren't filtered out, they're **labelled**: each row carries `AUTO`, `RELIC`,
+`PARALLEL` or `INSERT` badges plus a serial-number chip (`/25`) where TCDB
+records one. The type chips above the list narrow to one kind; "Cards only"
+hides autos and relics without deleting them.
+
+Brands show as coloured wordmarks (`TOPPS`, `DONRUSS`, `TOYS R US`). To use
+real logos instead, drop a PNG at `img/brands/<slug>.png` and register the
+slug in `window.MG_BRAND_LOGOS`; the wordmark is the fallback. No logo files
+ship with the repo.
+
 ## Known gaps
 
-- **Only 43 of 171 cards have an image.** TCDB blocks hotlinking *and*
+- **Only ~308 of 2,497 cards have an image.** TCDB blocks hotlinking *and*
   server-side fetching (403), so images can't be pulled automatically. The 43
   here were recovered from previously saved TCDB pages. Remaining images have to
   be added by hand: drop a JPEG in `img/` and set that card's `image` column.
 - **Parallels reuse their base card's image.** A Tiffany or Glossy parallel
   shows the base photo, because TCDB usually has no separate image for it.
-- **171 of 5,411 known cards are catalogued.** Coverage is strongest 1986–1993
-  and thin after; the insert-heavy mid-90s are barely started.
+- **2,497 of ~5,411 known cards are catalogued**, recovered from saved TCDB
+  pages and the checklist PDF. The rest are mostly post-2005 parallels.
+- **Some set names from the PDF are truncated** at ~37 characters, because
+  that is how the printed checklist column was cut.
 - **Prices aren't tracked.** The old markdown tracker had an empty price
   column; it was dropped rather than carried over blank.
 

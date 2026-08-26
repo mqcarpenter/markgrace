@@ -10,7 +10,7 @@
 <meta name="apple-mobile-web-app-title" content="Grace">
 <meta name="description" content="Mark Grace baseball card collection tracker.">
 <title>Mark Grace Card Tracker</title>
-<link rel="stylesheet" href="assets/app.css?v=5">
+<link rel="stylesheet" href="assets/app.css?v=9">
 
 <!-- Installed-app behaviour -->
 <link rel="manifest" href="manifest.json">
@@ -63,6 +63,13 @@
         <button class="chip" type="button" data-f="needed" aria-pressed="false">Needed</button>
         <button class="chip" type="button" data-f="owned"  aria-pressed="false">Owned</button>
       </div>
+      <div class="chips" id="typeChips">
+        <button class="chip" type="button" data-t="all"      aria-pressed="true">Everything</button>
+        <button class="chip" type="button" data-t="cards"    aria-pressed="false">Cards only</button>
+        <button class="chip" type="button" data-t="parallel" aria-pressed="false">Parallels</button>
+        <button class="chip" type="button" data-t="relic"    aria-pressed="false">Relics</button>
+        <button class="chip" type="button" data-t="auto"     aria-pressed="false">Autos</button>
+      </div>
       <div class="chips" id="yearChips"></div>
     </div>
 
@@ -77,6 +84,6 @@
 </div>
 
 <div id="toast" role="status" aria-live="polite"></div>
-<script src="assets/app.js?v=5"></script>
+<script src="assets/app.js?v=9"></script>
 </body>
 </html>

@@ -176,6 +176,7 @@ h1 .thin{display:block;font-weight:500;font-size:15px;letter-spacing:.01em;
 .chip.year{font-variant-numeric:tabular-nums}
 
 /* ---------- year sections ---------- */
+ul{content-visibility:auto;contain-intrinsic-size:0 400px}
 h2.yr{
   display:flex;justify-content:space-between;align-items:center;gap:10px;
   font-size:13px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;
@@ -197,6 +198,10 @@ ul{
 li{
   display:flex;align-items:center;gap:13px;padding:11px 13px;
   -webkit-user-select:none;user-select:none;
+  /* 2,497 rows: let the browser skip layout and paint for offscreen ones.
+     contain-intrinsic-size keeps the scrollbar honest before they render. */
+  content-visibility:auto;
+  contain-intrinsic-size:0 70px;
   border-bottom:1px solid var(--line-soft);cursor:pointer;min-height:70px;
   transition:background .13s;position:relative;
 }
@@ -310,3 +315,72 @@ footer button:hover{border-color:var(--cubs-blue);color:var(--cubs-blue)}
 
 /* Text the user may actually want to select or type into. */
 .search,.gate input{-webkit-user-select:auto;user-select:auto}
+
+/* ---------- card type badges ---------- */
+.tagrow{display:flex;flex-wrap:wrap;align-items:center;gap:5px;margin-top:5px}
+.tagrow .num{margin-top:0}
+.tag{
+  display:inline-block;font-size:9.5px;font-weight:800;letter-spacing:.06em;
+  padding:2px 6px;border-radius:4px;text-transform:uppercase;line-height:1.4;
+  border:1px solid transparent;white-space:nowrap;
+}
+.t-auto {background:color-mix(in srgb,var(--cubs-red) 16%,transparent); color:var(--cubs-red);  border-color:color-mix(in srgb,var(--cubs-red) 34%,transparent)}
+.t-relic{background:color-mix(in srgb,#b8860b 18%,transparent);         color:#8a6508;          border-color:color-mix(in srgb,#b8860b 38%,transparent)}
+.t-par  {background:color-mix(in srgb,var(--cubs-blue) 14%,transparent);color:var(--cubs-blue); border-color:color-mix(in srgb,var(--cubs-blue) 32%,transparent)}
+.t-ins  {background:var(--surface-2);color:var(--text-2);border-color:var(--line)}
+.t-sn   {background:var(--surface-2);color:var(--text-2);border-color:var(--line);font-variant-numeric:tabular-nums}
+:root[data-theme="dark"] .t-relic{color:#e8c45c}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .t-relic{color:#e8c45c}}
+.chip[data-t="relic"][aria-pressed="true"]{background:#8a6508;border-color:#8a6508;box-shadow:none}
+.chip[data-t="auto"][aria-pressed="true"] {background:var(--cubs-red);border-color:var(--cubs-red)}
+
+/* "showing N of M" footer for the windowed list */
+.more{
+  margin:18px 0 4px;padding:16px;text-align:center;background:var(--surface);
+  border:1px dashed var(--line);border-radius:var(--radius);color:var(--text-2);font-size:13px;
+}
+.more button{
+  margin-top:10px;padding:10px 20px;border-radius:10px;border:none;
+  background:var(--cubs-blue);color:#fff;font-size:14px;font-weight:700;
+  cursor:pointer;font-family:inherit;
+}
+.more .hint{margin-top:9px;font-size:11.5px;color:var(--text-3)}
+
+/* ---------- brand marks ----------
+   Wordmark chips by default. Drop a PNG at img/brands/<slug>.png and register
+   it in window.MG_BRAND_LOGOS to show a real logo instead. */
+.brand{
+  display:inline-block;font-size:9.5px;font-weight:900;letter-spacing:.04em;
+  padding:2px 6px;border-radius:4px;line-height:1.4;text-transform:uppercase;
+  color:#fff;white-space:nowrap;
+}
+.brandlogo{height:14px;width:auto;max-width:64px;object-fit:contain;display:block}
+.b-topps           {background:#d9282f}
+.b-donruss         {background:#0a4d9c}
+.b-fleer           {background:#1b8a4b}
+.b-upperdeck       {background:#111}
+.b-bowman          {background:#6a3fa0}
+.b-score           {background:#e07b00}
+.b-leaf            {background:#0f7d7d}
+.b-pinnacle        {background:#8a1538}
+.b-pacific         {background:#00679c}
+.b-playoff         {background:#444}
+.b-panini          {background:#c2102e}
+.b-stadiumclub     {background:#2b5f8c}
+.b-skybox          {background:#6b4fbb}
+.b-ultra           {background:#1f6f8b}
+.b-studio          {background:#5a5a5a}
+.b-classic         {background:#7a5c1e}
+.b-sportflics      {background:#b8541f}
+.b-procards        {background:#3d6b35}
+.b-opeechee        {background:#b03030}
+.b-collectorschoice{background:#2f7d5b}
+.b-zenith          {background:#333f7a}
+.b-sp              {background:#1a1a2e}
+.b-star            {background:#8a6508}
+.b-post            {background:#8a4b1f}
+.b-toysrus         {background:#0f4bbf}
+.b-kmart           {background:#c2102e}
+.b-crackerjack     {background:#b5482a}
+.b-woolworth       {background:#a01f1f}
+.b-nike            {background:#111}
