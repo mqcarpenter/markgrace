@@ -19,31 +19,48 @@
      Any file dropped at img/brands/<slug>.(png|svg|webp) is used automatically —
      no code change needed. We probe each slug once at boot and fall back to a
      coloured wordmark for brands with no logo file. */
-  var LOGO = {};                       // slug -> resolved url, or false
+  var LOGO = {}, LOGO_DARK = {};      // slug -> url, or false
+
+  function findFile(base) {
+    return new Promise(function (done) {
+      var exts = ['png', 'svg', 'webp'], i = 0;
+      (function next() {
+        if (i >= exts.length) return done(false);
+        var url = base + '.' + exts[i++];
+        var im = new Image();
+        im.onload  = function () { done(url); };
+        im.onerror = next;
+        im.src = url;
+      })();
+    });
+  }
+
   function probeLogos(slugs) {
     return Promise.all(slugs.map(function (slug) {
-      return new Promise(function (done) {
-        var exts = ['png', 'svg', 'webp'], i = 0;
-        (function next() {
-          if (i >= exts.length) { LOGO[slug] = false; return done(); }
-          var url = 'img/brands/' + slug + '.' + exts[i++];
-          var im = new Image();
-          im.onload  = function () { LOGO[slug] = url; done(); };
-          im.onerror = next;
-          im.src = url;
-        })();
-      });
+      return Promise.all([
+        findFile('img/brands/' + slug),
+        findFile('img/brands/' + slug + '-dark')
+      ]).then(function (r) { LOGO[slug] = r[0]; LOGO_DARK[slug] = r[1]; });
     }));
   }
 
   function brandMark(c) {
     if (!c.brand) return '';
     var slug = c.brandSlug || '';
-    if (LOGO[slug]) {
-      return '<img class="brandlogo" src="' + esc(LOGO[slug]) + '" alt="' +
-             esc(c.brand) + '" title="' + esc(c.brand) + '" loading="lazy">';
+    if (!LOGO[slug]) {
+      return '<span class="brand b-' + esc(slug) + '">' + esc(c.brand) + '</span>';
     }
-    return '<span class="brand b-' + esc(slug) + '">' + esc(c.brand) + '</span>';
+    var alt = esc(c.brand);
+    // A dark-mode variant is optional. With one, the two swap by theme; with
+    // none, the single logo is used in both.
+    var cls = LOGO_DARK[slug] ? ' lm' : '';
+    var out = '<img class="brandlogo' + cls + '" src="' + esc(LOGO[slug]) +
+              '" alt="' + alt + '" title="' + alt + '" loading="lazy">';
+    if (LOGO_DARK[slug]) {
+      out += '<img class="brandlogo dm" src="' + esc(LOGO_DARK[slug]) +
+             '" alt="' + alt + '" title="' + alt + '" loading="lazy">';
+    }
+    return out;
   }
 
   function badges(c) {
@@ -294,7 +311,7 @@
       yearChips();
       render();                                   // paint immediately with wordmarks
       probeLogos(Object.keys(slugs)).then(function () {
-        if (Object.keys(LOGO).some(function (k) { return LOGO[k]; })) render();
+        if (Object.keys(LOGO).some(function (k) { return LOGO[k] || LOGO_DARK[k]; })) render();
       });
     } catch (e) {
       if (e.message !== 'locked') {

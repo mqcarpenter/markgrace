@@ -355,6 +355,14 @@ footer button:hover{border-color:var(--cubs-blue);color:var(--cubs-blue)}
   color:#fff;white-space:nowrap;
 }
 .brandlogo{height:14px;width:auto;max-width:64px;object-fit:contain;display:block}
+/* Optional <slug>-dark.png for logos that vanish on the dark navy rows. */
+.brandlogo.dm{display:none}
+:root[data-theme="dark"] .brandlogo.lm{display:none}
+:root[data-theme="dark"] .brandlogo.dm{display:block}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) .brandlogo.lm{display:none}
+  :root:not([data-theme="light"]) .brandlogo.dm{display:block}
+}
 .b-topps           {background:#d9282f}
 .b-donruss         {background:#0a4d9c}
 .b-fleer           {background:#1b8a4b}
