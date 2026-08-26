@@ -23,8 +23,19 @@ function connect(array $d): PDO {
             PDO::ATTR_EMULATE_PREPARES   => false,
         ]);
     } catch (PDOException $e) {
-        http_response_code(500);
         error_log('DB connect failed: ' . $e->getMessage());
+        // On the command line the detail is safe and saves a lot of guessing.
+        // Over the web it stays generic so we don't leak host or user names.
+        if (PHP_SAPI === 'cli') {
+            fwrite(STDERR,
+                "Database connection failed.\n" .
+                "  user:  {$d['user']}\n" .
+                "  host:  {$d['host']}\n" .
+                "  db:    {$d['name']}\n" .
+                "  mysql: {$e->getMessage()}\n");
+            exit(1);
+        }
+        http_response_code(500);
         exit('Database connection failed. Check config.php.');
     }
 }
