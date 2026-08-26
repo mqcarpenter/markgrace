@@ -22,6 +22,20 @@ no code change. Name the file for the brand's slug:
 Nothing breaks if a file is the wrong size — `object-fit: contain` scales it
 down and preserves aspect ratio. Oversized files just waste bandwidth.
 
+## Preparing a file
+
+`tools/fix-logo.py` does the whole job — strips the background, trims, resizes
+and optimises:
+
+```bash
+python3 tools/fix-logo.py raw-logo.png img/brands/topps.png --bg white
+python3 tools/fix-logo.py img/brands/topps.png --check    # report, write nothing
+```
+
+Useful flags: `--bg white|black|auto|R,G,B`, `--tol N` (raise for soft edges,
+lower if the logo itself starts vanishing), `--keep-holes` (only clear
+background touching the border, so letter counters stay filled), `--height N`.
+
 **Transparency is the one that actually bites.** A logo saved as RGB with an
 opaque backdrop renders as a solid tile: wrong on white rows, wrong again on
 the green owned rows and the navy dark-mode rows. Save as PNG-32 with alpha,

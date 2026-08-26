@@ -160,6 +160,7 @@ install will silently not happen. The bundled `.htaccess` handles both.
 | `migrate-003-brand.sql` | Adds brand columns |
 | `grants.sql` | Least-privilege database users |
 | `seed.php` | One-time import of `data/cards.json` |
+| `tools/fix-logo.py` | Prepares a brand logo for `img/brands/` |
 | `cards-insert.sql` | Same data as plain SQL, for phpMyAdmin |
 | `data/cards.json` | The card list |
 | `img/` | Card images (294 files) |
