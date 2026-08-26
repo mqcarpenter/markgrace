@@ -13,7 +13,7 @@ if (PHP_SAPI !== 'cli') { http_response_code(403); exit("CLI only.\n"); }
 $json = json_decode(file_get_contents(__DIR__ . '/data/cards.json'), true);
 if (!is_array($json)) exit("Could not read data/cards.json\n");
 
-$pdo = db();
+$pdo = db_admin();
 $pdo->beginTransaction();
 
 $ins = $pdo->prepare(

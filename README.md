@@ -15,29 +15,66 @@ TCDB lists 5,411 Mark Grace cards total, so this is a work in progress.
 
 1. **Upload** these files to a directory your web server serves.
 
-2. **Create the database and tables:**
+2. **Create the database and tables** (as an admin account):
    ```bash
-   mysql -u YOUR_USER -p YOUR_DB < schema.sql
+   mysql -u YOUR_ADMIN -p YOUR_DB < schema.sql
    ```
 
-3. **Add your credentials:**
+3. **Create the two restricted users.** Edit `grants.sql` to set both
+   passwords first, then:
+   ```bash
+   mysql -u YOUR_ADMIN -p markgrace < grants.sql
+   ```
+   See [Database privileges](#database-privileges) for what these can do.
+
+4. **Add your credentials:**
    ```bash
    cp config.example.php config.php
    ```
-   Edit `config.php` with your database host, name, user and password.
+   Put the two accounts from `grants.sql` into `config.php`.
    `config.php` is gitignored — your credentials never reach GitHub.
 
-4. **Load the cards:**
+5. **Load the cards:**
    ```bash
    php seed.php
    ```
    Prints how many cards it imported. Safe to re-run — it refreshes card
    details but never overwrites an `owned` flag you've already set.
 
-5. Open the directory in a browser.
+6. Open the directory in a browser.
 
 ### Requirements
 PHP 7.4+ with PDO MySQL, and MySQL 5.7+ / MariaDB 10.2+.
+
+---
+
+## Database privileges
+
+**Never point `config.php` at `root`.** The web app needs far less than that,
+and `grants.sql` sets up two narrow accounts so a bug or a leaked config can't
+become a lost table.
+
+| Account | Privileges | Used by |
+|---|---|---|
+| `markgrace_app` | `SELECT` on `cards`; `UPDATE` on `owned`, `acquired_at`, `note` **only** | Every web request |
+| `markgrace_seed` | `SELECT`, `INSERT`, `UPDATE` on `cards` | `php seed.php`, command line only |
+| your admin account | everything | `schema.sql`, by hand |
+
+The app account is deliberately narrow. Verified against MySQL:
+
+- `DROP TABLE`, `TRUNCATE`, `DELETE`, `INSERT` — **denied**
+- `UPDATE` of `set_name`, `card_num`, `image`, `year` — **denied**
+  (`ERROR 1143: UPDATE command denied ... for column 'set_name'`)
+- `SELECT` and flipping `owned` / `acquired_at` — allowed, which is all the
+  page ever does
+- No access to any other database
+
+`db_admin()` in `db.php` refuses to run outside the command line, so the
+importer's account can never be reached by a web request.
+
+A strictly read-only account will not work for the app itself — marking a card
+owned is a write. If you later want a public *view-only* page, a third account
+with just `SELECT` is the right way to build it.
 
 ---
 
@@ -73,6 +110,7 @@ Screen**. It opens full-screen like an app.
 | `api/index.php` | JSON endpoints |
 | `db.php` | Config loading, PDO connection, auth helpers |
 | `schema.sql` | Table definition |
+| `grants.sql` | Least-privilege database users |
 | `seed.php` | One-time import of `data/cards.json` |
 | `data/cards.json` | The card list |
 | `img/` | Card thumbnails (38 files) |

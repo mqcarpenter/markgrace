@@ -14,22 +14,46 @@ function config(): array {
     return $cfg;
 }
 
+function connect(array $d): PDO {
+    $dsn = "mysql:host={$d['host']};dbname={$d['name']};charset={$d['charset']}";
+    try {
+        return new PDO($dsn, $d['user'], $d['pass'], [
+            PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+            PDO::ATTR_EMULATE_PREPARES   => false,
+        ]);
+    } catch (PDOException $e) {
+        http_response_code(500);
+        error_log('DB connect failed: ' . $e->getMessage());
+        exit('Database connection failed. Check config.php.');
+    }
+}
+
+/**
+ * The web app's connection. This account holds SELECT + UPDATE only,
+ * so a request can flip an `owned` flag but cannot insert, delete,
+ * or reach the schema. Every web request uses this.
+ */
 function db(): PDO {
     static $pdo = null;
+    if ($pdo === null) $pdo = connect(config()['db']);
+    return $pdo;
+}
+
+/**
+ * The importer's connection — additionally holds INSERT. CLI only:
+ * calling this from a web request is a bug, so it refuses to run there.
+ * Falls back to the app account when no 'db_admin' block is configured.
+ */
+function db_admin(): PDO {
+    if (PHP_SAPI !== 'cli') {
+        http_response_code(500);
+        exit('db_admin() is command-line only.');
+    }
+    static $pdo = null;
     if ($pdo === null) {
-        $d = config()['db'];
-        $dsn = "mysql:host={$d['host']};dbname={$d['name']};charset={$d['charset']}";
-        try {
-            $pdo = new PDO($dsn, $d['user'], $d['pass'], [
-                PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
-                PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-                PDO::ATTR_EMULATE_PREPARES   => false,
-            ]);
-        } catch (PDOException $e) {
-            http_response_code(500);
-            error_log('DB connect failed: ' . $e->getMessage());
-            exit('Database connection failed. Check config.php.');
-        }
+        $cfg = config();
+        $pdo = connect($cfg['db_admin'] ?? $cfg['db']);
     }
     return $pdo;
 }
