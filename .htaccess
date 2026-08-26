@@ -1,0 +1,35 @@
+# Apache: keep non-public files from being served.
+# .sql files hold database passwords; config.php holds credentials; the .git
+# directory exposes history. None of these should ever be fetchable.
+
+<IfModule mod_authz_core.c>
+  # Apache 2.4+
+  <FilesMatch "\.(sql|json|md)$">
+    Require all denied
+  </FilesMatch>
+  <Files "config.php">
+    Require all denied
+  </Files>
+  <Files "config.example.php">
+    Require all denied
+  </Files>
+</IfModule>
+
+<IfModule !mod_authz_core.c>
+  # Apache 2.2
+  <FilesMatch "\.(sql|json|md)$">
+    Order allow,deny
+    Deny from all
+  </FilesMatch>
+  <Files "config.php">
+    Order allow,deny
+    Deny from all
+  </Files>
+</IfModule>
+
+# Block the git directory outright.
+RedirectMatch 404 /\.git
+
+# Card images and the front-end assets stay public — they're referenced by
+# the page. data/cards.json is denied above; the browser never fetches it
+# directly, it comes through api/.

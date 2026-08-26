@@ -139,3 +139,29 @@ Screen**. It opens full-screen like an app.
   and thin after; the insert-heavy mid-90s are barely started.
 - **Prices aren't tracked.** The old markdown tracker had an empty price
   column; it was dropped rather than carried over blank.
+
+---
+
+## Web server notes
+
+`.htaccess` (Apache) blocks the files that must never be served: `.sql`
+(database passwords), `config.php`, and the `.git` directory. Confirm it's
+working after install — these should all return 403 or 404:
+
+```bash
+curl -I https://yourhost/markgrace/grants.sql
+curl -I https://yourhost/markgrace/config.php
+curl -I https://yourhost/markgrace/.git/config
+```
+
+**On nginx, `.htaccess` does nothing.** Add this to your server block instead:
+
+```nginx
+location ~ \.(sql|md)$        { deny all; }
+location ~ /config.*\.php$    { deny all; }
+location ~ /\.git             { deny all; }
+location ~ ^/data/            { deny all; }
+```
+
+Safest of all: keep the app out of the webroot entirely, or delete
+`grants.sql` from the server once the users exist — it isn't needed at runtime.
