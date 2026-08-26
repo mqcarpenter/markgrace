@@ -223,4 +223,25 @@
     document.getElementById('app').classList.remove('hide');
     boot();
   })();
+
+  /* ---------- installed-app plumbing ---------- */
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('sw.js').catch(function () { /* offline shell is optional */ });
+    });
+  }
+
+  // In standalone mode an external link would otherwise punt the user into
+  // Safari and lose the app frame. Keep same-origin navigation in-app.
+  if (window.navigator.standalone) {
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest('a[href]');
+      if (!a) return;
+      var url = new URL(a.href, location.href);
+      if (url.origin === location.origin && a.target !== '_blank') {
+        e.preventDefault();
+        location.href = a.href;
+      }
+    });
+  }
 })();

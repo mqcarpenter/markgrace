@@ -125,10 +125,24 @@ personal page, not to protect anything sensitive.
 
 ---
 
-## Adding to your phone's home screen
+## Installing it as an app
 
 Open the page in Safari (iOS) or Chrome (Android) and choose **Add to Home
-Screen**. It opens full-screen like an app.
+Screen**. It installs as a standalone app: its own icon, no address bar, no
+browser chrome, and it opens straight into the collection.
+
+The icon is Grace's portrait from his 1989 Donruss Super Diamond Kings card.
+To change it, replace the files in `icons/` — `apple-touch-icon.png` (180px)
+is the one iOS uses.
+
+A service worker (`sw.js`) caches the shell, the card list and any images
+you've viewed, so the app opens instantly and still works with no signal.
+**Marking a card owned needs a connection** — a write with no network fails
+visibly and rolls back rather than pretending to save.
+
+Two deployment notes: `sw.js` must be served from the app root (its scope is
+the whole app), and `manifest.json` must stay publicly readable or the
+install will silently not happen. The bundled `.htaccess` handles both.
 
 ---
 
@@ -147,6 +161,9 @@ Screen**. It opens full-screen like an app.
 | `cards-insert.sql` | Same data as plain SQL, for phpMyAdmin |
 | `data/cards.json` | The card list |
 | `img/` | Card thumbnails (38 files) |
+| `icons/` | App icons for the home screen |
+| `manifest.json` | Install metadata (name, icons, standalone) |
+| `sw.js` | Offline shell |
 
 ### API
 

@@ -1,0 +1,16 @@
+{
+  "name": "Mark Grace Card Tracker",
+  "short_name": "Grace",
+  "description": "Track the Mark Grace baseball card collection.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0E3386",
+  "theme_color": "#0E3386",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

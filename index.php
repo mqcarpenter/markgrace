@@ -10,7 +10,13 @@
 <meta name="apple-mobile-web-app-title" content="Grace">
 <meta name="description" content="Mark Grace baseball card collection tracker.">
 <title>Mark Grace Card Tracker</title>
-<link rel="stylesheet" href="assets/app.css?v=4">
+<link rel="stylesheet" href="assets/app.css?v=5">
+
+<!-- Installed-app behaviour -->
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<meta name="mobile-web-app-capable" content="yes">
 </head>
 <body>
 
@@ -71,6 +77,6 @@
 </div>
 
 <div id="toast" role="status" aria-live="polite"></div>
-<script src="assets/app.js?v=4"></script>
+<script src="assets/app.js?v=5"></script>
 </body>
 </html>

@@ -71,6 +71,10 @@
 html{-webkit-text-size-adjust:100%}
 body{
   margin:0;color:var(--text);
+  /* Installed-app feel: no rubber-band scroll past the ends, no long-press
+     text callout on rows you are only ever going to tap. */
+  overscroll-behavior-y:contain;
+  -webkit-touch-callout:none;
   /* Home whites: fine blue pinstripes on the page, clean solid cards on top. */
   background-color:var(--bg);
   background-image:repeating-linear-gradient(
@@ -192,6 +196,7 @@ ul{
 }
 li{
   display:flex;align-items:center;gap:13px;padding:11px 13px;
+  -webkit-user-select:none;user-select:none;
   border-bottom:1px solid var(--line-soft);cursor:pointer;min-height:70px;
   transition:background .13s;position:relative;
 }
@@ -302,3 +307,6 @@ footer button:hover{border-color:var(--cubs-blue);color:var(--cubs-blue)}
 @media (prefers-reduced-motion:reduce){
   *{transition:none !important;animation:none !important}
 }
+
+/* Text the user may actually want to select or type into. */
+.search,.gate input{-webkit-user-select:auto;user-select:auto}
