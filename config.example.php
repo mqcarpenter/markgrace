@@ -24,6 +24,10 @@ return [
         'charset' => 'utf8mb4',
     ],
 
+    // Set true to return the real error text from api/ instead of a bare
+    // "Server error." Useful while installing; turn it off afterwards.
+    'debug' => false,
+
     // Anyone with the URL can view and edit unless you set a passphrase.
     // Leave null for an open page; set a string to require sign-in.
     'passphrase' => null,

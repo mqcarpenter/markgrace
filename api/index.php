@@ -5,6 +5,32 @@ require __DIR__ . '/../db.php';
 header('Content-Type: application/json; charset=utf-8');
 header('Cache-Control: no-store');
 
+/**
+ * Without this, any uncaught PDO error dies as a blank 500 with no body,
+ * which tells the browser (and you) nothing. Always answer with JSON.
+ * Set 'debug' => true in config.php to include the real message.
+ */
+function fail(string $msg, ?Throwable $e = null): void {
+    if ($e) error_log('markgrace: ' . $e->getMessage());
+    http_response_code(500);
+    $out = ['error' => $msg];
+    if ($e && !empty(config()['debug'])) {
+        $out['detail'] = $e->getMessage();
+        $out['where']  = basename($e->getFile()) . ':' . $e->getLine();
+    }
+    echo json_encode($out);
+    exit;
+}
+set_exception_handler(function (Throwable $e) { fail('Server error.', $e); });
+register_shutdown_function(function () {
+    $e = error_get_last();
+    if ($e && in_array($e['type'], [E_ERROR, E_PARSE, E_COMPILE_ERROR], true)) {
+        if (!headers_sent()) http_response_code(500);
+        error_log('markgrace fatal: ' . $e['message']);
+        echo json_encode(['error' => 'Server error.', 'detail' => 'See server error log.']);
+    }
+});
+
 $method = $_SERVER['REQUEST_METHOD'];
 $action = $_GET['action'] ?? '';
 
