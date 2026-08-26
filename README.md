@@ -6,7 +6,7 @@ owned; the state lives in MySQL, so every device sees the same collection.
 **Scope:** base cards, inserts and parallels — no autographs, no relics.
 Minor league and oddball/team-issued cards are included.
 
-Currently tracking **2,497 cards (1982–2015)**, 13 marked owned.
+Currently tracking **2,435 cards (1982–2015)**, 13 marked owned.
 TCDB lists 5,411 Mark Grace cards total, so this is a work in progress.
 
 ---
@@ -158,6 +158,8 @@ install will silently not happen. The bundled `.htaccess` handles both.
 | `schema.sql` | Table definition |
 | `migrate-002-card-types.sql` | Adds auto/relic/parallel/insert flags |
 | `migrate-003-brand.sql` | Adds brand columns |
+| `migrate-004-variant.sql` | Splits the variant off the set name |
+| `cleanup-stale.sql` | Deletes rows left by the earlier import |
 | `grants.sql` | Least-privilege database users |
 | `seed.php` | One-time import of `data/cards.json` |
 | `tools/fix-logo.py` | Prepares a brand logo for `img/brands/` |
@@ -179,6 +181,12 @@ install will silently not happen. The bundled `.htaccess` handles both.
 | `POST api/?action=logout` | Ends the session |
 
 ---
+
+## Set names and variants
+
+TCDB writes a parallel as `Base Set - Variant`. Those are stored in separate
+columns and shown as `1988 Fleer Update | Glossy`, so a parallel is never
+mistaken for the base card. 574 cards carry a variant.
 
 ## Card types and brands
 
@@ -206,7 +214,8 @@ No logo files ship with this repo; they are third-party trademarks.
 - **2,497 of ~5,411 known cards are catalogued**, recovered from saved TCDB
   pages and the checklist PDF. The rest are mostly post-2005 parallels.
 - **Some set names from the PDF are truncated** at ~37 characters, because
-  that is how the printed checklist column was cut.
+  that is how the printed checklist column was cut. Where a saved TCDB page
+  has the full name it is used instead, which recovered 67 of them.
 - **Prices aren't tracked.** The old markdown tracker had an empty price
   column; it was dropped rather than carried over blank.
 

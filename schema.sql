@@ -7,6 +7,7 @@ CREATE TABLE IF NOT EXISTS cards (
   section      VARCHAR(191) NOT NULL,
   card_num     VARCHAR(64)  NOT NULL,
   set_name     VARCHAR(255) NOT NULL,
+  variant      VARCHAR(160) DEFAULT NULL,
   brand        VARCHAR(48)  DEFAULT NULL,
   brand_slug   VARCHAR(48)  DEFAULT NULL,
   image        VARCHAR(255) DEFAULT NULL,

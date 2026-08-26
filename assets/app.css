@@ -396,3 +396,11 @@ footer button:hover{border-color:var(--cubs-blue);color:var(--cubs-blue)}
 .b-crackerjack     {background:#b5482a}
 .b-woolworth       {background:#a01f1f}
 .b-nike            {background:#111}
+
+/* Variant shown as a distinct clause so a parallel is never mistaken for the
+   base card: "1989 Donruss  ·  Super Diamond Kings 5x7" */
+.variant{
+  display:inline;margin-left:7px;padding-left:8px;font-weight:500;
+  color:var(--cubs-blue);border-left:2px solid var(--line);
+}
+li.owned .variant{color:var(--good)}

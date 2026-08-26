@@ -105,7 +105,7 @@
         if (fStatus === 'owned'  && !c.owned) return false;
         if (fStatus === 'needed' &&  c.owned) return false;
         if (!typeOk(c)) return false;
-        if (q && (sec.year + ' ' + c.num + ' ' + c.set).toLowerCase().indexOf(q) < 0) return false;
+        if (q && (sec.year + ' ' + c.num + ' ' + c.set + ' ' + (c.variant || '')).toLowerCase().indexOf(q) < 0) return false;
         return true;
       });
       if (!rows.length) return;
@@ -122,7 +122,8 @@
             '" role="button" tabindex="0" aria-pressed="' + (c.owned ? 'true' : 'false') + '">' +
           (c.img ? '<img class="thumb" loading="lazy" alt="" src="img/' + esc(c.img) + '">'
                  : '<div class="noimg">no img</div>') +
-          '<div class="meta"><div class="set">' + esc(c.set) + '</div>' +
+          '<div class="meta"><div class="set">' + esc(c.set) +
+            (c.variant ? '<span class="variant">' + esc(c.variant) + '</span>' : '') + '</div>' +
           '<div class="tagrow">' + brandMark(c) + '<span class="num">' + esc(c.num) + '</span>' + badges(c) + '</div></div>' +
           '<div class="box">' + CHECK + '</div></li>');
       });

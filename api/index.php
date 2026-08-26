@@ -89,7 +89,7 @@ if ($action === 'logout') {
 if ($method === 'GET' && ($action === '' || $action === 'cards')) {
     require_unlocked();
     $rows = db()->query(
-        'SELECT id, year, section, card_num, set_name, brand, brand_slug, image,
+        'SELECT id, year, section, card_num, set_name, variant, brand, brand_slug, image,
                 is_auto, is_relic, is_parallel, is_insert, tags,
                 owned, acquired_at, note
            FROM cards ORDER BY sort_order ASC'
@@ -105,6 +105,7 @@ if ($method === 'GET' && ($action === '' || $action === 'cards')) {
             'id'    => $r['id'],
             'num'   => $r['card_num'],
             'set'   => $r['set_name'],
+            'variant'   => $r['variant'],
             'img'   => $r['image'],
             'brand'     => $r['brand'],
             'brandSlug' => $r['brand_slug'],
