@@ -12,15 +12,28 @@ no code change. Name the file for the brand's slug:
 | | |
 |---|---|
 | **Formats** | `.png`, `.svg`, `.webp` — tried in that order |
-| **Rendered at** | 14 px tall, 64 px wide maximum |
-| **Supply at** | ~120x40 px (PNG). Phones are 2-3x, so at least 42 px tall |
-| **Aspect ratio** | Up to about 4.6:1. Wider gets capped by the 64 px width and renders shorter |
+| **Rendered at** | 20 px tall, 82 px wide maximum |
+| **Supply at** | ~3x the rendered size: about 240x60 for a wordmark, 72x72 for a square mark |
+| **Aspect ratio** | Up to about 4:1. Wider gets capped by the 82 px width and renders shorter. Square marks are fine and render 20x20 |
 | **Background** | **Must be transparent.** Rows are white, green-tinted when owned, and navy in dark mode |
 | **File size** | Keep under ~10 KB. All 28 load once, then cache |
 | **Shape** | Horizontal wordmarks read far better than square icons at 14 px |
 
 Nothing breaks if a file is the wrong size — `object-fit: contain` scales it
 down and preserves aspect ratio. Oversized files just waste bandwidth.
+
+**Transparency is the one that actually bites.** A logo saved as RGB with an
+opaque backdrop renders as a solid tile: wrong on white rows, wrong again on
+the green owned rows and the navy dark-mode rows. Save as PNG-32 with alpha,
+or use SVG. To check a file:
+
+```bash
+python3 -c "from PIL import Image; im=Image.open('donruss.png'); \
+print(im.mode, im.size, im.getchannel('A').getextrema() if im.mode=='RGBA' else 'NO ALPHA')"
+```
+
+`RGBA` with an alpha range starting at 0 is what you want. `RGB`, or alpha
+`(255, 255)`, means the background is baked in.
 
 ## Dark mode
 

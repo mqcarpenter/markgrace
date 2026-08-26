@@ -354,7 +354,11 @@ footer button:hover{border-color:var(--cubs-blue);color:var(--cubs-blue)}
   padding:2px 6px;border-radius:4px;line-height:1.4;text-transform:uppercase;
   color:#fff;white-space:nowrap;
 }
-.brandlogo{height:14px;width:auto;max-width:64px;object-fit:contain;display:block}
+.brandlogo{
+  height:20px;width:auto;max-width:82px;object-fit:contain;display:block;
+  /* 20px so square logos (Donruss, Panini) stay legible; wide wordmarks are
+     capped by max-width and simply render shorter. */
+}
 /* Optional <slug>-dark.png for logos that vanish on the dark navy rows. */
 .brandlogo.dm{display:none}
 :root[data-theme="dark"] .brandlogo.lm{display:none}
