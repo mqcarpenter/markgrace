@@ -188,9 +188,11 @@ records one. The type chips above the list narrow to one kind; "Cards only"
 hides autos and relics without deleting them.
 
 Brands show as coloured wordmarks (`TOPPS`, `DONRUSS`, `TOYS R US`). To use
-real logos instead, drop a PNG at `img/brands/<slug>.png` and register the
-slug in `window.MG_BRAND_LOGOS`; the wordmark is the fallback. No logo files
-ship with the repo.
+real logos, just drop the file at `img/brands/<slug>.png` — it is picked up
+automatically with no code change, and `.svg` and `.webp` work too. Brands
+with no file keep the wordmark, so adding a few at a time is fine.
+`img/brands/README.md` lists every slug with the number of cards it covers.
+No logo files ship with this repo; they are third-party trademarks.
 
 ## Known gaps
 

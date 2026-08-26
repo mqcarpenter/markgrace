@@ -1,11 +1,11 @@
 /* Mark Grace Card Tracker — offline shell.
    Card data is always fetched fresh; the shell and images are cached so the
    app opens instantly and survives a dead connection at a card show. */
-const VERSION = 'mg-v5';
+const VERSION = 'mg-v6';
 const SHELL = [
   './',
-  './assets/app.css?v=9',
-  './assets/app.js?v=9',
+  './assets/app.css?v=10',
+  './assets/app.js?v=10',
   './icons/icon-192.png'
 ];
 

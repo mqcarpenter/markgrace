@@ -15,15 +15,33 @@
   var tid;
 
   // Relics, autos and parallels stay in the list — they're just labelled.
-  // Brand mark. If you drop a real logo at img/brands/<slug>.png it is used
-  // automatically; otherwise the brand shows as a coloured wordmark chip.
-  var BRAND_LOGOS = window.MG_BRAND_LOGOS || {};
+  /* Brand marks.
+     Any file dropped at img/brands/<slug>.(png|svg|webp) is used automatically —
+     no code change needed. We probe each slug once at boot and fall back to a
+     coloured wordmark for brands with no logo file. */
+  var LOGO = {};                       // slug -> resolved url, or false
+  function probeLogos(slugs) {
+    return Promise.all(slugs.map(function (slug) {
+      return new Promise(function (done) {
+        var exts = ['png', 'svg', 'webp'], i = 0;
+        (function next() {
+          if (i >= exts.length) { LOGO[slug] = false; return done(); }
+          var url = 'img/brands/' + slug + '.' + exts[i++];
+          var im = new Image();
+          im.onload  = function () { LOGO[slug] = url; done(); };
+          im.onerror = next;
+          im.src = url;
+        })();
+      });
+    }));
+  }
+
   function brandMark(c) {
     if (!c.brand) return '';
     var slug = c.brandSlug || '';
-    if (BRAND_LOGOS[slug]) {
-      return '<img class="brandlogo" src="img/brands/' + esc(slug) + '.png" alt="' +
-             esc(c.brand) + '" loading="lazy">';
+    if (LOGO[slug]) {
+      return '<img class="brandlogo" src="' + esc(LOGO[slug]) + '" alt="' +
+             esc(c.brand) + '" title="' + esc(c.brand) + '" loading="lazy">';
     }
     return '<span class="brand b-' + esc(slug) + '">' + esc(c.brand) + '</span>';
   }
@@ -269,8 +287,15 @@
     try {
       var d = await api('?action=cards');
       DATA = d.sections || [];
+      var slugs = {};
+      DATA.forEach(function (s) {
+        s.cards.forEach(function (c) { if (c.brandSlug) slugs[c.brandSlug] = 1; });
+      });
       yearChips();
-      render();
+      render();                                   // paint immediately with wordmarks
+      probeLogos(Object.keys(slugs)).then(function () {
+        if (Object.keys(LOGO).some(function (k) { return LOGO[k]; })) render();
+      });
     } catch (e) {
       if (e.message !== 'locked') {
         list.innerHTML = '<div class="empty">Could not load cards: ' + esc(e.message) + '</div>';
