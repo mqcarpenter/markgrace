@@ -9,7 +9,7 @@
   --cubs-red-d:  #a72827;
 
   --bg:        #ffffff;
-  --pinstripe: rgba(14,51,134,.085);
+  --pinstripe: rgba(14,51,134,.16);
   --surface:   #ffffff;
   --surface-2: #eef2fa;
   --line:      #d6ddee;
@@ -74,7 +74,7 @@ body{
   /* Home whites: fine blue pinstripes on the page, clean solid cards on top. */
   background-color:var(--bg);
   background-image:repeating-linear-gradient(
-    90deg, var(--pinstripe) 0 1px, transparent 1px 13px);
+    90deg, var(--pinstripe) 0 1.5px, transparent 1.5px 12px);
   font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   padding-bottom:calc(28px + env(safe-area-inset-bottom));
   overflow-x:hidden;
@@ -91,7 +91,7 @@ body{
 .masthead::before{ /* pinstripes across the blue */
   content:"";position:absolute;inset:0;pointer-events:none;
   background-image:repeating-linear-gradient(
-    90deg, rgba(255,255,255,.10) 0 1px, transparent 1px 13px);
+    90deg, rgba(255,255,255,.20) 0 1.5px, transparent 1.5px 12px);
 }
 .masthead::after{ /* baseball-stitch arc */
   content:"";position:absolute;right:-70px;top:-70px;width:230px;height:230px;
