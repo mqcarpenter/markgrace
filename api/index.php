@@ -27,7 +27,19 @@ register_shutdown_function(function () {
     if ($e && in_array($e['type'], [E_ERROR, E_PARSE, E_COMPILE_ERROR], true)) {
         if (!headers_sent()) http_response_code(500);
         error_log('markgrace fatal: ' . $e['message']);
-        echo json_encode(['error' => 'Server error.', 'detail' => 'See server error log.']);
+        $out = ['error' => 'Server error.'];
+        // Surface the real fatal when debugging; otherwise stay quiet.
+        $dbg = false;
+        try { $dbg = !empty(config()['debug']); } catch (Throwable $ignored) {}
+        if ($dbg) {
+            $out['detail']  = $e['message'];
+            $out['where']   = $e['file'] . ':' . $e['line'];
+            $out['php']     = PHP_VERSION;
+            $out['drivers'] = class_exists('PDO') ? PDO::getAvailableDrivers() : ['PDO missing'];
+        } else {
+            $out['detail'] = 'See server error log.';
+        }
+        echo json_encode($out);
     }
 });
 
