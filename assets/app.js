@@ -87,15 +87,24 @@
     toast.classList.toggle('bad', !!bad);
     toast.classList.add('show');
     clearTimeout(tid);
-    tid = setTimeout(function () { toast.classList.remove('show'); }, 2600);
+    // An error worth reading is usually longer than 2.6s worth of reading,
+    // so failures linger and can be dismissed by tapping.
+    tid = setTimeout(function () { toast.classList.remove('show'); }, bad ? 15000 : 2600);
   }
+  toast.addEventListener('click', function () { toast.classList.remove('show'); });
   async function api(path, opts) {
     var r = await fetch(API + path, Object.assign({ credentials: 'same-origin' }, opts || {}));
     var d = null;
     try { d = await r.json(); } catch (e) {}
     if (r.status === 401) { showGate(); throw new Error('locked'); }
     if (!r.ok) {
-      var err = new Error((d && d.error) || ('HTTP ' + r.status));
+      // With 'debug' => true the server attaches the real exception as
+      // `detail`. Show it — a bare "Server error." tells nobody anything,
+      // and this is the one path where the message is the whole point.
+      var msg = (d && d.error) || ('HTTP ' + r.status);
+      if (d && d.detail) msg += ' — ' + d.detail;
+      if (d && d.where)  msg += ' (' + d.where + ')';
+      var err = new Error(msg);
       err.status = r.status;
       err.code = d && d.error;
       throw err;

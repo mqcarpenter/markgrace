@@ -86,6 +86,86 @@ if ($action === 'session') {
     ]);
 }
 
+/**
+ * Diagnostics for "registration fails and the log says nothing".
+ * Checks the things that actually break on shared hosting, in order.
+ * Only ever available with 'debug' => true, because it reports on the
+ * environment and that is nobody else's business.
+ */
+if ($action === 'selftest') {
+    if (empty(config()['debug'])) out(['error' => 'Set \'debug\' => true in config.php first.'], 403);
+
+    $r = ['php' => PHP_VERSION, 'checks' => [], 'verdict' => 'ok'];
+    $fail = function (string $name, string $why) use (&$r): void {
+        $r['checks'][$name] = 'FAIL: ' . $why;
+        $r['verdict'] = 'blocked';
+    };
+    $pass = function (string $name, string $note = 'ok') use (&$r): void {
+        $r['checks'][$name] = $note;
+    };
+
+    // 1. OpenSSL with the P-256 curve — no EC, no signature verification.
+    if (!extension_loaded('openssl')) {
+        $fail('openssl', 'extension not loaded');
+    } else {
+        $curves = function_exists('openssl_get_curve_names') ? (openssl_get_curve_names() ?: []) : [];
+        in_array('prime256v1', $curves, true)
+            ? $pass('openssl', 'loaded, P-256 available')
+            : $fail('openssl', 'loaded but the P-256 curve is missing');
+    }
+
+    // 2. Sessions — the challenge is stored in one, so no session, no passkey.
+    try {
+        session_boot();
+        $_SESSION['mg_selftest'] = 1;
+        $pass('session', 'writable (' . session_name() . ')');
+    } catch (Throwable $e) {
+        $fail('session', $e->getMessage());
+    }
+
+    // 3. HTTPS — browsers refuse to create a passkey without it.
+    !empty($_SERVER['HTTPS'])
+        ? $pass('https', 'on')
+        : $fail('https', 'passkeys require HTTPS; this request arrived over plain HTTP');
+
+    $pass('rp_id', rp_id());
+    $pass('origins', implode(', ', allowed_origins()));
+
+    // 4. The devices table: present, readable, and writable by THIS account.
+    //    This is the check the generic 500 was hiding.
+    try {
+        $n = (int)db()->query('SELECT COUNT(*) FROM devices')->fetchColumn();
+        $pass('devices_table', "present, {$n} row(s)");
+
+        // Read the account's own grants rather than probing with a write.
+        // A test INSERT that failed to roll back would leave a junk row —
+        // and any row in `devices` locks the page to a device nobody holds.
+        try {
+            $grants = db()->query('SHOW GRANTS FOR CURRENT_USER()')->fetchAll(PDO::FETCH_COLUMN);
+            $canInsert = false;
+            foreach ($grants as $g) {
+                if (preg_match('/\bGRANT\s+(.+?)\s+ON\b/i', $g, $m)) {
+                    $priv = strtoupper($m[1]);
+                    // strpos, not str_contains — this has to run on PHP 7.4.
+                    if (strpos($priv, 'ALL PRIVILEGES') !== false || strpos($priv, 'INSERT') !== false) {
+                        $canInsert = true;
+                        break;
+                    }
+                }
+            }
+            $canInsert
+                ? $pass('devices_insert', 'INSERT granted')
+                : $fail('devices_insert', 'no INSERT privilege — grants: ' . implode(' | ', $grants));
+        } catch (Throwable $e) {
+            $pass('devices_insert', 'could not read grants: ' . $e->getMessage());
+        }
+    } catch (Throwable $e) {
+        $fail('devices_table', $e->getMessage());
+    }
+
+    out($r);
+}
+
 // ---- passkeys ------------------------------------------------------
 //
 // Reading the collection never needs a passkey. Changing a card does, as
