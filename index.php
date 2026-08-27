@@ -10,7 +10,7 @@
 <meta name="apple-mobile-web-app-title" content="Grace">
 <meta name="description" content="Mark Grace baseball card collection tracker.">
 <title>Mark Grace Card Tracker</title>
-<link rel="stylesheet" href="assets/app.css?v=13">
+<link rel="stylesheet" href="assets/app.css?v=14">
 
 <!-- Installed-app behaviour -->
 <link rel="manifest" href="manifest.json">
@@ -52,11 +52,24 @@
     </div>
 
     <div class="sticky">
-      <div class="searchwrap">
-        <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-          <circle cx="9" cy="9" r="6"/><path d="M13.5 13.5L18 18" stroke-linecap="round"/>
-        </svg>
-        <input class="search" id="q" type="search" placeholder="Search set, card #, year&hellip;" autocomplete="off">
+      <div class="searchrow">
+        <div class="searchwrap">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="9" cy="9" r="6"/><path d="M13.5 13.5L18 18" stroke-linecap="round"/>
+          </svg>
+          <input class="search" id="q" type="search" placeholder="Search set, card #, brand&hellip;" autocomplete="off">
+        </div>
+        <select class="brandsel" id="brand" aria-label="Filter by brand">
+          <option value="all">All brands</option>
+        </select>
+      </div>
+
+      <div class="viewrow">
+        <div class="chips" id="viewToggle" role="group" aria-label="View">
+          <button class="chip" type="button" data-v="list"   aria-pressed="true">List</button>
+          <button class="chip" type="button" data-v="binder" aria-pressed="false">Binder</button>
+        </div>
+        <button class="lock open" id="lockBtn" type="button">&mdash;</button>
       </div>
       <div class="chips" id="statusChips">
         <button class="chip" type="button" data-f="all"    aria-pressed="true">All</button>
@@ -77,13 +90,14 @@
     <div class="empty hide" id="empty">No cards match.</div>
 
     <footer>
-      <div>Tap a card to mark it owned. Saved to the database &mdash; your marks show up on every device.</div>
+      <div>Tap a card to mark it owned &mdash; in binder view, tap the card to flip it and the
+        corner check to mark it. Saved to the database, so your marks show up on every device.</div>
       <button id="theme" type="button">Toggle theme</button>
     </footer>
   </div>
 </div>
 
 <div id="toast" role="status" aria-live="polite"></div>
-<script src="assets/app.js?v=13"></script>
+<script src="assets/app.js?v=14"></script>
 </body>
 </html>

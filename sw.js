@@ -1,11 +1,11 @@
 /* Mark Grace Card Tracker — offline shell.
    Card data is always fetched fresh; the shell and images are cached so the
    app opens instantly and survives a dead connection at a card show. */
-const VERSION = 'mg-v9';
+const VERSION = 'mg-v10';
 const SHELL = [
   './',
-  './assets/app.css?v=13',
-  './assets/app.js?v=13',
+  './assets/app.css?v=14',
+  './assets/app.js?v=14',
   './icons/icon-192.png'
 ];
 
@@ -31,6 +31,14 @@ self.addEventListener('fetch', e => {
   if (req.method !== 'GET') return;                 // never cache toggles
   const url = new URL(req.url);
   if (url.origin !== location.origin) return;
+
+  // Passkey ceremonies and the session probe must never be served from cache.
+  // A challenge is single-use and expires server-side, so a cached one is
+  // guaranteed to fail; a cached session would misreport whether writes are
+  // unlocked. Let these go straight to the network.
+  if (url.pathname.includes('/api/') && /action=(passkey|session)/.test(url.search)) {
+    return;
+  }
 
   // Card data: always try the network, fall back to the last good copy.
   if (url.pathname.includes('/api/')) {
