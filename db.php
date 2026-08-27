@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+require_once __DIR__ . '/webauthn.php';
+
 function config(): array {
     static $cfg = null;
     if ($cfg === null) {
@@ -69,11 +71,111 @@ function db_admin(): PDO {
     return $pdo;
 }
 
+// ---- passkeys -------------------------------------------------------
+
+function session_boot(): void {
+    if (session_status() !== PHP_SESSION_NONE) return;
+    // The session cookie is only ever read back by this site, and only over
+    // the same scheme it was set on.
+    session_set_cookie_params([
+        'httponly' => true,
+        'samesite' => 'Lax',
+        'secure'   => !empty($_SERVER['HTTPS']),
+    ]);
+    session_start();
+}
+
+/**
+ * The relying party ID — the domain the passkey is bound to. A passkey
+ * registered for one host will not sign for another, which is the property
+ * doing the actual work here. Defaults to the request host, which is right
+ * for a single-domain install.
+ */
+function rp_id(): string {
+    $cfg = config();
+    if (!empty($cfg['rp_id'])) return (string)$cfg['rp_id'];
+    $host = (string)($_SERVER['HTTP_HOST'] ?? 'localhost');
+    return preg_replace('/:\d+$/', '', $host);   // strip any port
+}
+
+/** Origins a ceremony may come from. */
+function allowed_origins(): array {
+    $cfg = config();
+    if (!empty($cfg['origins'])) return (array)$cfg['origins'];
+    $scheme = !empty($_SERVER['HTTPS']) ? 'https' : 'http';
+    return [$scheme . '://' . ($_SERVER['HTTP_HOST'] ?? 'localhost')];
+}
+
+/** Issues a one-shot challenge and remembers it for the next request. */
+function new_challenge(string $ceremony): string {
+    session_boot();
+    $c = b64url_encode(random_bytes(32));
+    $_SESSION['mg_chal'] = ['v' => $c, 'for' => $ceremony, 'at' => time()];
+    return $c;
+}
+
+/**
+ * Returns the outstanding challenge and clears it, so a captured challenge
+ * can never be replayed. Challenges expire after two minutes.
+ */
+function take_challenge(string $ceremony): string {
+    session_boot();
+    $c = $_SESSION['mg_chal'] ?? null;
+    unset($_SESSION['mg_chal']);
+    if (!is_array($c) || ($c['for'] ?? '') !== $ceremony) {
+        throw new RuntimeException('No challenge outstanding — start again.');
+    }
+    if (time() - (int)($c['at'] ?? 0) > 120) {
+        throw new RuntimeException('Challenge expired — try again.');
+    }
+    return (string)$c['v'];
+}
+
+/** How long one Face ID prompt keeps writes unlocked. */
+function write_ttl(): int {
+    return (int)(config()['passkey_ttl'] ?? 900);
+}
+
+function devices_registered(): int {
+    try {
+        return (int)db()->query('SELECT COUNT(*) FROM devices')->fetchColumn();
+    } catch (PDOException $e) {
+        // The table is missing until migration 005 runs. Report zero rather
+        // than 500 so the page still loads read-only.
+        error_log('markgrace: devices table unavailable — ' . $e->getMessage());
+        return 0;
+    }
+}
+
+/** Seconds of write access left, or 0 when locked. */
+function write_window(): int {
+    session_boot();
+    $until = (int)($_SESSION['mg_write_until'] ?? 0);
+    return $until > time() ? $until - time() : 0;
+}
+
+function open_write_window(): void {
+    session_boot();
+    $_SESSION['mg_write_until'] = time() + write_ttl();
+}
+
+/**
+ * Gate for anything that changes a card. Reading is deliberately never gated
+ * by this — the page is meant to be shareable.
+ */
+function require_write_access(): void {
+    if (devices_registered() === 0) return;   // not yet locked down
+    if (write_window() > 0) return;
+    http_response_code(403);
+    header('Content-Type: application/json');
+    exit(json_encode(['error' => 'passkey_required']));
+}
+
 /** True when the page is locked and the visitor has not signed in. */
 function locked(): bool {
     $pass = config()['passphrase'] ?? null;
     if ($pass === null || $pass === '') return false;
-    if (session_status() === PHP_SESSION_NONE) session_start();
+    session_boot();
     return empty($_SESSION['mg_ok']);
 }
 

@@ -31,6 +31,14 @@
 GRANT SELECT ON DBNAME.cards TO 'otbdesig_gracey'@'localhost';
 GRANT UPDATE (owned, acquired_at, note) ON DBNAME.cards TO 'otbdesig_gracey'@'localhost';
 
+-- Registered passkeys. The app must be able to add a device, read the keys
+-- back, and bump the signature counter — but never delete one, so a bug or a
+-- hostile request cannot silently unlock the page by emptying the table.
+-- Removing a lost device is a deliberate act you do by hand:
+--   DELETE FROM devices WHERE label = '...';
+GRANT SELECT, INSERT ON DBNAME.devices TO 'otbdesig_gracey'@'localhost';
+GRANT UPDATE (sign_count, last_used_at) ON DBNAME.devices TO 'otbdesig_gracey'@'localhost';
+
 GRANT SELECT, INSERT, UPDATE ON DBNAME.cards TO 'otbdesig_harper'@'localhost';
 
 FLUSH PRIVILEGES;
