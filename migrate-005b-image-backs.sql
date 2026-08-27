@@ -1,0 +1,57 @@
+-- Migration 005b — image/image_back values found by tools/match-thumbs.py.
+-- Run AFTER migrate-005-backs-and-devices.sql (it adds the image_back column):
+--   mysql -u ADMIN -p DBNAME < migrate-005b-image-backs.sql
+-- or paste into phpMyAdmin. Safe to re-run; it only touches image columns.
+
+UPDATE cards SET image = '295795-17837532Fr.jpg', image_back = '295795-17837532Bk.jpg' WHERE id = '1982-290912-1982-92-nike-poster-cards-5x7';
+UPDATE cards SET image = '68117-5000674Fr.jpg', image_back = '68117-5000674Bk.jpg' WHERE id = '1986-nno-1986-procards-peoria-chiefs';
+UPDATE cards SET image = '60237-3554991Fr.jpg', image_back = '60237-3554991Bk.jpg' WHERE id = '1987-332-1987-procards';
+UPDATE cards SET image = '118895-2074570672Fr.jpg', image_back = '118895-2074570672Bk.jpg' WHERE id = '1988-3-1988-baseball-stars-series-2-unlicensed';
+UPDATE cards SET image = '118553-2074550137Fr.jpg', image_back = '118553-2074550137Bk.jpg' WHERE id = '1988-9-1988-baseball-stars-series-4-unlicensed';
+UPDATE cards SET image = '72825-17Fr.jpg', image_back = '72825-17Bk.jpg' WHERE id = '1988-17-1988-baseball-s-best-series-ii-unlicensed';
+UPDATE cards SET image = '9988-429526Bk.jpg', image_back = '9988-429526Bk.jpg' WHERE id = '1988-26-1988-class-of-88-unlicensed';
+UPDATE cards SET image = '9988-3Bk.jpg', image_back = '9988-3Bk.jpg' WHERE id = '1988-3-1988-class-of-88-unlicensed';
+UPDATE cards SET image = '65960-14Bk.jpg', image_back = '65960-14Bk.jpg' WHERE id = '1988-14-1988-cmc-iowa-cubs';
+UPDATE cards SET image = '116819-7997843Bk.jpg', image_back = '116819-7997843Bk.jpg' WHERE id = '1988-nno-1988-david-berg-chicago-cubs-sga';
+UPDATE cards SET image = '76359-5499504Bk.jpg', image_back = '76359-5499504Bk.jpg' WHERE id = '1988-10-1988-rookies-iii-unlicensed';
+UPDATE cards SET image = '76360-1Bk.jpg', image_back = '76360-1Bk.jpg' WHERE id = '1988-1-1988-rookies-iv-final-series-unlicensed';
+UPDATE cards SET image = '76360-19Bk.jpg', image_back = '76360-19Bk.jpg' WHERE id = '1988-19-1988-rookies-iv-final-series-unlicensed';
+UPDATE cards SET image = '116325-2062683912Fr.jpg', image_back = '116325-2062683912Bk.jpg' WHERE id = '1989-14-1989-pacific-cards-comics-action-superstars-series-one-unlicensed';
+UPDATE cards SET image = '116346-2062689807Fr.jpg', image_back = '116346-2062689807Bk.jpg' WHERE id = '1989-5-1989-pacific-cards-comics-all-stars-unlicensed';
+UPDATE cards SET image = '159359_10250805Thumb4.jpg', image_back = '159359-10250805Bk.jpg' WHERE id = '1990-240-1990-o-pee-chee-white-backs';
+UPDATE cards SET image = '8821_87991Thumb2.jpg', image_back = '8821-87991Bk.jpg' WHERE id = '1990-241-1990-panini-stickers';
+UPDATE cards SET image = '10077_19Thumb4.jpg', image_back = '10077-19Bk.jpg' WHERE id = '1990-19-1990-post';
+UPDATE cards SET image = '76378_5499831Thumb2.jpg', image_back = '76378-5499831Bk.jpg' WHERE id = '1990-nno-1990-publications-international-hottest-50-players-stickers';
+UPDATE cards SET image = '403369_23417997Thumb2.jpg', image_back = '403369-23417997Bk.jpg' WHERE id = '1990-nno-1990-salem-screen-printers-mini-pennant-stickers';
+UPDATE cards SET image = '144_66351RepThumb2.jpg', image_back = '144-66351RepBk.jpg' WHERE id = '1990-150-1990-score';
+UPDATE cards SET image = '33506_485940RepThumb4.jpg', image_back = '33506-485940RepBk.jpg' WHERE id = '1990-60-1990-score-100-superstars';
+UPDATE cards SET image = '10174_511166Thumb4.jpg', image_back = '10174-511166Bk.jpg' WHERE id = '1990-15-1990-sportflics';
+UPDATE cards SET image = '33501_33Thumb4.jpg', image_back = '33501-33Bk.jpg' WHERE id = '1990-33-1990-sports-collectors-digest-baseball-card-price-guide-monthly';
+UPDATE cards SET image = '178862_11459338Thumb2.jpg', image_back = '178862-11459338Bk.jpg' WHERE id = '1991-6-1991-star-platinum';
+UPDATE cards SET image = '178862_11459339Thumb2.jpg', image_back = '178862-11459339Bk.jpg' WHERE id = '1991-7-1991-star-platinum';
+UPDATE cards SET image = '178862_11459340Thumb2.jpg', image_back = '178862-11459340Bk.jpg' WHERE id = '1991-8-1991-star-platinum';
+UPDATE cards SET image = '178862_11459341Thumb2.jpg', image_back = '178862-11459341Bk.jpg' WHERE id = '1991-9-1991-star-platinum';
+UPDATE cards SET image = '191551_12099671Thumb2.jpg', image_back = '191551-12099671Bk.jpg' WHERE id = '1991-nno-1991-star-platinum-promos';
+UPDATE cards SET image = '166_76732RepThumb4.jpg', image_back = '166-76732RepBk.jpg' WHERE id = '1991-157-1991-studio';
+UPDATE cards SET image = '167_520Thumb2.jpg', image_back = '167-520Bk.jpg' WHERE id = '1991-520-1991-topps';
+UPDATE cards SET image = '10243_507670Thumb2.jpg', image_back = '10243-507670Bk.jpg' WHERE id = '1991-520-1991-topps-collector-s-edition-tiffany';
+UPDATE cards SET image = '10242_506695Thumb2.jpg', image_back = '10242-506695Bk.jpg' WHERE id = '1991-520-1991-topps-desert-shield';
+UPDATE cards SET image = '61735_3719882Thumb2.jpg', image_back = '61735-3719882Bk.jpg' WHERE id = '1991-24-1991-topps-cracker-jack-series-one';
+UPDATE cards SET image = '176_87580Thumb4.jpg', image_back = '176-87580Bk.jpg' WHERE id = '1992-580-1992-bowman';
+UPDATE cards SET image = '8461_29Thumb2.jpg', image_back = '8461-29Bk.jpg' WHERE id = '1992-29-1992-classic';
+UPDATE cards SET image = '177_15191894Thumb4.jpg', image_back = '177-15191894Bk.jpg' WHERE id = '1992-281-1992-donruss';
+UPDATE cards SET image = '61734_3719808RepThumb4.jpg', image_back = '61734-3719808RepBk.jpg' WHERE id = '1992-5-1992-donruss-cracker-jack-series-2';
+UPDATE cards SET image = '183_17290795Thumb2.jpg', image_back = '183-17290795Bk.jpg' WHERE id = '1992-381-1992-fleer';
+UPDATE cards SET image = '101109_24359057Thumb2.jpg', image_back = '101109-24359057Bk.jpg' WHERE id = '1992-nno-1992-high-5-reusable-decals';
+UPDATE cards SET image = '422998_7091943Thumb2.jpg', image_back = '422998-7091943Bk.jpg' WHERE id = '1992-nno-1992-high-5-reusable-decals-decals-cut-with-card-backing';
+UPDATE cards SET image = '220851_13939015Thumb2.jpg', image_back = '325680-19385542Bk.jpg' WHERE id = '1992-7-1992-jka-baseball-star-buttons-square-proofs';
+UPDATE cards SET image = '192_16170236Thumb4.jpg', image_back = '192-16170236Bk.jpg' WHERE id = '1992-26-1992-leaf';
+UPDATE cards SET image = '59756_3434733Thumb4.jpg', image_back = '59756-3434733Bk.jpg' WHERE id = '1992-182-1992-panini-stickers-canadian';
+UPDATE cards SET image = '194_136Thumb4.jpg', image_back = '194-136Bk.jpg' WHERE id = '1992-136-1992-pinnacle';
+UPDATE cards SET image = '200_93370RepThumb4.jpg', image_back = '200-93370RepBk.jpg' WHERE id = '1992-445-1992-score';
+UPDATE cards SET image = '13363_465780Thumb2.jpg', image_back = '13363-465780Bk.jpg' WHERE id = '1992-20-1992-score-100-superstars';
+UPDATE cards SET image = '206_17385851RepThumb4.jpg', image_back = '206-17385851RepBk.jpg' WHERE id = '1992-174-1992-stadium-club';
+UPDATE cards SET image = '210_14Thumb4.jpg', image_back = '210-14Bk.jpg' WHERE id = '1992-14-1992-studio';
+UPDATE cards SET image = '212_140Thumb2.jpg', image_back = '212-140Bk.jpg' WHERE id = '1992-140-1992-topps';
+UPDATE cards SET image = '10273_491380Thumb4.jpg', image_back = '10273-491380Bk.jpg' WHERE id = '1992-140-1992-topps-gold';
+UPDATE cards SET image = '10274_492220Thumb2.jpg', image_back = '10274-492220Bk.jpg' WHERE id = '1992-140-1992-topps-gold-winners';

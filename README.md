@@ -6,7 +6,7 @@ owned; the state lives in MySQL, so every device sees the same collection.
 **Scope:** base cards, inserts and parallels — no autographs, no relics.
 Minor league and oddball/team-issued cards are included.
 
-Currently tracking **2,435 cards (1982–2015)**, 13 marked owned.
+Currently tracking **2,438 cards (1982–2015)**, 13 marked owned.
 TCDB lists 5,411 Mark Grace cards total, so this is a work in progress.
 
 ---
@@ -112,8 +112,73 @@ WordPress's `wp_`-prefixed tables.
 
 ## Locking it down
 
-The page is **open to anyone with the URL** by default — including the ability
-to change your checkmarks. To require a passphrase, set one in `config.php`:
+Two independent locks, because reading and writing deserve different answers.
+
+### Writing: your iPhone only (passkeys)
+
+Anyone with the URL can look at the collection. Only a **registered device**
+can change which cards are owned.
+
+This is a WebAuthn passkey. The private key is generated inside the iPhone's
+Secure Enclave and cannot be exported — not by you, not by Apple, not by
+malware. The server stores only the matching public key. To flip an `owned`
+flag the phone has to sign a fresh random challenge, which takes a Face ID
+prompt. A leaked database, a copied cookie, or a shared URL gets an attacker
+nothing, because none of them can produce a signature.
+
+**IMEI is not an option, and neither is IP.** No browser exposes a device
+serial — Apple blocks it deliberately — and phone IPs change constantly. A
+passkey is the thing that actually identifies *this device* on the web.
+
+**Setup, in order:**
+
+1. Run the migration (adds the `devices` table):
+   ```bash
+   mysql -u ADMIN -p DBNAME < migrate-005-backs-and-devices.sql
+   ```
+2. Add the new grants from `grants.sql` for the `devices` table.
+3. Open the page **on the iPhone** and tap **Unprotected** in the top right.
+   Confirm, approve the Face ID prompt, and that device is registered.
+
+> **Do step 3 as soon as the site is up.** Until the first device registers,
+> the page behaves exactly as it did before — anyone can edit, *and anyone can
+> register themselves as the owner*. That window closes the moment you enrol.
+> If you don't want to register straight away, set `'passphrase'` first so
+> strangers can't reach the page at all.
+
+Once one device is registered, everything else is read-only.
+
+**Adding a second device later** needs the enrolment key, because the "first
+device registers freely" rule no longer applies. Set one in `config.php`:
+
+```php
+'enroll_key' => '…',   // php -r 'echo bin2hex(random_bytes(16)), "\n";'
+```
+
+Leave it `null` and no further device can enrol over the web at all — the
+safest setting. Recovery is then deliberate: delete the row by hand and
+re-register.
+
+```sql
+SELECT id, label, created_at, last_used_at FROM devices;   -- what's registered
+DELETE FROM devices WHERE id = 3;                          -- retire a lost phone
+DELETE FROM devices;                                       -- start over
+```
+
+Emptying `devices` reopens free registration, which is the intended escape
+hatch if you lose the phone. The app account deliberately holds no `DELETE`
+on that table, so only you at the database can do it.
+
+One Face ID prompt unlocks writing for 15 minutes (`passkey_ttl`), so marking
+a stack of cards doesn't prompt on every tap. The header shows the countdown;
+tap it to lock again immediately.
+
+**Passkeys require HTTPS.** On plain HTTP the browser refuses to create one,
+and the lock button will say so.
+
+### Reading: a shared passphrase
+
+To keep strangers from *viewing* the page at all, set one in `config.php`:
 
 ```php
 'passphrase' => 'something-only-you-know',
@@ -155,17 +220,22 @@ install will silently not happen. The bundled `.htaccess` handles both.
 | `assets/app.css` | Styles, light and dark |
 | `api/index.php` | JSON endpoints |
 | `db.php` | Config loading, PDO connection, auth helpers |
+| `webauthn.php` | Passkey verification — CBOR, COSE keys, signature checks |
 | `schema.sql` | Table definition |
 | `migrate-002-card-types.sql` | Adds auto/relic/parallel/insert flags |
 | `migrate-003-brand.sql` | Adds brand columns |
 | `migrate-004-variant.sql` | Splits the variant off the set name |
+| `migrate-005-backs-and-devices.sql` | Adds `image_back` and the `devices` table |
+| `migrate-005b-image-backs.sql` | Fills in the card backs found locally |
+| `migrate-006-minor-league.sql` | Three minor league / college cards added by hand |
 | `cleanup-stale.sql` | Deletes rows left by the earlier import |
 | `grants.sql` | Least-privilege database users |
 | `seed.php` | One-time import of `data/cards.json` |
 | `tools/fix-logo.py` | Prepares a brand logo for `img/brands/` |
+| `tools/match-thumbs.py` | Matches saved TCDB thumbnails to cards |
 | `cards-insert.sql` | Same data as plain SQL, for phpMyAdmin |
 | `data/cards.json` | The card list |
-| `img/` | Card images (294 files) |
+| `img/` | Card images (340 files, fronts and backs) |
 | `icons/` | App icons for the home screen |
 | `manifest.json` | Install metadata (name, icons, standalone) |
 | `sw.js` | Offline shell |
@@ -175,10 +245,15 @@ install will silently not happen. The bundled `.htaccess` handles both.
 | Request | Does |
 |---|---|
 | `GET api/?action=cards` | All cards, grouped by year |
-| `POST api/?action=toggle` | `{"id":"...","owned":true}` — set owned state |
-| `GET api/?action=session` | Whether the page is locked |
+| `POST api/?action=toggle` | `{"id":"...","owned":true}` — set owned state. Needs a passkey. |
+| `GET api/?action=session` | Lock state, device count, seconds of write access left |
 | `POST api/?action=login` | `{"passphrase":"..."}` |
 | `POST api/?action=logout` | Ends the session |
+| `POST api/?action=passkey-register-options` | Challenge + options for enrolling a device |
+| `POST api/?action=passkey-register` | Stores a new device's public key |
+| `GET api/?action=passkey-auth-options` | Challenge for proving possession |
+| `POST api/?action=passkey-auth` | Verifies a signature, opens the write window |
+| `POST api/?action=passkey-lock` | Closes the write window immediately |
 
 ---
 
@@ -203,12 +278,79 @@ with no file keep the wordmark, so adding a few at a time is fine.
 `img/brands/README.md` lists every slug with the number of cards it covers.
 No logo files ship with this repo; they are third-party trademarks.
 
+## The binder
+
+The **Binder** toggle swaps the list for a nine-pocket album page — three
+across, three down, the way the cards actually sit in the sheet. Owned cards
+sit in their pocket in colour; ones you still need show greyed out, so a page
+reads at a glance as how far along that stretch of the collection is.
+
+- **Tap a card** to flip it. If a back scan exists it shows the real reverse;
+  otherwise it shows a printed panel with the set, number, badges and the date
+  you added it.
+- **Tap the corner check** to mark it owned. Flipping never changes state, so
+  you can browse the backs without touching the collection.
+- **Swipe left/right**, use the arrows, or press the arrow keys to turn pages.
+
+Every filter applies — pick a year and the binder becomes that year's pages.
+`prefers-reduced-motion` turns off the page-turn and flip animations.
+
+## Filtering by brand
+
+The dropdown next to the search box lists every brand with its card count,
+biggest first. There are ~90 of them, which is far too many for a chip row.
+It composes with the year, type and status filters, and with search, which
+also now matches the brand name.
+
+## Card images
+
+`tools/match-thumbs.py` matches locally saved TCDB thumbnails to cards. TCDB
+names its files `<sid>_<token><kind>.jpg`, where `sid` is the set id — and
+neither id appears in `data/cards.json`, so the join comes from saved TCDB
+pages: every `/ViewCard.cfm/sid/…/cid/…/` link carries the set name and card
+number in its link text.
+
+```bash
+python3 tools/match-thumbs.py ~/path/to/saved-tcdb-folder          # dry run
+python3 tools/match-thumbs.py ~/path/to/saved-tcdb-folder --apply
+```
+
+**The limit is saved pages, not image files.** With 46 saved pages covering
+984 sets, roughly 700 of the 1,716 images on hand still can't be tied to a
+card — their set id appears in no saved page, so there is nothing that says
+which card they are. Saving more pages from the TCDB checklist (it runs to
+109) is what unlocks them; adding more image files alone does not.
+
+## Minor league and college
+
+Grace's minor league run (Peoria 1986, Pittsfield 1987, Iowa 1988) and his
+San Diego State cards are in scope and catalogued.
+
+**Watch for the same card under two names.** TCDB's set names often differ
+from how collectors say them, and the difference reads as a missing card when
+it isn't. Real examples, all already in the checklist:
+
+| Said as | Catalogued as |
+|---|---|
+| 1990 Classic #8 | 1990 Classic **Blue** #8 |
+| 1988 ProCards **Minor League** #539 | 1988 ProCards #539 |
+| 1988 **Kodak** Peoria Chiefs Team Issue | 1988 Peoria Chiefs #NNO |
+| 1988 **Broder** Rookies Series **IV** #1 | 1988 Rookies **IV Final Series (unlicensed)** #1 |
+| 1988 **Broder** Class of '88 #3 | 1988 Class of '88 **(unlicensed)** #3 |
+| 1988 **Broder/**Baseball's Best Series II #17 | 1988 Baseball's Best Series II **(unlicensed)** #17 |
+| 1988 Baseball Stars Series **IV** #9 | 1988 Baseball Stars Series **4 (unlicensed)** #9 |
+
+Two rules cover most of it: TCDB drops **Broder** (it catalogues those as
+`(unlicensed)` instead) and writes series numbers as digits, not Roman
+numerals. Search by card number first — it survives the renaming.
+
 ## Known gaps
 
-- **Only ~308 of 2,497 cards have an image.** TCDB blocks hotlinking *and*
-  server-side fetching (403), so images can't be pulled automatically. The 43
-  here were recovered from previously saved TCDB pages. Remaining images have to
-  be added by hand: drop a JPEG in `img/` and set that card's `image` column.
+- **Only 295 of 2,438 cards have a front image, and 52 have a back.** TCDB
+  blocks hotlinking *and* server-side fetching (403), so images can't be pulled
+  automatically; these were recovered from previously saved TCDB pages. More
+  saved pages is the unlock — see [Card images](#card-images). Failing that,
+  drop a JPEG in `img/` and set that card's `image` column by hand.
 - **Parallels reuse their base card's image.** A Tiffany or Glossy parallel
   shows the base photo, because TCDB usually has no separate image for it.
 - **2,497 of ~5,411 known cards are catalogued**, recovered from saved TCDB
