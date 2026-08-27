@@ -602,3 +602,39 @@ body.binderview .more,body.binderview h2.yr{display:none}
   .pmark{width:22px;height:22px}
   .plabel{display:none}
 }
+
+/* ---------- landscape scans ----------
+   ~a quarter of the scans are wider than they are tall: 5x7 posters, panels,
+   and the many card backs printed sideways. They are the right way up — they
+   just don't fit a portrait frame. Fit them instead of filling, so nothing is
+   cropped, and letterbox the gap so the card still reads as a card. */
+.thumb.wide,
+.face img.wide{
+  object-fit:contain;
+  background:color-mix(in srgb,var(--text) 7%,var(--surface-2));
+}
+.face img.wide{padding:1px}
+
+/* ---------- glossary chips ----------
+   A variant like "Glossy" or a card number like "210b" is trade shorthand.
+   These carry a dotted underline to say "there's an explanation here", and
+   tapping one puts it in the toast — hover titles do nothing on a phone. */
+.why{
+  cursor:help;
+  text-decoration:underline dotted currentColor;
+  text-underline-offset:2px;
+}
+.why:focus-visible{
+  outline:2px solid var(--cubs-blue);outline-offset:2px;border-radius:4px;
+}
+.backfill .bvar.why{text-decoration-color:rgba(255,255,255,.55)}
+
+/* The toast used to carry three words; it now carries whole explanations and
+   error detail. A 99px pill can't hold a sentence, and pointer-events:none
+   meant tap-to-dismiss never reached it. */
+#toast{
+  max-width:min(520px,calc(100vw - 28px));
+  line-height:1.45;border-radius:14px;padding:12px 18px;
+  text-align:left;font-weight:500;
+}
+#toast.show{pointer-events:auto;cursor:pointer}

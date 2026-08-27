@@ -114,7 +114,7 @@
   "set": "1988 Class of '88 (unlicensed)",
   "variant": null,
   "full": "1988 Class of '88 (unlicensed)",
-  "img": "9988-429526Bk.jpg",
+  "img": "9988-429526Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -132,7 +132,7 @@
   "set": "1988 Class of '88 (unlicensed)",
   "variant": null,
   "full": "1988 Class of '88 (unlicensed)",
-  "img": "9988-3Bk.jpg",
+  "img": "9988-3Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -150,7 +150,7 @@
   "set": "1988 CMC Iowa Cubs",
   "variant": null,
   "full": "1988 CMC Iowa Cubs",
-  "img": "65960-14Bk.jpg",
+  "img": "65960-14Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -168,7 +168,7 @@
   "set": "1988 David Berg Chicago Cubs SGA",
   "variant": null,
   "full": "1988 David Berg Chicago Cubs SGA",
-  "img": "116819-7997843Bk.jpg",
+  "img": "116819-7997843Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -186,7 +186,7 @@
   "set": "1988 Donruss",
   "variant": null,
   "full": "1988 Donruss",
-  "img": "119_15610192RepThumb2__1_.jpg",
+  "img": "1988_Donruss_40-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -195,7 +195,7 @@
   "insert": false,
   "brand": "Donruss",
   "brand_slug": "donruss",
-  "img_back": null
+  "img_back": "1988_Donruss_40-Bk-v2.jpg"
  },
  {
   "id": "1988-40a-1988-donruss",
@@ -285,7 +285,7 @@
   "set": "1988 Donruss Baseball's Best",
   "variant": null,
   "full": "1988 Donruss Baseball's Best",
-  "img": "6627_4Thumb2__1_.jpg",
+  "img": "1988_Donruss-Baseball's-Best_4-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -294,7 +294,7 @@
   "insert": false,
   "brand": "Donruss",
   "brand_slug": "donruss",
-  "img_back": null
+  "img_back": "1988_Donruss-Baseball's-Best_4-Bk.jpg"
  },
  {
   "id": "1988-40-1988-donruss-chicago-cubs-team-collection",
@@ -303,7 +303,7 @@
   "set": "1988 Donruss Chicago Cubs Team Collection",
   "variant": null,
   "full": "1988 Donruss Chicago Cubs Team Collection",
-  "img": "85446_6175928Thumb2__1_.jpg",
+  "img": "1988_Donruss-Chicago-Cubs-Team-Collection_40-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -312,7 +312,7 @@
   "insert": false,
   "brand": "Donruss",
   "brand_slug": "donruss",
-  "img_back": null
+  "img_back": "1988_Donruss-Chicago-Cubs-Team-Collection_40-Bk.jpg"
  },
  {
   "id": "1988-1-1988-donruss-rookies-boxed-set",
@@ -321,7 +321,7 @@
   "set": "1988 Donruss The Rookies",
   "variant": null,
   "full": "1988 Donruss The Rookies",
-  "img": "120_44701RepThumb2__1_.jpg",
+  "img": "1988_Donruss-The-Rookies_1-Fr.jpg",
   "owned": true,
   "tags": [],
   "auto": false,
@@ -330,7 +330,7 @@
   "insert": false,
   "brand": "Donruss",
   "brand_slug": "donruss",
-  "img_back": null
+  "img_back": "1988_Donruss-The-Rookies_1-Bk.jpg"
  },
  {
   "id": "1988-641-1988-fleer",
@@ -339,7 +339,7 @@
   "set": "1988 Fleer",
   "variant": null,
   "full": "1988 Fleer",
-  "img": "121_50846RepThumb2__1_.jpg",
+  "img": "1988_Fleer_641-Fr.jpg",
   "owned": false,
   "tags": [
    "MLP",
@@ -351,7 +351,7 @@
   "insert": false,
   "brand": "Fleer",
   "brand_slug": "fleer",
-  "img_back": null
+  "img_back": "1988_Fleer_641-Bk.jpg"
  },
  {
   "id": "1988-641-1988-fleer-glossy",
@@ -360,7 +360,7 @@
   "set": "1988 Fleer",
   "variant": "Glossy",
   "full": "1988 Fleer - Glossy",
-  "img": "85077_6281297Thumb2__1_.jpg",
+  "img": "1988_Fleer-Glossy_641-Fr-v2.jpg",
   "owned": false,
   "tags": [
    "MLP"
@@ -371,7 +371,7 @@
   "insert": false,
   "brand": "Fleer",
   "brand_slug": "fleer",
-  "img_back": null
+  "img_back": "1988_Fleer-Glossy_641-Bk.jpg"
  },
  {
   "id": "1988-641-1988-fleer-major-league-prospects-true-rc-shared-w-darrin-jackson",
@@ -398,7 +398,7 @@
   "set": "1988 Fleer Classic Miniatures",
   "variant": null,
   "full": "1988 Fleer Classic Miniatures",
-  "img": "59406_68Thumb2__1_.jpg",
+  "img": "1988_Fleer-Classic-Miniatures_68-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -407,7 +407,7 @@
   "insert": false,
   "brand": "Fleer",
   "brand_slug": "fleer",
-  "img_back": null
+  "img_back": "1988_Fleer-Classic-Miniatures_68-Bk.jpg"
  },
  {
   "id": "1988-u-77-1988-fleer-update",
@@ -416,7 +416,7 @@
   "set": "1988 Fleer Update",
   "variant": null,
   "full": "1988 Fleer Update",
-  "img": "122_50977RepThumb2__1_.jpg",
+  "img": "1988_Fleer-Update_U-77-Fr.jpg",
   "owned": true,
   "tags": [],
   "auto": false,
@@ -425,7 +425,7 @@
   "insert": false,
   "brand": "Fleer",
   "brand_slug": "fleer",
-  "img_back": null
+  "img_back": "1988_Fleer-Update_U-77-Bk.jpg"
  },
  {
   "id": "1988-u-77-1988-fleer-update-glossy",
@@ -434,7 +434,7 @@
   "set": "1988 Fleer Update",
   "variant": "Glossy",
   "full": "1988 Fleer Update - Glossy",
-  "img": "59558_77Thumb2__1_.jpg",
+  "img": "1988_Fleer-Update-Glossy_U-77-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -443,7 +443,7 @@
   "insert": false,
   "brand": "Fleer",
   "brand_slug": "fleer",
-  "img_back": null
+  "img_back": "1988_Fleer-Update-Glossy_U-77-Bk.jpg"
  },
  {
   "id": "1988-9-1988-gray-star-series-2-blue-border-unlicensed",
@@ -452,7 +452,7 @@
   "set": "1988 Gray Star Series 2 Blue Border (unlicensed)",
   "variant": null,
   "full": "1988 Gray Star Series 2 Blue Border (unlicensed)",
-  "img": "118551_2074543900Thumb2__1_.jpg",
+  "img": "1988_Gray-Star-Series-2-Blue-Border-(unlicensed)_9-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -461,7 +461,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1988_Gray-Star-Series-2-Blue-Border-(unlicensed)_9-Bk.jpg"
  },
  {
   "id": "1988-40-1988-leaf",
@@ -470,7 +470,7 @@
   "set": "1988 Leaf",
   "variant": null,
   "full": "1988 Leaf",
-  "img": "8747_40Thumb2__1_.jpg",
+  "img": "1988_Leaf_40-Fr.jpg",
   "owned": false,
   "tags": [
    "RC"
@@ -481,7 +481,7 @@
   "insert": false,
   "brand": "Leaf",
   "brand_slug": "leaf",
-  "img_back": null
+  "img_back": "1988_Leaf_40-Bk.jpg"
  },
  {
   "id": "1988-1-1988-pacific-cards-comics-big-league-all-stars-series-3-unlicensed",
@@ -490,7 +490,7 @@
   "set": "1988 Pacific Cards & Comics Big League All-Stars Series 3 (unlicensed)",
   "variant": null,
   "full": "1988 Pacific Cards & Comics Big League All-Stars Series 3 (unlicensed)",
-  "img": "76363_9912383Thumb2__1_.jpg",
+  "img": "1988_Pacific-Cards-&-Comics-Big-League-All-Stars-Series-3-(unlicensed)_1-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -499,7 +499,7 @@
   "insert": false,
   "brand": "Pacific",
   "brand_slug": "pacific",
-  "img_back": null
+  "img_back": "1988_Pacific-Cards-&-Comics-Big-League-All-Stars-Series-3-(unlicensed)_1-Bk.jpg"
  },
  {
   "id": "1988-nno-1988-peoria-chiefs",
@@ -508,7 +508,7 @@
   "set": "1988 Peoria Chiefs",
   "variant": null,
   "full": "1988 Peoria Chiefs",
-  "img": "76079_5491779Thumb2__1_.jpg",
+  "img": "1988_Peoria-Chiefs_NNO-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -517,7 +517,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1988_Peoria-Chiefs_NNO-Bk-v2.jpg"
  },
  {
   "id": "1988-1988-peoria-chiefs-nno-alumni",
@@ -544,7 +544,7 @@
   "set": "1988 ProCards",
   "variant": null,
   "full": "1988 ProCards",
-  "img": "60183_539Thumb2__1_.jpg",
+  "img": "1988_ProCards_539-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -553,7 +553,7 @@
   "insert": false,
   "brand": "ProCards",
   "brand_slug": "procards",
-  "img_back": null
+  "img_back": "1988_ProCards_539-Bk.jpg"
  },
  {
   "id": "1988-3-1988-red-stars-series-1-unlicensed",
@@ -562,7 +562,7 @@
   "set": "1988 Red Stars Series 1 (unlicensed)",
   "variant": null,
   "full": "1988 Red Stars Series 1 (unlicensed)",
-  "img": "91764_9698989Thumb2__1_.jpg",
+  "img": "1988_Red-Stars-Series-1-(unlicensed)_3-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -571,7 +571,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1988_Red-Stars-Series-1-(unlicensed)_3-Bk.jpg"
  },
  {
   "id": "1988-9-1988-rookies-unlicensed",
@@ -580,7 +580,7 @@
   "set": "1988 Rookies (unlicensed)",
   "variant": null,
   "full": "1988 Rookies (unlicensed)",
-  "img": "115927_2056827248Thumb4__1_.jpg",
+  "img": "1988_Rookies-(unlicensed)_9-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -589,7 +589,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1988_Rookies-(unlicensed)_9-Bk.jpg"
  },
  {
   "id": "1988-11a-1988-rookies-commemorati",
@@ -634,7 +634,7 @@
   "set": "1988 Rookies II (unlicensed)",
   "variant": null,
   "full": "1988 Rookies II (unlicensed)",
-  "img": "116320_2062683804Thumb4__1_.jpg",
+  "img": "1988_Rookies-II-(unlicensed)_11-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -643,7 +643,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1988_Rookies-II-(unlicensed)_11-Bk.jpg"
  },
  {
   "id": "1988-16-1988-rookies-ii-unlicensed",
@@ -652,7 +652,7 @@
   "set": "1988 Rookies II (unlicensed)",
   "variant": null,
   "full": "1988 Rookies II (unlicensed)",
-  "img": "116320_2062683809Thumb4__1_.jpg",
+  "img": "1988_Rookies-II-(unlicensed)_16-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -661,7 +661,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1988_Rookies-II-(unlicensed)_16-Bk.jpg"
  },
  {
   "id": "1988-10-1988-rookies-iii-unlicensed",
@@ -670,7 +670,7 @@
   "set": "1988 Rookies III (unlicensed)",
   "variant": null,
   "full": "1988 Rookies III (unlicensed)",
-  "img": "76359-5499504Bk.jpg",
+  "img": "76359-5499504Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -688,7 +688,7 @@
   "set": "1988 Rookies IV Final Series (unlicensed)",
   "variant": null,
   "full": "1988 Rookies IV Final Series (unlicensed)",
-  "img": "76360-1Bk.jpg",
+  "img": "76360-1Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -706,7 +706,7 @@
   "set": "1988 Rookies IV Final Series (unlicensed)",
   "variant": null,
   "full": "1988 Rookies IV Final Series (unlicensed)",
-  "img": "76360-19Bk.jpg",
+  "img": "76360-19Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -733,7 +733,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1988_San-Diego-State-Aztecs-All-Time-Greats_NNO-Bk.jpg"
  },
  {
   "id": "1988-80t-1988-score-rookie-traded",
@@ -742,7 +742,7 @@
   "set": "1988 Score Rookie & Traded",
   "variant": null,
   "full": "1988 Score Rookie & Traded",
-  "img": "124_80TThumb4__1_.jpg",
+  "img": "1988_Score-Rookie-&-Traded_80T-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -751,7 +751,7 @@
   "insert": false,
   "brand": "Score",
   "brand_slug": "score",
-  "img_back": null
+  "img_back": "1988_Score-Rookie-&-Traded_80T-Bk.jpg"
  },
  {
   "id": "1988-80t-1988-score-rookie-traded-glossy",
@@ -760,7 +760,7 @@
   "set": "1988 Score Rookie & Traded",
   "variant": "Glossy",
   "full": "1988 Score Rookie & Traded - Glossy",
-  "img": "59775_80TThumb4__1_.jpg",
+  "img": "1988_Score-Rookie-&-Traded-Glossy_80T-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -769,7 +769,7 @@
   "insert": false,
   "brand": "Score",
   "brand_slug": "score",
-  "img_back": null
+  "img_back": "1988_Score-Rookie-&-Traded-Glossy_80T-Bk.jpg"
  },
  {
   "id": "1988-19-1988-starbrite-superstars-unlicensed",
@@ -778,7 +778,7 @@
   "set": "1988 Starbrite Superstars (unlicensed)",
   "variant": null,
   "full": "1988 Starbrite Superstars (unlicensed)",
-  "img": "79561_19Thumb4__1_.jpg",
+  "img": "1988_Starbrite-Superstars-(unlicensed)_19-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -796,7 +796,7 @@
   "set": "1988 Starbrite Superstars (unlicensed)",
   "variant": null,
   "full": "1988 Starbrite Superstars (unlicensed)",
-  "img": "79561_2Thumb4__1_.jpg",
+  "img": "1988_Starbrite-Superstars-(unlicensed)_2-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -805,7 +805,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1988_Starbrite-Superstars-(unlicensed)_2-Bk.jpg"
  },
  {
   "id": "1988-42t-1988-topps-traded",
@@ -814,7 +814,7 @@
   "set": "1988 Topps Traded",
   "variant": null,
   "full": "1988 Topps Traded",
-  "img": "126_54692RepThumb2__1_.jpg",
+  "img": "1988_Topps-Traded_42T-Fr.jpg",
   "owned": true,
   "tags": [],
   "auto": false,
@@ -823,7 +823,7 @@
   "insert": false,
   "brand": "Topps",
   "brand_slug": "topps",
-  "img_back": null
+  "img_back": "1988_Topps-Traded_42T-Bk.jpg"
  },
  {
   "id": "1988-42t-1988-topps-traded-limited-edition-tiffany",
@@ -832,7 +832,7 @@
   "set": "1988 Topps Traded",
   "variant": "Limited Edition (Tiffany)",
   "full": "1988 Topps Traded - Limited Edition (Tiffany)",
-  "img": "25524_516332RepThumb4__1_.jpg",
+  "img": "1988_Topps-Traded-Limited-Edition-(Tiffany)_42T-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -841,7 +841,7 @@
   "insert": false,
   "brand": "Topps",
   "brand_slug": "topps",
-  "img_back": null
+  "img_back": "1988_Topps-Traded-Limited-Edition-(Tiffany)_42T-Bk.jpg"
  },
  {
   "id": "1988-42t-1988-topps-traded-limited-edition",
@@ -868,7 +868,7 @@
   "set": "1988-89 Star Gold",
   "variant": null,
   "full": "1988-89 Star Gold",
-  "img": "120901_8223060Thumb2__1_.jpg",
+  "img": "1988-89_Star-Gold_71-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -877,7 +877,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1988-89_Star-Gold_71-Bk.jpg"
  },
  {
   "id": "1988-72-1988-89-star-gold",
@@ -886,7 +886,7 @@
   "set": "1988-89 Star Gold",
   "variant": null,
   "full": "1988-89 Star Gold",
-  "img": "120901_8223061Thumb2__1_.jpg",
+  "img": "1988-89_Star-Gold_72-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -895,7 +895,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1988-89_Star-Gold_72-Bk.jpg"
  },
  {
   "id": "1988-73-1988-89-star-gold",
@@ -904,7 +904,7 @@
   "set": "1988-89 Star Gold",
   "variant": null,
   "full": "1988-89 Star Gold",
-  "img": "120901_8223062Thumb4__1_.jpg",
+  "img": "1988-89_Star-Gold_73-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -913,7 +913,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1988-89_Star-Gold_73-Bk.jpg"
  },
  {
   "id": "1988-74-1988-89-star-gold",
@@ -922,7 +922,7 @@
   "set": "1988-89 Star Gold",
   "variant": null,
   "full": "1988-89 Star Gold",
-  "img": "120901_8223063Thumb2__1_.jpg",
+  "img": "1988-89_Star-Gold_74-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -931,7 +931,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1988-89_Star-Gold_74-Bk.jpg"
  },
  {
   "id": "1988-75-1988-89-star-gold",
@@ -940,7 +940,7 @@
   "set": "1988-89 Star Gold",
   "variant": null,
   "full": "1988-89 Star Gold",
-  "img": "120901_8223064Thumb2__1_.jpg",
+  "img": "1988-89_Star-Gold_75-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -949,7 +949,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1988-89_Star-Gold_75-Bk.jpg"
  },
  {
   "id": "1988-76-1988-89-star-gold",
@@ -958,7 +958,7 @@
   "set": "1988-89 Star Gold",
   "variant": null,
   "full": "1988-89 Star Gold",
-  "img": "120901_8223065Thumb2__1_.jpg",
+  "img": "1988-89_Star-Gold_76-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -967,7 +967,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1988-89_Star-Gold_76-Bk.jpg"
  },
  {
   "id": "1988-77-1988-89-star-gold",
@@ -976,7 +976,7 @@
   "set": "1988-89 Star Gold",
   "variant": null,
   "full": "1988-89 Star Gold",
-  "img": "120901_8223066Thumb2__1_.jpg",
+  "img": "1988-89_Star-Gold_77-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -985,7 +985,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1988-89_Star-Gold_77-Bk.jpg"
  },
  {
   "id": "1988-78-1988-89-star-gold",
@@ -994,7 +994,7 @@
   "set": "1988-89 Star Gold",
   "variant": null,
   "full": "1988-89 Star Gold",
-  "img": "120901_8223067Thumb2__1_.jpg",
+  "img": "1988-89_Star-Gold_78-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1003,7 +1003,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1988-89_Star-Gold_78-Bk.jpg"
  },
  {
   "id": "1988-79-1988-89-star-gold",
@@ -1012,7 +1012,7 @@
   "set": "1988-89 Star Gold",
   "variant": null,
   "full": "1988-89 Star Gold",
-  "img": "120901_8223068Thumb2.jpg",
+  "img": "1988-89_Star-Gold_79-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1021,7 +1021,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1988-89_Star-Gold_79-Bk.jpg"
  },
  {
   "id": "1988-80-1988-89-star-gold",
@@ -1030,7 +1030,7 @@
   "set": "1988-89 Star Gold",
   "variant": null,
   "full": "1988-89 Star Gold",
-  "img": "120901_8223069Thumb2.jpg",
+  "img": "1988-89_Star-Gold_80-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1039,7 +1039,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1988-89_Star-Gold_80-Bk.jpg"
  },
  {
   "id": "1988-nno-1988-89-star-gold-promos",
@@ -1048,7 +1048,7 @@
   "set": "1988-89 Star Gold",
   "variant": "Promos",
   "full": "1988-89 Star Gold - Promos",
-  "img": "190710_12027373Thumb2.jpg",
+  "img": "1988-89_Star-Gold-Promos_NNO-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1057,7 +1057,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1988-89_Star-Gold-Promos_NNO-Bk.jpg"
  },
  {
   "id": "1988-nno-1988-92-star-ad-cards",
@@ -1066,7 +1066,7 @@
   "set": "1988-92 Star Ad Cards",
   "variant": null,
   "full": "1988-92 Star Ad Cards",
-  "img": "157272_15112513Thumb4.jpg",
+  "img": "1988-92_Star-Ad-Cards_NNO-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1075,7 +1075,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1988-92_Star-Ad-Cards_NNO-Bk.jpg"
  },
  {
   "id": "1989-29-1989-all-star-set-collec",
@@ -1102,7 +1102,7 @@
   "set": "1989 Barry Colla All-Stars 8x10",
   "variant": null,
   "full": "1989 Barry Colla All-Stars 8x10",
-  "img": "119230_8121388Thumb2.jpg",
+  "img": "1989_Barry-Colla-All-Stars-8x10_1389-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1111,7 +1111,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_Barry-Colla-All-Stars-8x10_1389-Bk.jpg"
  },
  {
   "id": "1989-14-1989-baseball-s-best-one-unlicensed",
@@ -1120,7 +1120,7 @@
   "set": "1989 Baseball's Best One (unlicensed)",
   "variant": null,
   "full": "1989 Baseball's Best One (unlicensed)",
-  "img": "78048_5549786Thumb2.jpg",
+  "img": "1989_Baseball's-Best-One-(unlicensed)_14-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1129,7 +1129,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_Baseball's-Best-One-(unlicensed)_14-Bk.jpg"
  },
  {
   "id": "1989-4-1989-baseball-s-best-one-unlicensed",
@@ -1138,7 +1138,7 @@
   "set": "1989 Baseball's Best One (unlicensed)",
   "variant": null,
   "full": "1989 Baseball's Best One (unlicensed)",
-  "img": "78048_5549776Thumb2.jpg",
+  "img": "1989_Baseball's-Best-One-(unlicensed)_4-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1147,7 +1147,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_Baseball's-Best-One-(unlicensed)_4-Bk.jpg"
  },
  {
   "id": "1989-19-1989-baseball-s-finest-stars-unlicensed",
@@ -1156,7 +1156,7 @@
   "set": "1989 Baseball's Finest Stars (unlicensed)",
   "variant": null,
   "full": "1989 Baseball's Finest Stars (unlicensed)",
-  "img": "115952_7946154Thumb2.jpg",
+  "img": "1989_Baseball's-Finest-Stars-(unlicensed)_19-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1165,7 +1165,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_Baseball's-Finest-Stars-(unlicensed)_19-Bk.jpg"
  },
  {
   "id": "1989-8-1989-baseball-s-top-twenty-unlicensed",
@@ -1174,7 +1174,7 @@
   "set": "1989 Baseball's Top Twenty (unlicensed)",
   "variant": null,
   "full": "1989 Baseball's Top Twenty (unlicensed)",
-  "img": "78052_5549921Thumb2.jpg",
+  "img": "1989_Baseball's-Top-Twenty-(unlicensed)_8-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1183,7 +1183,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_Baseball's-Top-Twenty-(unlicensed)_8-Bk.jpg"
  },
  {
   "id": "1989-10-1989-big-apple-sportscards-superstar-photos-unlicensed",
@@ -1192,7 +1192,7 @@
   "set": "1989 Big Apple Sportscards Superstar Photos (unlicensed)",
   "variant": null,
   "full": "1989 Big Apple Sportscards Superstar Photos (unlicensed)",
-  "img": "121406_2093918240Thumb2.jpg",
+  "img": "1989_Big-Apple-Sportscards-Superstar-Photos-(unlicensed)_10-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1201,7 +1201,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_Big-Apple-Sportscards-Superstar-Photos-(unlicensed)_10-Bk.jpg"
  },
  {
   "id": "1989-11-1989-big-apple-sportscards-superstar-photos-unlicensed",
@@ -1210,7 +1210,7 @@
   "set": "1989 Big Apple Sportscards Superstar Photos (unlicensed)",
   "variant": null,
   "full": "1989 Big Apple Sportscards Superstar Photos (unlicensed)",
-  "img": "121406_2093918241Thumb2.jpg",
+  "img": "1989_Big-Apple-Sportscards-Superstar-Photos-(unlicensed)_11-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1219,7 +1219,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_Big-Apple-Sportscards-Superstar-Photos-(unlicensed)_11-Bk.jpg"
  },
  {
   "id": "1989-9-1989-big-apple-sportscards-superstar-photos-unlicensed",
@@ -1228,7 +1228,7 @@
   "set": "1989 Big Apple Sportscards Superstar Photos (unlicensed)",
   "variant": null,
   "full": "1989 Big Apple Sportscards Superstar Photos (unlicensed)",
-  "img": "121406_2093918239Thumb2.jpg",
+  "img": "1989_Big-Apple-Sportscards-Superstar-Photos-(unlicensed)_9-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1237,7 +1237,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_Big-Apple-Sportscards-Superstar-Photos-(unlicensed)_9-Bk.jpg"
  },
  {
   "id": "1989-291-1989-bowman",
@@ -1246,7 +1246,7 @@
   "set": "1989 Bowman",
   "variant": null,
   "full": "1989 Bowman",
-  "img": "127_63191RepThumb2.jpg",
+  "img": "1989_Bowman_291-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1255,7 +1255,7 @@
   "insert": false,
   "brand": "Bowman",
   "brand_slug": "bowman",
-  "img_back": null
+  "img_back": "1989_Bowman_291-Bk.jpg"
  },
  {
   "id": "1989-291-1989-bowman-collector-s-edition-tiffany",
@@ -1264,7 +1264,7 @@
   "set": "1989 Bowman",
   "variant": "Collector's Edition (Tiffany)",
   "full": "1989 Bowman - Collector's Edition (Tiffany)",
-  "img": "60230_3549007Thumb4.jpg",
+  "img": "1989_Bowman-Collector's-Edition-(Tiffany)_291-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1273,7 +1273,7 @@
   "insert": false,
   "brand": "Bowman",
   "brand_slug": "bowman",
-  "img_back": null
+  "img_back": "1989_Bowman-Collector's-Edition-(Tiffany)_291-Bk.jpg"
  },
  {
   "id": "1989-291-1989-bowman-collector-s-edition-ti",
@@ -1300,7 +1300,7 @@
   "set": "1989 Cactus League All-Stars (unlicensed)",
   "variant": null,
   "full": "1989 Cactus League All-Stars (unlicensed)",
-  "img": "100677_14227328Thumb2.jpg",
+  "img": "1989_Cactus-League-All-Stars-(unlicensed)_13-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1309,7 +1309,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_Cactus-League-All-Stars-(unlicensed)_13-Bk.jpg"
  },
  {
   "id": "1989-14-1989-cactus-league-all-stars-unlicensed",
@@ -1318,7 +1318,7 @@
   "set": "1989 Cactus League All-Stars (unlicensed)",
   "variant": null,
   "full": "1989 Cactus League All-Stars (unlicensed)",
-  "img": "100677_14227329Thumb2.jpg",
+  "img": "1989_Cactus-League-All-Stars-(unlicensed)_14-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1327,7 +1327,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_Cactus-League-All-Stars-(unlicensed)_14-Bk.jpg"
  },
  {
   "id": "1989-15-1989-cactus-league-all-stars-unlicensed",
@@ -1336,7 +1336,7 @@
   "set": "1989 Cactus League All-Stars (unlicensed)",
   "variant": null,
   "full": "1989 Cactus League All-Stars (unlicensed)",
-  "img": "100677_14227330Thumb4.jpg",
+  "img": "1989_Cactus-League-All-Stars-(unlicensed)_15-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1345,7 +1345,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_Cactus-League-All-Stars-(unlicensed)_15-Bk.jpg"
  },
  {
   "id": "1989-10-1989-champ",
@@ -1390,7 +1390,7 @@
   "set": "1989 Classic",
   "variant": null,
   "full": "1989 Classic",
-  "img": "8446_441223Thumb4.jpg",
+  "img": "1989_Classic_13-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1399,7 +1399,7 @@
   "insert": false,
   "brand": "Classic",
   "brand_slug": "classic",
-  "img_back": null
+  "img_back": "1989_Classic_13-Bk.jpg"
  },
  {
   "id": "1989-155-1989-classic",
@@ -1408,7 +1408,7 @@
   "set": "1989 Classic",
   "variant": null,
   "full": "1989 Classic",
-  "img": "8446_155Thumb4.jpg",
+  "img": "1989_Classic_155-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1417,7 +1417,7 @@
   "insert": false,
   "brand": "Classic",
   "brand_slug": "classic",
-  "img_back": null
+  "img_back": "1989_Classic_155-Bk.jpg"
  },
  {
   "id": "1989-8-1989-collector-s-choice-unlicensed",
@@ -1426,7 +1426,7 @@
   "set": "1989 Collector's Choice (unlicensed)",
   "variant": null,
   "full": "1989 Collector's Choice (unlicensed)",
-  "img": "116324_7972600Thumb2.jpg",
+  "img": "1989_Collector's-Choice-(unlicensed)_8-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1435,7 +1435,7 @@
   "insert": false,
   "brand": "Collectors Choice",
   "brand_slug": "collectorschoice",
-  "img_back": null
+  "img_back": "1989_Collector's-Choice-(unlicensed)_8-Bk.jpg"
  },
  {
   "id": "1989-17-1989-donruss",
@@ -1444,7 +1444,7 @@
   "set": "1989 Donruss",
   "variant": null,
   "full": "1989 Donruss",
-  "img": "128_45167RepThumb2.jpg",
+  "img": "1989_Donruss_17-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1453,7 +1453,7 @@
   "insert": false,
   "brand": "Donruss",
   "brand_slug": "donruss",
-  "img_back": null
+  "img_back": "1989_Donruss_17-Bk.jpg"
  },
  {
   "id": "1989-17-1989-donruss-super-diamond-kings-5x7",
@@ -1462,7 +1462,7 @@
   "set": "1989 Donruss",
   "variant": "Super Diamond Kings 5x7",
   "full": "1989 Donruss - Super Diamond Kings 5x7",
-  "img": "10156_475287Thumb2.jpg",
+  "img": "1989_Donruss-Super-Diamond-Kings-5x7_17-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1471,7 +1471,7 @@
   "insert": true,
   "brand": "Donruss",
   "brand_slug": "donruss",
-  "img_back": null
+  "img_back": "1989_Donruss-Super-Diamond-Kings-5x7_17-Bk.jpg"
  },
  {
   "id": "1989-255-1989-donruss",
@@ -1480,7 +1480,7 @@
   "set": "1989 Donruss",
   "variant": null,
   "full": "1989 Donruss",
-  "img": "128_14657948Thumb2.jpg",
+  "img": "1989_Donruss_255-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1489,7 +1489,7 @@
   "insert": false,
   "brand": "Donruss",
   "brand_slug": "donruss",
-  "img_back": null
+  "img_back": "1989_Donruss_255-Bk-v2.jpg"
  },
  {
   "id": "1989-255a-1989-donruss",
@@ -1606,7 +1606,7 @@
   "set": "1989 Fleer",
   "variant": null,
   "full": "1989 Fleer",
-  "img": "130_426Thumb2.jpg",
+  "img": "1989_Fleer_426-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1615,7 +1615,7 @@
   "insert": false,
   "brand": "Fleer",
   "brand_slug": "fleer",
-  "img_back": null
+  "img_back": "1989_Fleer_426-Bk.jpg"
  },
  {
   "id": "1989-426-1989-fleer-collectors-edition-glossy",
@@ -1624,7 +1624,7 @@
   "set": "1989 Fleer",
   "variant": "Collectors Edition (Glossy)",
   "full": "1989 Fleer - Collectors Edition (Glossy)",
-  "img": "59562_426Thumb2.jpg",
+  "img": "1989_Fleer-Collectors-Edition-(Glossy)_426-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1633,7 +1633,7 @@
   "insert": false,
   "brand": "Fleer",
   "brand_slug": "fleer",
-  "img_back": null
+  "img_back": "1989_Fleer-Collectors-Edition-(Glossy)_426-Bk.jpg"
  },
  {
   "id": "1989-15-1989-fleer-baseball-mvps",
@@ -1642,7 +1642,7 @@
   "set": "1989 Fleer Baseball MVPs",
   "variant": null,
   "full": "1989 Fleer Baseball MVPs",
-  "img": "33325_475195RepThumb2.jpg",
+  "img": "1989_Fleer-Baseball-MVPs_15-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1651,7 +1651,7 @@
   "insert": false,
   "brand": "Fleer",
   "brand_slug": "fleer",
-  "img_back": null
+  "img_back": "1989_Fleer-Baseball-MVPs_15-Bk.jpg"
  },
  {
   "id": "1989-17-1989-fleer-baseball-s-exciting-stars",
@@ -1660,7 +1660,7 @@
   "set": "1989 Fleer Baseball's Exciting Stars",
   "variant": null,
   "full": "1989 Fleer Baseball's Exciting Stars",
-  "img": "33322_17Thumb2.jpg",
+  "img": "1989_Fleer-Baseball's-Exciting-Stars_17-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1669,7 +1669,7 @@
   "insert": false,
   "brand": "Fleer",
   "brand_slug": "fleer",
-  "img_back": null
+  "img_back": "1989_Fleer-Baseball's-Exciting-Stars_17-Bk.jpg"
  },
  {
   "id": "1989-426-1989-fleer-collectors-edition-glos",
@@ -1696,7 +1696,7 @@
   "set": "1989 Fleer League Leaders",
   "variant": null,
   "full": "1989 Fleer League Leaders",
-  "img": "33324_17Thumb2.jpg",
+  "img": "1989_Fleer-League-Leaders_17-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1705,7 +1705,7 @@
   "insert": true,
   "brand": "Fleer",
   "brand_slug": "fleer",
-  "img_back": null
+  "img_back": "1989_Fleer-League-Leaders_17-Bk.jpg"
  },
  {
   "id": "1989-19-1989-fleer-superstars",
@@ -1714,7 +1714,7 @@
   "set": "1989 Fleer SuperStars",
   "variant": null,
   "full": "1989 Fleer SuperStars",
-  "img": "33326_19Thumb2.jpg",
+  "img": "1989_Fleer-SuperStars_19-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1723,7 +1723,7 @@
   "insert": false,
   "brand": "Fleer",
   "brand_slug": "fleer",
-  "img_back": null
+  "img_back": "1989_Fleer-SuperStars_19-Bk.jpg"
  },
  {
   "id": "1989-9-1989-franklin-caramel-series-two-unlicensed",
@@ -1732,7 +1732,7 @@
   "set": "1989 Franklin Caramel Series Two (unlicensed)",
   "variant": null,
   "full": "1989 Franklin Caramel Series Two (unlicensed)",
-  "img": "97052_6772111RepThumb4.jpg",
+  "img": "1989_Franklin-Caramel-Series-Two-(unlicensed)_9-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1741,7 +1741,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_Franklin-Caramel-Series-Two-(unlicensed)_9-Bk.jpg"
  },
  {
   "id": "1989-23-1989-golden-superstars-unlicensed",
@@ -1750,7 +1750,7 @@
   "set": "1989 Golden Superstars (unlicensed)",
   "variant": null,
   "full": "1989 Golden Superstars (unlicensed)",
-  "img": "78045_5549751Thumb2.jpg",
+  "img": "1989_Golden-Superstars-(unlicensed)_23-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1759,7 +1759,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_Golden-Superstars-(unlicensed)_23-Bk.jpg"
  },
  {
   "id": "1989-7-1989-golden-superstars-unlicensed",
@@ -1768,7 +1768,7 @@
   "set": "1989 Golden Superstars (unlicensed)",
   "variant": null,
   "full": "1989 Golden Superstars (unlicensed)",
-  "img": "78045_7Thumb4.jpg",
+  "img": "1989_Golden-Superstars-(unlicensed)_7-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1777,7 +1777,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_Golden-Superstars-(unlicensed)_7-Bk.jpg"
  },
  {
   "id": "1989-nno-1989-grand-slam-dice-game-gray-unlicensed",
@@ -1786,7 +1786,7 @@
   "set": "1989 Grand Slam Dice Game Gray (unlicensed)",
   "variant": null,
   "full": "1989 Grand Slam Dice Game Gray (unlicensed)",
-  "img": "95307_9893692Thumb2.jpg",
+  "img": "1989_Grand-Slam-Dice-Game-Gray-(unlicensed)_NNO-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1795,7 +1795,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_Grand-Slam-Dice-Game-Gray-(unlicensed)_NNO-Bk.jpg"
  },
  {
   "id": "1989-12-1989-holsum-schafer-s-super-stars-discs",
@@ -1804,7 +1804,7 @@
   "set": "1989 Holsum Schafer's Super Stars Discs",
   "variant": null,
   "full": "1989 Holsum Schafer's Super Stars Discs",
-  "img": "95038_6867896Thumb2.jpg",
+  "img": "1989_Holsum-Schafer's-Super-Stars-Discs_12-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1813,7 +1813,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_Holsum-Schafer's-Super-Stars-Discs_12-Bk-v2.jpg"
  },
  {
   "id": "1989-12a-1989-holsum-schafer-s-super-stars-discs",
@@ -1858,7 +1858,7 @@
   "set": "1989 Holsum Super Stars Discs",
   "variant": null,
   "full": "1989 Holsum Super Stars Discs",
-  "img": "119179_8119251Thumb2.jpg",
+  "img": "1989_Holsum-Super-Stars-Discs_12-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1867,7 +1867,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_Holsum-Super-Stars-Discs_12-Bk-v2.jpg"
  },
  {
   "id": "1989-12a-1989-holsum-super-stars-discs",
@@ -1912,7 +1912,7 @@
   "set": "1989 J.J. Nissen Super Stars",
   "variant": null,
   "full": "1989 J.J. Nissen Super Stars",
-  "img": "81520_5787836RepThumb2.jpg",
+  "img": "1989_J.J.-Nissen-Super-Stars_12-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1921,7 +1921,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_J.J.-Nissen-Super-Stars_12-Bk.jpg"
  },
  {
   "id": "1989-12a-1989-j-j-nissen-super-stars",
@@ -1966,7 +1966,7 @@
   "set": "1989 Kenner Starting Lineup Cards",
   "variant": null,
   "full": "1989 Kenner Starting Lineup Cards",
-  "img": "67768_4959788Thumb2.jpg",
+  "img": "1989_Kenner-Starting-Lineup-Cards_3991134080-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1975,7 +1975,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_Kenner-Starting-Lineup-Cards_3991134080-Bk.jpg"
  },
  {
   "id": "1989-1-1989-major-league-superstars-unlicensed",
@@ -1984,7 +1984,7 @@
   "set": "1989 Major League Superstars (unlicensed)",
   "variant": null,
   "full": "1989 Major League Superstars (unlicensed)",
-  "img": "78049_1Thumb4.jpg",
+  "img": "1989_Major-League-Superstars-(unlicensed)_1-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -1993,7 +1993,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_Major-League-Superstars-(unlicensed)_1-Bk.jpg"
  },
  {
   "id": "1989-19-1989-major-league-superstars-unlicensed",
@@ -2002,7 +2002,7 @@
   "set": "1989 Major League Superstars (unlicensed)",
   "variant": null,
   "full": "1989 Major League Superstars (unlicensed)",
-  "img": "78049_5549860Thumb4.jpg",
+  "img": "1989_Major-League-Superstars-(unlicensed)_19-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2011,7 +2011,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_Major-League-Superstars-(unlicensed)_19-Bk.jpg"
  },
  {
   "id": "1989-nno-1989-marathon-chicago-cubs-sga",
@@ -2020,7 +2020,7 @@
   "set": "1989 Marathon Chicago Cubs SGA",
   "variant": null,
   "full": "1989 Marathon Chicago Cubs SGA",
-  "img": "48322_538916Thumb2.jpg",
+  "img": "1989_Marathon-Chicago-Cubs-SGA_NNO-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2029,7 +2029,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_Marathon-Chicago-Cubs-SGA_NNO-Bk.jpg"
  },
  {
   "id": "1989-297-1989-o-pee-chee",
@@ -2038,7 +2038,7 @@
   "set": "1989 O-Pee-Chee",
   "variant": null,
   "full": "1989 O-Pee-Chee",
-  "img": "8705_482372Thumb4.jpg",
+  "img": "1989_O-Pee-Chee_297-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2047,7 +2047,7 @@
   "insert": false,
   "brand": "O-Pee-Chee",
   "brand_slug": "opeechee",
-  "img_back": null
+  "img_back": "1989_O-Pee-Chee_297-Bk.jpg"
  },
  {
   "id": "1989-210a-1989-o-pee-chee-stickers-50",
@@ -2152,7 +2152,7 @@
   "set": "1989 Pacific Cards & Comics American Flag Series I (unlicensed)",
   "variant": null,
   "full": "1989 Pacific Cards & Comics American Flag Series I (unlicensed)",
-  "img": "116322-2062683863Fr.jpg",
+  "img": "1989_Pacific-Cards-&-Comics-American-Flag-Series-I-(unlicensed)_7-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2161,7 +2161,7 @@
   "insert": false,
   "brand": "Pacific",
   "brand_slug": "pacific",
-  "img_back": null
+  "img_back": "1989_Pacific-Cards-&-Comics-American-Flag-Series-I-(unlicensed)_7-Bk.jpg"
  },
  {
   "id": "1989-8-1989-pacific-cards-comics-american-flag-series-i-unlicensed",
@@ -2296,7 +2296,7 @@
   "set": "1989 Panini Stickers",
   "variant": null,
   "full": "1989 Panini Stickers",
-  "img": null,
+  "img": "1989_Panini-Stickers_55-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2305,7 +2305,7 @@
   "insert": false,
   "brand": "Panini",
   "brand_slug": "panini",
-  "img_back": null
+  "img_back": "1989_Panini-Stickers_55-Bk.jpg"
  },
  {
   "id": "1989-nno-1989-phoenix-baseball-magnetables",
@@ -2314,7 +2314,7 @@
   "set": "1989 Phoenix Baseball Magnetables",
   "variant": null,
   "full": "1989 Phoenix Baseball Magnetables",
-  "img": null,
+  "img": "1989_Phoenix-Baseball-Magnetables_NNO-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2323,7 +2323,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_Phoenix-Baseball-Magnetables_NNO-Bk.jpg"
  },
  {
   "id": "1989-19-1989-preview-unlicensed",
@@ -2332,7 +2332,7 @@
   "set": "1989 Preview (unlicensed)",
   "variant": null,
   "full": "1989 Preview (unlicensed)",
-  "img": null,
+  "img": "1989_Preview-(unlicensed)_19-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2341,7 +2341,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_Preview-(unlicensed)_19-Bk.jpg"
  },
  {
   "id": "1989-4-1989-preview-unlicensed",
@@ -2350,7 +2350,7 @@
   "set": "1989 Preview (unlicensed)",
   "variant": null,
   "full": "1989 Preview (unlicensed)",
-  "img": null,
+  "img": "1989_Preview-(unlicensed)_4-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2359,7 +2359,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_Preview-(unlicensed)_4-Bk.jpg"
  },
  {
   "id": "1989-12a-1989-rainier-farms-super-stars-discs",
@@ -2404,7 +2404,7 @@
   "set": "1989 Rookies I... (unlicensed)",
   "variant": null,
   "full": "1989 Rookies I... (unlicensed)",
-  "img": null,
+  "img": "1989_Rookies-I...-(unlicensed)_18-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2413,7 +2413,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_Rookies-I...-(unlicensed)_18-Bk.jpg"
  },
  {
   "id": "1989-19-1989-rookies-i-unlicensed",
@@ -2422,7 +2422,7 @@
   "set": "1989 Rookies I... (unlicensed)",
   "variant": null,
   "full": "1989 Rookies I... (unlicensed)",
-  "img": null,
+  "img": "1989_Rookies-I...-(unlicensed)_19-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2431,7 +2431,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_Rookies-I...-(unlicensed)_19-Bk.jpg"
  },
  {
   "id": "1989-362-1989-score",
@@ -2440,7 +2440,7 @@
   "set": "1989 Score",
   "variant": null,
   "full": "1989 Score",
-  "img": null,
+  "img": "1989_Score_362-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2449,7 +2449,7 @@
   "insert": false,
   "brand": "Score",
   "brand_slug": "score",
-  "img_back": null
+  "img_back": "1989_Score_362-Bk.jpg"
  },
  {
   "id": "1989-78-1989-score-100-rising-stars",
@@ -2458,7 +2458,7 @@
   "set": "1989 Score 100 Rising Stars",
   "variant": null,
   "full": "1989 Score 100 Rising Stars",
-  "img": null,
+  "img": "1989_Score-100-Rising-Stars_78-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2467,7 +2467,7 @@
   "insert": false,
   "brand": "Score",
   "brand_slug": "score",
-  "img_back": null
+  "img_back": "1989_Score-100-Rising-Stars_78-Bk.jpg"
  },
  {
   "id": "1989-22-1989-score-scoremasters",
@@ -2476,7 +2476,7 @@
   "set": "1989 Score Scoremasters",
   "variant": null,
   "full": "1989 Score Scoremasters",
-  "img": null,
+  "img": "1989_Score-Scoremasters_22-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2485,7 +2485,7 @@
   "insert": false,
   "brand": "Score",
   "brand_slug": "score",
-  "img_back": null
+  "img_back": "1989_Score-Scoremasters_22-Bk.jpg"
  },
  {
   "id": "1989-3-1989-score-young-superstars-set-1",
@@ -2494,7 +2494,7 @@
   "set": "1989 Score Young Superstars (Set 1)",
   "variant": null,
   "full": "1989 Score Young Superstars (Set 1)",
-  "img": null,
+  "img": "1989_Score-Young-Superstars-(Set-1)_3-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2503,7 +2503,7 @@
   "insert": false,
   "brand": "Score",
   "brand_slug": "score",
-  "img_back": null
+  "img_back": "1989_Score-Young-Superstars-(Set-1)_3-Bk.jpg"
  },
  {
   "id": "1989-15-1989-sportflics",
@@ -2512,7 +2512,7 @@
   "set": "1989 Sportflics",
   "variant": null,
   "full": "1989 Sportflics",
-  "img": null,
+  "img": "1989_Sportflics_15-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2521,7 +2521,7 @@
   "insert": false,
   "brand": "Sportflics",
   "brand_slug": "sportflics",
-  "img_back": null
+  "img_back": "1989_Sportflics_15-Bk.jpg"
  },
  {
   "id": "1989-nno-1989-starline-7-eleven-promos",
@@ -2530,7 +2530,7 @@
   "set": "1989 Starline 7-Eleven Promos",
   "variant": null,
   "full": "1989 Starline 7-Eleven Promos",
-  "img": null,
+  "img": "1989_Starline-7-Eleven-Promos_NNO-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2539,7 +2539,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_Starline-7-Eleven-Promos_NNO-Bk.jpg"
  },
  {
   "id": "1989-nno-1989-starline-burger-king-promos",
@@ -2548,7 +2548,7 @@
   "set": "1989 Starline Burger King Promos",
   "variant": null,
   "full": "1989 Starline Burger King Promos",
-  "img": null,
+  "img": "1989_Starline-Burger-King-Promos_NNO-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2557,7 +2557,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_Starline-Burger-King-Promos_NNO-Bk.jpg"
  },
  {
   "id": "1989-nno-1989-starline-coca-cola-promos",
@@ -2566,7 +2566,7 @@
   "set": "1989 Starline Coca-Cola Promos",
   "variant": null,
   "full": "1989 Starline Coca-Cola Promos",
-  "img": null,
+  "img": "1989_Starline-Coca-Cola-Promos_NNO-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2575,7 +2575,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_Starline-Coca-Cola-Promos_NNO-Bk.jpg"
  },
  {
   "id": "1989-nno-1989-starline-domino-s-pizza-promos",
@@ -2584,7 +2584,7 @@
   "set": "1989 Starline Domino's Pizza Promos",
   "variant": null,
   "full": "1989 Starline Domino's Pizza Promos",
-  "img": null,
+  "img": "1989_Starline-Domino's-Pizza-Promos_NNO-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2593,7 +2593,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_Starline-Domino's-Pizza-Promos_NNO-Bk.jpg"
  },
  {
   "id": "1989-nno-1989-starline-mcdonald-s-promos",
@@ -2602,7 +2602,7 @@
   "set": "1989 Starline McDonald's Promos",
   "variant": null,
   "full": "1989 Starline McDonald's Promos",
-  "img": null,
+  "img": "1989_Starline-McDonald's-Promos_NNO-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2611,7 +2611,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_Starline-McDonald's-Promos_NNO-Bk.jpg"
  },
  {
   "id": "1989-nno-1989-starline-promos",
@@ -2620,7 +2620,7 @@
   "set": "1989 Starline Promos",
   "variant": null,
   "full": "1989 Starline Promos",
-  "img": null,
+  "img": "1989_Starline-Promos_NNO-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2629,7 +2629,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_Starline-Promos_NNO-Bk.jpg"
  },
  {
   "id": "1989-nno-1989-t-m-sports-action-photos",
@@ -2638,7 +2638,7 @@
   "set": "1989 T&M Sports Action Photos",
   "variant": null,
   "full": "1989 T&M Sports Action Photos",
-  "img": null,
+  "img": "1989_T&M-Sports-Action-Photos_NNO-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2647,7 +2647,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_T&M-Sports-Action-Photos_NNO-Bk.jpg"
  },
  {
   "id": "1989-465-1989-topps",
@@ -2656,7 +2656,7 @@
   "set": "1989 Topps",
   "variant": null,
   "full": "1989 Topps",
-  "img": null,
+  "img": "1989_Topps_465-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2665,7 +2665,7 @@
   "insert": false,
   "brand": "Topps",
   "brand_slug": "topps",
-  "img_back": null
+  "img_back": "1989_Topps_465-Bk.jpg"
  },
  {
   "id": "1989-12-1989-topps-bazooka-shining-stars",
@@ -2674,7 +2674,7 @@
   "set": "1989 Topps Bazooka Shining Stars",
   "variant": null,
   "full": "1989 Topps Bazooka Shining Stars",
-  "img": null,
+  "img": "1989_Topps-Bazooka-Shining-Stars_12-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2683,7 +2683,7 @@
   "insert": false,
   "brand": "Topps",
   "brand_slug": "topps",
-  "img_back": null
+  "img_back": "1989_Topps-Bazooka-Shining-Stars_12-Bk.jpg"
  },
  {
   "id": "1989-189-1989-topps-big",
@@ -2692,7 +2692,7 @@
   "set": "1989 Topps Big",
   "variant": null,
   "full": "1989 Topps Big",
-  "img": null,
+  "img": "1989_Topps-Big_189-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2701,7 +2701,7 @@
   "insert": false,
   "brand": "Topps",
   "brand_slug": "topps",
-  "img_back": null
+  "img_back": "1989_Topps-Big_189-Bk.jpg"
  },
  {
   "id": "1989-15-1989-topps-coins",
@@ -2710,7 +2710,7 @@
   "set": "1989 Topps Coins",
   "variant": null,
   "full": "1989 Topps Coins",
-  "img": null,
+  "img": "1989_Topps-Coins_15-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2719,7 +2719,7 @@
   "insert": false,
   "brand": "Topps",
   "brand_slug": "topps",
-  "img_back": null
+  "img_back": "1989_Topps-Coins_15-Bk.jpg"
  },
  {
   "id": "1989-465-1989-topps-collector-s-edition-tif",
@@ -2746,7 +2746,7 @@
   "set": "1989 Topps Heads Up! Test Issue",
   "variant": null,
   "full": "1989 Topps Heads Up! Test Issue",
-  "img": null,
+  "img": "1989_Topps-Heads-Up!-Test-Issue_15-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2755,7 +2755,7 @@
   "insert": false,
   "brand": "Topps",
   "brand_slug": "topps",
-  "img_back": null
+  "img_back": "1989_Topps-Heads-Up!-Test-Issue_15-Bk.jpg"
  },
  {
   "id": "1989-1-1989-topps-kmart-dream-team",
@@ -2764,7 +2764,7 @@
   "set": "1989 Topps Kmart Dream Team",
   "variant": null,
   "full": "1989 Topps Kmart Dream Team",
-  "img": null,
+  "img": "1989_Topps-Kmart-Dream-Team_1-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2773,7 +2773,7 @@
   "insert": false,
   "brand": "Kmart",
   "brand_slug": "kmart",
-  "img_back": null
+  "img_back": "1989_Topps-Kmart-Dream-Team_1-Bk.jpg"
  },
  {
   "id": "1989-210a-1989-topps-stickers-50",
@@ -2862,7 +2862,7 @@
   "set": "1989 Topps Toys \"R\" Us Rookies",
   "variant": null,
   "full": "1989 Topps Toys \"R\" Us Rookies",
-  "img": null,
+  "img": "1989_Topps-Toys-R-Us-Rookies_12-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2871,7 +2871,7 @@
   "insert": false,
   "brand": "Toys R Us",
   "brand_slug": "toysrus",
-  "img_back": null
+  "img_back": "1989_Topps-Toys-R-Us-Rookies_12-Bk.jpg"
  },
  {
   "id": "1989-18-1989-tv-sports-mailbag-8x10",
@@ -2880,7 +2880,7 @@
   "set": "1989 TV Sports Mailbag 8x10",
   "variant": null,
   "full": "1989 TV Sports Mailbag 8x10",
-  "img": null,
+  "img": "1989_TV-Sports-Mailbag-8x10_18-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2889,7 +2889,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1989_TV-Sports-Mailbag-8x10_18-Bk.jpg"
  },
  {
   "id": "1989-140-1989-upper-deck",
@@ -2898,7 +2898,7 @@
   "set": "1989 Upper Deck",
   "variant": null,
   "full": "1989 Upper Deck",
-  "img": null,
+  "img": "1989_Upper-Deck_140-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2907,7 +2907,7 @@
   "insert": false,
   "brand": "Upper Deck",
   "brand_slug": "upperdeck",
-  "img_back": null
+  "img_back": "1989_Upper-Deck_140-Bk.jpg"
  },
  {
   "id": "1990-nno-1990-ace-mvp-pins",
@@ -2916,7 +2916,7 @@
   "set": "1990 ACE MVP Pins",
   "variant": null,
   "full": "1990 ACE MVP Pins",
-  "img": "111178_7682656Thumb2.jpg",
+  "img": "1990_ACE-MVP-Pins_NNO-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2925,7 +2925,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1990_ACE-MVP-Pins_NNO-Bk.jpg"
  },
  {
   "id": "1990-12-1990-all-star-set-collec",
@@ -2952,7 +2952,7 @@
   "set": "1990 Bandai Sport Stars Collector Coins",
   "variant": null,
   "full": "1990 Bandai Sport Stars Collector Coins",
-  "img": "154455_9959456RepThumb2.jpg",
+  "img": "1990_Bandai-Sport-Stars-Collector-Coins_NNO-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2961,7 +2961,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1990_Bandai-Sport-Stars-Collector-Coins_NNO-Bk.jpg"
  },
  {
   "id": "1990-2190-1990-barry-colla-all-stars-8x10",
@@ -2970,7 +2970,7 @@
   "set": "1990 Barry Colla All-Stars 8x10",
   "variant": null,
   "full": "1990 Barry Colla All-Stars 8x10",
-  "img": "119229_2093785297Thumb2.jpg",
+  "img": "1990_Barry-Colla-All-Stars-8x10_2190-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2979,7 +2979,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1990_Barry-Colla-All-Stars-8x10_2190-Bk.jpg"
  },
  {
   "id": "1990-30-1990-baseball-cards-magazine-repli-cards",
@@ -2988,7 +2988,7 @@
   "set": "1990 Baseball Cards Magazine Repli-Cards",
   "variant": null,
   "full": "1990 Baseball Cards Magazine Repli-Cards",
-  "img": "33351_30Thumb2.jpg",
+  "img": "1990_Baseball-Cards-Magazine-Repli-Cards_30-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -2997,7 +2997,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1990_Baseball-Cards-Magazine-Repli-Cards_30-Bk.jpg"
  },
  {
   "id": "1990-6-1990-blue-sox-action-superstars-unlicensed",
@@ -3006,7 +3006,7 @@
   "set": "1990 Blue Sox Action Superstars (unlicensed)",
   "variant": null,
   "full": "1990 Blue Sox Action Superstars (unlicensed)",
-  "img": "101752_14345352Thumb2.jpg",
+  "img": "1990_Blue-Sox-Action-Superstars-(unlicensed)_6-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3015,7 +3015,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1990_Blue-Sox-Action-Superstars-(unlicensed)_6-Bk.jpg"
  },
  {
   "id": "1990-29-1990-bowman",
@@ -3024,7 +3024,7 @@
   "set": "1990 Bowman",
   "variant": null,
   "full": "1990 Bowman",
-  "img": "137_29Thumb4.jpg",
+  "img": "1990_Bowman_29-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3033,7 +3033,7 @@
   "insert": false,
   "brand": "Bowman",
   "brand_slug": "bowman",
-  "img_back": null
+  "img_back": "1990_Bowman_29-Bk.jpg"
  },
  {
   "id": "1990-29-1990-bowman-limited-edition-tiffany",
@@ -3042,7 +3042,7 @@
   "set": "1990 Bowman",
   "variant": "Limited Edition (Tiffany)",
   "full": "1990 Bowman - Limited Edition (Tiffany)",
-  "img": "8546_29Thumb4.jpg",
+  "img": "1990_Bowman-Limited-Edition-(Tiffany)_29-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3051,7 +3051,7 @@
   "insert": false,
   "brand": "Bowman",
   "brand_slug": "bowman",
-  "img_back": null
+  "img_back": "1990_Bowman-Limited-Edition-(Tiffany)_29-Bk.jpg"
  },
  {
   "id": "1990-29-1990-bowman-limited-edition-tiffan",
@@ -3078,7 +3078,7 @@
   "set": "1990 Cadaco All-Star Baseball Game Discs",
   "variant": null,
   "full": "1990 Cadaco All-Star Baseball Game Discs",
-  "img": "197544_12669299Thumb2.jpg",
+  "img": "1990_Cadaco-All-Star-Baseball-Game-Discs_NNO-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3087,7 +3087,7 @@
   "insert": true,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1990_Cadaco-All-Star-Baseball-Game-Discs_NNO-Bk.jpg"
  },
  {
   "id": "1990-7-1990-chicago-sports-stars-unlicensed",
@@ -3096,7 +3096,7 @@
   "set": "1990 Chicago Sports Stars (unlicensed)",
   "variant": null,
   "full": "1990 Chicago Sports Stars (unlicensed)",
-  "img": "261728_16107092Thumb2.jpg",
+  "img": "1990_Chicago-Sports-Stars-(unlicensed)_7-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3105,7 +3105,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1990_Chicago-Sports-Stars-(unlicensed)_7-Bk.jpg"
  },
  {
   "id": "1990-8-1990-classic-blue",
@@ -3114,7 +3114,7 @@
   "set": "1990 Classic Blue",
   "variant": null,
   "full": "1990 Classic Blue",
-  "img": "8447_8Thumb2.jpg",
+  "img": "1990_Classic-Blue_8-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3123,7 +3123,7 @@
   "insert": false,
   "brand": "Classic",
   "brand_slug": "classic",
-  "img_back": null
+  "img_back": "1990_Classic-Blue_8-Bk.jpg"
  },
  {
   "id": "1990-31-1990-collect-a-books",
@@ -3132,7 +3132,7 @@
   "set": "1990 Collect-A-Books",
   "variant": null,
   "full": "1990 Collect-A-Books",
-  "img": "9101_31Thumb4.jpg",
+  "img": "1990_Collect-A-Books_31-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3141,7 +3141,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1990_Collect-A-Books_31-Bk.jpg"
  },
  {
   "id": "1990-nno-1990-collectors-marketing-action-photos-8x10",
@@ -3150,7 +3150,7 @@
   "set": "1990 Collectors Marketing Action Photos 8x10",
   "variant": null,
   "full": "1990 Collectors Marketing Action Photos 8x10",
-  "img": "188548_20702809Thumb2.jpg",
+  "img": "1990_Collectors-Marketing-Action-Photos-8x10_NNO-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3159,7 +3159,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1990_Collectors-Marketing-Action-Photos-8x10_NNO-Bk-v2.jpg"
  },
  {
   "id": "1990-8-1990-costacos-brothers-mini-poster-postcards",
@@ -3168,7 +3168,7 @@
   "set": "1990 Costacos Brothers Mini-Poster Postcards",
   "variant": null,
   "full": "1990 Costacos Brothers Mini-Poster Postcards",
-  "img": "458747_28971445Thumb2.jpg",
+  "img": "1990_Costacos-Brothers-Mini-Poster-Postcards_8-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3177,7 +3177,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1990_Costacos-Brothers-Mini-Poster-Postcards_8-Bk.jpg"
  },
  {
   "id": "1990-577-1990-donruss",
@@ -3186,7 +3186,7 @@
   "set": "1990 Donruss",
   "variant": null,
   "full": "1990 Donruss",
-  "img": "138_14793793Thumb2.jpg",
+  "img": "1990_Donruss_577-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3195,7 +3195,7 @@
   "insert": false,
   "brand": "Donruss",
   "brand_slug": "donruss",
-  "img_back": null
+  "img_back": "1990_Donruss_577-Bk-v2.jpg"
  },
  {
   "id": "1990-577a-1990-donruss",
@@ -3258,7 +3258,7 @@
   "set": "1990 Donruss Best of the National League",
   "variant": null,
   "full": "1990 Donruss Best of the National League",
-  "img": "33337_51Thumb2.jpg",
+  "img": "1990_Donruss-Best-of-the-National-League_51-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3267,7 +3267,7 @@
   "insert": false,
   "brand": "Donruss",
   "brand_slug": "donruss",
-  "img_back": null
+  "img_back": "1990_Donruss-Best-of-the-National-League_51-Bk.jpg"
  },
  {
   "id": "1990-32-1990-fleer",
@@ -3276,7 +3276,7 @@
   "set": "1990 Fleer",
   "variant": null,
   "full": "1990 Fleer",
-  "img": "140_18441734Thumb2.jpg",
+  "img": "1990_Fleer_32-Fr-v2.jpg",
   "owned": true,
   "tags": [],
   "auto": false,
@@ -3285,7 +3285,7 @@
   "insert": false,
   "brand": "Fleer",
   "brand_slug": "fleer",
-  "img_back": null
+  "img_back": "1990_Fleer_32-Bk-v2.jpg"
  },
  {
   "id": "1990-32a-1990-fleer",
@@ -3330,7 +3330,7 @@
   "set": "1990 Fleer",
   "variant": "League Standouts",
   "full": "1990 Fleer - League Standouts",
-  "img": "8548_6Thumb2.jpg",
+  "img": "1990_Fleer-League-Standouts_6-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3339,7 +3339,7 @@
   "insert": false,
   "brand": "Fleer",
   "brand_slug": "fleer",
-  "img_back": null
+  "img_back": "1990_Fleer-League-Standouts_6-Bk.jpg"
  },
  {
   "id": "1990-12-1990-fleer-baseball-all-stars",
@@ -3348,7 +3348,7 @@
   "set": "1990 Fleer Baseball All-Stars",
   "variant": null,
   "full": "1990 Fleer Baseball All-Stars",
-  "img": "33503_485812Thumb2.jpg",
+  "img": "1990_Fleer-Baseball-All-Stars_12-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3357,7 +3357,7 @@
   "insert": false,
   "brand": "Fleer",
   "brand_slug": "fleer",
-  "img_back": null
+  "img_back": "1990_Fleer-Baseball-All-Stars_12-Bk.jpg"
  },
  {
   "id": "1990-32-1990-fleer-canadian",
@@ -3366,7 +3366,7 @@
   "set": "1990 Fleer Canadian",
   "variant": null,
   "full": "1990 Fleer Canadian",
-  "img": "59559_32Thumb2.jpg",
+  "img": "1990_Fleer-Canadian_32-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3375,7 +3375,7 @@
   "insert": false,
   "brand": "Fleer",
   "brand_slug": "fleer",
-  "img_back": null
+  "img_back": "1990_Fleer-Canadian_32-Bk.jpg"
  },
  {
   "id": "1990-12-1990-fleer-league-leaders",
@@ -3384,7 +3384,7 @@
   "set": "1990 Fleer League Leaders",
   "variant": null,
   "full": "1990 Fleer League Leaders",
-  "img": "33341_12Thumb2.jpg",
+  "img": "1990_Fleer-League-Leaders_12-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3393,7 +3393,7 @@
   "insert": true,
   "brand": "Fleer",
   "brand_slug": "fleer",
-  "img_back": null
+  "img_back": "1990_Fleer-League-Leaders_12-Bk.jpg"
  },
  {
   "id": "1990-4691009050-1990-kenner-starting-lineup-cards",
@@ -3402,7 +3402,7 @@
   "set": "1990 Kenner Starting Lineup Cards",
   "variant": null,
   "full": "1990 Kenner Starting Lineup Cards",
-  "img": "67769_4959960Thumb4.jpg",
+  "img": "1990_Kenner-Starting-Lineup-Cards_4691009050-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3411,7 +3411,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1990_Kenner-Starting-Lineup-Cards_4691009050-Bk.jpg"
  },
  {
   "id": "1990-4691009051-1990-kenner-starting-lineup-cards",
@@ -3420,7 +3420,7 @@
   "set": "1990 Kenner Starting Lineup Cards",
   "variant": null,
   "full": "1990 Kenner Starting Lineup Cards",
-  "img": "67769_24356754Thumb2.jpg",
+  "img": "1990_Kenner-Starting-Lineup-Cards_4691009051-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3429,7 +3429,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1990_Kenner-Starting-Lineup-Cards_4691009051-Bk.jpg"
  },
  {
   "id": "1990-4691209050-1990-kenner-starting-lineup-cards",
@@ -3438,7 +3438,7 @@
   "set": "1990 Kenner Starting Lineup Cards",
   "variant": null,
   "full": "1990 Kenner Starting Lineup Cards",
-  "img": "67769_4959961Thumb2.jpg",
+  "img": "1990_Kenner-Starting-Lineup-Cards_4691209050-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3447,7 +3447,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1990_Kenner-Starting-Lineup-Cards_4691209050-Bk.jpg"
  },
  {
   "id": "1990-137-1990-leaf",
@@ -3456,7 +3456,7 @@
   "set": "1990 Leaf",
   "variant": null,
   "full": "1990 Leaf",
-  "img": "143_65787RepThumb2.jpg",
+  "img": "1990_Leaf_137-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3465,7 +3465,7 @@
   "insert": false,
   "brand": "Leaf",
   "brand_slug": "leaf",
-  "img_back": null
+  "img_back": "1990_Leaf_137-Bk.jpg"
  },
  {
   "id": "1990-6-1990-m-v-p-big-league-all-stars-multi-color-border-unlicensed",
@@ -3474,7 +3474,7 @@
   "set": "1990 M.V.P. Big League All Stars Multi-Color Border (unlicensed)",
   "variant": null,
   "full": "1990 M.V.P. Big League All Stars Multi-Color Border (unlicensed)",
-  "img": "224291_14163627Thumb2.jpg",
+  "img": "1990_M.V.P.-Big-League-All-Stars-Multi-Color-Border-(unlicensed)_6-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3483,7 +3483,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1990_M.V.P.-Big-League-All-Stars-Multi-Color-Border-(unlicensed)_6-Bk.jpg"
  },
  {
   "id": "1990-nno-1990-marathon-chicago-cubs-sga",
@@ -3492,7 +3492,7 @@
   "set": "1990 Marathon Chicago Cubs SGA",
   "variant": null,
   "full": "1990 Marathon Chicago Cubs SGA",
-  "img": "59911_5609722Thumb2.jpg",
+  "img": "1990_Marathon-Chicago-Cubs-SGA_NNO-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3501,7 +3501,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1990_Marathon-Chicago-Cubs-SGA_NNO-Bk.jpg"
  },
  {
   "id": "1990-nno-1990-mlbpa-baseball-buttons",
@@ -3510,7 +3510,7 @@
   "set": "1990 MLBPA Baseball Buttons",
   "variant": null,
   "full": "1990 MLBPA Baseball Buttons",
-  "img": "91745_6493033Thumb4.jpg",
+  "img": "1990_MLBPA-Baseball-Buttons_NNO-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3519,7 +3519,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1990_MLBPA-Baseball-Buttons_NNO-Bk.jpg"
  },
  {
   "id": "1990-240-1990-o-pee-chee",
@@ -3528,7 +3528,7 @@
   "set": "1990 O-Pee-Chee",
   "variant": null,
   "full": "1990 O-Pee-Chee",
-  "img": "8710_508730Thumb4.jpg",
+  "img": "1990_O-Pee-Chee_240-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3537,7 +3537,7 @@
   "insert": false,
   "brand": "O-Pee-Chee",
   "brand_slug": "opeechee",
-  "img_back": null
+  "img_back": "1990_O-Pee-Chee_240-Bk.jpg"
  },
  {
   "id": "1990-240-1990-o-pee-chee-white-backs",
@@ -3546,7 +3546,7 @@
   "set": "1990 O-Pee-Chee",
   "variant": "White Backs",
   "full": "1990 O-Pee-Chee - White Backs",
-  "img": "159359_10250805Thumb4.jpg",
+  "img": "159359-10250805Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3582,7 +3582,7 @@
   "set": "1990 Panini Stickers",
   "variant": null,
   "full": "1990 Panini Stickers",
-  "img": "8821_87991Thumb2.jpg",
+  "img": "8821-87991Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3618,7 +3618,7 @@
   "set": "1990 Post",
   "variant": null,
   "full": "1990 Post",
-  "img": "10077_19Thumb4.jpg",
+  "img": "10077-19Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3636,7 +3636,7 @@
   "set": "1990 Publications International Hottest 50 Players Stickers",
   "variant": null,
   "full": "1990 Publications International Hottest 50 Players Stickers",
-  "img": "76378_5499831Thumb2.jpg",
+  "img": "76378-5499831Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3654,7 +3654,7 @@
   "set": "1990 Publications International Trivia Stickers",
   "variant": null,
   "full": "1990 Publications International Trivia Stickers",
-  "img": "75188_5318169Thumb2.jpg",
+  "img": "75188-194Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3663,7 +3663,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1990_Publications-International-Trivia-Stickers_NNO-Bk.jpg"
  },
  {
   "id": "1990-38-1990-red-foley-s-best-baseball-book-ever-stickers",
@@ -3672,7 +3672,7 @@
   "set": "1990 Red Foley's Best Baseball Book Ever Stickers",
   "variant": null,
   "full": "1990 Red Foley's Best Baseball Book Ever Stickers",
-  "img": "48196_525798Thumb2.jpg",
+  "img": "48196-525798Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3681,7 +3681,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1990_Red-Foley's-Best-Baseball-Book-Ever-Stickers_38-Bk.jpg"
  },
  {
   "id": "1990-nno-1990-salem-screen-printers-mini-pennant-stickers",
@@ -3690,7 +3690,7 @@
   "set": "1990 Salem Screen Printers Mini Pennant Stickers",
   "variant": null,
   "full": "1990 Salem Screen Printers Mini Pennant Stickers",
-  "img": "403369_23417997Thumb2.jpg",
+  "img": "403369-23417997Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3708,7 +3708,7 @@
   "set": "1990 Score",
   "variant": null,
   "full": "1990 Score",
-  "img": "144_66351RepThumb2.jpg",
+  "img": "144-66351RepFr.jpg",
   "owned": true,
   "tags": [],
   "auto": false,
@@ -3726,7 +3726,7 @@
   "set": "1990 Score 100 Superstars",
   "variant": null,
   "full": "1990 Score 100 Superstars",
-  "img": "33506_485940RepThumb4.jpg",
+  "img": "33506-485940RepFr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3744,7 +3744,7 @@
   "set": "1990 Sportflics",
   "variant": null,
   "full": "1990 Sportflics",
-  "img": "10174_511166Thumb4.jpg",
+  "img": "10174-511166Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3762,7 +3762,7 @@
   "set": "1990 Sportflics",
   "variant": "Promos",
   "full": "1990 Sportflics - Promos",
-  "img": null,
+  "img": "1990_Sportflics-Promos_15-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3771,7 +3771,7 @@
   "insert": false,
   "brand": "Sportflics",
   "brand_slug": "sportflics",
-  "img_back": null
+  "img_back": "1990_Sportflics-Promos_15-Bk.jpg"
  },
  {
   "id": "1990-33-1990-sports-collectors-digest-baseball-card-price-guide-monthly",
@@ -3780,7 +3780,7 @@
   "set": "1990 Sports Collectors Digest Baseball Card Price Guide Monthly",
   "variant": null,
   "full": "1990 Sports Collectors Digest Baseball Card Price Guide Monthly",
-  "img": "33501_33Thumb4.jpg",
+  "img": "33501-33Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3798,7 +3798,7 @@
   "set": "1990 Star Gold",
   "variant": null,
   "full": "1990 Star Gold",
-  "img": null,
+  "img": "1990_Star-Gold_154-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3807,7 +3807,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1990_Star-Gold_154-Bk.jpg"
  },
  {
   "id": "1990-155-1990-star-gold",
@@ -3816,7 +3816,7 @@
   "set": "1990 Star Gold",
   "variant": null,
   "full": "1990 Star Gold",
-  "img": null,
+  "img": "1990_Star-Gold_155-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3825,7 +3825,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1990_Star-Gold_155-Bk.jpg"
  },
  {
   "id": "1990-156-1990-star-gold",
@@ -3834,7 +3834,7 @@
   "set": "1990 Star Gold",
   "variant": null,
   "full": "1990 Star Gold",
-  "img": null,
+  "img": "1990_Star-Gold_156-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3843,7 +3843,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1990_Star-Gold_156-Bk.jpg"
  },
  {
   "id": "1990-157-1990-star-gold",
@@ -3852,7 +3852,7 @@
   "set": "1990 Star Gold",
   "variant": null,
   "full": "1990 Star Gold",
-  "img": null,
+  "img": "1990_Star-Gold_157-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3861,7 +3861,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1990_Star-Gold_157-Bk.jpg"
  },
  {
   "id": "1990-158-1990-star-gold",
@@ -3870,7 +3870,7 @@
   "set": "1990 Star Gold",
   "variant": null,
   "full": "1990 Star Gold",
-  "img": null,
+  "img": "1990_Star-Gold_158-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3879,7 +3879,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1990_Star-Gold_158-Bk.jpg"
  },
  {
   "id": "1990-159-1990-star-gold",
@@ -3888,7 +3888,7 @@
   "set": "1990 Star Gold",
   "variant": null,
   "full": "1990 Star Gold",
-  "img": null,
+  "img": "1990_Star-Gold_159-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3906,7 +3906,7 @@
   "set": "1990 Star Gold",
   "variant": null,
   "full": "1990 Star Gold",
-  "img": null,
+  "img": "1990_Star-Gold_160-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3915,7 +3915,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1990_Star-Gold_160-Bk.jpg"
  },
  {
   "id": "1990-161-1990-star-gold",
@@ -3924,7 +3924,7 @@
   "set": "1990 Star Gold",
   "variant": null,
   "full": "1990 Star Gold",
-  "img": null,
+  "img": "1990_Star-Gold_161-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3933,7 +3933,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1990_Star-Gold_161-Bk.jpg"
  },
  {
   "id": "1990-162-1990-star-gold",
@@ -3942,7 +3942,7 @@
   "set": "1990 Star Gold",
   "variant": null,
   "full": "1990 Star Gold",
-  "img": null,
+  "img": "1990_Star-Gold_162-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3951,7 +3951,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1990_Star-Gold_162-Bk.jpg"
  },
  {
   "id": "1990-nno-1990-star-gold-promo",
@@ -3960,7 +3960,7 @@
   "set": "1990 Star Gold Promo",
   "variant": null,
   "full": "1990 Star Gold Promo",
-  "img": null,
+  "img": "1990_Star-Gold-Promo_NNO-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3969,7 +3969,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1990_Star-Gold-Promo_NNO-Bk.jpg"
  },
  {
   "id": "1990-172-1990-star-platinum",
@@ -3978,7 +3978,7 @@
   "set": "1990 Star Platinum",
   "variant": null,
   "full": "1990 Star Platinum",
-  "img": null,
+  "img": "1990_Star-Platinum_172-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -3987,7 +3987,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1990_Star-Platinum_172-Bk.jpg"
  },
  {
   "id": "1990-173-1990-star-platinum",
@@ -3996,7 +3996,7 @@
   "set": "1990 Star Platinum",
   "variant": null,
   "full": "1990 Star Platinum",
-  "img": null,
+  "img": "1990_Star-Platinum_173-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4005,7 +4005,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1990_Star-Platinum_173-Bk.jpg"
  },
  {
   "id": "1990-174-1990-star-platinum",
@@ -4014,7 +4014,7 @@
   "set": "1990 Star Platinum",
   "variant": null,
   "full": "1990 Star Platinum",
-  "img": null,
+  "img": "1990_Star-Platinum_174-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4023,7 +4023,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1990_Star-Platinum_174-Bk.jpg"
  },
  {
   "id": "1990-175-1990-star-platinum",
@@ -4032,7 +4032,7 @@
   "set": "1990 Star Platinum",
   "variant": null,
   "full": "1990 Star Platinum",
-  "img": null,
+  "img": "1990_Star-Platinum_175-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4041,7 +4041,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1990_Star-Platinum_175-Bk.jpg"
  },
  {
   "id": "1990-176-1990-star-platinum",
@@ -4050,7 +4050,7 @@
   "set": "1990 Star Platinum",
   "variant": null,
   "full": "1990 Star Platinum",
-  "img": null,
+  "img": "1990_Star-Platinum_176-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4059,7 +4059,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1990_Star-Platinum_176-Bk.jpg"
  },
  {
   "id": "1990-177-1990-star-platinum",
@@ -4068,7 +4068,7 @@
   "set": "1990 Star Platinum",
   "variant": null,
   "full": "1990 Star Platinum",
-  "img": null,
+  "img": "1990_Star-Platinum_177-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4077,7 +4077,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1990_Star-Platinum_177-Bk.jpg"
  },
  {
   "id": "1990-178-1990-star-platinum",
@@ -4086,7 +4086,7 @@
   "set": "1990 Star Platinum",
   "variant": null,
   "full": "1990 Star Platinum",
-  "img": null,
+  "img": "1990_Star-Platinum_178-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4095,7 +4095,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1990_Star-Platinum_178-Bk.jpg"
  },
  {
   "id": "1990-179-1990-star-platinum",
@@ -4104,7 +4104,7 @@
   "set": "1990 Star Platinum",
   "variant": null,
   "full": "1990 Star Platinum",
-  "img": null,
+  "img": "1990_Star-Platinum_179-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4113,7 +4113,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1990_Star-Platinum_179-Bk.jpg"
  },
  {
   "id": "1990-180-1990-star-platinum",
@@ -4122,7 +4122,7 @@
   "set": "1990 Star Platinum",
   "variant": null,
   "full": "1990 Star Platinum",
-  "img": null,
+  "img": "1990_Star-Platinum_180-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4131,7 +4131,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1990_Star-Platinum_180-Bk.jpg"
  },
  {
   "id": "1990-nno-1990-star-platinum-promos",
@@ -4158,7 +4158,7 @@
   "set": "1990 Star Silver",
   "variant": null,
   "full": "1990 Star Silver",
-  "img": null,
+  "img": "1990_Star-Silver_10-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4167,7 +4167,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1990_Star-Silver_10-Bk.jpg"
  },
  {
   "id": "1990-11-1990-star-silver",
@@ -4176,7 +4176,7 @@
   "set": "1990 Star Silver",
   "variant": null,
   "full": "1990 Star Silver",
-  "img": null,
+  "img": "1990_Star-Silver_11-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4185,7 +4185,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1990_Star-Silver_11-Bk.jpg"
  },
  {
   "id": "1990-12-1990-star-silver",
@@ -4194,7 +4194,7 @@
   "set": "1990 Star Silver",
   "variant": null,
   "full": "1990 Star Silver",
-  "img": null,
+  "img": "1990_Star-Silver_12-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4203,7 +4203,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1990_Star-Silver_12-Bk.jpg"
  },
  {
   "id": "1990-13-1990-star-silver",
@@ -4212,7 +4212,7 @@
   "set": "1990 Star Silver",
   "variant": null,
   "full": "1990 Star Silver",
-  "img": null,
+  "img": "1990_Star-Silver_13-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4221,7 +4221,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1990_Star-Silver_13-Bk.jpg"
  },
  {
   "id": "1990-14-1990-star-silver",
@@ -4230,7 +4230,7 @@
   "set": "1990 Star Silver",
   "variant": null,
   "full": "1990 Star Silver",
-  "img": null,
+  "img": "1990_Star-Silver_14-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4239,7 +4239,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1990_Star-Silver_14-Bk.jpg"
  },
  {
   "id": "1990-15-1990-star-silver",
@@ -4248,7 +4248,7 @@
   "set": "1990 Star Silver",
   "variant": null,
   "full": "1990 Star Silver",
-  "img": null,
+  "img": "1990_Star-Silver_15-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4257,7 +4257,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1990_Star-Silver_15-Bk.jpg"
  },
  {
   "id": "1990-16-1990-star-silver",
@@ -4266,7 +4266,7 @@
   "set": "1990 Star Silver",
   "variant": null,
   "full": "1990 Star Silver",
-  "img": null,
+  "img": "1990_Star-Silver_16-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4275,7 +4275,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1990_Star-Silver_16-Bk.jpg"
  },
  {
   "id": "1990-17-1990-star-silver",
@@ -4284,7 +4284,7 @@
   "set": "1990 Star Silver",
   "variant": null,
   "full": "1990 Star Silver",
-  "img": null,
+  "img": "1990_Star-Silver_17-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4293,7 +4293,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1990_Star-Silver_17-Bk.jpg"
  },
  {
   "id": "1990-18-1990-star-silver",
@@ -4302,7 +4302,7 @@
   "set": "1990 Star Silver",
   "variant": null,
   "full": "1990 Star Silver",
-  "img": null,
+  "img": "1990_Star-Silver_18-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4311,7 +4311,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1990_Star-Silver_18-Bk.jpg"
  },
  {
   "id": "1990-nno-1990-star-silver-promos",
@@ -4320,7 +4320,7 @@
   "set": "1990 Star Silver Promos",
   "variant": null,
   "full": "1990 Star Silver Promos",
-  "img": null,
+  "img": "1990_Star-Silver-Promos_NNO-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4329,7 +4329,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1990_Star-Silver-Promos_NNO-Bk.jpg"
  },
  {
   "id": "1990-1990-star-will-clark",
@@ -4359,7 +4359,7 @@
   "set": "1990 Starline Long John Silver",
   "variant": null,
   "full": "1990 Starline Long John Silver",
-  "img": null,
+  "img": "1990_Starline-Long-John-Silver_16-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4368,7 +4368,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1990_Starline-Long-John-Silver_16-Bk.jpg"
  },
  {
   "id": "1990-2-1990-starline-long-john-silver",
@@ -4377,7 +4377,7 @@
   "set": "1990 Starline Long John Silver",
   "variant": null,
   "full": "1990 Starline Long John Silver",
-  "img": null,
+  "img": "1990_Starline-Long-John-Silver_2-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4386,7 +4386,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1990_Starline-Long-John-Silver_2-Bk.jpg"
  },
  {
   "id": "1990-40-1990-starline-long-john-silver",
@@ -4395,7 +4395,7 @@
   "set": "1990 Starline Long John Silver",
   "variant": null,
   "full": "1990 Starline Long John Silver",
-  "img": null,
+  "img": "1990_Starline-Long-John-Silver_40-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4404,7 +4404,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1990_Starline-Long-John-Silver_40-Bk.jpg"
  },
  {
   "id": "1990-240-1990-topps",
@@ -4413,7 +4413,7 @@
   "set": "1990 Topps",
   "variant": null,
   "full": "1990 Topps",
-  "img": null,
+  "img": "1990_Topps_240-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4422,7 +4422,7 @@
   "insert": false,
   "brand": "Topps",
   "brand_slug": "topps",
-  "img_back": null
+  "img_back": "1990_Topps_240-Bk.jpg"
  },
  {
   "id": "1990-19a-1990-topps-big",
@@ -4485,7 +4485,7 @@
   "set": "1990 Topps DoubleHeaders",
   "variant": null,
   "full": "1990 Topps DoubleHeaders",
-  "img": null,
+  "img": "1990_Topps-DoubleHeaders_NNO-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4494,7 +4494,7 @@
   "insert": false,
   "brand": "Topps",
   "brand_slug": "topps",
-  "img_back": null
+  "img_back": "1990_Topps-DoubleHeaders_NNO-Bk.jpg"
  },
  {
   "id": "1990-49-1990-topps-major-league-leaders-minis",
@@ -4503,7 +4503,7 @@
   "set": "1990 Topps Major League Leaders Minis",
   "variant": null,
   "full": "1990 Topps Major League Leaders Minis",
-  "img": null,
+  "img": "1990_Topps-Major-League-Leaders-Minis_49-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4512,7 +4512,7 @@
   "insert": true,
   "brand": "Topps",
   "brand_slug": "topps",
-  "img_back": null
+  "img_back": "1990_Topps-Major-League-Leaders-Minis_49-Bk.jpg"
  },
  {
   "id": "1990-228-1990-topps-stickers-56",
@@ -4521,7 +4521,7 @@
   "set": "1990 Topps Stickers 56",
   "variant": null,
   "full": "1990 Topps Stickers 56",
-  "img": null,
+  "img": "1990_Topps-Stickers_56-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4530,7 +4530,7 @@
   "insert": false,
   "brand": "Topps",
   "brand_slug": "topps",
-  "img_back": null
+  "img_back": "1990_Topps-Stickers_56-Bk.jpg"
  },
  {
   "id": "1990-63-1990-topps-tv-all-stars",
@@ -4539,7 +4539,7 @@
   "set": "1990 Topps TV All-Stars",
   "variant": null,
   "full": "1990 Topps TV All-Stars",
-  "img": null,
+  "img": "1990_Topps-TV-All-Stars_63-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4548,7 +4548,7 @@
   "insert": false,
   "brand": "Topps",
   "brand_slug": "topps",
-  "img_back": null
+  "img_back": "1990_Topps-TV-All-Stars_63-Bk.jpg"
  },
  {
   "id": "1990-23-1990-topps-tv-chicago-cubs",
@@ -4557,7 +4557,7 @@
   "set": "1990 Topps TV Chicago Cubs",
   "variant": null,
   "full": "1990 Topps TV Chicago Cubs",
-  "img": null,
+  "img": "1990_Topps-TV-Chicago-Cubs_23-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4566,7 +4566,7 @@
   "insert": false,
   "brand": "Topps",
   "brand_slug": "topps",
-  "img_back": null
+  "img_back": "1990_Topps-TV-Chicago-Cubs_23-Bk.jpg"
  },
  {
   "id": "1990-15-1990-tv-sports-mailbag-8x10",
@@ -4665,7 +4665,7 @@
   "set": "1991 Ballstreet",
   "variant": null,
   "full": "1991 Ballstreet",
-  "img": "78042_5549684Thumb4.jpg",
+  "img": "1991_Ballstreet_35-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4674,7 +4674,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1991_Ballstreet_35-Bk.jpg"
  },
  {
   "id": "1991-35-1991-ballstreet-oversized-4x6",
@@ -4683,7 +4683,7 @@
   "set": "1991 Ballstreet",
   "variant": "Oversized 4x6",
   "full": "1991 Ballstreet - Oversized 4x6",
-  "img": "120770_8213246Thumb2.jpg",
+  "img": "1991_Ballstreet-Oversized-4x6_35-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4692,7 +4692,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1991_Ballstreet-Oversized-4x6_35-Bk.jpg"
  },
  {
   "id": "1991-433-1991-bowman",
@@ -4701,7 +4701,7 @@
   "set": "1991 Bowman",
   "variant": null,
   "full": "1991 Bowman",
-  "img": "151_433Thumb2.jpg",
+  "img": "1991_Bowman_433-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4710,7 +4710,7 @@
   "insert": false,
   "brand": "Bowman",
   "brand_slug": "bowman",
-  "img_back": null
+  "img_back": "1991_Bowman_433-Bk.jpg"
  },
  {
   "id": "1991-nno-1991-cadaco-all-star-baseball-game-discs",
@@ -4719,7 +4719,7 @@
   "set": "1991 Cadaco All-Star Baseball Game Discs",
   "variant": null,
   "full": "1991 Cadaco All-Star Baseball Game Discs",
-  "img": "91876_6502595Thumb2.jpg",
+  "img": "1991_Cadaco-All-Star-Baseball-Game-Discs_NNO-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4728,7 +4728,7 @@
   "insert": true,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1991_Cadaco-All-Star-Baseball-Game-Discs_NNO-Bk.jpg"
  },
  {
   "id": "1991-nno-1991-chicago-cubs-vine-line",
@@ -4737,7 +4737,7 @@
   "set": "1991 Chicago Cubs Vine Line",
   "variant": null,
   "full": "1991 Chicago Cubs Vine Line",
-  "img": "59912_3502151Thumb2.jpg",
+  "img": "1991_Chicago-Cubs-Vine-Line_NNO-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4746,7 +4746,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1991_Chicago-Cubs-Vine-Line_NNO-Bk.jpg"
  },
  {
   "id": "1991-105-1991-classic",
@@ -4755,7 +4755,7 @@
   "set": "1991 Classic",
   "variant": null,
   "full": "1991 Classic",
-  "img": "8454_105Thumb2.jpg",
+  "img": "1991_Classic_105-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4764,7 +4764,7 @@
   "insert": false,
   "brand": "Classic",
   "brand_slug": "classic",
-  "img_back": null
+  "img_back": "1991_Classic_105-Bk.jpg"
  },
  {
   "id": "1991-t27-1991-classic-i",
@@ -4773,7 +4773,7 @@
   "set": "1991 Classic I",
   "variant": null,
   "full": "1991 Classic I",
-  "img": "8451_T27Thumb4.jpg",
+  "img": "1991_Classic-I_T27-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4782,7 +4782,7 @@
   "insert": false,
   "brand": "Classic",
   "brand_slug": "classic",
-  "img_back": null
+  "img_back": "1991_Classic-I_T27-Bk.jpg"
  },
  {
   "id": "1991-199-1991-donruss",
@@ -4791,7 +4791,7 @@
   "set": "1991 Donruss",
   "variant": null,
   "full": "1991 Donruss",
-  "img": "152_12811205Thumb2.jpg",
+  "img": "1991_Donruss_199-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4800,7 +4800,7 @@
   "insert": false,
   "brand": "Donruss",
   "brand_slug": "donruss",
-  "img_back": null
+  "img_back": "1991_Donruss_199-Bk-v2.jpg"
  },
  {
   "id": "1991-199a-1991-donruss",
@@ -4863,7 +4863,7 @@
   "set": "1991 Fleer",
   "variant": null,
   "full": "1991 Fleer",
-  "img": "155_18488755Thumb4.jpg",
+  "img": "1991_Fleer_422-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -4872,7 +4872,7 @@
   "insert": false,
   "brand": "Fleer",
   "brand_slug": "fleer",
-  "img_back": null
+  "img_back": "1991_Fleer_422-Bk-v2.jpg"
  },
  {
   "id": "1991-422a-1991-fleer",
@@ -4993,7 +4993,7 @@
   "set": "1991 Leaf",
   "variant": null,
   "full": "1991 Leaf",
-  "img": "158_74420RepThumb4.jpg",
+  "img": "158-74420RepFr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5002,7 +5002,7 @@
   "insert": false,
   "brand": "Leaf",
   "brand_slug": "leaf",
-  "img_back": null
+  "img_back": "1991_Leaf_170-Bk.jpg"
  },
  {
   "id": "1991-20-1991-line-drive-collect-a-books",
@@ -5011,7 +5011,7 @@
   "set": "1991 Line Drive Collect-a-Books",
   "variant": null,
   "full": "1991 Line Drive Collect-a-Books",
-  "img": "86265_6236546Thumb4.jpg",
+  "img": "1991_Line-Drive-Collect-a-Books_20-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5020,7 +5020,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1991_Line-Drive-Collect-a-Books_20-Bk.jpg"
  },
  {
   "id": "1991-nno-1991-marathon-chicago-cubs-sga",
@@ -5029,7 +5029,7 @@
   "set": "1991 Marathon Chicago Cubs SGA",
   "variant": null,
   "full": "1991 Marathon Chicago Cubs SGA",
-  "img": "169054_10825357Thumb2.jpg",
+  "img": "1991_Marathon-Chicago-Cubs-SGA_NNO-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5038,7 +5038,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1991_Marathon-Chicago-Cubs-SGA_NNO-Bk.jpg"
  },
  {
   "id": "1991-nno-1991-mlbpa-baseball-buttons",
@@ -5047,7 +5047,7 @@
   "set": "1991 MLBPA Baseball Buttons",
   "variant": null,
   "full": "1991 MLBPA Baseball Buttons",
-  "img": "223208_14085761Thumb2.jpg",
+  "img": "1991_MLBPA-Baseball-Buttons_NNO-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5056,7 +5056,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1991_MLBPA-Baseball-Buttons_NNO-Bk.jpg"
  },
  {
   "id": "1991-520-1991-o-pee-chee",
@@ -5065,7 +5065,7 @@
   "set": "1991 O-Pee-Chee",
   "variant": null,
   "full": "1991 O-Pee-Chee",
-  "img": "8712_505855RepThumb2.jpg",
+  "img": "1991_O-Pee-Chee_520-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5074,7 +5074,7 @@
   "insert": false,
   "brand": "O-Pee-Chee",
   "brand_slug": "opeechee",
-  "img_back": null
+  "img_back": "1991_O-Pee-Chee_520-Bk.jpg"
  },
  {
   "id": "1991-48-1991-panini-stickers",
@@ -5083,7 +5083,7 @@
   "set": "1991 Panini Stickers",
   "variant": null,
   "full": "1991 Panini Stickers",
-  "img": "8822_137548Thumb2.jpg",
+  "img": "1991_Panini-Stickers_48-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5092,7 +5092,7 @@
   "insert": false,
   "brand": "Panini",
   "brand_slug": "panini",
-  "img_back": null
+  "img_back": "1991_Panini-Stickers_48-Bk.jpg"
  },
  {
   "id": "1991-43-1991-panini-stickers-canadian",
@@ -5101,7 +5101,7 @@
   "set": "1991 Panini Stickers (Canadian)",
   "variant": null,
   "full": "1991 Panini Stickers (Canadian)",
-  "img": "59753_3433991Thumb2.jpg",
+  "img": "1991_Panini-Stickers-(Canadian)_43-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5110,7 +5110,7 @@
   "insert": false,
   "brand": "Panini",
   "brand_slug": "panini",
-  "img_back": null
+  "img_back": "1991_Panini-Stickers-(Canadian)_43-Bk.jpg"
  },
  {
   "id": "1991-22-1991-post",
@@ -5119,7 +5119,7 @@
   "set": "1991 Post",
   "variant": null,
   "full": "1991 Post",
-  "img": "9091_22Thumb4.jpg",
+  "img": "1991_Post_22-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5128,7 +5128,7 @@
   "insert": false,
   "brand": "Post",
   "brand_slug": "post",
-  "img_back": null
+  "img_back": "1991_Post_22-Bk.jpg"
  },
  {
   "id": "1991-175-1991-score",
@@ -5137,7 +5137,7 @@
   "set": "1991 Score",
   "variant": null,
   "full": "1991 Score",
-  "img": "160_75025RepThumb4.jpg",
+  "img": "1991_Score_175-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5146,7 +5146,7 @@
   "insert": false,
   "brand": "Score",
   "brand_slug": "score",
-  "img_back": null
+  "img_back": "1991_Score_175-Bk.jpg"
  },
  {
   "id": "1991-175-1991-score-promos",
@@ -5155,7 +5155,7 @@
   "set": "1991 Score",
   "variant": "Promos",
   "full": "1991 Score - Promos",
-  "img": "230110_14455568Thumb4.jpg",
+  "img": "1991_Score-Promos_175-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5164,7 +5164,7 @@
   "insert": false,
   "brand": "Score",
   "brand_slug": "score",
-  "img_back": null
+  "img_back": "1991_Score-Promos_175-Bk.jpg"
  },
  {
   "id": "1991-91-1991-score-100-superstars",
@@ -5173,7 +5173,7 @@
   "set": "1991 Score 100 Superstars",
   "variant": null,
   "full": "1991 Score 100 Superstars",
-  "img": "27864_91Thumb2.jpg",
+  "img": "1991_Score-100-Superstars_91-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5182,7 +5182,7 @@
   "insert": false,
   "brand": "Score",
   "brand_slug": "score",
-  "img_back": null
+  "img_back": "1991_Score-100-Superstars_91-Bk.jpg"
  },
  {
   "id": "1991-ws-1991-score-7-eleven-superstar-action-6",
@@ -5209,7 +5209,7 @@
   "set": "1991 Sports Illustrated for Kids",
   "variant": null,
   "full": "1991 Sports Illustrated for Kids",
-  "img": "73994_5307146Thumb4.jpg",
+  "img": "1991_Sports-Illustrated-for-Kids_283-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5218,7 +5218,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1991_Sports-Illustrated-for-Kids_283-Bk.jpg"
  },
  {
   "id": "1991-290-1991-stadium-club",
@@ -5227,7 +5227,7 @@
   "set": "1991 Stadium Club",
   "variant": null,
   "full": "1991 Stadium Club",
-  "img": "165_17269566Thumb4.jpg",
+  "img": "1991_Stadium-Club_290-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5236,7 +5236,7 @@
   "insert": false,
   "brand": "Stadium Club",
   "brand_slug": "stadiumclub",
-  "img_back": null
+  "img_back": "1991_Stadium-Club_290-Bk-v2.jpg"
  },
  {
   "id": "1991-290a-1991-stadium-club",
@@ -5281,7 +5281,7 @@
   "set": "1991 Star Platinum",
   "variant": null,
   "full": "1991 Star Platinum",
-  "img": "178862_11459333Thumb2.jpg",
+  "img": "1991_Star-Platinum_1-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5290,7 +5290,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1991_Star-Platinum_1-Bk.jpg"
  },
  {
   "id": "1991-2-1991-star-platinum",
@@ -5299,7 +5299,7 @@
   "set": "1991 Star Platinum",
   "variant": null,
   "full": "1991 Star Platinum",
-  "img": "178862_11459334Thumb2.jpg",
+  "img": "1991_Star-Platinum_2-Fr-v2.jpg",
   "owned": false,
   "tags": [
    "PR1000"
@@ -5310,7 +5310,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1991_Star-Platinum_2-Bk.jpg"
  },
  {
   "id": "1991-3-1991-star-platinum",
@@ -5319,7 +5319,7 @@
   "set": "1991 Star Platinum",
   "variant": null,
   "full": "1991 Star Platinum",
-  "img": "178862_11459335Thumb2.jpg",
+  "img": "1991_Star-Platinum_3-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5328,7 +5328,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1991_Star-Platinum_3-Bk.jpg"
  },
  {
   "id": "1991-4-1991-star-platinum",
@@ -5337,7 +5337,7 @@
   "set": "1991 Star Platinum",
   "variant": null,
   "full": "1991 Star Platinum",
-  "img": "178862_11459336Thumb2.jpg",
+  "img": "1991_Star-Platinum_4-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5346,7 +5346,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1991_Star-Platinum_4-Bk.jpg"
  },
  {
   "id": "1991-5-1991-star-platinum",
@@ -5355,7 +5355,7 @@
   "set": "1991 Star Platinum",
   "variant": null,
   "full": "1991 Star Platinum",
-  "img": "178862_11459337Thumb2.jpg",
+  "img": "1991_Star-Platinum_5-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5364,7 +5364,7 @@
   "insert": false,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1991_Star-Platinum_5-Bk.jpg"
  },
  {
   "id": "1991-6-1991-star-platinum",
@@ -5373,7 +5373,7 @@
   "set": "1991 Star Platinum",
   "variant": null,
   "full": "1991 Star Platinum",
-  "img": "178862_11459338Thumb2.jpg",
+  "img": "178862-11459338Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5391,7 +5391,7 @@
   "set": "1991 Star Platinum",
   "variant": null,
   "full": "1991 Star Platinum",
-  "img": "178862_11459339Thumb2.jpg",
+  "img": "178862-11459339Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5409,7 +5409,7 @@
   "set": "1991 Star Platinum",
   "variant": null,
   "full": "1991 Star Platinum",
-  "img": "178862_11459340Thumb2.jpg",
+  "img": "178862-11459340Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5427,7 +5427,7 @@
   "set": "1991 Star Platinum",
   "variant": null,
   "full": "1991 Star Platinum",
-  "img": "178862_11459341Thumb2.jpg",
+  "img": "178862-11459341Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5445,7 +5445,7 @@
   "set": "1991 Star Platinum",
   "variant": "Promos",
   "full": "1991 Star Platinum - Promos",
-  "img": "191551_12099671Thumb2.jpg",
+  "img": "191551-12099671Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5463,7 +5463,7 @@
   "set": "1991 Studio",
   "variant": null,
   "full": "1991 Studio",
-  "img": "166_76732RepThumb4.jpg",
+  "img": "166-76732RepFr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5481,7 +5481,7 @@
   "set": "1991 Topps",
   "variant": null,
   "full": "1991 Topps",
-  "img": "167_520Thumb2.jpg",
+  "img": "167-520Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5499,7 +5499,7 @@
   "set": "1991 Topps",
   "variant": "Collector's Edition (Tiffany)",
   "full": "1991 Topps - Collector's Edition (Tiffany)",
-  "img": "10243_507670Thumb2.jpg",
+  "img": "10243-507670Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5517,7 +5517,7 @@
   "set": "1991 Topps",
   "variant": "Desert Shield",
   "full": "1991 Topps - Desert Shield",
-  "img": "10242_506695Thumb2.jpg",
+  "img": "10242-506695Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5553,7 +5553,7 @@
   "set": "1991 Topps Cracker Jack (Series One)",
   "variant": null,
   "full": "1991 Topps Cracker Jack (Series One)",
-  "img": "61735_3719882Thumb2.jpg",
+  "img": "61735-3719882Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5571,7 +5571,7 @@
   "set": "1991 Topps Micro",
   "variant": null,
   "full": "1991 Topps Micro",
-  "img": null,
+  "img": "1991_Topps-Micro_520-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5580,7 +5580,7 @@
   "insert": false,
   "brand": "Topps",
   "brand_slug": "topps",
-  "img_back": null
+  "img_back": "1991_Topps-Micro_520-Bk.jpg"
  },
  {
   "id": "1991-16-1991-topps-superstar-stand-ups",
@@ -5589,7 +5589,7 @@
   "set": "1991 Topps Superstar Stand-Ups",
   "variant": null,
   "full": "1991 Topps Superstar Stand-Ups",
-  "img": null,
+  "img": "1991_Topps-Superstar-Stand-Ups_16-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5598,7 +5598,7 @@
   "insert": false,
   "brand": "Topps",
   "brand_slug": "topps",
-  "img_back": null
+  "img_back": "1991_Topps-Superstar-Stand-Ups_16-Bk.jpg"
  },
  {
   "id": "1991-16-1991-topps-superstar-stand-ups-clea",
@@ -5625,7 +5625,7 @@
   "set": "1991 Ultra",
   "variant": null,
   "full": "1991 Ultra",
-  "img": null,
+  "img": "1991_Ultra_61-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5634,7 +5634,7 @@
   "insert": false,
   "brand": "Ultra",
   "brand_slug": "ultra",
-  "img_back": null
+  "img_back": "1991_Ultra_61-Bk.jpg"
  },
  {
   "id": "1991-134-1991-upper-deck",
@@ -5643,7 +5643,7 @@
   "set": "1991 Upper Deck",
   "variant": null,
   "full": "1991 Upper Deck",
-  "img": null,
+  "img": "1991_Upper-Deck_134-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5652,7 +5652,7 @@
   "insert": false,
   "brand": "Upper Deck",
   "brand_slug": "upperdeck",
-  "img_back": null
+  "img_back": "1991_Upper-Deck_134-Bk-v2.jpg"
  },
  {
   "id": "1991-134b-1991-upper-deck",
@@ -5697,7 +5697,7 @@
   "set": "1991 Upper Deck",
   "variant": null,
   "full": "1991 Upper Deck",
-  "img": null,
+  "img": "1991_Upper-Deck_99-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5706,7 +5706,7 @@
   "insert": false,
   "brand": "Upper Deck",
   "brand_slug": "upperdeck",
-  "img_back": null
+  "img_back": "1991_Upper-Deck_99-Bk-v2.jpg"
  },
  {
   "id": "1991-99b-1991-upper-deck",
@@ -5753,7 +5753,7 @@
   "set": "1992 Bowman",
   "variant": null,
   "full": "1992 Bowman",
-  "img": "176_87580Thumb4.jpg",
+  "img": "176-87580Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5771,7 +5771,7 @@
   "set": "1992 Classic",
   "variant": null,
   "full": "1992 Classic",
-  "img": "8461_29Thumb2.jpg",
+  "img": "8461-29Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5789,7 +5789,7 @@
   "set": "1992 Donruss",
   "variant": null,
   "full": "1992 Donruss",
-  "img": "177_15191894Thumb4.jpg",
+  "img": "177-15191894Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5843,7 +5843,7 @@
   "set": "1992 Donruss Cracker Jack (Series 2)",
   "variant": null,
   "full": "1992 Donruss Cracker Jack (Series 2)",
-  "img": "61734_3719808RepThumb4.jpg",
+  "img": "61734-3719808Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5861,7 +5861,7 @@
   "set": "1992 Fleer",
   "variant": null,
   "full": "1992 Fleer",
-  "img": "183_17290795Thumb2.jpg",
+  "img": "183-17290795Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5919,7 +5919,7 @@
   "set": "1992 High 5 Reusable Decals",
   "variant": null,
   "full": "1992 High 5 Reusable Decals",
-  "img": "101109_24359057Thumb2.jpg",
+  "img": "101109-24359057Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5937,7 +5937,7 @@
   "set": "1992 High 5 Reusable Decals",
   "variant": "Decals (Cut With Card Backing)",
   "full": "1992 High 5 Reusable Decals - Decals (Cut With Card Backing)",
-  "img": "422998_7091943Thumb2.jpg",
+  "img": "422998-7091943Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -5973,7 +5973,7 @@
   "set": "1992 JKA Baseball Star Buttons",
   "variant": "Square Proofs",
   "full": "1992 JKA Baseball Star Buttons - Square Proofs",
-  "img": "220851_13939015Thumb2.jpg",
+  "img": "325680-19385542Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6009,7 +6009,7 @@
   "set": "1992 Leaf",
   "variant": null,
   "full": "1992 Leaf",
-  "img": "192_16170236Thumb4.jpg",
+  "img": "192-16170236Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6027,7 +6027,7 @@
   "set": "1992 Leaf",
   "variant": "Gold Edition",
   "full": "1992 Leaf - Gold Edition",
-  "img": "10269_598656RepThumb4.jpg",
+  "img": "1992_Leaf-Gold-Edition_26-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6036,7 +6036,7 @@
   "insert": false,
   "brand": "Leaf",
   "brand_slug": "leaf",
-  "img_back": null
+  "img_back": "1992_Leaf-Gold-Edition_26-Bk.jpg"
  },
  {
   "id": "1992-26a-1992-leaf",
@@ -6081,7 +6081,7 @@
   "set": "1992 Marathon Chicago Cubs SGA",
   "variant": null,
   "full": "1992 Marathon Chicago Cubs SGA",
-  "img": "112826_7731332Thumb2.jpg",
+  "img": "1992_Marathon-Chicago-Cubs-SGA_NNO-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6090,7 +6090,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1992_Marathon-Chicago-Cubs-SGA_NNO-Bk.jpg"
  },
  {
   "id": "1992-140-1992-o-pee-chee",
@@ -6099,7 +6099,7 @@
   "set": "1992 O-Pee-Chee",
   "variant": null,
   "full": "1992 O-Pee-Chee",
-  "img": "8715_91315Thumb2.jpg",
+  "img": "1992_O-Pee-Chee_140-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6108,7 +6108,7 @@
   "insert": false,
   "brand": "O-Pee-Chee",
   "brand_slug": "opeechee",
-  "img_back": null
+  "img_back": "1992_O-Pee-Chee_140-Bk.jpg"
  },
  {
   "id": "1992-182-1992-panini-stickers",
@@ -6117,7 +6117,7 @@
   "set": "1992 Panini Stickers",
   "variant": null,
   "full": "1992 Panini Stickers",
-  "img": "8823_182Thumb2.jpg",
+  "img": "1992_Panini-Stickers_182-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6126,7 +6126,7 @@
   "insert": false,
   "brand": "Panini",
   "brand_slug": "panini",
-  "img_back": null
+  "img_back": "1992_Panini-Stickers_182-Bk.jpg"
  },
  {
   "id": "1992-182-1992-panini-stickers-canadian",
@@ -6135,7 +6135,7 @@
   "set": "1992 Panini Stickers (Canadian)",
   "variant": null,
   "full": "1992 Panini Stickers (Canadian)",
-  "img": "59756_3434733Thumb4.jpg",
+  "img": "59756-3434733Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6153,7 +6153,7 @@
   "set": "1992 Pinnacle",
   "variant": null,
   "full": "1992 Pinnacle",
-  "img": "194_136Thumb4.jpg",
+  "img": "194-136Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6171,7 +6171,7 @@
   "set": "1992 Score",
   "variant": null,
   "full": "1992 Score",
-  "img": "200_93370RepThumb4.jpg",
+  "img": "200-93370RepFr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6189,7 +6189,7 @@
   "set": "1992 Score 100 Superstars",
   "variant": null,
   "full": "1992 Score 100 Superstars",
-  "img": "13363_465780Thumb2.jpg",
+  "img": "13363-465780Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6207,7 +6207,7 @@
   "set": "1992 Stadium Club",
   "variant": null,
   "full": "1992 Stadium Club",
-  "img": "206_17385851RepThumb4.jpg",
+  "img": "206-17385851RepFr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6261,7 +6261,7 @@
   "set": "1992 Studio",
   "variant": null,
   "full": "1992 Studio",
-  "img": "210_14Thumb4.jpg",
+  "img": "210-14Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6279,7 +6279,7 @@
   "set": "1992 Topps",
   "variant": null,
   "full": "1992 Topps",
-  "img": "212_140Thumb2.jpg",
+  "img": "212-140Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6297,7 +6297,7 @@
   "set": "1992 Topps",
   "variant": "Gold",
   "full": "1992 Topps - Gold",
-  "img": "10273_491380Thumb4.jpg",
+  "img": "10273-491380Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6315,7 +6315,7 @@
   "set": "1992 Topps",
   "variant": "Gold Winners",
   "full": "1992 Topps - Gold Winners",
-  "img": "10274_492220Thumb2.jpg",
+  "img": "10274-492220Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6333,7 +6333,7 @@
   "set": "1992 Topps Kids",
   "variant": null,
   "full": "1992 Topps Kids",
-  "img": "10179_16115130Thumb2.jpg",
+  "img": "1992_Topps-Kids_4-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6342,7 +6342,7 @@
   "insert": false,
   "brand": "Topps",
   "brand_slug": "topps",
-  "img_back": null
+  "img_back": "1992_Topps-Kids_4-Bk-v2.jpg"
  },
  {
   "id": "1992-4a-1992-topps-kids",
@@ -6387,7 +6387,7 @@
   "set": "1992 Topps Micro",
   "variant": null,
   "full": "1992 Topps Micro",
-  "img": "10275_600614Thumb2.jpg",
+  "img": "1992_Topps-Micro_140-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6396,7 +6396,7 @@
   "insert": false,
   "brand": "Topps",
   "brand_slug": "topps",
-  "img_back": null
+  "img_back": "1992_Topps-Micro_140-Bk.jpg"
  },
  {
   "id": "1992-114-1992-triple-play",
@@ -6405,7 +6405,7 @@
   "set": "1992 Triple Play",
   "variant": null,
   "full": "1992 Triple Play",
-  "img": "214_96664RepThumb2.jpg",
+  "img": "1992_Triple-Play_114-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6414,7 +6414,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1992_Triple-Play_114-Bk.jpg"
  },
  {
   "id": "1992-8-1992-u-s-playing-card-co-chicago-cubs-playing-cards",
@@ -6423,7 +6423,7 @@
   "set": "1992 U.S. Playing Card Co. Chicago Cubs Playing Cards",
   "variant": null,
   "full": "1992 U.S. Playing Card Co. Chicago Cubs Playing Cards",
-  "img": "173007_11090837Thumb4.jpg",
+  "img": "1992_U.S.-Playing-Card-Co.-Chicago-Cubs-Playing-Cards_8\u2665-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6432,7 +6432,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1992_U.S.-Playing-Card-Co.-Chicago-Cubs-Playing-Cards_8\u2665-Bk.jpg"
  },
  {
   "id": "1992-k-1992-u-s-playing-card-co-chicago-cubs-playing-cards",
@@ -6441,7 +6441,7 @@
   "set": "1992 U.S. Playing Card Co. Chicago Cubs Playing Cards",
   "variant": null,
   "full": "1992 U.S. Playing Card Co. Chicago Cubs Playing Cards",
-  "img": "173007_11090855Thumb2.jpg",
+  "img": "1992_U.S.-Playing-Card-Co.-Chicago-Cubs-Playing-Cards_K\u2660-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6450,7 +6450,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1992_U.S.-Playing-Card-Co.-Chicago-Cubs-Playing-Cards_K\u2660-Bk.jpg"
  },
  {
   "id": "1992-175-1992-ultra",
@@ -6459,7 +6459,7 @@
   "set": "1992 Ultra",
   "variant": null,
   "full": "1992 Ultra",
-  "img": "216_97025RepThumb4.jpg",
+  "img": "1992_Ultra_175-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6468,7 +6468,7 @@
   "insert": false,
   "brand": "Ultra",
   "brand_slug": "ultra",
-  "img_back": null
+  "img_back": "1992_Ultra_175-Bk.jpg"
  },
  {
   "id": "1992-143-1992-upper-deck",
@@ -6477,7 +6477,7 @@
   "set": "1992 Upper Deck",
   "variant": null,
   "full": "1992 Upper Deck",
-  "img": "217_97643RepThumb4.jpg",
+  "img": "1992_Upper-Deck_143-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6486,7 +6486,7 @@
   "insert": false,
   "brand": "Upper Deck",
   "brand_slug": "upperdeck",
-  "img_back": null
+  "img_back": "1992_Upper-Deck_143-Bk.jpg"
  },
  {
   "id": "1992-143-1992-upper-deck-gold-hologram",
@@ -6495,7 +6495,7 @@
   "set": "1992 Upper Deck",
   "variant": "Gold Hologram",
   "full": "1992 Upper Deck - Gold Hologram",
-  "img": "10281_601421Thumb4.jpg",
+  "img": "1992_Upper-Deck-Gold-Hologram_143-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6504,7 +6504,7 @@
   "insert": false,
   "brand": "Upper Deck",
   "brand_slug": "upperdeck",
-  "img_back": null
+  "img_back": "1992_Upper-Deck-Gold-Hologram_143-Bk.jpg"
  },
  {
   "id": "1993-440-1993-bowman",
@@ -6513,7 +6513,7 @@
   "set": "1993 Bowman",
   "variant": null,
   "full": "1993 Bowman",
-  "img": "224_440Thumb4.jpg",
+  "img": "1993_Bowman_440-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6522,7 +6522,7 @@
   "insert": false,
   "brand": "Bowman",
   "brand_slug": "bowman",
-  "img_back": null
+  "img_back": "1993_Bowman_440-Bk.jpg"
  },
  {
   "id": "1993-nno-1993-cadaco-all-star-baseball-game-discs",
@@ -6531,7 +6531,7 @@
   "set": "1993 Cadaco All-Star Baseball Game Discs",
   "variant": null,
   "full": "1993 Cadaco All-Star Baseball Game Discs",
-  "img": "197629_12679438Thumb2.jpg",
+  "img": "1993_Cadaco-All-Star-Baseball-Game-Discs_NNO-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6540,7 +6540,7 @@
   "insert": true,
   "brand": "Star",
   "brand_slug": "star",
-  "img_back": null
+  "img_back": "1993_Cadaco-All-Star-Baseball-Game-Discs_NNO-Bk.jpg"
  },
  {
   "id": "1993-nno-1993-diamond-marks-bookmarkers",
@@ -6549,7 +6549,7 @@
   "set": "1993 Diamond Marks Bookmarkers",
   "variant": null,
   "full": "1993 Diamond Marks Bookmarkers",
-  "img": "48216_42Thumb2.jpg",
+  "img": "1993_Diamond-Marks-Bookmarkers_NNO-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6558,7 +6558,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1993_Diamond-Marks-Bookmarkers_NNO-Bk.jpg"
  },
  {
   "id": "1993-532-1993-donruss",
@@ -6567,7 +6567,7 @@
   "set": "1993 Donruss",
   "variant": null,
   "full": "1993 Donruss",
-  "img": "225_100532RepThumb2.jpg",
+  "img": "1993_Donruss_532-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6576,7 +6576,7 @@
   "insert": false,
   "brand": "Donruss",
   "brand_slug": "donruss",
-  "img_back": null
+  "img_back": "1993_Donruss_532-Bk.jpg"
  },
  {
   "id": "1993-73-1993-finest",
@@ -6585,7 +6585,7 @@
   "set": "1993 Finest",
   "variant": null,
   "full": "1993 Finest",
-  "img": "231_73Thumb2.jpg",
+  "img": "1993_Finest_73-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6594,7 +6594,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1993_Finest_73-Bk.jpg"
  },
  {
   "id": "1993-73-1993-finest-refractors",
@@ -6603,7 +6603,7 @@
   "set": "1993 Finest",
   "variant": "Refractors",
   "full": "1993 Finest - Refractors",
-  "img": "233_101223Thumb4.jpg",
+  "img": "1993_Finest-Refractors_73-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6612,7 +6612,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1993_Finest-Refractors_73-Bk.jpg"
  },
  {
   "id": "1993-14-1993-flair",
@@ -6621,7 +6621,7 @@
   "set": "1993 Flair",
   "variant": null,
   "full": "1993 Flair",
-  "img": "234_14Thumb2.jpg",
+  "img": "1993_Flair_14-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6630,7 +6630,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1993_Flair_14-Bk.jpg"
  },
  {
   "id": "1993-20-1993-fleer",
@@ -6639,7 +6639,7 @@
   "set": "1993 Fleer",
   "variant": null,
   "full": "1993 Fleer",
-  "img": "236_101770RepThumb4.jpg",
+  "img": "1993_Fleer_20-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6648,7 +6648,7 @@
   "insert": false,
   "brand": "Fleer",
   "brand_slug": "fleer",
-  "img_back": null
+  "img_back": "1993_Fleer_20-Bk.jpg"
  },
  {
   "id": "1993-24-1993-fleer-fruit-of-the-loom",
@@ -6657,7 +6657,7 @@
   "set": "1993 Fleer Fruit of the Loom",
   "variant": null,
   "full": "1993 Fleer Fruit of the Loom",
-  "img": "86266_6238314Thumb2.jpg",
+  "img": "1993_Fleer-Fruit-of-the-Loom_24-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6666,7 +6666,7 @@
   "insert": false,
   "brand": "Fleer",
   "brand_slug": "fleer",
-  "img_back": null
+  "img_back": "1993_Fleer-Fruit-of-the-Loom_24-Bk.jpg"
  },
  {
   "id": "1993-28-1993-humpty-dumpty",
@@ -6675,7 +6675,7 @@
   "set": "1993 Humpty Dumpty",
   "variant": null,
   "full": "1993 Humpty Dumpty",
-  "img": "85824_6190154Thumb4.jpg",
+  "img": "1993_Humpty-Dumpty_28-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6684,7 +6684,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1993_Humpty-Dumpty_28-Bk.jpg"
  },
  {
   "id": "1993-10-1993-leaf-gold-leaf-all-stars",
@@ -6693,7 +6693,7 @@
   "set": "1993 Leaf",
   "variant": "Gold Leaf All-Stars",
   "full": "1993 Leaf - Gold Leaf All-Stars",
-  "img": "257_529722RepThumb4.jpg",
+  "img": "1993_Leaf-Gold-Leaf-All-Stars_10-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6702,7 +6702,7 @@
   "insert": false,
   "brand": "Leaf",
   "brand_slug": "leaf",
-  "img_back": null
+  "img_back": "1993_Leaf-Gold-Leaf-All-Stars_10-Bk.jpg"
  },
  {
   "id": "1993-12-1993-leaf-gold-leaf-stars",
@@ -6711,7 +6711,7 @@
   "set": "1993 Leaf",
   "variant": "Gold Leaf Stars",
   "full": "1993 Leaf - Gold Leaf Stars",
-  "img": "253_529704Thumb4.jpg",
+  "img": "1993_Leaf-Gold-Leaf-Stars_12-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6720,7 +6720,7 @@
   "insert": false,
   "brand": "Leaf",
   "brand_slug": "leaf",
-  "img_back": null
+  "img_back": "1993_Leaf-Gold-Leaf-Stars_12-Bk.jpg"
  },
  {
   "id": "1993-198-1993-leaf",
@@ -6729,7 +6729,7 @@
   "set": "1993 Leaf",
   "variant": null,
   "full": "1993 Leaf",
-  "img": "250_102724RepThumb4.jpg",
+  "img": "1993_Leaf_198-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6738,7 +6738,7 @@
   "insert": false,
   "brand": "Leaf",
   "brand_slug": "leaf",
-  "img_back": null
+  "img_back": "1993_Leaf_198-Bk.jpg"
  },
  {
   "id": "1993-nno-1993-marathon-chicago-cubs-sga",
@@ -6747,7 +6747,7 @@
   "set": "1993 Marathon Chicago Cubs SGA",
   "variant": null,
   "full": "1993 Marathon Chicago Cubs SGA",
-  "img": "211507_13475308Thumb2.jpg",
+  "img": "1993_Marathon-Chicago-Cubs-SGA_NNO-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6756,7 +6756,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1993_Marathon-Chicago-Cubs-SGA_NNO-Bk.jpg"
  },
  {
   "id": "1993-nno-1993-metz-baking-company",
@@ -6765,7 +6765,7 @@
   "set": "1993 Metz Baking Company",
   "variant": null,
   "full": "1993 Metz Baking Company",
-  "img": "48214_529999Thumb2.jpg",
+  "img": "1993_Metz-Baking-Company_NNO-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6774,7 +6774,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1993_Metz-Baking-Company_NNO-Bk.jpg"
  },
  {
   "id": "1993-86-1993-o-pee-chee",
@@ -6783,7 +6783,7 @@
   "set": "1993 O-Pee-Chee",
   "variant": null,
   "full": "1993 O-Pee-Chee",
-  "img": "8718_86Thumb4.jpg",
+  "img": "1993_O-Pee-Chee_86-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6792,7 +6792,7 @@
   "insert": false,
   "brand": "O-Pee-Chee",
   "brand_slug": "opeechee",
-  "img_back": null
+  "img_back": "1993_O-Pee-Chee_86-Bk.jpg"
  },
  {
   "id": "1993-27-1993-pacific-spanish-jugadores-calientes-de-1993",
@@ -6801,7 +6801,7 @@
   "set": "1993 Pacific Spanish",
   "variant": "Jugadores Calientes de 1993",
   "full": "1993 Pacific Spanish - Jugadores Calientes de 1993",
-  "img": "59740_3433141Thumb2.jpg",
+  "img": "1993_Pacific-Spanish-Jugadores-Calientes-de-1993_27-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6810,7 +6810,7 @@
   "insert": false,
   "brand": "Pacific",
   "brand_slug": "pacific",
-  "img_back": null
+  "img_back": "1993_Pacific-Spanish-Jugadores-Calientes-de-1993_27-Bk.jpg"
  },
  {
   "id": "1993-58-1993-pacific-spanish",
@@ -6819,7 +6819,7 @@
   "set": "1993 Pacific Spanish",
   "variant": null,
   "full": "1993 Pacific Spanish",
-  "img": "59738_58Thumb2.jpg",
+  "img": "1993_Pacific-Spanish_58-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6828,7 +6828,7 @@
   "insert": false,
   "brand": "Pacific",
   "brand_slug": "pacific",
-  "img_back": null
+  "img_back": "1993_Pacific-Spanish_58-Bk.jpg"
  },
  {
   "id": "1993-27-1993-pacific-spanish-jugadores-cali",
@@ -6855,7 +6855,7 @@
   "set": "1993 Panini Stickers",
   "variant": null,
   "full": "1993 Panini Stickers",
-  "img": "8824_203Thumb2.jpg",
+  "img": "1993_Panini-Stickers_203-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6864,7 +6864,7 @@
   "insert": false,
   "brand": "Panini",
   "brand_slug": "panini",
-  "img_back": null
+  "img_back": "1993_Panini-Stickers_203-Bk.jpg"
  },
  {
   "id": "1993-34-1993-pinnacle",
@@ -6873,7 +6873,7 @@
   "set": "1993 Pinnacle",
   "variant": null,
   "full": "1993 Pinnacle",
-  "img": "259_34Thumb4.jpg",
+  "img": "1993_Pinnacle_34-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6882,7 +6882,7 @@
   "insert": false,
   "brand": "Pinnacle",
   "brand_slug": "pinnacle",
-  "img_back": null
+  "img_back": "1993_Pinnacle_34-Bk.jpg"
  },
  {
   "id": "1993-630-1993-r-n-china-topps",
@@ -6909,7 +6909,7 @@
   "set": "1993 Red Foley's Best Baseball Book Ever Stickers",
   "variant": null,
   "full": "1993 Red Foley's Best Baseball Book Ever Stickers",
-  "img": "48199_525972Thumb2.jpg",
+  "img": "1993_Red-Foley's-Best-Baseball-Book-Ever-Stickers_33-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6918,7 +6918,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1993_Red-Foley's-Best-Baseball-Book-Ever-Stickers_33-Bk.jpg"
  },
  {
   "id": "1993-12-1993-score-select-stat-leaders",
@@ -6927,7 +6927,7 @@
   "set": "1993 Score",
   "variant": "Select Stat Leaders",
   "full": "1993 Score - Select Stat Leaders",
-  "img": "276_528854RepThumb2.jpg",
+  "img": "1993_Score-Select-Stat-Leaders_12-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6936,7 +6936,7 @@
   "insert": true,
   "brand": "Score",
   "brand_slug": "score",
-  "img_back": null
+  "img_back": "1993_Score-Select-Stat-Leaders_12-Bk.jpg"
  },
  {
   "id": "1993-50-1993-score",
@@ -6945,7 +6945,7 @@
   "set": "1993 Score",
   "variant": null,
   "full": "1993 Score",
-  "img": "265_104475RepThumb4.jpg",
+  "img": "1993_Score_50-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6954,7 +6954,7 @@
   "insert": false,
   "brand": "Score",
   "brand_slug": "score",
-  "img_back": null
+  "img_back": "1993_Score_50-Bk.jpg"
  },
  {
   "id": "1993-73-1993-select",
@@ -6963,7 +6963,7 @@
   "set": "1993 Select",
   "variant": null,
   "full": "1993 Select",
-  "img": "269_105198RepThumb4.jpg",
+  "img": "1993_Select_73-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -6972,7 +6972,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1993_Select_73-Bk.jpg"
  },
  {
   "id": "1993-89-1993-sports-collectors-digest-sports-card-pocket-price-guide-panels",
@@ -6999,7 +6999,7 @@
   "set": "1993 Sports Collectors Digest Sports Card Pocket Price Guide",
   "variant": "Panels",
   "full": "1993 Sports Collectors Digest Sports Card Pocket Price Guide - Panels",
-  "img": "280441_17088115Thumb2.jpg",
+  "img": "1993_Sports-Collectors-Digest-Sports-Card-Pocket-Price-Guide-Panels_89-96-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7008,7 +7008,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1993_Sports-Collectors-Digest-Sports-Card-Pocket-Price-Guide-Panels_89-96-Bk.jpg"
  },
  {
   "id": "1993-419-1993-stadium-club",
@@ -7017,7 +7017,7 @@
   "set": "1993 Stadium Club",
   "variant": null,
   "full": "1993 Stadium Club",
-  "img": "280_106495RepThumb4.jpg",
+  "img": "1993_Stadium-Club_419-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7026,7 +7026,7 @@
   "insert": false,
   "brand": "Stadium Club",
   "brand_slug": "stadiumclub",
-  "img_back": null
+  "img_back": "1993_Stadium-Club_419-Bk.jpg"
  },
  {
   "id": "1993-419-1993-stadium-club-first-day-production",
@@ -7035,7 +7035,7 @@
   "set": "1993 Stadium Club",
   "variant": "First Day Production",
   "full": "1993 Stadium Club - First Day Production",
-  "img": "10322_419Thumb4.jpg",
+  "img": "1993_Stadium-Club-First-Day-Production_419-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7044,7 +7044,7 @@
   "insert": false,
   "brand": "Stadium Club",
   "brand_slug": "stadiumclub",
-  "img_back": null
+  "img_back": "1993_Stadium-Club-First-Day-Production_419-Bk.jpg"
  },
  {
   "id": "1993-419-1993-stadium-club-members-only",
@@ -7053,7 +7053,7 @@
   "set": "1993 Stadium Club",
   "variant": "Members Only",
   "full": "1993 Stadium Club - Members Only",
-  "img": "10324_419Thumb4.jpg",
+  "img": "1993_Stadium-Club-Members-Only_419-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7062,7 +7062,7 @@
   "insert": false,
   "brand": "Stadium Club",
   "brand_slug": "stadiumclub",
-  "img_back": null
+  "img_back": "1993_Stadium-Club-Members-Only_419-Bk.jpg"
  },
  {
   "id": "1993-nno-1993-stadium-club-master-photos-series-2-5x7",
@@ -7071,7 +7071,7 @@
   "set": "1993 Stadium Club",
   "variant": "Master Photos (Series 2) 5x7",
   "full": "1993 Stadium Club - Master Photos (Series 2) 5x7",
-  "img": "284_539364Thumb2.jpg",
+  "img": "1993_Stadium-Club-Master-Photos-(Series-2)-5x7_NNO-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7080,7 +7080,7 @@
   "insert": false,
   "brand": "Stadium Club",
   "brand_slug": "stadiumclub",
-  "img_back": null
+  "img_back": "1993_Stadium-Club-Master-Photos-(Series-2)-5x7_NNO-Bk.jpg"
  },
  {
   "id": "1993-nno-1993-stadium-club-master-photos-members-only-5x7",
@@ -7089,7 +7089,7 @@
   "set": "1993 Stadium Club",
   "variant": "Master Photos Members Only 5x7",
   "full": "1993 Stadium Club - Master Photos Members Only 5x7",
-  "img": "130669_8689321Thumb2.jpg",
+  "img": "1993_Stadium-Club-Master-Photos-Members-Only-5x7_NNO-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7098,7 +7098,7 @@
   "insert": false,
   "brand": "Stadium Club",
   "brand_slug": "stadiumclub",
-  "img_back": null
+  "img_back": "1993_Stadium-Club-Master-Photos-Members-Only-5x7_NNO-Bk.jpg"
  },
  {
   "id": "1993-nno-1993-stadium-club-master-photos-redemptions-series-2",
@@ -7107,7 +7107,7 @@
   "set": "1993 Stadium Club",
   "variant": "Master Photos Redemptions (Series 2)",
   "full": "1993 Stadium Club - Master Photos Redemptions (Series 2)",
-  "img": "338806_587695Thumb4.jpg",
+  "img": "1993_Stadium-Club-Master-Photos-Redemptions-(Series-2)_NNO-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7116,7 +7116,7 @@
   "insert": false,
   "brand": "Stadium Club",
   "brand_slug": "stadiumclub",
-  "img_back": null
+  "img_back": "1993_Stadium-Club-Master-Photos-Redemptions-(Series-2)_NNO-Bk.jpg"
  },
  {
   "id": "1993-8-1993-stadium-club-chicago-cubs",
@@ -7125,7 +7125,7 @@
   "set": "1993 Stadium Club Chicago Cubs",
   "variant": null,
   "full": "1993 Stadium Club Chicago Cubs",
-  "img": "56665_8Thumb4.jpg",
+  "img": "1993_Stadium-Club-Chicago-Cubs_8-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7134,7 +7134,7 @@
   "insert": false,
   "brand": "Stadium Club",
   "brand_slug": "stadiumclub",
-  "img_back": null
+  "img_back": "1993_Stadium-Club-Chicago-Cubs_8-Bk.jpg"
  },
  {
   "id": "1993-419-1993-stadium-club-first-day-product",
@@ -7215,7 +7215,7 @@
   "set": "1993 Stadium Club Members Only",
   "variant": null,
   "full": "1993 Stadium Club Members Only",
-  "img": "61415_6863879Thumb4.jpg",
+  "img": "1993_Stadium-Club-Members-Only_NNO-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7224,7 +7224,7 @@
   "insert": false,
   "brand": "Stadium Club",
   "brand_slug": "stadiumclub",
-  "img_back": null
+  "img_back": "1993_Stadium-Club-Members-Only_NNO-Bk.jpg"
  },
  {
   "id": "1993-42-1993-studio",
@@ -7233,7 +7233,7 @@
   "set": "1993 Studio",
   "variant": null,
   "full": "1993 Studio",
-  "img": "286_42Thumb2.jpg",
+  "img": "1993_Studio_42-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7242,7 +7242,7 @@
   "insert": false,
   "brand": "Studio",
   "brand_slug": "studio",
-  "img_back": null
+  "img_back": "1993_Studio_42-Bk.jpg"
  },
  {
   "id": "1993-5-1993-studio-heritage",
@@ -7251,7 +7251,7 @@
   "set": "1993 Studio",
   "variant": "Heritage",
   "full": "1993 Studio - Heritage",
-  "img": "288_471275Thumb4.jpg",
+  "img": "1993_Studio-Heritage_5-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7260,7 +7260,7 @@
   "insert": false,
   "brand": "Studio",
   "brand_slug": "studio",
-  "img_back": null
+  "img_back": "1993_Studio-Heritage_5-Bk.jpg"
  },
  {
   "id": "1993-8-1993-studio-superstars-on-canvas",
@@ -7269,7 +7269,7 @@
   "set": "1993 Studio",
   "variant": "Superstars on Canvas",
   "full": "1993 Studio - Superstars on Canvas",
-  "img": "290_603523RepThumb4.jpg",
+  "img": "1993_Studio-Superstars-on-Canvas_8-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7278,7 +7278,7 @@
   "insert": false,
   "brand": "Studio",
   "brand_slug": "studio",
-  "img_back": null
+  "img_back": "1993_Studio-Superstars-on-Canvas_8-Bk.jpg"
  },
  {
   "id": "1993-630-1993-topps",
@@ -7287,7 +7287,7 @@
   "set": "1993 Topps",
   "variant": null,
   "full": "1993 Topps",
-  "img": "291_108005RepThumb4.jpg",
+  "img": "1993_Topps_630-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7296,7 +7296,7 @@
   "insert": false,
   "brand": "Topps",
   "brand_slug": "topps",
-  "img_back": null
+  "img_back": "1993_Topps_630-Bk.jpg"
  },
  {
   "id": "1993-630-1993-topps-gold",
@@ -7305,7 +7305,7 @@
   "set": "1993 Topps",
   "variant": "Gold",
   "full": "1993 Topps - Gold",
-  "img": "10327_500915RepThumb4.jpg",
+  "img": "1993_Topps-Gold_630-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7314,7 +7314,7 @@
   "insert": false,
   "brand": "Topps",
   "brand_slug": "topps",
-  "img_back": null
+  "img_back": "1993_Topps-Gold_630-Bk.jpg"
  },
  {
   "id": "1993-630-1993-topps-inaugural-marlins",
@@ -7323,7 +7323,7 @@
   "set": "1993 Topps",
   "variant": "Inaugural Marlins",
   "full": "1993 Topps - Inaugural Marlins",
-  "img": "10328_501790Thumb4.jpg",
+  "img": "1993_Topps-Inaugural-Marlins_630-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7332,7 +7332,7 @@
   "insert": false,
   "brand": "Topps",
   "brand_slug": "topps",
-  "img_back": null
+  "img_back": "1993_Topps-Inaugural-Marlins_630-Bk.jpg"
  },
  {
   "id": "1993-630-1993-topps-inaugural-rockies",
@@ -7341,7 +7341,7 @@
   "set": "1993 Topps",
   "variant": "Inaugural Rockies",
   "full": "1993 Topps - Inaugural Rockies",
-  "img": "10329_502665Thumb4.jpg",
+  "img": "1993_Topps-Inaugural-Rockies_630-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7350,7 +7350,7 @@
   "insert": false,
   "brand": "Topps",
   "brand_slug": "topps",
-  "img_back": null
+  "img_back": "1993_Topps-Inaugural-Rockies_630-Bk.jpg"
  },
  {
   "id": "1993-630-1993-topps-micro",
@@ -7359,7 +7359,7 @@
   "set": "1993 Topps Micro",
   "variant": null,
   "full": "1993 Topps Micro",
-  "img": "10330_3442049Thumb4.jpg",
+  "img": "1993_Topps-Micro_630-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7368,7 +7368,7 @@
   "insert": false,
   "brand": "Topps",
   "brand_slug": "topps",
-  "img_back": null
+  "img_back": "1993_Topps-Micro_630-Bk.jpg"
  },
  {
   "id": "1993-11-1993-triple-play",
@@ -7377,7 +7377,7 @@
   "set": "1993 Triple Play",
   "variant": null,
   "full": "1993 Triple Play",
-  "img": "294_108411RepThumb2.jpg",
+  "img": "1993_Triple-Play_11-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7386,7 +7386,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1993_Triple-Play_11-Bk.jpg"
  },
  {
   "id": "1993-11-1993-triple-play-previews",
@@ -7395,7 +7395,7 @@
   "set": "1993 Triple Play",
   "variant": "Previews",
   "full": "1993 Triple Play - Previews",
-  "img": "195479_12518337Thumb2.jpg",
+  "img": "1993_Triple-Play-Previews_11-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7404,7 +7404,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1993_Triple-Play-Previews_11-Bk.jpg"
  },
  {
   "id": "1993-211-1993-triple-play",
@@ -7413,7 +7413,7 @@
   "set": "1993 Triple Play",
   "variant": null,
   "full": "1993 Triple Play",
-  "img": "294_108612RepThumb2.jpg",
+  "img": "1993_Triple-Play_211-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7422,7 +7422,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1993_Triple-Play_211-Bk.jpg"
  },
  {
   "id": "1993-18-1993-ultra",
@@ -7431,7 +7431,7 @@
   "set": "1993 Ultra",
   "variant": null,
   "full": "1993 Ultra",
-  "img": null,
+  "img": "1993_Ultra_18-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7440,7 +7440,7 @@
   "insert": false,
   "brand": "Ultra",
   "brand_slug": "ultra",
-  "img_back": null
+  "img_back": "1993_Ultra_18-Bk.jpg"
  },
  {
   "id": "1993-3-1993-ultra-award-winners",
@@ -7449,7 +7449,7 @@
   "set": "1993 Ultra Award Winners",
   "variant": null,
   "full": "1993 Ultra Award Winners",
-  "img": null,
+  "img": "1993_Ultra-Award-Winners_3-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7458,7 +7458,7 @@
   "insert": false,
   "brand": "Ultra",
   "brand_slug": "ultra",
-  "img_back": null
+  "img_back": "1993_Ultra-Award-Winners_3-Bk.jpg"
  },
  {
   "id": "1993-573-1993-upper-deck",
@@ -7467,7 +7467,7 @@
   "set": "1993 Upper Deck",
   "variant": null,
   "full": "1993 Upper Deck",
-  "img": null,
+  "img": "1993_Upper-Deck_573-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7476,7 +7476,7 @@
   "insert": false,
   "brand": "Upper Deck",
   "brand_slug": "upperdeck",
-  "img_back": null
+  "img_back": "1993_Upper-Deck_573-Bk.jpg"
  },
  {
   "id": "1993-81-1993-upper-deck-fun-pack",
@@ -7485,7 +7485,7 @@
   "set": "1993 Upper Deck Fun Pack",
   "variant": null,
   "full": "1993 Upper Deck Fun Pack",
-  "img": null,
+  "img": "1993_Upper-Deck-Fun-Pack_81-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7494,7 +7494,7 @@
   "insert": false,
   "brand": "Upper Deck",
   "brand_slug": "upperdeck",
-  "img_back": null
+  "img_back": "1993_Upper-Deck-Fun-Pack_81-Bk.jpg"
  },
  {
   "id": "1993-573-1993-upper-deck-gold-hologram",
@@ -7503,7 +7503,7 @@
   "set": "1993 Upper Deck Gold Hologram",
   "variant": null,
   "full": "1993 Upper Deck Gold Hologram",
-  "img": null,
+  "img": "1993_Upper-Deck-Gold-Hologram_573-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7512,7 +7512,7 @@
   "insert": false,
   "brand": "Upper Deck",
   "brand_slug": "upperdeck",
-  "img_back": null
+  "img_back": "1993_Upper-Deck-Gold-Hologram_573-Bk.jpg"
  },
  {
   "id": "1993-8-1993-upper-deck-iooss-collection-3x-wi",
@@ -7539,7 +7539,7 @@
   "set": "1993 Upper Deck Iooss Collection WI",
   "variant": null,
   "full": "1993 Upper Deck Iooss Collection WI",
-  "img": null,
+  "img": "1993_Upper-Deck-Iooss-Collection_WI-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7548,7 +7548,7 @@
   "insert": false,
   "brand": "Upper Deck",
   "brand_slug": "upperdeck",
-  "img_back": null
+  "img_back": "1993_Upper-Deck-Iooss-Collection_WI-Bk.jpg"
  },
  {
   "id": "1994-7-1994-bicycle-aces-playing-cards",
@@ -7557,7 +7557,7 @@
   "set": "1994 Bicycle Aces Playing Cards",
   "variant": null,
   "full": "1994 Bicycle Aces Playing Cards",
-  "img": "73201_7DThumb2.jpg",
+  "img": "1994_Bicycle-Aces-Playing-Cards_7\u2666-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7566,7 +7566,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1994_Bicycle-Aces-Playing-Cards_7\u2666-Bk.jpg"
  },
  {
   "id": "1994-410-1994-bowman",
@@ -7575,7 +7575,7 @@
   "set": "1994 Bowman",
   "variant": null,
   "full": "1994 Bowman",
-  "img": "319_111510Thumb4.jpg",
+  "img": "1994_Bowman_410-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7584,7 +7584,7 @@
   "insert": false,
   "brand": "Bowman",
   "brand_slug": "bowman",
-  "img_back": null
+  "img_back": "1994_Bowman_410-Bk.jpg"
  },
  {
   "id": "1994-9-1994-bowman-s-best",
@@ -7593,7 +7593,7 @@
   "set": "1994 Bowman's Best",
   "variant": null,
   "full": "1994 Bowman's Best",
-  "img": "320_111924Thumb2.jpg",
+  "img": "1994_Bowman's-Best_9-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7602,7 +7602,7 @@
   "insert": false,
   "brand": "Bowman",
   "brand_slug": "bowman",
-  "img_back": null
+  "img_back": "1994_Bowman's-Best_9-Bk.jpg"
  },
  {
   "id": "1994-9-1994-bowman-s-best-refractors",
@@ -7611,7 +7611,7 @@
   "set": "1994 Bowman's Best",
   "variant": "Refractors",
   "full": "1994 Bowman's Best - Refractors",
-  "img": "321_112174Thumb2.jpg",
+  "img": "1994_Bowman's-Best-Refractors_9-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7620,7 +7620,7 @@
   "insert": false,
   "brand": "Bowman",
   "brand_slug": "bowman",
-  "img_back": null
+  "img_back": "1994_Bowman's-Best-Refractors_9-Bk.jpg"
  },
  {
   "id": "1994-114-1994-collector-s-choice",
@@ -7629,7 +7629,7 @@
   "set": "1994 Collector's Choice",
   "variant": null,
   "full": "1994 Collector's Choice",
-  "img": "322_112939RepThumb4.jpg",
+  "img": "1994_Collector's-Choice_114-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7638,7 +7638,7 @@
   "insert": false,
   "brand": "Collectors Choice",
   "brand_slug": "collectorschoice",
-  "img_back": null
+  "img_back": "1994_Collector's-Choice_114-Bk.jpg"
  },
  {
   "id": "1994-114-1994-collector-s-choice-gold-signature",
@@ -7647,7 +7647,7 @@
   "set": "1994 Collector's Choice",
   "variant": "Gold Signature",
   "full": "1994 Collector's Choice - Gold Signature",
-  "img": "10347_454054Thumb4.jpg",
+  "img": "1994_Collector's-Choice-Gold-Signature_114-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": true,
@@ -7656,7 +7656,7 @@
   "insert": false,
   "brand": "Collectors Choice",
   "brand_slug": "collectorschoice",
-  "img_back": null
+  "img_back": "1994_Collector's-Choice-Gold-Signature_114-Bk.jpg"
  },
  {
   "id": "1994-114-1994-collector-s-choice-silver-signature",
@@ -7665,7 +7665,7 @@
   "set": "1994 Collector's Choice",
   "variant": "Silver Signature",
   "full": "1994 Collector's Choice - Silver Signature",
-  "img": "10313_454774RepThumb4.jpg",
+  "img": "1994_Collector's-Choice-Silver-Signature_114-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": true,
@@ -7674,7 +7674,7 @@
   "insert": false,
   "brand": "Collectors Choice",
   "brand_slug": "collectorschoice",
-  "img_back": null
+  "img_back": "1994_Collector's-Choice-Silver-Signature_114-Bk.jpg"
  },
  {
   "id": "1994-114-1994-collector-s-choice-gold-signat",
@@ -7719,7 +7719,7 @@
   "set": "1994 Donruss",
   "variant": "MVPs",
   "full": "1994 Donruss - MVPs",
-  "img": "330_443462Thumb2.jpg",
+  "img": "1994_Donruss-MVPs_2-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7728,7 +7728,7 @@
   "insert": false,
   "brand": "Donruss",
   "brand_slug": "donruss",
-  "img_back": null
+  "img_back": "1994_Donruss-MVPs_2-Bk.jpg"
  },
  {
   "id": "1994-358-1994-donruss",
@@ -7737,7 +7737,7 @@
   "set": "1994 Donruss",
   "variant": null,
   "full": "1994 Donruss",
-  "img": "324_358Thumb2.jpg",
+  "img": "1994_Donruss_358-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7746,7 +7746,7 @@
   "insert": false,
   "brand": "Donruss",
   "brand_slug": "donruss",
-  "img_back": null
+  "img_back": "1994_Donruss_358-Bk.jpg"
  },
  {
   "id": "1994-78-1994-donruss-special-edition",
@@ -7755,7 +7755,7 @@
   "set": "1994 Donruss",
   "variant": "Special Edition",
   "full": "1994 Donruss - Special Edition",
-  "img": "331_443613Thumb2.jpg",
+  "img": "1994_Donruss-Special-Edition_78-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7764,7 +7764,7 @@
   "insert": false,
   "brand": "Donruss",
   "brand_slug": "donruss",
-  "img_back": null
+  "img_back": "1994_Donruss-Special-Edition_78-Bk.jpg"
  },
  {
   "id": "1994-390-1994-finest",
@@ -7773,7 +7773,7 @@
   "set": "1994 Finest",
   "variant": null,
   "full": "1994 Finest",
-  "img": "333_390Thumb4.jpg",
+  "img": "1994_Finest_390-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7782,7 +7782,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1994_Finest_390-Bk.jpg"
  },
  {
   "id": "1994-390-1994-finest-refractors",
@@ -7791,7 +7791,7 @@
   "set": "1994 Finest",
   "variant": "Refractors",
   "full": "1994 Finest - Refractors",
-  "img": "334_115180Thumb2.jpg",
+  "img": "1994_Finest-Refractors_390-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7800,7 +7800,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1994_Finest-Refractors_390-Bk.jpg"
  },
  {
   "id": "1994-360-1994-flair",
@@ -7809,7 +7809,7 @@
   "set": "1994 Flair",
   "variant": null,
   "full": "1994 Flair",
-  "img": "335_115640Thumb4.jpg",
+  "img": "1994_Flair_360-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7818,7 +7818,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1994_Flair_360-Bk.jpg"
  },
  {
   "id": "1994-37-1994-fleer-all-stars",
@@ -7827,7 +7827,7 @@
   "set": "1994 Fleer",
   "variant": "All-Stars",
   "full": "1994 Fleer - All-Stars",
-  "img": "344_442417Thumb2.jpg",
+  "img": "1994_Fleer-All-Stars_37-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7836,7 +7836,7 @@
   "insert": false,
   "brand": "Fleer",
   "brand_slug": "fleer",
-  "img_back": null
+  "img_back": "1994_Fleer-All-Stars_37-Bk.jpg"
  },
  {
   "id": "1994-383-1994-fleer",
@@ -7845,7 +7845,7 @@
   "set": "1994 Fleer",
   "variant": null,
   "full": "1994 Fleer",
-  "img": "342_116163RepThumb2.jpg",
+  "img": "1994_Fleer_383-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7854,7 +7854,7 @@
   "insert": false,
   "brand": "Fleer",
   "brand_slug": "fleer",
-  "img_back": null
+  "img_back": "1994_Fleer_383-Bk.jpg"
  },
  {
   "id": "1994-13-1994-fleer-extra-bases-game-breakers",
@@ -7863,7 +7863,7 @@
   "set": "1994 Fleer Extra Bases",
   "variant": "Game Breakers",
   "full": "1994 Fleer Extra Bases - Game Breakers",
-  "img": "358_604071Thumb2.jpg",
+  "img": "1994_Fleer-Extra-Bases-Game-Breakers_13-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7872,7 +7872,7 @@
   "insert": false,
   "brand": "Fleer",
   "brand_slug": "fleer",
-  "img_back": null
+  "img_back": "1994_Fleer-Extra-Bases-Game-Breakers_13-Bk.jpg"
  },
  {
   "id": "1994-218-1994-fleer-extra-bases",
@@ -7881,7 +7881,7 @@
   "set": "1994 Fleer Extra Bases",
   "variant": null,
   "full": "1994 Fleer Extra Bases",
-  "img": "357_218Thumb4.jpg",
+  "img": "1994_Fleer-Extra-Bases_218-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7890,7 +7890,7 @@
   "insert": false,
   "brand": "Fleer",
   "brand_slug": "fleer",
-  "img_back": null
+  "img_back": "1994_Fleer-Extra-Bases_218-Bk.jpg"
  },
  {
   "id": "1994-13-1994-fleer-extra-bases-game-breaker",
@@ -7917,7 +7917,7 @@
   "set": "1994 Kenner Starting Lineup Cards",
   "variant": null,
   "full": "1994 Kenner Starting Lineup Cards",
-  "img": "67773_4960209Thumb2.jpg",
+  "img": "1994_Kenner-Starting-Lineup-Cards_510691-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7926,7 +7926,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1994_Kenner-Starting-Lineup-Cards_510691-Bk.jpg"
  },
  {
   "id": "1994-23-1994-kraft-singles-superstars",
@@ -7935,7 +7935,7 @@
   "set": "1994 Kraft Singles Superstars",
   "variant": null,
   "full": "1994 Kraft Singles Superstars",
-  "img": "10194_444323Thumb4.jpg",
+  "img": "1994_Kraft-Singles-Superstars_23-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7944,7 +7944,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1994_Kraft-Singles-Superstars_23-Bk.jpg"
  },
  {
   "id": "1994-43-1994-leaf",
@@ -7953,7 +7953,7 @@
   "set": "1994 Leaf",
   "variant": null,
   "full": "1994 Leaf",
-  "img": "363_117343RepThumb4.jpg",
+  "img": "1994_Leaf_43-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7962,7 +7962,7 @@
   "insert": false,
   "brand": "Leaf",
   "brand_slug": "leaf",
-  "img_back": null
+  "img_back": "1994_Leaf_43-Bk.jpg"
  },
  {
   "id": "1994-6-1994-leaf-gamers",
@@ -7971,7 +7971,7 @@
   "set": "1994 Leaf",
   "variant": "Gamers",
   "full": "1994 Leaf - Gamers",
-  "img": "366_451506Thumb4.jpg",
+  "img": "1994_Leaf-Gamers_6-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7980,7 +7980,7 @@
   "insert": false,
   "brand": "Leaf",
   "brand_slug": "leaf",
-  "img_back": null
+  "img_back": "1994_Leaf-Gamers_6-Bk.jpg"
  },
  {
   "id": "1994-90-1994-leaf-limited",
@@ -7989,7 +7989,7 @@
   "set": "1994 Leaf Limited",
   "variant": null,
   "full": "1994 Leaf Limited",
-  "img": "373_117880Thumb2.jpg",
+  "img": "1994_Leaf-Limited_90-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -7998,7 +7998,7 @@
   "insert": false,
   "brand": "Leaf",
   "brand_slug": "leaf",
-  "img_back": null
+  "img_back": "1994_Leaf-Limited_90-Bk.jpg"
  },
  {
   "id": "1994-146-1994-o-pee-chee",
@@ -8007,7 +8007,7 @@
   "set": "1994 O-Pee-Chee",
   "variant": null,
   "full": "1994 O-Pee-Chee",
-  "img": "377_118146RepThumb4.jpg",
+  "img": "1994_O-Pee-Chee_146-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -8016,7 +8016,7 @@
   "insert": false,
   "brand": "O-Pee-Chee",
   "brand_slug": "opeechee",
-  "img_back": null
+  "img_back": "1994_O-Pee-Chee_146-Bk.jpg"
  },
  {
   "id": "1994-25-1994-pacific-silver-prisms",
@@ -8025,7 +8025,7 @@
   "set": "1994 Pacific",
   "variant": "Silver Prisms",
   "full": "1994 Pacific - Silver Prisms",
-  "img": "84863_6035596Thumb2.jpg",
+  "img": "1994_Pacific-Silver-Prisms_25-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -8034,7 +8034,7 @@
   "insert": false,
   "brand": "Pacific",
   "brand_slug": "pacific",
-  "img_back": null
+  "img_back": "1994_Pacific-Silver-Prisms_25-Bk.jpg"
  },
  {
   "id": "1994-25-1994-pacific-silver-prisms-circular",
@@ -8043,7 +8043,7 @@
   "set": "1994 Pacific",
   "variant": "Silver Prisms Circular",
   "full": "1994 Pacific - Silver Prisms Circular",
-  "img": "10192_539913Thumb2.jpg",
+  "img": "1994_Pacific-Silver-Prisms-Circular_25-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -8052,7 +8052,7 @@
   "insert": false,
   "brand": "Pacific",
   "brand_slug": "pacific",
-  "img_back": null
+  "img_back": "1994_Pacific-Silver-Prisms-Circular_25-Bk.jpg"
  },
  {
   "id": "1994-98-1994-pacific",
@@ -8061,7 +8061,7 @@
   "set": "1994 Pacific",
   "variant": null,
   "full": "1994 Pacific",
-  "img": "380_98Thumb2.jpg",
+  "img": "1994_Pacific_98-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -8070,7 +8070,7 @@
   "insert": false,
   "brand": "Pacific",
   "brand_slug": "pacific",
-  "img_back": null
+  "img_back": "1994_Pacific_98-Bk.jpg"
  },
  {
   "id": "1994-153-1994-panini-stickers",
@@ -8079,7 +8079,7 @@
   "set": "1994 Panini Stickers",
   "variant": null,
   "full": "1994 Panini Stickers",
-  "img": "8825_446013Thumb2.jpg",
+  "img": "1994_Panini-Stickers_153-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -8088,7 +8088,7 @@
   "insert": false,
   "brand": "Panini",
   "brand_slug": "panini",
-  "img_back": null
+  "img_back": "1994_Panini-Stickers_153-Bk.jpg"
  },
  {
   "id": "1994-336-1994-pinnacle",
@@ -8097,7 +8097,7 @@
   "set": "1994 Pinnacle",
   "variant": null,
   "full": "1994 Pinnacle",
-  "img": "384_336Thumb4.jpg",
+  "img": "1994_Pinnacle_336-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -8106,7 +8106,7 @@
   "insert": false,
   "brand": "Pinnacle",
   "brand_slug": "pinnacle",
-  "img_back": null
+  "img_back": "1994_Pinnacle_336-Bk.jpg"
  },
  {
   "id": "1994-336-1994-pinnacle-artist-s-proofs",
@@ -8115,7 +8115,7 @@
   "set": "1994 Pinnacle",
   "variant": "Artist's Proofs",
   "full": "1994 Pinnacle - Artist's Proofs",
-  "img": "10340_540367Thumb4.jpg",
+  "img": "1994_Pinnacle-Artist's-Proofs_336-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -8124,7 +8124,7 @@
   "insert": false,
   "brand": "Pinnacle",
   "brand_slug": "pinnacle",
-  "img_back": null
+  "img_back": "1994_Pinnacle-Artist's-Proofs_336-Bk.jpg"
  },
  {
   "id": "1994-336-1994-pinnacle-museum-collection",
@@ -8133,7 +8133,7 @@
   "set": "1994 Pinnacle",
   "variant": "Museum Collection",
   "full": "1994 Pinnacle - Museum Collection",
-  "img": "10339_455926Thumb4.jpg",
+  "img": "1994_Pinnacle-Museum-Collection_336-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -8142,7 +8142,7 @@
   "insert": false,
   "brand": "Pinnacle",
   "brand_slug": "pinnacle",
-  "img_back": null
+  "img_back": "1994_Pinnacle-Museum-Collection_336-Bk.jpg"
  },
  {
   "id": "1994-rc34-1994-pinnacle-the-run-creators",
@@ -8151,7 +8151,7 @@
   "set": "1994 Pinnacle",
   "variant": "The Run Creators",
   "full": "1994 Pinnacle - The Run Creators",
-  "img": "386_449484Thumb2.jpg",
+  "img": "1994_Pinnacle-The-Run-Creators_RC34-Fr-v2.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -8160,7 +8160,7 @@
   "insert": false,
   "brand": "Pinnacle",
   "brand_slug": "pinnacle",
-  "img_back": null
+  "img_back": "1994_Pinnacle-The-Run-Creators_RC34-Bk.jpg"
  },
  {
   "id": "1994-14-1994-post",
@@ -8169,7 +8169,7 @@
   "set": "1994 Post",
   "variant": null,
   "full": "1994 Post",
-  "img": "10080_437709RepThumb4.jpg",
+  "img": "1994_Post_14-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -8178,7 +8178,7 @@
   "insert": false,
   "brand": "Post",
   "brand_slug": "post",
-  "img_back": null
+  "img_back": "1994_Post_14-Bk.jpg"
  },
  {
   "id": "1994-nno-1994-red-foley-s-best-baseball-book-ever",
@@ -8187,7 +8187,7 @@
   "set": "1994 Red Foley's Best Baseball Book Ever",
   "variant": null,
   "full": "1994 Red Foley's Best Baseball Book Ever",
-  "img": "112720_35396384Thumb4.jpg",
+  "img": "1994_Red-Foley's-Best-Baseball-Book-Ever_NNO-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -8196,7 +8196,7 @@
   "insert": false,
   "brand": null,
   "brand_slug": null,
-  "img_back": null
+  "img_back": "1994_Red-Foley's-Best-Baseball-Book-Ever_NNO-Bk.jpg"
  },
  {
   "id": "1994-3-1994-score-gold-stars",
@@ -8205,7 +8205,7 @@
   "set": "1994 Score",
   "variant": "Gold Stars",
   "full": "1994 Score - Gold Stars",
-  "img": "393_436393Thumb4.jpg",
+  "img": "1994_Score-Gold-Stars_3-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -8241,7 +8241,7 @@
   "set": "1994 Score",
   "variant": "Gold Rush",
   "full": "1994 Score - Gold Rush",
-  "img": "392_447372Thumb4.jpg",
+  "img": "1994_Score-Gold-Rush_42-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -8295,7 +8295,7 @@
   "set": "1994 SP",
   "variant": "Die Cuts",
   "full": "1994 SP - Die Cuts",
-  "img": "405_444064Thumb4.jpg",
+  "img": "1994_SP-Die-Cuts_69-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -8313,7 +8313,7 @@
   "set": "1994 Sportflics 2000",
   "variant": null,
   "full": "1994 Sportflics 2000",
-  "img": "408_121345Thumb4.jpg",
+  "img": "1994_Sportflics-2000_120-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -8349,7 +8349,7 @@
   "set": "1994 Stadium Club",
   "variant": "First Day Issue",
   "full": "1994 Stadium Club - First Day Issue",
-  "img": "419_541370Thumb4.jpg",
+  "img": "1994_Stadium-Club-First-Day-Issue_403-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -8385,7 +8385,7 @@
   "set": "1994 Stadium Club",
   "variant": "Members Only",
   "full": "1994 Stadium Club - Members Only",
-  "img": "10374_605200Thumb4.jpg",
+  "img": "1994_Stadium-Club-Members-Only_403-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -8403,7 +8403,7 @@
   "set": "1994 Stadium Club Members Only 50",
   "variant": null,
   "full": "1994 Stadium Club Members Only 50",
-  "img": "10196_444785RepThumb4.jpg",
+  "img": "1994_Stadium-Club-Members-Only-50_10-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -8439,7 +8439,7 @@
   "set": "1994 Stadium Club Team",
   "variant": null,
   "full": "1994 Stadium Club Team",
-  "img": "56676_1875779Thumb4.jpg",
+  "img": "1994_Stadium-Club-Team_339-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -8693,7 +8693,7 @@
   "set": "1994 Triple Play Medalists",
   "variant": null,
   "full": "1994 Triple Play Medalists",
-  "img": null,
+  "img": "1994_Triple-Play-Medalists_4-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,

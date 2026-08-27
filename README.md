@@ -228,6 +228,7 @@ install will silently not happen. The bundled `.htaccess` handles both.
 | `migrate-005-backs-and-devices.sql` | Adds `image_back` and the `devices` table |
 | `migrate-005b-image-backs.sql` | Fills in the card backs found locally |
 | `migrate-006-minor-league.sql` | Three minor league / college cards added by hand |
+| `migrate-007-owned-from-md.sql` | Ownership carried over from the old markdown tracker |
 | `cleanup-stale.sql` | Deletes rows left by the earlier import |
 | `grants.sql` | Least-privilege database users |
 | `seed.php` | One-time import of `data/cards.json` |
@@ -235,7 +236,7 @@ install will silently not happen. The bundled `.htaccess` handles both.
 | `tools/match-thumbs.py` | Matches saved TCDB thumbnails to cards |
 | `cards-insert.sql` | Same data as plain SQL, for phpMyAdmin |
 | `data/cards.json` | The card list |
-| `img/` | Card images (340 files, fronts and backs) |
+| `img/` | Card images (986 files, fronts and backs) |
 | `icons/` | App icons for the home screen |
 | `manifest.json` | Install metadata (name, icons, standalone) |
 | `sw.js` | Offline shell |
@@ -315,11 +316,48 @@ python3 tools/match-thumbs.py ~/path/to/saved-tcdb-folder          # dry run
 python3 tools/match-thumbs.py ~/path/to/saved-tcdb-folder --apply
 ```
 
-**The limit is saved pages, not image files.** With 46 saved pages covering
-984 sets, roughly 700 of the 1,716 images on hand still can't be tied to a
-card — their set id appears in no saved page, so there is nothing that says
-which card they are. Saving more pages from the TCDB checklist (it runs to
-109) is what unlocks them; adding more image files alone does not.
+**Two naming schemes are understood.** The descriptive one —
+`1988_Fleer-Glossy_641-Fr.jpg` — carries the year, set and card number in
+the name, so it needs no saved page at all and is by far the better source.
+The older TCDB one — `120901_8223068Thumb2.jpg` — encodes only internal ids,
+so it can only be placed when a saved page happens to name that set. Files
+of the second kind are what remain unmatched.
+
+A full `Fr` scan outranks either thumbnail, so a card already carrying a
+TCDB thumbnail is upgraded in place when a real scan turns up for it.
+
+## What the variants mean
+
+TCDB writes a parallel as `Base Set - Variant`, and the variant is trade
+shorthand: *Glossy*, *Tiffany*, *Rave*, *Press Proof*. Those are explained in
+the app now — the variant is underlined with dots, and tapping it puts a
+plain-English note in the toast. Hover works on desktop; the tap is there
+because a `title` tooltip does nothing on a phone.
+
+`explainVariant()` in `assets/app.js` holds the glossary, matched
+most-specific-first so *Atomic Refractors* isn't answered as *Refractors*.
+Anything unmatched still gets a sensible fallback, so adding a term is a
+one-line change.
+
+**Card numbers carry meaning too, and the case matters.** A trailing
+lowercase letter is a print variation — `#40a` and `#40b` are one card with
+small back-text differences between printings, and both are tappable for the
+explanation. An uppercase suffix is something else and is deliberately *not*
+treated as a variation: `#80T` is Score's Traded set, `#68G` an Ultra Gold
+Medallion, `#26A` and `#26B` two distinct Topps Tek patterns.
+
+## Landscape scans
+
+About a quarter of the scans are wider than they are tall — 5x7 posters,
+uncut panels, and the many card backs printed sideways. They are stored the
+right way up and need no rotation; the problem was that a portrait frame with
+`object-fit: cover` centre-cropped them into nonsense, which reads as the card
+being turned the wrong way.
+
+Orientation is measured from `naturalWidth`/`naturalHeight` as each image
+loads, and anything wider than tall is fitted rather than filled, letterboxed
+against a neutral ground. A cached image can be complete before the load
+listener ever sees it, so every repaint also sweeps what is already on screen.
 
 ## Minor league and college
 
@@ -346,7 +384,7 @@ numerals. Search by card number first — it survives the renaming.
 
 ## Known gaps
 
-- **Only 295 of 2,438 cards have a front image, and 52 have a back.** TCDB
+- **Only 373 of 2,438 cards have a front image, and 348 have a back.** TCDB
   blocks hotlinking *and* server-side fetching (403), so images can't be pulled
   automatically; these were recovered from previously saved TCDB pages. More
   saved pages is the unlock — see [Card images](#card-images). Failing that,

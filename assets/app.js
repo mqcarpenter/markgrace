@@ -66,6 +66,66 @@
     return out;
   }
 
+  /* ---------- what the variants mean ----------
+     TCDB writes a parallel as "Base Set - Variant", and the variant is trade
+     shorthand: "Glossy", "Tiffany", "Rave". Matched most-specific first, so
+     "Atomic Refractors" wins over "Refractors". */
+  var GLOSSARY = [
+    [/atomic refractor/i,   'Atomic Refractor — a Bowman/Finest parallel with a heavier prismatic pattern than a standard Refractor. Short print.'],
+    [/x-?fractor/i,         'X-Fractor — a Refractor variant with a fine cross-hatch in the foil. Short print.'],
+    [/gold refractor/i,     'Gold Refractor — a Refractor on gold foil. Usually numbered, and scarcer than the plain Refractor.'],
+    [/refractor/i,          'Refractor — Topps chromium stock with a prismatic coating that throws a rainbow when tilted. Printed in far smaller numbers than the base card.'],
+    [/tiffany/i,            'Tiffany — Topps\' premium boxed edition: white card stock and a high-gloss front. Print runs were a fraction of the base set, so these carry a real premium.'],
+    [/glossy/i,             'Glossy — a factory set issued with a glossy coating on the front, as against the base card\'s matte finish. Otherwise the same card.'],
+    [/press proof/i,        'Press Proof — a Donruss parallel stamped "Press Proof", produced in small numbers. Gold and Silver denote the stamp colour.'],
+    [/artist'?s proof/i,    'Artist\'s Proof — a Pinnacle parallel carrying an "A.P." stamp. One of the shorter print runs of its era.'],
+    [/(gold|silver) signature/i, 'Signature parallel — Upper Deck Collector\'s Choice cards with a foil facsimile autograph. Silver was common, Gold much scarcer.'],
+    [/die ?cut/i,           'Die Cut — the card stock is cut to a shape rather than a plain rectangle.'],
+    [/\brave\b/i,           'Rave — a Pacific parallel, typically serial-numbered to a very small run.'],
+    [/aqueous/i,            'Aqueous — a Pacific foil parallel with a water-like sheen.'],
+    [/beckett sample/i,     'Beckett Sample — a promotional card distributed with Beckett price guides, marked as a sample. Not issued in packs.'],
+    [/wrapper redemption/i, 'Wrapper Redemption — a card obtained by mailing in wrappers or redeeming them at a show, rather than pulling it from a pack.'],
+    [/\bpromo|\bsample/i,   'Promo — a promotional card sent to dealers and press ahead of the set\'s release. Often marked "SAMPLE".'],
+    [/stat line (career|season)/i, 'Stat Line — a Donruss parallel where the serial number matches one of the player\'s statistics, so the print run differs card to card.'],
+    [/members only/i,       'Members Only — a Stadium Club parallel sold to club members rather than through packs.'],
+    [/museum collection/i,  'Museum Collection — a Stadium Club parallel on heavier stock with a distinct finish. Short print.'],
+    [/masterpiece/i,        'Masterpiece — a one-of-one printing plate or equivalent unique card.'],
+    [/opening day/i,        'Opening Day — Topps\' lower-priced parallel set, with its own logo on the front.'],
+    [/international/i,      'International — a parallel distributed outside the US, usually with different back text or a language change.'],
+    [/panel/i,              'Panel — an uncut strip of several cards issued as a single piece.'],
+    [/platinum/i,           'Platinum — a premium foil parallel, typically serial-numbered.'],
+    [/recollection collection/i, 'Recollection Collection — Upper Deck buyback: an original card bought back, autographed or stamped, and reissued.'],
+    [/^gold$/i,             'Gold — a gold-foil parallel of the base card, printed in smaller numbers.'],
+    [/^silver$/i,           'Silver — a silver-foil parallel of the base card.'],
+    [/^(red|blue|green|purple|orange|black|bronze)$/i,
+                            'Colour parallel — the same card with a different border or foil colour. Each colour is its own, usually numbered, print run.'],
+    [/^pc$/i,               'PC — Donruss "Preferred Collection", a short-printed premium parallel.']
+  ];
+
+  function explainVariant(v) {
+    if (!v) return '';
+    for (var i = 0; i < GLOSSARY.length; i++) {
+      if (GLOSSARY[i][0].test(v)) return GLOSSARY[i][1];
+    }
+    return v + ' — a parallel or sub-set printing of the base card. ' +
+           'No plain-English note for this one yet.';
+  }
+
+  /**
+   * A trailing LOWERCASE letter marks a print variation — #40a and #40b are
+   * the same card with small back-text differences between printings.
+   *
+   * Uppercase is a different thing entirely and must not be caught here: it
+   * is a set designator. #80T is Score's Traded set, #68G an Ultra Gold
+   * Medallion, #26A and #26B two distinct Topps Tek patterns.
+   */
+  function explainNum(num) {
+    return /^\d+[a-d]$/.test(String(num))
+      ? 'Print variation — the same card and number, with small differences in ' +
+        'the back text between printings. #40a and #40b are two printings of one card.'
+      : '';
+  }
+
   function badges(c) {
     var out = '';
     if (c.auto)     out += '<span class="tag t-auto">AUTO</span>';
@@ -272,6 +332,32 @@
     }
   }
 
+  /* ---------- image orientation ----------
+     Roughly a quarter of the scans are landscape — 5x7 posters, panels, and
+     the many card backs printed sideways. Dropped into a portrait frame with
+     object-fit:cover they get centre-cropped into nonsense, which reads as
+     the card being turned the wrong way. Nothing needs rotating: the scans
+     are the right way up. They just need to be fitted rather than filled.
+
+     `load` doesn't bubble, so this listens on the capture phase. */
+  function markOrientation(img) {
+    if (!img || !img.naturalWidth || !img.naturalHeight) return;
+    // 1.05 rather than 1.0: a square-ish card shouldn't be letterboxed over
+    // a couple of stray pixels.
+    if (img.naturalWidth > img.naturalHeight * 1.05) img.classList.add('wide');
+  }
+  list.addEventListener('load', function (e) {
+    if (e.target && e.target.tagName === 'IMG') markOrientation(e.target);
+  }, true);
+
+  // An image served from cache can already be complete before that listener
+  // ever sees it, so sweep whatever is on screen after every repaint.
+  function sweepOrientation() {
+    [].forEach.call(list.querySelectorAll('img'), function (img) {
+      if (img.complete) markOrientation(img);
+    });
+  }
+
   /* ---------- filtering ---------- */
   function matches(sec, c, q) {
     if (fStatus === 'owned'  && !c.owned) return false;
@@ -322,8 +408,13 @@
           (c.img ? '<img class="thumb" loading="lazy" alt="" src="img/' + esc(c.img) + '">'
                  : '<div class="noimg">no img</div>') +
           '<div class="meta"><div class="set">' + esc(c.set) +
-            (c.variant ? '<span class="variant">' + esc(c.variant) + '</span>' : '') + '</div>' +
-          '<div class="tagrow">' + brandMark(c) + '<span class="num">' + esc(c.num) + '</span>' + badges(c) + '</div></div>' +
+            (c.variant ? '<span class="variant why" role="button" tabindex="0" data-why="variant"' +
+                         ' data-v="' + esc(c.variant) + '" title="' + esc(explainVariant(c.variant)) +
+                         '">' + esc(c.variant) + '</span>' : '') + '</div>' +
+          '<div class="tagrow">' + brandMark(c) + '<span class="num' + (explainNum(c.num) ? ' why' : '') + '"' +
+            (explainNum(c.num) ? ' role="button" tabindex="0" data-why="num" data-v="' + esc(c.num) +
+                                 '" title="' + esc(explainNum(c.num)) + '"' : '') +
+            '>' + esc(c.num) + '</span>' + badges(c) + '</div></div>' +
           '<div class="box">' + CHECK + '</div></li>');
       });
       out.push('</ul>');
@@ -335,6 +426,7 @@
                '<div class="hint">Searching or picking a year is faster than loading everything.</div></div>');
     }
     list.innerHTML = out.join('');
+    sweepOrientation();
     var btn = document.getElementById('showAll');
     if (btn) btn.addEventListener('click', function () { showAll = true; render(); });
     document.getElementById('empty').classList.toggle('hide', shown > 0);
@@ -367,7 +459,8 @@
                 ? '<img loading="lazy" alt="Back of ' + esc(c.set) + '" src="' + back + '">'
                 : '<div class="backfill">' +
                     '<div class="bset">' + esc(c.set) + '</div>' +
-                    (c.variant ? '<div class="bvar">' + esc(c.variant) + '</div>' : '') +
+                    (c.variant ? '<div class="bvar why" role="button" tabindex="0" data-why="variant"' +
+                                 ' data-v="' + esc(c.variant) + '">' + esc(c.variant) + '</div>' : '') +
                     '<div class="bnum">#' + esc(c.num) + '</div>' +
                     '<div class="bbadges">' + badges(c) + '</div>' +
                     '<div class="byear">' + esc(entry.sec.year) + '</div>' +
@@ -412,6 +505,7 @@
       '</div></div>');
 
     list.innerHTML = out.join('');
+    sweepOrientation();
     document.getElementById('empty').classList.toggle('hide', all.length > 0);
 
     var prev = document.getElementById('prevPage'), next = document.getElementById('nextPage');
@@ -567,6 +661,17 @@
 
   /* ---------- events ---------- */
   list.addEventListener('click', function (e) {
+    // "What does Glossy mean?" — hover titles are useless on a phone, so the
+    // chip is tappable and answers in the toast. Checked before the row and
+    // pocket handlers so explaining never toggles or flips the card.
+    var why = e.target.closest('.why');
+    if (why) {
+      e.stopPropagation();
+      var v = why.dataset.v || '';
+      say(why.dataset.why === 'num' ? explainNum(v) : explainVariant(v));
+      return;
+    }
+
     // Binder: the corner button marks, the card itself flips.
     var mark = e.target.closest('.pmark');
     if (mark) { e.stopPropagation(); toggle(mark); return; }
@@ -578,6 +683,15 @@
   });
   list.addEventListener('keydown', function (e) {
     if (e.key !== 'Enter' && e.key !== ' ') return;
+    // The glossary chips are focusable in their own right, so keyboard users
+    // get the explanation rather than accidentally marking the card owned.
+    var why = e.target.closest('.why');
+    if (why) {
+      e.preventDefault();
+      var v = why.dataset.v || '';
+      say(why.dataset.why === 'num' ? explainNum(v) : explainVariant(v));
+      return;
+    }
     var li = e.target.closest('li[data-id]');
     if (li) { e.preventDefault(); toggle(li); }
   });

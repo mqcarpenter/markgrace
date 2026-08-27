@@ -39,11 +39,25 @@ FILE_RE = re.compile(
 LINK_RE = re.compile(
     r'<a href="/ViewCard\.cfm/sid/(\d+)/cid/(\d+)/[^"]*">([^<]*)</a>')
 
+# The descriptive scheme, which needs no saved page at all because the year,
+# set and card number are right there in the name:
+#
+#   1988_Fleer-Glossy_641-Fr.jpg
+#   1988_Fleer-Update_U-77-Bk.jpg
+#   1988-89_Star-Gold_71-Fr-v2.jpg
+#
+# The year may span two ("1988-89"), spaces in the set are dashes, and an
+# alternate scan carries -v2/-v3 on either side of the Fr/Bk marker.
+DESC_RE = re.compile(
+    r'^(\d{4}(?:-\d{2})?)_(.+)_(.+?)(?:-v\d+)?-(Fr|Bk)(?:-v(\d+))?\.(jpg|jpeg|png|webp)$',
+    re.I)
+
 TITLE_RE = re.compile(r'^(.*?)\s+#(\S+)\s+Mark Grace\b')
 
-# Which scan wins when a card resolves to several files. Thumb4 is TCDB's
-# larger thumbnail; Fr is a full front scan but far rarer.
-FRONT_RANK = {'thumb4': 0, 'fr': 1, 'thumb2': 2}
+# Which scan wins when a card resolves to several files. A full "Fr" scan
+# beats either TCDB thumbnail, so a card already carrying a thumbnail is
+# upgraded when a real scan turns up for it.
+FRONT_RANK = {'fr': 0, 'thumb4': 1, 'thumb2': 2}
 
 
 def norm(s):
@@ -131,15 +145,40 @@ def main():
 
     fronts, backs = {}, {}
     unresolved = 0
+    unresolved_names = []
     for pool in pools:
         for name in sorted(os.listdir(pool)):
-            m = FILE_RE.match(name)
-            if not m:
-                continue
-            sid, token, kind = m.group(1), m.group(2), m.group(4).lower()
-            card, _how = resolve(sid, token, links, sid_sets, by_key, by_set)
+            card = None
+            kind = None
+
+            # Descriptive names first — they identify a card outright, with no
+            # dependence on which pages happen to have been saved.
+            d = DESC_RE.match(name)
+            if d:
+                full = f'{d.group(1)} {d.group(2)}'.replace('-', ' ')
+                kind = d.group(4).lower()
+                card = by_key.get((norm(full), norm(d.group(3))))
+                if not card:
+                    # "1989 O-Pee-Chee Stickers 50" splits as set + "50", so a
+                    # trailing token of the set may really belong to the name.
+                    parts = d.group(2).rsplit('-', 1)
+                    if len(parts) == 2:
+                        wider = f'{d.group(1)} {d.group(2)} {d.group(3)}'.replace('-', ' ')
+                        same = by_set.get(norm(wider), [])
+                        if len(same) == 1:
+                            card = same[0]
+
+            if not card:
+                m = FILE_RE.match(name)
+                if not m:
+                    continue
+                sid, token, kind = m.group(1), m.group(2), m.group(4).lower()
+                card, _how = resolve(sid, token, links, sid_sets, by_key, by_set)
+
             if not card:
                 unresolved += 1
+                if len(unresolved_names) < 40:
+                    unresolved_names.append(name)
                 continue
             path = os.path.join(pool, name)
             if kind == 'bk':
@@ -153,23 +192,32 @@ def main():
     img_dir = os.path.join(REPO, 'img')
     have = set(os.listdir(img_dir))
 
-    new_front = {cid: v for cid, v in fronts.items()
-                 if not next(c for c in cards if c['id'] == cid)['img']}
-    new_back = {cid: v for cid, v in backs.items()
-                if not next(c for c in cards if c['id'] == cid).get('img_back')}
+    index = {c['id']: c for c in cards}
 
-    print(f'Resolved files to {len(fronts)} card(s); {unresolved} file(s) '
-          f'belong to sets not present in the saved pages.')
-    print(f'  new front images: {len(new_front)}')
-    print(f'  new back images:  {len(new_back)}')
+    new_front = {cid: v for cid, v in fronts.items() if not index[cid]['img']}
+    # A card already holding a TCDB thumbnail is upgraded when a full scan
+    # turns up — same card, better picture.
+    upgrades = {cid: v for cid, v in fronts.items()
+                if index[cid]['img'] and v[0] == 0 and index[cid]['img'] != v[1]}
+    new_back = {cid: v for cid, v in backs.items() if not index[cid].get('img_back')}
+
+    print(f'Resolved files to {len(fronts)} card(s); {unresolved} file(s) could '
+          f'not be tied to a card.')
+    print(f'  new front images:      {len(new_front)}')
+    print(f'  thumbnails upgraded:   {len(upgrades)}')
+    print(f'  new back images:       {len(new_back)}')
+
+    if unresolved_names:
+        print('\n  unplaced, first few:')
+        for n in unresolved_names[:8]:
+            print(f'    {n}')
 
     if not args.apply:
         print('\nDry run. Re-run with --apply to copy files and update cards.json.')
         return
 
     copied = 0
-    index = {c['id']: c for c in cards}
-    for cid, (_rank, name, path) in new_front.items():
+    for cid, (_rank, name, path) in list(new_front.items()) + list(upgrades.items()):
         if name not in have:
             shutil.copy2(path, os.path.join(img_dir, name))
             copied += 1
