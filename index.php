@@ -10,7 +10,7 @@
 <meta name="apple-mobile-web-app-title" content="Grace">
 <meta name="description" content="Mark Grace baseball card collection tracker.">
 <title>Mark Grace Card Tracker</title>
-<link rel="stylesheet" href="assets/app.css?v=16">
+<link rel="stylesheet" href="assets/app.css?v=17">
 
 <!-- Installed-app behaviour -->
 <link rel="manifest" href="manifest.json">
@@ -98,6 +98,6 @@
 </div>
 
 <div id="toast" role="status" aria-live="polite"></div>
-<script src="assets/app.js?v=16"></script>
+<script src="assets/app.js?v=17"></script>
 </body>
 </html>

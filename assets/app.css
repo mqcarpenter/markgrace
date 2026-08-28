@@ -215,7 +215,9 @@ li.owned::before{
 li.saving{opacity:.5}
 
 .thumb{
-  flex:0 0 auto;width:46px;height:64px;border-radius:5px;object-fit:cover;display:block;
+  /* Held as variables so the landscape rule can swap them when it rotates. */
+  --tw:46px; --th:64px;
+  flex:0 0 auto;width:var(--tw);height:var(--th);border-radius:5px;object-fit:cover;display:block;
   background:var(--surface-2);border:1px solid var(--line);box-shadow:var(--shadow-sm);
 }
 .noimg{
@@ -306,7 +308,8 @@ footer button:hover{border-color:var(--cubs-blue);color:var(--cubs-blue)}
   h1{font-size:23px}
   .pct b{font-size:29px}
   li{gap:11px;padding:10px 11px;min-height:66px}
-  .thumb,.noimg{width:42px;height:59px}
+  .thumb{--tw:42px; --th:59px}
+  .noimg{width:42px;height:59px}
   .set{font-size:14px}
 }
 @media (prefers-reduced-motion:reduce){
@@ -604,16 +607,41 @@ body.binderview .more,body.binderview h2.yr{display:none}
 }
 
 /* ---------- landscape scans ----------
-   ~a quarter of the scans are wider than they are tall: 5x7 posters, panels,
-   and the many card backs printed sideways. They are the right way up — they
-   just don't fit a portrait frame. Fit them instead of filling, so nothing is
-   cropped, and letterbox the gap so the card still reads as a card. */
-.thumb.wide,
-.face img.wide{
-  object-fit:contain;
-  background:color-mix(in srgb,var(--text) 7%,var(--surface-2));
+   ~a quarter of the scans are wider than they are tall: 5x7 posters, uncut
+   panels, and the many card backs printed sideways.
+
+   These are turned a quarter turn so they fill the portrait frame, which is
+   how the card physically sits in a nine-pocket sleeve — the pocket is
+   portrait, so a landscape card goes in sideways and you turn the binder to
+   read it. Letterboxing them upright would show something the binder never
+   does.
+
+   Rotating doesn't change layout, so the trick is to swap the box's width and
+   height first and then pull the extra width back with a negative margin, so
+   the row's slot stays exactly the size it was. */
+.thumb.wide{
+  width:var(--th);height:var(--tw);
+  margin-inline:calc((var(--tw) - var(--th)) / 2);
+  transform:rotate(90deg);
+  object-fit:cover;
 }
-.face img.wide{padding:1px}
+
+/* In the binder the pocket is 5:7, so before rotating, the card's box has to
+   be as wide as the pocket is tall. That is 140% of the pocket's width, plus
+   3px: .card3d sits inset 3px, which shortens the face's width and height by
+   the same 6px and so shifts the ratio slightly away from a clean 7:5.
+   Without the correction the turned card falls a few pixels short of the
+   pocket and shows a sliver of empty sleeve top and bottom. */
+.face img.wide{
+  position:absolute;top:50%;left:50%;
+  width:calc(140% + 3px);height:auto;aspect-ratio:7/5;
+  transform:translate(-50%,-50%) rotate(90deg);
+  transform-origin:center;
+  object-fit:cover;
+}
+
+/* A quarter turn is a rotation, not a flip, so it stays legible with reduced
+   motion on — there is no animation here, only a static orientation. */
 
 /* ---------- glossary chips ----------
    A variant like "Glossy" or a card number like "210b" is trade shorthand.

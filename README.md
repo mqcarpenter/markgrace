@@ -373,16 +373,30 @@ Medallion, `#26A` and `#26B` two distinct Topps Tek patterns.
 
 ## Landscape scans
 
-About a quarter of the scans are wider than they are tall — 5x7 posters,
-uncut panels, and the many card backs printed sideways. They are stored the
-right way up and need no rotation; the problem was that a portrait frame with
-`object-fit: cover` centre-cropped them into nonsense, which reads as the card
-being turned the wrong way.
+About a quarter of the scans are wider than they are tall — 5x7 posters, uncut
+panels, and the many card backs printed sideways.
+
+They are shown **turned a quarter turn, filling the portrait frame**, because
+that is how the card physically sits in a nine-pocket sleeve: the pocket is
+portrait, so a landscape card goes in sideways and you turn the binder to read
+it. Fitting them upright inside the pocket instead would letterbox them and
+show something the binder never does.
 
 Orientation is measured from `naturalWidth`/`naturalHeight` as each image
-loads, and anything wider than tall is fitted rather than filled, letterboxed
-against a neutral ground. A cached image can be complete before the load
-listener ever sees it, so every repaint also sweeps what is already on screen.
+loads, and a cached image can be complete before the load listener sees it, so
+every repaint also sweeps what is already on screen.
+
+Two details in the CSS worth keeping:
+
+- Rotation doesn't affect layout, so the box's width and height are swapped
+  first and the extra width pulled back with a negative margin. Without that
+  the list rows would grow by the difference.
+- In the binder the turned card's box has to be as wide as the pocket is tall
+  — 140% of the pocket width, `+3px` because `.card3d` sits inset by 3px and
+  that shifts the ratio slightly off a clean 7:5.
+
+The turn is clockwise. To go the other way, change the two `rotate(90deg)`
+values to `rotate(-90deg)`.
 
 ## Minor league and college
 
