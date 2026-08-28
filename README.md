@@ -6,7 +6,7 @@ owned; the state lives in MySQL, so every device sees the same collection.
 **Scope:** base cards, inserts and parallels — no autographs, no relics.
 Minor league and oddball/team-issued cards are included.
 
-Currently tracking **2,438 cards (1982–2015)**, 13 marked owned.
+Currently tracking **2,876 cards (1982–2026)**, 13 marked owned.
 TCDB lists 5,411 Mark Grace cards total, so this is a work in progress.
 
 ---
@@ -229,6 +229,7 @@ install will silently not happen. The bundled `.htaccess` handles both.
 | `migrate-005b-image-backs.sql` | Fills in the card backs found locally |
 | `migrate-006-minor-league.sql` | Three minor league / college cards added by hand |
 | `migrate-007-owned-from-md.sql` | Ownership carried over from the old markdown tracker |
+| `migrate-008-expand-checklist.sql` | 438 cards found via their scans, incl. 2016-2026 |
 | `cleanup-stale.sql` | Deletes rows left by the earlier import |
 | `grants.sql` | Least-privilege database users |
 | `seed.php` | One-time import of `data/cards.json` |
@@ -236,7 +237,7 @@ install will silently not happen. The bundled `.htaccess` handles both.
 | `tools/match-thumbs.py` | Matches saved TCDB thumbnails to cards |
 | `cards-insert.sql` | Same data as plain SQL, for phpMyAdmin |
 | `data/cards.json` | The card list |
-| `img/` | Card images (986 files, fronts and backs) |
+| `img/` | Card images (3,432 files, fronts and backs) |
 | `icons/` | App icons for the home screen |
 | `manifest.json` | Install metadata (name, icons, standalone) |
 | `sw.js` | Offline shell |
@@ -326,6 +327,30 @@ of the second kind are what remain unmatched.
 A full `Fr` scan outranks either thumbnail, so a card already carrying a
 TCDB thumbnail is upgraded in place when a real scan turns up for it.
 
+## The checklist PDF is only Part 1
+
+`Trading Card Database _ Mark Grace Checklist.pdf` in the project folder is
+**not** the full checklist, despite covering 34 pages. Its footer reads
+`Part=1`, and the last row on page 34/34 is a 2004 Donruss card. Everything
+from late 2004 onward is in a Part 2 that isn't in the folder.
+
+That matters because the PDF was treated as ground truth for "does this card
+exist". It can't answer that for anything after 2004. Until Part 2 is
+exported from TCDB, the scan filenames are the better source for recent years
+— they carry the full set name and card number, untruncated.
+
+It's also two-column, and a naive text extraction interleaves the columns into
+nonsense. Crop each page into halves and extract them separately:
+
+```python
+for x0, x1 in ((0, page.width / 2), (page.width / 2, page.width)):
+    text = page.crop((x0, 0, x1, page.height)).extract_text()
+```
+
+Rows wrap, so rejoin any line that doesn't start with a four-digit year. Set
+names in the PDF are still truncated to ~37 characters, which is a property of
+the printed column and not of the extraction.
+
 ## What the variants mean
 
 TCDB writes a parallel as `Base Set - Variant`, and the variant is trade
@@ -384,14 +409,14 @@ numerals. Search by card number first — it survives the renaming.
 
 ## Known gaps
 
-- **Only 373 of 2,438 cards have a front image, and 348 have a back.** TCDB
+- **1,587 of 2,876 cards have a front image, and 1,576 have a back.** TCDB
   blocks hotlinking *and* server-side fetching (403), so images can't be pulled
   automatically; these were recovered from previously saved TCDB pages. More
   saved pages is the unlock — see [Card images](#card-images). Failing that,
   drop a JPEG in `img/` and set that card's `image` column by hand.
 - **Parallels reuse their base card's image.** A Tiffany or Glossy parallel
   shows the base photo, because TCDB usually has no separate image for it.
-- **2,497 of ~5,411 known cards are catalogued**, recovered from saved TCDB
+- **2,876 of ~5,411 known cards are catalogued**, recovered from saved TCDB
   pages and the checklist PDF. The rest are mostly post-2005 parallels.
 - **Some set names from the PDF are truncated** at ~37 characters, because
   that is how the printed checklist column was cut. Where a saved TCDB page
