@@ -99,3 +99,13 @@ DELETE FROM cards WHERE id = '2002-cs-2002-fleer-platinum-cornerstones-n-24' AND
 UPDATE cards SET set_name = '1995 Topps CyberStats (Spectralight)' WHERE id = '1995-061-1995-topps-cyberstats-spectralight';
 DELETE FROM cards WHERE id = '1989-29-1989-all-star-set-collec' AND owned = 0;
 DELETE FROM cards WHERE id = '1990-12-1990-all-star-set-collec' AND owned = 0;
+
+-- Chopped duplicate entries cleanup
+DELETE FROM cards WHERE id = '1998-174-1998-99-donruss-crusade-test-issue-red' AND owned = 0;
+DELETE FROM cards WHERE id = '1999-53-1999-retro-mar' AND owned = 0;
+DELETE FROM cards WHERE id = '1999-53-1999-retro-stat-line-s' AND owned = 0;
+DELETE FROM cards WHERE id = '2000-241-2000-fleer-tradition-glossy-hawaii' AND owned = 0;
+DELETE FROM cards WHERE id = '2000-24-2000-retro-mar' AND owned = 0;
+DELETE FROM cards WHERE id = '2000-24-2000-retro-stat-line-s' AND owned = 0;
+DELETE FROM cards WHERE id = '2001-97-2001-donruss-signature-hawaii-trade' AND owned = 0;
+DELETE FROM cards WHERE id = '2002-079-2002-donruss-diamond-kings-2002-hawaii-trade-conference-framed-blue' AND owned = 0;
