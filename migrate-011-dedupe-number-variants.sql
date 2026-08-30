@@ -71,3 +71,4 @@ DELETE FROM cards WHERE id = '1998-59b-1998-collector-s-choice' AND owned = 0;
 DELETE FROM cards WHERE id = '2002-115b-2002-leaf-rookies-stars' AND owned = 0;
 DELETE FROM cards WHERE id = '2002-115a-2002-leaf-rookies-stars-longevity' AND owned = 0;
 DELETE FROM cards WHERE id = '2002-pog-56b-2002-playoff-piece-of-the-game-mate' AND owned = 0;
+DELETE FROM cards WHERE id = '1988-4-1988-san-diego-state-university-50th-anniversary' AND owned = 0;
