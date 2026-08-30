@@ -22,3 +22,5 @@ UPDATE cards SET image = '1999_Topps-Tek-Pattern-19_26B-Fr.jpg' WHERE id = '1999
 UPDATE cards SET image = '1997_Crown-Pro-Stickers-Chicago-Cubs_7-Fr.jpg' WHERE id = '1997-7-1997-crown-pro-stickers-chicago-cubs';
 UPDATE cards SET image = '1996-07_Danbury-Mint-22KT-Gold_110-Fr.jpg' WHERE id = '1996-110-1996-07-danbury-mint-22kt-gold';
 UPDATE cards SET image = '1997_Bowman\'s-Best-Atomic-Refractors_16-Fr.jpg' WHERE id = '1997-16-1997-bowman-s-best-atomic-refractors';
+UPDATE cards SET image = '1997_Donruss-Press-Proofs-Gold_120-Fr.jpg' WHERE id = '1997-120-1997-donruss-press-proofs-gold';
+UPDATE cards SET image = '1999_Ultra-Gold-Medallion_161G-Fr.jpg', image_back = '1999_Ultra-Gold-Medallion_161G-Bk.jpg' WHERE id = '1999-161g-1999-ultra-gold-medallion';
