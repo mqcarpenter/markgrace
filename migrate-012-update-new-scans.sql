@@ -19,3 +19,4 @@ UPDATE cards SET image = '1998_Topps-Gold-Label-Class-2-Black-Label_92-Fr.jpg', 
 UPDATE cards SET image = '1998_Topps-Gold-Label-Class-3-Black-Label_92-Fr.jpg', image_back = '1998_Topps-Gold-Label-Class-3-Black-Label_92-Bk.jpg' WHERE id = '1998-92-1998-topps-gold-label-class-3-black';
 UPDATE cards SET image = '1999_Topps-Gold-Label-Class-1-Black_3-Fr.jpg', image_back = '1999_Topps-Gold-Label-Class-1-Black_3-Bk.jpg' WHERE id = '1999-3-1999-topps-gold-label-class-1-black';
 UPDATE cards SET image = '1999_Topps-Tek-Pattern-19_26B-Fr.jpg' WHERE id = '1999-26b-1999-topps-tek-pattern-19';
+UPDATE cards SET image = '1997_Crown-Pro-Stickers-Chicago-Cubs_7-Fr.jpg' WHERE id = '1997-7-1997-crown-pro-stickers-chicago-cubs';
