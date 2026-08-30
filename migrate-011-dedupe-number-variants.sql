@@ -141,3 +141,18 @@ DELETE FROM cards WHERE id = '2004-79-2004-donruss-diamond-kings-recollec' AND o
 DELETE FROM cards WHERE id = '2004-152-2004-donruss-diamond-kings-silver-s' AND owned = 0;
 DELETE FROM cards WHERE id = '2004-152-2004-donruss-diamond-kings-bronze' AND owned = 0;
 DELETE FROM cards WHERE id = '2004-hc-25-2004-donruss-diamond-kings-heritage' AND owned = 0;
+
+-- 1999 chopped duplicate cleanup
+DELETE FROM cards WHERE id = '1999-144-1999-metal-universe-precious-metal' AND owned = 0;
+DELETE FROM cards WHERE id = '1999-28-1999-pacific-revolution-premiere-da' AND owned = 0;
+DELETE FROM cards WHERE id = '1999-61-1999-topps-gallery-player-s-private' AND owned = 0;
+DELETE FROM cards WHERE id = '1999-61-1999-topps-gallery-press-plates-bla' AND owned = 0;
+DELETE FROM cards WHERE id = '1999-61-1999-topps-gallery-press-plates-cya' AND owned = 0;
+DELETE FROM cards WHERE id = '1999-61-1999-topps-gallery-press-plates-mag' AND owned = 0;
+DELETE FROM cards WHERE id = '1999-61-1999-topps-gallery-press-plates-yel' AND owned = 0;
+DELETE FROM cards WHERE id = '1999-3-1999-topps-gold-label-class-1-one-t' AND owned = 0;
+DELETE FROM cards WHERE id = '1999-3-1999-topps-gold-label-class-1-red-o' AND owned = 0;
+DELETE FROM cards WHERE id = '1999-3-1999-topps-gold-label-class-2-one-t' AND owned = 0;
+DELETE FROM cards WHERE id = '1999-3-1999-topps-gold-label-class-2-red-o' AND owned = 0;
+DELETE FROM cards WHERE id = '1999-3-1999-topps-gold-label-class-3-one-t' AND owned = 0;
+DELETE FROM cards WHERE id = '1999-3-1999-topps-gold-label-class-3-red-o' AND owned = 0;
