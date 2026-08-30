@@ -1,6 +1,17 @@
 -- Migration 005b — image / image_back for every card that has a scan.
--- Regenerated 2026-08-29 after the latest import and the 009/010 dedupes.
--- Run AFTER migrate-005-backs-and-devices.sql. Safe to re-run.
+--
+-- This file is a full snapshot, not a delta. It is regenerated from
+-- data/cards.json after every import, so it always covers every scanned
+-- card and always supersedes the version you ran last. Re-running it is
+-- safe: it sets only the two image columns and never touches owned,
+-- acquired_at or note.
+--
+-- Regenerated 2026-08-30, after the 009/010/011 dedupes. Three rows that
+-- referred to ids deleted by those migrations have been dropped, and two
+-- cards whose scans no earlier migration covered are now included.
+--
+-- Run AFTER migrate-005-backs-and-devices.sql:
+--   mysql -u ADMIN -p DBNAME < migrate-005b-image-backs.sql
 
 UPDATE cards SET image = '295795-17837532Fr.jpg', image_back = '295795-17837532Bk.jpg' WHERE id = '1982-290912-1982-92-nike-poster-cards-5x7';
 UPDATE cards SET image = '68117-5000674Fr.jpg', image_back = '68117-5000674Bk.jpg' WHERE id = '1986-nno-1986-procards-peoria-chiefs';
@@ -56,7 +67,6 @@ UPDATE cards SET image = '1988-89_Star-Gold_79-Fr-v2.jpg', image_back = '1988-89
 UPDATE cards SET image = '1988-89_Star-Gold_80-Fr-v2.jpg', image_back = '1988-89_Star-Gold_80-Bk.jpg' WHERE id = '1988-80-1988-89-star-gold';
 UPDATE cards SET image = '1988-89_Star-Gold-Promos_NNO-Fr-v2.jpg', image_back = '1988-89_Star-Gold-Promos_NNO-Bk.jpg' WHERE id = '1988-nno-1988-89-star-gold-promos';
 UPDATE cards SET image = '1988-92_Star-Ad-Cards_NNO-Fr-v2.jpg', image_back = '1988-92_Star-Ad-Cards_NNO-Bk.jpg' WHERE id = '1988-nno-1988-92-star-ad-cards';
-UPDATE cards SET image = '1989_All-Star-Set-Collec_29-Fr.jpg' WHERE id = '1989-29-1989-all-star-set-collec';
 UPDATE cards SET image = '1989_Barry-Colla-All-Stars-8x10_1389-Fr-v2.jpg', image_back = '1989_Barry-Colla-All-Stars-8x10_1389-Bk.jpg' WHERE id = '1989-1389-1989-barry-colla-all-stars-8x10';
 UPDATE cards SET image = '1989_Baseball''s-Best-One-(unlicensed)_14-Fr-v2.jpg', image_back = '1989_Baseball''s-Best-One-(unlicensed)_14-Bk.jpg' WHERE id = '1989-14-1989-baseball-s-best-one-unlicensed';
 UPDATE cards SET image = '1989_Baseball''s-Best-One-(unlicensed)_4-Fr-v2.jpg', image_back = '1989_Baseball''s-Best-One-(unlicensed)_4-Bk.jpg' WHERE id = '1989-4-1989-baseball-s-best-one-unlicensed';
@@ -128,7 +138,6 @@ UPDATE cards SET image = '1989_Topps-Toys-R-Us-Rookies_12-Fr.jpg', image_back = 
 UPDATE cards SET image = '1989_TV-Sports-Mailbag-8x10_18-Fr.jpg', image_back = '1989_TV-Sports-Mailbag-8x10_18-Bk.jpg' WHERE id = '1989-18-1989-tv-sports-mailbag-8x10';
 UPDATE cards SET image = '1989_Upper-Deck_140-Fr-v2.jpg', image_back = '1989_Upper-Deck_140-Bk.jpg' WHERE id = '1989-140-1989-upper-deck';
 UPDATE cards SET image = '1990_ACE-MVP-Pins_NNO-Fr-v2.jpg', image_back = '1990_ACE-MVP-Pins_NNO-Bk.jpg' WHERE id = '1990-nno-1990-ace-mvp-pins';
-UPDATE cards SET image = '1990_All-Star-Set-Collec_12-Fr.jpg' WHERE id = '1990-12-1990-all-star-set-collec';
 UPDATE cards SET image = '1990_Bandai-Sport-Stars-Collector-Coins_NNO-Fr.jpg', image_back = '1990_Bandai-Sport-Stars-Collector-Coins_NNO-Bk.jpg' WHERE id = '1990-nno-1990-bandai-sport-stars-collector-coins';
 UPDATE cards SET image = '1990_Barry-Colla-All-Stars-8x10_2190-Fr.jpg', image_back = '1990_Barry-Colla-All-Stars-8x10_2190-Bk.jpg' WHERE id = '1990-2190-1990-barry-colla-all-stars-8x10';
 UPDATE cards SET image = '1990_Baseball-Cards-Magazine-Repli-Cards_30-Fr.jpg', image_back = '1990_Baseball-Cards-Magazine-Repli-Cards_30-Bk.jpg' WHERE id = '1990-30-1990-baseball-cards-magazine-repli-cards';
@@ -558,17 +567,21 @@ UPDATE cards SET image = '1996_Upper-Deck_295-Fr.jpg', image_back = '1996_Upper-
 UPDATE cards SET image = '1996_Zenith_73-Fr.jpg', image_back = '1996_Zenith_73-Bk.jpg' WHERE id = '1996-73-1996-zenith';
 UPDATE cards SET image = '1996_Zenith-Artist''s-Proofs_73-Fr.jpg', image_back = '1996_Zenith-Artist''s-Proofs_73-Bk.jpg' WHERE id = '1996-73-1996-zenith-artist-s-proofs';
 UPDATE cards SET image = '1996_Zenith-Mozaics_6-Fr.jpg', image_back = '1996_Zenith-Mozaics_6-Bk.jpg' WHERE id = '1996-6-1996-zenith-mozaics';
+UPDATE cards SET image = '1996-07_Danbury-Mint-22KT-Gold_110-Fr.jpg' WHERE id = '1996-110-1996-07-danbury-mint-22kt-gold';
 UPDATE cards SET image = '1997_Bowman_237-Fr.jpg', image_back = '1997_Bowman_237-Bk.jpg' WHERE id = '1997-237-1997-bowman';
 UPDATE cards SET image = '1997_Bowman-International_237-Fr.jpg', image_back = '1997_Bowman-International_237-Bk.jpg' WHERE id = '1997-237-1997-bowman-international';
 UPDATE cards SET image = '1997_Bowman-Chrome_64-Fr.jpg', image_back = '1997_Bowman-Chrome_64-Bk.jpg' WHERE id = '1997-64-1997-bowman-chrome';
 UPDATE cards SET image = '1997_Bowman-Chrome-Refractors_64-Fr.jpg', image_back = '1997_Bowman-Chrome-Refractors_64-Bk.jpg' WHERE id = '1997-64-1997-bowman-chrome-refractors';
 UPDATE cards SET image = '1997_Bowman-Chrome-International_64-Fr.jpg', image_back = '1997_Bowman-Chrome-International_64-Bk.jpg' WHERE id = '1997-64-1997-bowman-chrome-international';
 UPDATE cards SET image = '1997_Bowman''s-Best_16-Fr.jpg', image_back = '1997_Bowman''s-Best_16-Bk.jpg' WHERE id = '1997-16-1997-bowman-s-best';
+UPDATE cards SET image = '1997_Bowman''s-Best-Atomic-Refractors_16-Fr.jpg' WHERE id = '1997-16-1997-bowman-s-best-atomic-refractors';
 UPDATE cards SET image = '1997_Bowman''s-Best-Refractors_16-Fr.jpg', image_back = '1997_Bowman''s-Best-Refractors_16-Bk.jpg' WHERE id = '1997-16-1997-bowman-s-best-refractors';
 UPDATE cards SET image = '1997_Circa_316-Fr.jpg', image_back = '1997_Circa_316-Bk.jpg' WHERE id = '1997-316-1997-circa';
 UPDATE cards SET image = '1997_Collector''s-Choice_290-Fr.jpg', image_back = '1997_Collector''s-Choice_290-Bk.jpg' WHERE id = '1997-290-1997-collector-s-choice';
 UPDATE cards SET image = '1997_Collector''s-Choice-Chicago-Cubs_CC9-Fr.jpg', image_back = '1997_Collector''s-Choice-Chicago-Cubs_CC9-Bk.jpg' WHERE id = '1997-cc9-1997-collector-s-choice-chicago-cubs';
+UPDATE cards SET image = '1997_Crown-Pro-Stickers-Chicago-Cubs_7-Fr.jpg' WHERE id = '1997-7-1997-crown-pro-stickers-chicago-cubs';
 UPDATE cards SET image = '1997_Donruss_120-Fr.jpg', image_back = '1997_Donruss_120-Bk.jpg' WHERE id = '1997-120-1997-donruss';
+UPDATE cards SET image = '1997_Donruss-Press-Proofs-Gold_120-Fr.jpg' WHERE id = '1997-120-1997-donruss-press-proofs-gold';
 UPDATE cards SET image = '1997_Donruss-Press-Proofs-Silver_120-Fr.jpg', image_back = '1997_Donruss-Press-Proofs-Silver_120-Bk.jpg' WHERE id = '1997-120-1997-donruss-press-proofs-silver';
 UPDATE cards SET image = '1997_Donruss-Elite_86-Fr.jpg', image_back = '1997_Donruss-Elite_86-Bk.jpg' WHERE id = '1997-86-1997-donruss-elite';
 UPDATE cards SET image = '1997_Donruss-Elite-Gold-Stars_86-Fr.jpg', image_back = '1997_Donruss-Elite-Gold-Stars_86-Bk.jpg' WHERE id = '1997-86-1997-donruss-elite-gold-stars';
@@ -686,6 +699,7 @@ UPDATE cards SET image = '1998_Pacific_251-Fr.jpg', image_back = '1998_Pacific_2
 UPDATE cards SET image = '1998_Pacific-Aurora_112-Fr.jpg', image_back = '1998_Pacific-Aurora_112-Bk.jpg' WHERE id = '1998-112-1998-pacific-aurora';
 UPDATE cards SET image = '1998_Pacific-Crown-Royale_29-Fr.jpg', image_back = '1998_Pacific-Crown-Royale_29-Bk.jpg' WHERE id = '1998-29-1998-pacific-crown-royale';
 UPDATE cards SET image = '1998_Pacific-Invincible_83-Fr.jpg', image_back = '1998_Pacific-Invincible_83-Bk.jpg' WHERE id = '1998-83-1998-pacific-invincible';
+UPDATE cards SET image = '1998_Pacific-Invincible-Gems-of-the-Diamond_130-Fr.jpg' WHERE id = '1998-130-1998-pacific-invincible-gems-of-the';
 UPDATE cards SET image = '1998_Pacific-Invincible-Silver_83-Fr.jpg', image_back = '1998_Pacific-Invincible-Silver_83-Bk.jpg' WHERE id = '1998-83-1998-pacific-invincible-silver';
 UPDATE cards SET image = '1998_Pacific-Omega_47-Fr.jpg', image_back = '1998_Pacific-Omega_47-Bk.jpg' WHERE id = '1998-47-1998-pacific-omega';
 UPDATE cards SET image = '1998_Pacific-Omega-Red_47-Fr.jpg', image_back = '1998_Pacific-Omega-Red_47-Bk.jpg' WHERE id = '1998-47-1998-pacific-omega-red';
@@ -725,6 +739,7 @@ UPDATE cards SET image = '1998_SPx-Finite-Spectrum_68-Fr.jpg', image_back = '199
 UPDATE cards SET image = '1998_Stadium-Club_253-Fr.jpg', image_back = '1998_Stadium-Club_253-Bk.jpg' WHERE id = '1998-253-1998-stadium-club';
 UPDATE cards SET image = '1998_Stadium-Club-One-of-a-Kind_253-Fr.jpg', image_back = '1998_Stadium-Club-One-of-a-Kind_253-Bk.jpg' WHERE id = '1998-253-1998-stadium-club-one-of-a-kind';
 UPDATE cards SET image = '1998_Studio_40-Fr.jpg', image_back = '1998_Studio_40-Bk.jpg' WHERE id = '1998-40-1998-studio';
+UPDATE cards SET image = '1998_Studio-Studio-Proofs_40-Fr.jpg' WHERE id = '1998-40-1998-studio-studio-proofs';
 UPDATE cards SET image = '1998_Studio-Studio-Proofs-Gold_40-Fr.jpg', image_back = '1998_Studio-Studio-Proofs-Gold_40-Bk.jpg' WHERE id = '1998-40-1998-studio-studio-proofs-gold';
 UPDATE cards SET image = '1998_Studio-Studio-Proofs-Silver_40-Fr.jpg', image_back = '1998_Studio-Studio-Proofs-Silver_40-Bk.jpg' WHERE id = '1998-40-1998-studio-studio-proofs-silver';
 UPDATE cards SET image = '1998_Topps_168-Fr.jpg', image_back = '1998_Topps_168-Bk.jpg' WHERE id = '1998-168-1998-topps';
@@ -735,8 +750,11 @@ UPDATE cards SET image = '1998_Topps-Gallery-Gallery-Proofs_GP58-Fr.jpg', image_
 UPDATE cards SET image = '1998_Topps-Gallery-Players-Private_NNO-Fr.jpg' WHERE id = '1998-nno-1998-topps-gallery-players-private';
 UPDATE cards SET image = '1998_Topps-Gallery-Players-Private_PPI58-Fr.jpg' WHERE id = '1998-ppi58-1998-topps-gallery-players-private';
 UPDATE cards SET image = '1998_Topps-Gold-Label_92-Fr.jpg', image_back = '1998_Topps-Gold-Label_92-Bk.jpg' WHERE id = '1998-92-1998-topps-gold-label';
+UPDATE cards SET image = '1998_Topps-Gold-Label-Class-1-Black-Label_92-Fr.jpg', image_back = '1998_Topps-Gold-Label-Class-1-Black-Label_92-Bk.jpg' WHERE id = '1998-92-1998-topps-gold-label-class-1-black';
 UPDATE cards SET image = '1998_Topps-Gold-Label-Class-2_92-Fr.jpg', image_back = '1998_Topps-Gold-Label-Class-2_92-Bk.jpg' WHERE id = '1998-92-1998-topps-gold-label-class-2';
+UPDATE cards SET image = '1998_Topps-Gold-Label-Class-2-Black-Label_92-Fr.jpg', image_back = '1998_Topps-Gold-Label-Class-2-Black-Label_92-Bk.jpg' WHERE id = '1998-92-1998-topps-gold-label-class-2-black';
 UPDATE cards SET image = '1998_Topps-Gold-Label-Class-3_92-Fr.jpg', image_back = '1998_Topps-Gold-Label-Class-3_92-Bk.jpg' WHERE id = '1998-92-1998-topps-gold-label-class-3';
+UPDATE cards SET image = '1998_Topps-Gold-Label-Class-3-Black-Label_92-Fr.jpg', image_back = '1998_Topps-Gold-Label-Class-3-Black-Label_92-Bk.jpg' WHERE id = '1998-92-1998-topps-gold-label-class-3-black';
 UPDATE cards SET image = '1998_Topps-Inaugural-Devil-Rays_168-Fr.jpg', image_back = '1998_Topps-Inaugural-Devil-Rays_168-Bk.jpg' WHERE id = '1998-168-1998-topps-inaugural-devil-rays';
 UPDATE cards SET image = '1998_Topps-Inaugural-Diamondbacks_168-Fr.jpg', image_back = '1998_Topps-Inaugural-Diamondbacks_168-Bk.jpg' WHERE id = '1998-168-1998-topps-inaugural-diamondbacks';
 UPDATE cards SET image = '1998_Topps-Minted-in-Cooperstown_168-Fr.jpg', image_back = '1998_Topps-Minted-in-Cooperstown_168-Bk.jpg' WHERE id = '1998-168-1998-topps-minted-in-cooperstown';
@@ -777,6 +795,7 @@ UPDATE cards SET image = '1998_Upper-Deck-UD3-Die-Cuts_264-Fr.jpg' WHERE id = '1
 UPDATE cards SET image = '1998_Upper-Deck-UD3-Die-Cuts_84-Fr.jpg', image_back = '1998_Upper-Deck-UD3-Die-Cuts_84-Bk.jpg' WHERE id = '1998-84-1998-upper-deck-ud3-die-cuts';
 UPDATE cards SET image = '1998_Zenith_36-Fr.jpg', image_back = '1998_Zenith_36-Bk.jpg' WHERE id = '1998-36-1998-zenith';
 UPDATE cards SET image = '1998_Zenith-Oversized-5x7_Z32-Fr.jpg', image_back = '1998_Zenith-Oversized-5x7_Z32-Bk.jpg' WHERE id = '1998-z32-1998-zenith-oversized-5x7';
+UPDATE cards SET image = '1998_Zenith-Oversized-Gold-Impulse-5x7_Z32-Fr.jpg', image_back = '1998_Zenith-Oversized-Gold-Impulse-5x7_Z32-Bk.jpg' WHERE id = '1998-z32-1998-zenith-oversized-gold-impulse';
 UPDATE cards SET image = '1998_Zenith-Oversized-Impulse-5x7_Z32-Fr.jpg' WHERE id = '1998-z32-1998-zenith-oversized-impulse-5x7';
 UPDATE cards SET image = '1998_Zenith-Z-Gold_36-Fr.jpg', image_back = '1998_Zenith-Z-Gold_36-Bk.jpg' WHERE id = '1998-36-1998-zenith-z-gold';
 UPDATE cards SET image = '1998_Zenith-Z-Silver_36-Fr.jpg', image_back = '1998_Zenith-Z-Silver_36-Bk.jpg' WHERE id = '1998-36-1998-zenith-z-silver';
@@ -816,6 +835,7 @@ UPDATE cards SET image = '1999_Pacific-Invincible_29-Fr.jpg', image_back = '1999
 UPDATE cards SET image = '1999_Pacific-Invincible-Opening-Day_29-Fr.jpg', image_back = '1999_Pacific-Invincible-Opening-Day_29-Bk.jpg' WHERE id = '1999-29-1999-pacific-invincible-opening-day';
 UPDATE cards SET image = '1999_Pacific-Invincible-Red_29-Fr.jpg', image_back = '1999_Pacific-Invincible-Red_29-Bk.jpg' WHERE id = '1999-29-1999-pacific-invincible-red';
 UPDATE cards SET image = '1999_Pacific-Omega_47-Fr.jpg', image_back = '1999_Pacific-Omega_47-Bk.jpg' WHERE id = '1999-47-1999-pacific-omega';
+UPDATE cards SET image = '1999_Pacific-Omega-Gold_47-Fr.jpg' WHERE id = '1999-47-1999-pacific-omega-gold';
 UPDATE cards SET image = '1999_Pacific-Omega-Premiere-Date_47-Fr.jpg' WHERE id = '1999-47-1999-pacific-omega-premiere-date';
 UPDATE cards SET image = '1999_Pacific-Paramount_48-Fr.jpg', image_back = '1999_Pacific-Paramount_48-Bk.jpg' WHERE id = '1999-48-1999-pacific-paramount';
 UPDATE cards SET image = '1999_Pacific-Paramount-Copper_48-Fr.jpg', image_back = '1999_Pacific-Paramount-Copper_48-Bk.jpg' WHERE id = '1999-48-1999-pacific-paramount-copper';
@@ -872,6 +892,7 @@ UPDATE cards SET image = '1999_Topps-Tek-Pattern-27_26A-Fr.jpg', image_back = '1
 UPDATE cards SET image = '1999_Topps-Tek-Pattern-29_26B-Fr.jpg', image_back = '1999_Topps-Tek-Pattern-29_26B-Bk.jpg' WHERE id = '1999-26b-1999-topps-tek-pattern-29';
 UPDATE cards SET image = '1999_UD-Choice_68-Fr.jpg' WHERE id = '1999-68-1999-ud-choice';
 UPDATE cards SET image = '1999_Ultra_161-Fr.jpg' WHERE id = '1999-161-1999-ultra';
+UPDATE cards SET image = '1999_Ultra-Gold-Medallion_161G-Fr.jpg', image_back = '1999_Ultra-Gold-Medallion_161G-Bk.jpg' WHERE id = '1999-161g-1999-ultra-gold-medallion';
 UPDATE cards SET image = '1999_Ultra-Platinum-Medallion_161P-Fr.jpg', image_back = '1999_Ultra-Platinum-Medallion_161P-Bk.jpg' WHERE id = '1999-161p-1999-ultra-platinum-medallion';
 UPDATE cards SET image = '1999_Upper-Deck_61-Fr.jpg', image_back = '1999_Upper-Deck_61-Bk.jpg' WHERE id = '1999-61-1999-upper-deck';
 UPDATE cards SET image = '1999_Upper-Deck-Century-Legends_91-Fr.jpg', image_back = '1999_Upper-Deck-Century-Legends_91-Bk.jpg' WHERE id = '1999-91-1999-upper-deck-century-legends';
@@ -1165,7 +1186,6 @@ UPDATE cards SET image = '2003_Donruss-Diamond-Kings-Framed-Black-(Gold-Foil)_77
 UPDATE cards SET image = '2003_Donruss-Diamond-Kings-Framed-Gray-(Silver-Foil)_77-Fr.jpg', image_back = '2003_Donruss-Diamond-Kings-Framed-Gray-(Silver-Foil)_77-Bk.jpg' WHERE id = '2003-77-2003-donruss-diamond-kings-framed-gray-silver-foil';
 UPDATE cards SET image = '2003_Donruss-Diamond-Kings-Framed-White-(Bronze-Foil)_77-Fr.jpg', image_back = '2003_Donruss-Diamond-Kings-Framed-White-(Bronze-Foil)_77-Bk.jpg' WHERE id = '2003-77-2003-donruss-diamond-kings-framed-white-bronze-foil';
 UPDATE cards SET image = '2003_Donruss-Elite_85-Fr.jpg', image_back = '2003_Donruss-Elite_85-Bk.jpg' WHERE id = '2003-85-2003-donruss-elite';
-UPDATE cards SET image = '2003_Donruss-Elite-Throwback-Thread-TT-67-Sammy-Sosa_--Fr.jpg' WHERE id = '2003-2003-donruss-elite-throwback-thread-tt-67-sammy-sosa';
 UPDATE cards SET image = '2003_Donruss-Signature-Team-Trademarks-Autographs-Century_TT-20-Fr.jpg', image_back = '2003_Donruss-Signature-Team-Trademarks-Autographs-Century_TT-20-Bk.jpg' WHERE id = '2003-tt-20-2003-donruss-signature-team-trademarks-autographs-century';
 UPDATE cards SET image = '2003_Donruss-Studio_99-Fr.jpg', image_back = '2003_Donruss-Studio_99-Bk.jpg' WHERE id = '2003-99-2003-donruss-studio';
 UPDATE cards SET image = '2003_Donruss-Team-Heroes_19-Fr.jpg', image_back = '2003_Donruss-Team-Heroes_19-Bk.jpg' WHERE id = '2003-19-2003-donruss-team-heroes';
@@ -1218,15 +1238,20 @@ UPDATE cards SET image = '2004_Donruss-Diamond-Kings-Bronze-Sepia_152-Fr.jpg', i
 UPDATE cards SET image = '2004_Donruss-Diamond-Kings_63-Fr.jpg', image_back = '2004_Donruss-Diamond-Kings_63-Bk.jpg' WHERE id = '2004-63-2004-donruss-diamond-kings';
 UPDATE cards SET image = '2004_Donruss-Diamond-Kings-Bronze_63-Fr.jpg', image_back = '2004_Donruss-Diamond-Kings-Bronze_63-Bk.jpg' WHERE id = '2004-63-2004-donruss-diamond-kings-bronze';
 UPDATE cards SET image = '2004_Donruss-Diamond-Kings-DK-Mater_63-Fr.jpg' WHERE id = '2004-63-2004-donruss-diamond-kings-dk-mater';
+UPDATE cards SET image = '2004_Donruss-Diamond-Kings-Heritage_HC-25-Fr.jpg' WHERE id = '2004-hc-25-2004-donruss-diamond-kings-heritage';
 UPDATE cards SET image = '2004_Donruss-Diamond-Kings-Sepia_152-Fr.jpg', image_back = '2004_Donruss-Diamond-Kings-Sepia_152-Bk.jpg' WHERE id = '2004-152-2004-donruss-diamond-kings-sepia';
 UPDATE cards SET image = '2004_Donruss-Diamond-Kings-Timeline_T-2-Fr.jpg', image_back = '2004_Donruss-Diamond-Kings-Timeline_T-2-Bk.jpg' WHERE id = '2004-t-2-2004-donruss-diamond-kings-timeline';
+UPDATE cards SET image = '2004_Donruss-Elite-Throwback-Thread_TT-40-Fr.jpg' WHERE id = '2004-tt-40-2004-donruss-elite-throwback-thread';
 UPDATE cards SET image = '2004_Donruss-Team-Heroes_85-Fr.jpg', image_back = '2004_Donruss-Team-Heroes_85-Bk.jpg' WHERE id = '2004-85-2004-donruss-team-heroes';
+UPDATE cards SET image = '2004_Donruss-Team-Heroes-Showdown-S_85-Fr.jpg' WHERE id = '2004-85-2004-donruss-team-heroes-showdown-s';
 UPDATE cards SET image = '2004_Donruss-World-Series-Blue_WS-17-Fr.jpg', image_back = '2004_Donruss-World-Series-Blue_WS-17-Bk.jpg' WHERE id = '2004-ws-17-2004-donruss-world-series-blue';
 UPDATE cards SET image = '2005_Donruss-Champions_336-Fr.jpg', image_back = '2005_Donruss-Champions_336-Bk.jpg' WHERE id = '2005-336-2005-donruss-champions';
 UPDATE cards SET image = '2005_Donruss-Champions-Impressions-Red_336-Fr.jpg', image_back = '2005_Donruss-Champions-Impressions-Red_336-Bk.jpg' WHERE id = '2005-336-2005-donruss-champions-impressions-red';
 UPDATE cards SET image = '2005_Donruss-Champions-Impressions-Fielding-Glove_336-Fr.jpg', image_back = '2005_Donruss-Champions-Impressions-Fielding-Glove_336-Bk.jpg' WHERE id = '2005-336-2005-donruss-champions-impressions-fielding-glove';
 UPDATE cards SET image = '2005_Donruss-Classics-Stars-of-Summer-Material_BOS-18-Fr.jpg', image_back = '2005_Donruss-Classics-Stars-of-Summer-Material_BOS-18-Bk.jpg' WHERE id = '2005-bos-18-2005-donruss-classics-stars-of-summer-material';
 UPDATE cards SET image = '2005_Donruss-Diamond-Kings_427-Fr.jpg', image_back = '2005_Donruss-Diamond-Kings_427-Bk.jpg' WHERE id = '2005-427-2005-donruss-diamond-kings';
+UPDATE cards SET image = '2005_Donruss-Diamond-Kings-DK-Challenge_427-Fr.jpg' WHERE id = '2005-427-2005-donruss-diamond-kings-dk-challenge';
+UPDATE cards SET image = '2006_Fleer-Greats-of-the-Game_64-Fr.jpg' WHERE id = '2006-64-2006-fleer-greats-of-the-game';
 UPDATE cards SET image_back = '2006_Fleer-Greats-of-the-Game-Autographs_64-Bk.jpg' WHERE id = '2006-64-2006-fleer-greats-of-the-game-autographs';
 UPDATE cards SET image = '2006_Fleer-Greats-of-the-Game-Copper_64-Fr.jpg', image_back = '2006_Fleer-Greats-of-the-Game-Copper_64-Bk.jpg' WHERE id = '2006-64-2006-fleer-greats-of-the-game-copper';
 UPDATE cards SET image = '2006_Fleer-Greats-of-the-Game-Pewter_64-Fr.jpg', image_back = '2006_Fleer-Greats-of-the-Game-Pewter_64-Bk.jpg' WHERE id = '2006-64-2006-fleer-greats-of-the-game-pewter';
@@ -1234,6 +1259,7 @@ UPDATE cards SET image = '2006_Fleer-Greats-of-the-Game-Cubs-Greats-Memorabilia_
 UPDATE cards SET image = '2006_Hero-Decks-Chicago-Cubs-Baseball-Heroes-Playing-Cards_3♠-Fr.jpg', image_back = '2006_Hero-Decks-Chicago-Cubs-Baseball-Heroes-Playing-Cards_3♠-Bk.jpg' WHERE id = '2006-3-2006-hero-decks-chicago-cubs-baseball-heroes-playing-cards';
 UPDATE cards SET image = '2006_SP-Legendary-Cuts_52-Fr.jpg', image_back = '2006_SP-Legendary-Cuts_52-Bk.jpg' WHERE id = '2006-52-2006-sp-legendary-cuts';
 UPDATE cards SET image = '2006_SP-Legendary-Cuts-Legendary-Materials-Silver_LM-MG-Fr.jpg', image_back = '2006_SP-Legendary-Cuts-Legendary-Materials-Silver_LM-MG-Bk.jpg' WHERE id = '2006-lm-mg-2006-sp-legendary-cuts-legendary-materials-silver';
+UPDATE cards SET image = '2007_Arizona-Diamondbacks-Hometown-Tour_NNO-Fr.jpg' WHERE id = '2007-nno-2007-arizona-diamondbacks-hometown-tour';
 UPDATE cards SET image = '2007_Upper-Deck-Sweet-Spot-Classic-Classic-Memorabilia-Patch_CM-MG-Fr.jpg', image_back = '2007_Upper-Deck-Sweet-Spot-Classic-Classic-Memorabilia-Patch_CM-MG-Bk.jpg' WHERE id = '2007-cm-mg-2007-upper-deck-sweet-spot-classic-classic-memorabilia-patch';
 UPDATE cards SET image = '2007_Upper-Deck-Sweet-Spot-Classic-Signatures-Red-Stitch-Blue-Ink_SPS-MG-Fr.jpg', image_back = '2007_Upper-Deck-Sweet-Spot-Classic-Signatures-Red-Stitch-Blue-Ink_SPS-MG-Bk.jpg' WHERE id = '2007-sps-mg-2007-upper-deck-sweet-spot-classic-signatures-red-stitch-blue-ink';
 UPDATE cards SET image = '2008_Hero-Decks-Chicago-Cubs-Baseball-Heroes-Playing-Cards_3♠️-Fr.jpg', image_back = '2008_Hero-Decks-Chicago-Cubs-Baseball-Heroes-Playing-Cards_3♠️-Bk.jpg' WHERE id = '2008-3-2008-hero-decks-chicago-cubs-baseball-heroes-playing-cards';
@@ -1244,6 +1270,7 @@ UPDATE cards SET image = '2013_Panini-Hometown-Heroes-States_18-Fr.jpg', image_b
 UPDATE cards SET image = '2013_Panini-Hometown-Heroes_243-Fr.jpg', image_back = '2013_Panini-Hometown-Heroes_243-Bk.jpg' WHERE id = '2013-243-2013-panini-hometown-heroes';
 UPDATE cards SET image = '2013_Panini-Hometown-Heroes-States_243-Fr.jpg', image_back = '2013_Panini-Hometown-Heroes-States_243-Bk.jpg' WHERE id = '2013-243-2013-panini-hometown-heroes-states';
 UPDATE cards SET image = '2013_Panini-Hometown-Heroes_271-Fr.jpg', image_back = '2013_Panini-Hometown-Heroes_271-Bk.jpg' WHERE id = '2013-271-2013-panini-hometown-heroes';
+UPDATE cards SET image = '2013_Panini-Hometown-Heroes-Zip-Code_271-Fr.jpg' WHERE id = '2013-271-2013-panini-hometown-heroes-zip-code';
 UPDATE cards SET image = '2013_Topps-Archives-Chicago-Cubs-Season-Ticket-Holder_CUBS-17-Fr.jpg', image_back = '2013_Topps-Archives-Chicago-Cubs-Season-Ticket-Holder_CUBS-17-Bk.jpg' WHERE id = '2013-cubs-17-2013-topps-archives-chicago-cubs-season-ticket-holder';
 UPDATE cards SET image = '2013_Topps-Archives-Chicago-Cubs-Season-Ticket-Holder_CUBS-30-Fr.jpg', image_back = '2013_Topps-Archives-Chicago-Cubs-Season-Ticket-Holder_CUBS-30-Bk.jpg' WHERE id = '2013-cubs-30-2013-topps-archives-chicago-cubs-season-ticket-holder';
 UPDATE cards SET image = '2013_Topps-Archives-Chicago-Cubs-Season-Ticket-Holder_CUBS-51-Fr.jpg', image_back = '2013_Topps-Archives-Chicago-Cubs-Season-Ticket-Holder_CUBS-51-Bk.jpg' WHERE id = '2013-cubs-51-2013-topps-archives-chicago-cubs-season-ticket-holder';
@@ -1251,7 +1278,11 @@ UPDATE cards SET image = '2013_Topps-Archives-Chicago-Cubs-SGA_CUBS-17-Fr.jpg', 
 UPDATE cards SET image = '2013_Topps-Archives-Chicago-Cubs-SGA_CUBS-30-Fr.jpg', image_back = '2013_Topps-Archives-Chicago-Cubs-SGA_CUBS-30-Bk.jpg' WHERE id = '2013-cubs-30-2013-topps-archives-chicago-cubs-sga';
 UPDATE cards SET image = '2013_Topps-Archives-Chicago-Cubs-SGA_CUBS-51-Fr.jpg', image_back = '2013_Topps-Archives-Chicago-Cubs-SGA_CUBS-51-Bk.jpg' WHERE id = '2013-cubs-51-2013-topps-archives-chicago-cubs-sga';
 UPDATE cards SET image = '2014_Grandstand-Hillsboro-Hops_NNO-Fr.jpg', image_back = '2014_Grandstand-Hillsboro-Hops_NNO-Bk.jpg' WHERE id = '2014-nno-2014-grandstand-hillsboro-hops';
+UPDATE cards SET image = '2015_Donruss-Signature-Series-Blue_75-Fr.jpg', image_back = '2015_Donruss-Signature-Series-Blue_75-Bk.jpg' WHERE id = '2015-75-2015-donruss-signature-series-blue';
 UPDATE cards SET image = '2015_Hero-Decks-Chicago-Cubs-Baseball-Heroes-Playing-Cards_K♥-Fr.jpg', image_back = '2015_Hero-Decks-Chicago-Cubs-Baseball-Heroes-Playing-Cards_K♥-Bk.jpg' WHERE id = '2015-k-2015-hero-decks-chicago-cubs-baseball-heroes-playing-cards';
+UPDATE cards SET image = '2015_Topps-Archives-Fan-Favorites-Autographs-Gold_FFA-MGR-Fr.jpg' WHERE id = '2015-ffa-mgr-2015-topps-archives-fan-favorites-autographs-gold';
+UPDATE cards SET image = '2015_Topps-Five-Star_FSA-MG-Fr.jpg' WHERE id = '2015-fsa-mg-2015-topps-five-star';
+UPDATE cards SET image = '2015_Topps-Five-Star-Emerald_FSA-MG-Fr.jpg' WHERE id = '2015-fsa-mg-2015-topps-five-star-emerald';
 UPDATE cards SET image = '1988_ProCards-Iowa-Cubs_30-Fr.jpg' WHERE id = '1988-30-1988-procards-iowa-cubs';
 UPDATE cards SET image = '1988_Donruss-Chicago-Cubs-Team-Collection-Panels_NNO-Fr-v2.jpg', image_back = '1988_Donruss-Chicago-Cubs-Team-Collection-Panels_NNO-Bk.jpg' WHERE id = '1988-nno-1988-donruss-chicago-cubs-team-collection-panels';
 UPDATE cards SET image = '1989_O-Pee-Chee-Stickers_3-Fr-v2.jpg', image_back = '1989_O-Pee-Chee-Stickers_3-Bk.jpg' WHERE id = '1989-3-1989-o-pee-chee-stickers';
