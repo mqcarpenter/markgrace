@@ -6,7 +6,7 @@ owned; the state lives in MySQL, so every device sees the same collection.
 **Scope:** base cards, inserts and parallels — no autographs, no relics.
 Minor league and oddball/team-issued cards are included.
 
-Currently tracking **2,747 cards (1982–2026)**, 13 marked owned.
+Currently tracking **2,692 cards (1982–2026)**, 13 marked owned.
 TCDB lists 5,411 Mark Grace cards total, so this is a work in progress.
 
 ---
@@ -231,6 +231,7 @@ install will silently not happen. The bundled `.htaccess` handles both.
 | `migrate-007-owned-from-md.sql` | Ownership carried over from the old markdown tracker |
 | `migrate-008-expand-checklist.sql` | 438 cards found via their scans, incl. 2016-2026 |
 | `migrate-009-dedupe-truncated.sql` | Removes 129 rows duplicated under a chopped set name |
+| `migrate-010-dedupe-from-pages.sql` | 55 more, found via the saved TCDB pages |
 | `cleanup-stale.sql` | Deletes rows left by the earlier import |
 | `grants.sql` | Least-privilege database users |
 | `seed.php` | One-time import of `data/cards.json` |
@@ -430,14 +431,14 @@ numerals. Search by card number first — it survives the renaming.
 
 ## Known gaps
 
-- **1,679 of 2,747 cards have a front image, and 1,576 have a back.** TCDB
+- **1,685 of 2,692 cards have a front image, and 1,576 have a back.** TCDB
   blocks hotlinking *and* server-side fetching (403), so images can't be pulled
   automatically; these were recovered from previously saved TCDB pages. More
   saved pages is the unlock — see [Card images](#card-images). Failing that,
   drop a JPEG in `img/` and set that card's `image` column by hand.
 - **Parallels reuse their base card's image.** A Tiffany or Glossy parallel
   shows the base photo, because TCDB usually has no separate image for it.
-- **2,747 of ~5,411 known cards are catalogued**, recovered from saved TCDB
+- **2,692 of ~5,411 known cards are catalogued**, recovered from saved TCDB
   pages and the checklist PDF. The rest are mostly post-2005 parallels.
 - **Some set names from the PDF are truncated** at ~37 characters, because
   that is how the printed checklist column was cut. Where a saved TCDB page

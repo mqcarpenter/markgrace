@@ -1,5 +1,5 @@
 -- Migration 005b — image / image_back for every card that has a scan.
--- Regenerated after the 2026-08-29 import and the dedupe in 009.
+-- Regenerated 2026-08-29 after the latest import and the 009/010 dedupes.
 -- Run AFTER migrate-005-backs-and-devices.sql. Safe to re-run.
 
 UPDATE cards SET image = '295795-17837532Fr.jpg', image_back = '295795-17837532Bk.jpg' WHERE id = '1982-290912-1982-92-nike-poster-cards-5x7';
@@ -1186,6 +1186,8 @@ UPDATE cards SET image = '2003_Fleer-Tradition-Game-Used_NNO-Fr.jpg', image_back
 UPDATE cards SET image = '2003_Keebler-Arizona-Diamondbacks-SGA_9-Fr.jpg', image_back = '2003_Keebler-Arizona-Diamondbacks-SGA_9-Bk.jpg' WHERE id = '2003-9-2003-keebler-arizona-diamondbacks-sga';
 UPDATE cards SET image = '2003_Leaf_127-Fr.jpg', image_back = '2003_Leaf_127-Bk.jpg' WHERE id = '2003-127-2003-leaf';
 UPDATE cards SET image = '2003_Leaf_267-Fr.jpg', image_back = '2003_Leaf_267-Bk.jpg' WHERE id = '2003-267-2003-leaf';
+UPDATE cards SET image = '2003_Leaf-Certified-Materials-Fabri_FG-60-Fr.jpg' WHERE id = '2003-fg-60-2003-leaf-certified-materials-fabri';
+UPDATE cards SET image = '2003_Leaf-Limited_98-Fr.jpg' WHERE id = '2003-98-2003-leaf-limited';
 UPDATE cards SET image = '2003_Leaf-Limited-Lineups-Jersey_L-8-Fr.jpg', image_back = '2003_Leaf-Limited-Lineups-Jersey_L-8-Bk.jpg' WHERE id = '2003-l-8-2003-leaf-limited-lineups-jersey';
 UPDATE cards SET image = '2003_Leaf-Limited-Threads-Prime_98-Fr.jpg', image_back = '2003_Leaf-Limited-Threads-Prime_98-Bk.jpg' WHERE id = '2003-98-2003-leaf-limited-threads-prime';
 UPDATE cards SET image = '2003_Leaf-Limited-TNT-Prime_98-Fr.jpg', image_back = '2003_Leaf-Limited-TNT-Prime_98-Bk.jpg' WHERE id = '2003-98-2003-leaf-limited-tnt-prime';
@@ -1193,6 +1195,7 @@ UPDATE cards SET image = '2003_MLB-Showdown_018-Fr.jpg', image_back = '2003_MLB-
 UPDATE cards SET image = '2003_MLB-Showdown-Pennant-Run_110-Fr.jpg', image_back = '2003_MLB-Showdown-Pennant-Run_110-Bk.jpg' WHERE id = '2003-110-2003-mlb-showdown-pennant-run';
 UPDATE cards SET image = '2003_Playoff-Absolute-Memorabilia_145-Fr.jpg', image_back = '2003_Playoff-Absolute-Memorabilia_145-Bk.jpg' WHERE id = '2003-145-2003-playoff-absolute-memorabilia';
 UPDATE cards SET image = '2003_Playoff-Prestige_95-Fr.jpg', image_back = '2003_Playoff-Prestige_95-Bk.jpg' WHERE id = '2003-95-2003-playoff-prestige';
+UPDATE cards SET image = '2003_Stadium-Club-Born-in-the-USA-R_USA-MG-Fr.jpg' WHERE id = '2003-usa-mg-2003-stadium-club-born-in-the-usa-r';
 UPDATE cards SET image = '2003_Topps_581-Fr.jpg' WHERE id = '2003-581-2003-topps';
 UPDATE cards SET image = '2003_Topps-Chrome_390-Fr.jpg', image_back = '2003_Topps-Chrome_390-Bk.jpg' WHERE id = '2003-390-2003-topps-chrome';
 UPDATE cards SET image = '2003_Topps-Gold_581-Fr.jpg', image_back = '2003_Topps-Gold_581-Bk.jpg' WHERE id = '2003-581-2003-topps-gold';
@@ -1207,11 +1210,14 @@ UPDATE cards SET image = '2003_Upper-Deck-MVP-Silver_13-Fr.jpg', image_back = '2
 UPDATE cards SET image = '2004_Donruss-Stat-Line-Career_220-Fr.jpg', image_back = '2004_Donruss-Stat-Line-Career_220-Bk.jpg' WHERE id = '2004-220-2004-donruss-stat-line-career';
 UPDATE cards SET image = '2004_Donruss-Stat-Line-Season_220-Fr.jpg', image_back = '2004_Donruss-Stat-Line-Season_220-Bk.jpg' WHERE id = '2004-220-2004-donruss-stat-line-season';
 UPDATE cards SET image = '2004_Donruss_220-Fr.jpg', image_back = '2004_Donruss_220-Bk.jpg' WHERE id = '2004-220-2004-donruss-2-copies-owned-per-photo';
+UPDATE cards SET image = '2004_Donruss-Classics_59-Fr.jpg' WHERE id = '2004-59-2004-donruss-classics';
+UPDATE cards SET image = '2004_Donruss-Classics-Dress-Code-Bat_DC-17-Fr.jpg' WHERE id = '2004-dc-17-2004-donruss-classics-dress-code-bat';
 UPDATE cards SET image = '2004_Donruss-Classics-Team-Colors-Bat_TC-30-Fr.jpg', image_back = '2004_Donruss-Classics-Team-Colors-Bat_TC-30-Bk.jpg' WHERE id = '2004-tc-30-2004-donruss-classics-team-colors-bat';
 UPDATE cards SET image = '2004_Donruss-Diamond-Kings_152-Fr.jpg', image_back = '2004_Donruss-Diamond-Kings_152-Bk.jpg' WHERE id = '2004-152-2004-donruss-diamond-kings';
 UPDATE cards SET image = '2004_Donruss-Diamond-Kings-Bronze-Sepia_152-Fr.jpg', image_back = '2004_Donruss-Diamond-Kings-Bronze-Sepia_152-Bk.jpg' WHERE id = '2004-152-2004-donruss-diamond-kings-bronze-sepia';
 UPDATE cards SET image = '2004_Donruss-Diamond-Kings_63-Fr.jpg', image_back = '2004_Donruss-Diamond-Kings_63-Bk.jpg' WHERE id = '2004-63-2004-donruss-diamond-kings';
 UPDATE cards SET image = '2004_Donruss-Diamond-Kings-Bronze_63-Fr.jpg', image_back = '2004_Donruss-Diamond-Kings-Bronze_63-Bk.jpg' WHERE id = '2004-63-2004-donruss-diamond-kings-bronze';
+UPDATE cards SET image = '2004_Donruss-Diamond-Kings-DK-Mater_63-Fr.jpg' WHERE id = '2004-63-2004-donruss-diamond-kings-dk-mater';
 UPDATE cards SET image = '2004_Donruss-Diamond-Kings-Sepia_152-Fr.jpg', image_back = '2004_Donruss-Diamond-Kings-Sepia_152-Bk.jpg' WHERE id = '2004-152-2004-donruss-diamond-kings-sepia';
 UPDATE cards SET image = '2004_Donruss-Diamond-Kings-Timeline_T-2-Fr.jpg', image_back = '2004_Donruss-Diamond-Kings-Timeline_T-2-Bk.jpg' WHERE id = '2004-t-2-2004-donruss-diamond-kings-timeline';
 UPDATE cards SET image = '2004_Donruss-Team-Heroes_85-Fr.jpg', image_back = '2004_Donruss-Team-Heroes_85-Bk.jpg' WHERE id = '2004-85-2004-donruss-team-heroes';
