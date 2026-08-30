@@ -201,3 +201,20 @@ DELETE FROM cards WHERE id = '2002-2-2002-topps-gallery-press-plates-mag' AND ow
 DELETE FROM cards WHERE id = '2002-2-2002-topps-gallery-press-plates-yel' AND owned = 0;
 DELETE FROM cards WHERE id = '2002-1060-2002-upper-deck-40-man-electric-rai' AND owned = 0;
 DELETE FROM cards WHERE id = '2002-o-mg-2002-upper-deck-ovation-swatches-go' AND owned = 0;
+
+-- 2003-2004 chopped duplicate cleanup
+DELETE FROM cards WHERE id = '2003-77-2003-donruss-diamond-kings-beckett' AND owned = 0;
+DELETE FROM cards WHERE id = '2003-85-2003-donruss-elite-aspirations' AND owned = 0;
+DELETE FROM cards WHERE id = '2003-19-2003-donruss-team-heroes-atlantic-c' AND owned = 0;
+DELETE FROM cards WHERE id = '2003-19-2003-donruss-team-heroes-beckett-sa' AND owned = 0;
+DELETE FROM cards WHERE id = '2003-19-2003-donruss-team-heroes-chicago-co' AND owned = 0;
+DELETE FROM cards WHERE id = '2003-19-2003-donruss-team-heroes-master-tea' AND owned = 0;
+DELETE FROM cards WHERE id = '2004-44-2004-donruss-elite-recollection-col' AND owned = 0;
+DELETE FROM cards WHERE id = '2004-85-2004-donruss-team-heroes-showdown-g' AND owned = 0;
+DELETE FROM cards WHERE id = '2004-cc-56-2004-donruss-throwback-threads-cent' AND owned = 0;
+DELETE FROM cards WHERE id = '2004-43-2004-donruss-throwback-threads-play' AND owned = 0;
+DELETE FROM cards WHERE id = '2004-pt-43-2004-donruss-throwback-threads-play' AND owned = 0;
+DELETE FROM cards WHERE id = '2004-mi-19-2004-donruss-timeless-treasures-mat' AND owned = 0;
+DELETE FROM cards WHERE id = '2004-ws-17-2004-donruss-world-series-blue-holo' AND owned = 0;
+DELETE FROM cards WHERE id = '2004-ws-17-2004-donruss-world-series-blue-mate' AND owned = 0;
+DELETE FROM cards WHERE id = '2004-ws-17-2004-donruss-world-series-blue-sign' AND owned = 0;
