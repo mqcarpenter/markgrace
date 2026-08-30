@@ -31,3 +31,5 @@ UPDATE cards SET image = '2015_Donruss-Signature-Series-Blue_75-Fr.jpg', image_b
 UPDATE cards SET image = '1998_Studio-Studio-Proofs_40-Fr.jpg' WHERE id = '1998-40-1998-studio-studio-proofs';
 UPDATE cards SET image = '1998_Pacific-Invincible-Gems-of-the-Diamond_130-Fr.jpg' WHERE id = '1998-130-1998-pacific-invincible-gems-of-the';
 UPDATE cards SET image = '1999_Pacific-Omega-Gold_47-Fr.jpg' WHERE id = '1999-47-1999-pacific-omega-gold';
+UPDATE cards SET image = '1996_Topps-Chrome-Refractors_20-Fr.jpg' WHERE id = '1996-20-1996-topps-chrome-refractors';
+UPDATE cards SET image = '1997_Bowman-Chrome-Refractors_64-Fr.jpg' WHERE id = '1997-64-1997-bowman-chrome-refractors';
