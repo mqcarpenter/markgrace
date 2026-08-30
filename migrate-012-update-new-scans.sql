@@ -48,3 +48,5 @@ UPDATE cards SET image = '1999_Bowman''s-Best-Refractors_61-Fr.jpg' WHERE id = '
 UPDATE cards SET image = '2000_Fleer-Mystique-Gold_6-Fr.jpg' WHERE id = '2000-6-2000-fleer-mystique-gold';
 UPDATE cards SET image = '1997_Topps-Chrome-Refractors_13-Fr.jpg' WHERE id = '1997-13-1997-topps-chrome-refractors';
 UPDATE cards SET image = '1997_Donruss-Signature-Series-Platinum-Press-Proofs_42-Fr.jpg' WHERE id = '1997-42-1997-donruss-signature-series-platinum-press-proofs';
+UPDATE cards SET image = '1996_Leaf-Press-Proofs-Gold_126-Fr.jpg' WHERE id = '1996-126-1996-leaf-press-proofs-gold';
+UPDATE cards SET image = '1990_Old-Style-Chicago-Cubs-Photocards_NNO-Fr.jpg' WHERE id = '1990-nno-1990-old-style-chicago-cubs-photocards';
