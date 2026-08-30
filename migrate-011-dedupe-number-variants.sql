@@ -73,3 +73,27 @@ DELETE FROM cards WHERE id = '2002-115a-2002-leaf-rookies-stars-longevity' AND o
 DELETE FROM cards WHERE id = '2002-pog-56b-2002-playoff-piece-of-the-game-mate' AND owned = 0;
 DELETE FROM cards WHERE id = '1988-4-1988-san-diego-state-university-50th-anniversary' AND owned = 0;
 DELETE FROM cards WHERE id = '1988-3-1988-gray-star-wrigley-field-series-2-unlicensed' AND owned = 0;
+
+-- Corrupted PDF / chopped dual-player remnants:
+DELETE FROM cards WHERE id = '1990-1990-star-will-clark' AND owned = 0;
+DELETE FROM cards WHERE id = '1997-1997-donruss-limited-71-darin-erstad' AND owned = 0;
+DELETE FROM cards WHERE id = '1997-1997-donruss-limited-limited-exposu-71-darin-erstad' AND owned = 0;
+DELETE FROM cards WHERE id = '1998-1998-pacific-invincible-team-checkl-5-sammy-sosa' AND owned = 0;
+DELETE FROM cards WHERE id = '1998-1998-pacific-team-checklists-16-sammy-sosa' AND owned = 0;
+DELETE FROM cards WHERE id = '2000-2000-topps-gold-label-bullion-b7-sammy-sosa' AND owned = 0;
+DELETE FROM cards WHERE id = '2000-2000-topps-gold-label-bullion-one-t-b7-sammy-sosa' AND owned = 0;
+DELETE FROM cards WHERE id = '2000-2000-upper-deck-victory-90-sammy-sosa' AND owned = 0;
+DELETE FROM cards WHERE id = '2002-2002-fleer-platinum-cornerstones-n-40-cs-john-olerud' AND owned = 0;
+DELETE FROM cards WHERE id = '2002-2002-fleer-platinum-cornerstones-u-nno-john-olerud' AND owned = 0;
+DELETE FROM cards WHERE id = '2002-2002-fleer-platinum-cornerstones-me-nno-john-olerud' AND owned = 0;
+DELETE FROM cards WHERE id = '2003-2003-donruss-elite-throwback-thread-tt-67-sammy-sosa' AND owned = 0;
+DELETE FROM cards WHERE id = '2004-2004-donruss-diamond-kings-team-tim-tt-8-andre-dawson' AND owned = 0;
+DELETE FROM cards WHERE id = '2004-2004-donruss-world-series-signature-4-steve-finley' AND owned = 0;
+DELETE FROM cards WHERE id = '1989-10-1989-champ' AND owned = 0;
+DELETE FROM cards WHERE id = '1989-3-1989-champ' AND owned = 0;
+DELETE FROM cards WHERE id = '1989-9-1989-pacific-cards-comics-signature' AND owned = 0;
+DELETE FROM cards WHERE id = '1998-141-1998-pacific-online-web-cards-gold' AND owned = 0;
+DELETE FROM cards WHERE id = '2002-cs-2002-fleer-platinum-cornerstones-n-24' AND owned = 0;
+
+-- Fix unclosed parenthesis syntax on 1995 Topps CyberStats:
+UPDATE cards SET set_name = '1995 Topps CyberStats (Spectralight)' WHERE id = '1995-061-1995-topps-cyberstats-spectralight';
