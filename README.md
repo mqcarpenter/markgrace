@@ -6,7 +6,7 @@ owned; the state lives in MySQL, so every device sees the same collection.
 **Scope:** base cards, inserts and parallels — no autographs, no relics.
 Minor league and oddball/team-issued cards are included.
 
-Currently tracking **2,606 cards (1982–2026)**, 13 marked owned.
+Currently tracking **2,606 cards (1982–2026)**.
 TCDB lists 5,411 Mark Grace cards total, so this is a work in progress.
 
 ---
