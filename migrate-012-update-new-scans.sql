@@ -34,3 +34,4 @@ UPDATE cards SET image = '1999_Pacific-Omega-Gold_47-Fr.jpg' WHERE id = '1999-47
 UPDATE cards SET image = '1996_Topps-Chrome-Refractors_20-Fr.jpg' WHERE id = '1996-20-1996-topps-chrome-refractors';
 UPDATE cards SET image = '1997_Bowman-Chrome-Refractors_64-Fr.jpg' WHERE id = '1997-64-1997-bowman-chrome-refractors';
 UPDATE cards SET image = '1998_Donruss-Elite-Aspirations_66-Fr.jpg' WHERE id = '1998-66-1998-donruss-elite-aspirations';
+UPDATE cards SET image = '2001_Donruss-Elite-Aspirations_38-Fr.jpg' WHERE id = '2001-38-2001-donruss-elite-aspirations';
