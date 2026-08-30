@@ -51,3 +51,4 @@ UPDATE cards SET image = '1997_Donruss-Signature-Series-Platinum-Press-Proofs_42
 UPDATE cards SET image = '1996_Leaf-Press-Proofs-Gold_126-Fr.jpg' WHERE id = '1996-126-1996-leaf-press-proofs-gold';
 UPDATE cards SET image = '1990_Old-Style-Chicago-Cubs-Photocards_NNO-Fr.jpg' WHERE id = '1990-nno-1990-old-style-chicago-cubs-photocards';
 UPDATE cards SET image = '2001_Topps-Chrome-Retrofractors_251-Fr.jpg' WHERE id = '2001-251-2001-topps-chrome-retrofractors';
+UPDATE cards SET image = '2014_Panini-Classics-Significant-Signatures-Jerseys-Gold-Prime_51-Fr.jpg' WHERE id = '2014-51-2014-panini-classics-significant-signatures-jerseys-gold-prime';
