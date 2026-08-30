@@ -118,3 +118,26 @@ DELETE FROM cards WHERE id = '2002-44-2002-donruss-studio-national-sports' AND o
 DELETE FROM cards WHERE id = '2003-85-2003-donruss-elite-national-sports' AND owned = 0;
 DELETE FROM cards WHERE id = '2003-99-2003-donruss-studio-beckett-samples' AND owned = 0;
 DELETE FROM cards WHERE id = '2003-99-2003-donruss-studio-national-sports' AND owned = 0;
+
+-- 2001 chopped twin duplicate cleanup
+DELETE FROM cards WHERE id = '2001-39-2001-march-20' AND owned = 0;
+DELETE FROM cards WHERE id = '2001-97-2001-donruss-signature-chicago-sun' AND owned = 0;
+
+-- 2004 Diamond Kings truncated duplicate cleanup
+DELETE FROM cards WHERE id = '2004-152-2004-donruss-diamond-kings-dk-mater' AND owned = 0;
+DELETE FROM cards WHERE id = '2004-152-2004-donruss-diamond-kings-dk-signa' AND owned = 0;
+DELETE FROM cards WHERE id = '2004-63-2004-donruss-diamond-kings-dk-signa' AND owned = 0;
+DELETE FROM cards WHERE id = '2004-63-2004-donruss-diamond-kings-framed-b' AND owned = 0;
+DELETE FROM cards WHERE id = '2004-152-2004-donruss-diamond-kings-framed-g' AND owned = 0;
+DELETE FROM cards WHERE id = '2004-63-2004-donruss-diamond-kings-framed-g' AND owned = 0;
+DELETE FROM cards WHERE id = '2004-152-2004-donruss-diamond-kings-framed-p' AND owned = 0;
+DELETE FROM cards WHERE id = '2004-63-2004-donruss-diamond-kings-framed-p' AND owned = 0;
+DELETE FROM cards WHERE id = '2004-152-2004-donruss-diamond-kings-framed-s' AND owned = 0;
+DELETE FROM cards WHERE id = '2004-63-2004-donruss-diamond-kings-framed-s' AND owned = 0;
+DELETE FROM cards WHERE id = '2004-152-2004-donruss-diamond-kings-hawaii-t' AND owned = 0;
+DELETE FROM cards WHERE id = '2004-63-2004-donruss-diamond-kings-hawaii-t' AND owned = 0;
+DELETE FROM cards WHERE id = '2004-77-2004-donruss-diamond-kings-recollec' AND owned = 0;
+DELETE FROM cards WHERE id = '2004-79-2004-donruss-diamond-kings-recollec' AND owned = 0;
+DELETE FROM cards WHERE id = '2004-152-2004-donruss-diamond-kings-silver-s' AND owned = 0;
+DELETE FROM cards WHERE id = '2004-152-2004-donruss-diamond-kings-bronze' AND owned = 0;
+DELETE FROM cards WHERE id = '2004-hc-25-2004-donruss-diamond-kings-heritage' AND owned = 0;
