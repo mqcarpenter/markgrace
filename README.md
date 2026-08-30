@@ -6,7 +6,7 @@ owned; the state lives in MySQL, so every device sees the same collection.
 **Scope:** base cards, inserts and parallels — no autographs, no relics.
 Minor league and oddball/team-issued cards are included.
 
-Currently tracking **2,692 cards (1982–2026)**, 13 marked owned.
+Currently tracking **2,629 cards (1982–2026)**, 13 marked owned.
 TCDB lists 5,411 Mark Grace cards total, so this is a work in progress.
 
 ---
@@ -431,14 +431,14 @@ numerals. Search by card number first — it survives the renaming.
 
 ## Known gaps
 
-- **1,685 of 2,692 cards have a front image, and 1,576 have a back.** TCDB
+- **1,685 of 2,629 cards have a front image, and 1,576 have a back.** TCDB
   blocks hotlinking *and* server-side fetching (403), so images can't be pulled
   automatically; these were recovered from previously saved TCDB pages. More
   saved pages is the unlock — see [Card images](#card-images). Failing that,
   drop a JPEG in `img/` and set that card's `image` column by hand.
 - **Parallels reuse their base card's image.** A Tiffany or Glossy parallel
   shows the base photo, because TCDB usually has no separate image for it.
-- **2,692 of ~5,411 known cards are catalogued**, recovered from saved TCDB
+- **2,629 of ~5,411 known cards are catalogued**, recovered from saved TCDB
   pages and the checklist PDF. The rest are mostly post-2005 parallels.
 - **Some set names from the PDF are truncated** at ~37 characters, because
   that is how the printed checklist column was cut. Where a saved TCDB page
