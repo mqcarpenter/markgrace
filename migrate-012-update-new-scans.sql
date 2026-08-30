@@ -41,3 +41,6 @@ UPDATE cards SET image = '2014_Panini-Immaculate-Collection-Immaculate-Autograph
 UPDATE cards SET image = '2005_Donruss-Champions-Impressions-Blue_336-Fr.jpg' WHERE id = '2005-336-2005-donruss-champions-impressions-blue';
 UPDATE cards SET image = '2005_Playoff-Absolute-Memorabilia-Heroes_AH-60-Fr.jpg' WHERE id = '2005-ah-60-2005-playoff-absolute-memorabilia-heroes';
 UPDATE cards SET image = '2006_Fleer-Greats-of-the-Game-Autographs_64-Fr.jpg' WHERE id = '2006-64-2006-fleer-greats-of-the-game-autographs';
+UPDATE cards SET image = '2007_Upper-Deck-Sweet-Spot-Classic-Classic-Memorabilia_17-Fr.jpg' WHERE id = '2007-17-2007-upper-deck-sweet-spot-classic-classic-memorabilia';
+UPDATE cards SET image = '2008_SP-Legendary-Cuts-Legendary-Memorabilia-Blue_LM-MG-Fr.jpg' WHERE id = '2008-lm-mg-2008-sp-legendary-cuts-legendary-memorabilia-blue';
+UPDATE cards SET image = '2009_SP-Legendary-Cuts-Legendary-Memorabilia-Brown_LM-MG-Fr.jpg' WHERE id = '2009-lm-mg-2009-sp-legendary-cuts-legendary-memorabilia-brown';
