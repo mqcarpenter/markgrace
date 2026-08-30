@@ -6,7 +6,7 @@ owned; the state lives in MySQL, so every device sees the same collection.
 **Scope:** base cards, inserts and parallels — no autographs, no relics.
 Minor league and oddball/team-issued cards are included.
 
-Currently tracking **2,876 cards (1982–2026)**, 13 marked owned.
+Currently tracking **2,747 cards (1982–2026)**, 13 marked owned.
 TCDB lists 5,411 Mark Grace cards total, so this is a work in progress.
 
 ---
@@ -230,6 +230,7 @@ install will silently not happen. The bundled `.htaccess` handles both.
 | `migrate-006-minor-league.sql` | Three minor league / college cards added by hand |
 | `migrate-007-owned-from-md.sql` | Ownership carried over from the old markdown tracker |
 | `migrate-008-expand-checklist.sql` | 438 cards found via their scans, incl. 2016-2026 |
+| `migrate-009-dedupe-truncated.sql` | Removes 129 rows duplicated under a chopped set name |
 | `cleanup-stale.sql` | Deletes rows left by the earlier import |
 | `grants.sql` | Least-privilege database users |
 | `seed.php` | One-time import of `data/cards.json` |
@@ -351,6 +352,12 @@ Rows wrap, so rejoin any line that doesn't start with a four-digit year. Set
 names in the PDF are still truncated to ~37 characters, which is a property of
 the printed column and not of the extraction.
 
+That truncation put 129 sets into the checklist twice — once chopped, once in
+full — which `migrate-009` clears out. The scans are what settle it, since
+their filenames carry the untruncated name. Numeric suffixes are deliberately
+left alone: `Topps Tek Pattern 2` and `Pattern 23` are two real sets, not one
+cut short.
+
 ## What the variants mean
 
 TCDB writes a parallel as `Base Set - Variant`, and the variant is trade
@@ -423,14 +430,14 @@ numerals. Search by card number first — it survives the renaming.
 
 ## Known gaps
 
-- **1,587 of 2,876 cards have a front image, and 1,576 have a back.** TCDB
+- **1,679 of 2,747 cards have a front image, and 1,576 have a back.** TCDB
   blocks hotlinking *and* server-side fetching (403), so images can't be pulled
   automatically; these were recovered from previously saved TCDB pages. More
   saved pages is the unlock — see [Card images](#card-images). Failing that,
   drop a JPEG in `img/` and set that card's `image` column by hand.
 - **Parallels reuse their base card's image.** A Tiffany or Glossy parallel
   shows the base photo, because TCDB usually has no separate image for it.
-- **2,876 of ~5,411 known cards are catalogued**, recovered from saved TCDB
+- **2,747 of ~5,411 known cards are catalogued**, recovered from saved TCDB
   pages and the checklist PDF. The rest are mostly post-2005 parallels.
 - **Some set names from the PDF are truncated** at ~37 characters, because
   that is how the printed checklist column was cut. Where a saved TCDB page
