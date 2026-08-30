@@ -179,3 +179,25 @@ DELETE FROM cards WHERE id = '1998-70-1998-donruss-collections-donruss-pr-pc' AN
 DELETE FROM cards WHERE id = '1998-466-1998-donruss-collections-elite-priz-pc' AND owned = 0;
 DELETE FROM cards WHERE id = '1998-296-1998-donruss-collections-leaf-prize-pc' AND owned = 0;
 DELETE FROM cards WHERE id = '1998-608-1998-donruss-collections-preferred-pc' AND owned = 0;
+
+-- 2001-2002 chopped duplicate cleanup
+DELETE FROM cards WHERE id = '2001-39-2001-beckett' AND owned = 0;
+DELETE FROM cards WHERE id = '2001-104-2001-fleer-platinum-platinum-editio' AND owned = 0;
+DELETE FROM cards WHERE id = '2001-38-2001-leaf-certified-materials-chica' AND owned = 0;
+DELETE FROM cards WHERE id = '2001-38-2001-leaf-certified-materials-mirro' AND owned = 0;
+DELETE FROM cards WHERE id = '2001-bh43-2001-playoff-absolute-memorabilia-b' AND owned = 0;
+DELETE FROM cards WHERE id = '2001-38-2001-playoff-absolute-memorabilia-c' AND owned = 0;
+DELETE FROM cards WHERE id = '2001-38-2001-playoff-absolute-memorabilia-s' AND owned = 0;
+DELETE FROM cards WHERE id = '2002-6-2002-flair-sweet-swatch-patch-maste' AND owned = 0;
+DELETE FROM cards WHERE id = '2002-12-2002-fleer-focus-jersey-edition-jer' AND owned = 0;
+DELETE FROM cards WHERE id = '2002-67-2002-fleer-showcase-masterpiece-col' AND owned = 0;
+DELETE FROM cards WHERE id = '2002-57-2002-fleer-triple-crown-home-run-pa' AND owned = 0;
+DELETE FROM cards WHERE id = '2002-133-2002-leaf-certified-fabric-of-the-g-fg' AND owned = 0;
+DELETE FROM cards WHERE id = '2002-9-2002-playoff-absolute-memorabilia-n' AND owned = 0;
+DELETE FROM cards WHERE id = '2002-9-2002-playoff-absolute-memorabilia-s' AND owned = 0;
+DELETE FROM cards WHERE id = '2002-2-2002-topps-gallery-press-plates-bla' AND owned = 0;
+DELETE FROM cards WHERE id = '2002-2-2002-topps-gallery-press-plates-cya' AND owned = 0;
+DELETE FROM cards WHERE id = '2002-2-2002-topps-gallery-press-plates-mag' AND owned = 0;
+DELETE FROM cards WHERE id = '2002-2-2002-topps-gallery-press-plates-yel' AND owned = 0;
+DELETE FROM cards WHERE id = '2002-1060-2002-upper-deck-40-man-electric-rai' AND owned = 0;
+DELETE FROM cards WHERE id = '2002-o-mg-2002-upper-deck-ovation-swatches-go' AND owned = 0;
