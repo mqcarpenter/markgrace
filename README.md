@@ -431,7 +431,7 @@ numerals. Search by card number first — it survives the renaming.
 
 ## Known gaps
 
-- **1,723 of 2,505 cards have a front image, and 1,584 have a back.** TCDB
+- **1,723 of 2,490 cards have a front image, and 1,584 have a back.** TCDB
   blocks hotlinking *and* server-side fetching (403), so images can't be pulled
   automatically; these were recovered from previously saved TCDB pages. More
   saved pages is the unlock — see [Card images](#card-images). Failing that,

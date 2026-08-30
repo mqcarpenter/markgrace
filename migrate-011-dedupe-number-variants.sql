@@ -218,3 +218,20 @@ DELETE FROM cards WHERE id = '2004-mi-19-2004-donruss-timeless-treasures-mat' AN
 DELETE FROM cards WHERE id = '2004-ws-17-2004-donruss-world-series-blue-holo' AND owned = 0;
 DELETE FROM cards WHERE id = '2004-ws-17-2004-donruss-world-series-blue-mate' AND owned = 0;
 DELETE FROM cards WHERE id = '2004-ws-17-2004-donruss-world-series-blue-sign' AND owned = 0;
+
+-- 1998 chopped duplicate cleanup
+DELETE FROM cards WHERE id = '1998-113-1998-flair-showcase-masterpiece-leg' AND owned = 0;
+DELETE FROM cards WHERE id = '1998-de-1998-fleer-tradition-decade-of-exce-6' AND owned = 0;
+DELETE FROM cards WHERE id = '1998-10c-1998-fleer-tradition-vintage-classi' AND owned = 0;
+DELETE FROM cards WHERE id = '1998-97-1998-leaf-fractal-materials-die-cut' AND owned = 0;
+DELETE FROM cards WHERE id = '1998-97-1998-leaf-fractal-materials-z2-axis' AND owned = 0;
+DELETE FROM cards WHERE id = '1998-97-1998-leaf-fractal-matrix-diamond-ax' AND owned = 0;
+DELETE FROM cards WHERE id = '1998-89-1998-metal-universe-precious-metal' AND owned = 0;
+DELETE FROM cards WHERE id = '1998-138-1998-pacific-paramount-holographic' AND owned = 0;
+DELETE FROM cards WHERE id = '1998-138-1998-pacific-paramount-inaugural-is' AND owned = 0;
+DELETE FROM cards WHERE id = '1998-138-1998-pacific-paramount-platinum-blu' AND owned = 0;
+DELETE FROM cards WHERE id = '1998-96-1998-select-test-issue-jersey-numbe' AND owned = 0;
+DELETE FROM cards WHERE id = '1998-92-1998-topps-gold-label-class-1-one-t' AND owned = 0;
+DELETE FROM cards WHERE id = '1998-92-1998-topps-gold-label-class-2-one-t' AND owned = 0;
+DELETE FROM cards WHERE id = '1998-92-1998-topps-gold-label-class-3-one-t' AND owned = 0;
+DELETE FROM cards WHERE id = '1998-92-1998-topps-gold-label-class-3-red-l' AND owned = 0;
