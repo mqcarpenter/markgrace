@@ -24,3 +24,7 @@ UPDATE cards SET image = '1996-07_Danbury-Mint-22KT-Gold_110-Fr.jpg' WHERE id = 
 UPDATE cards SET image = '1997_Bowman\'s-Best-Atomic-Refractors_16-Fr.jpg' WHERE id = '1997-16-1997-bowman-s-best-atomic-refractors';
 UPDATE cards SET image = '1997_Donruss-Press-Proofs-Gold_120-Fr.jpg' WHERE id = '1997-120-1997-donruss-press-proofs-gold';
 UPDATE cards SET image = '1999_Ultra-Gold-Medallion_161G-Fr.jpg', image_back = '1999_Ultra-Gold-Medallion_161G-Bk.jpg' WHERE id = '1999-161g-1999-ultra-gold-medallion';
+UPDATE cards SET image = '2015_Topps-Archives-Fan-Favorites-Autographs-Gold_FFA-MGR-Fr.jpg' WHERE id = '2015-ffa-mgr-2015-topps-archives-fan-favorites-autographs-gold';
+UPDATE cards SET image = '2015_Topps-Five-Star_FSA-MG-Fr.jpg' WHERE id = '2015-fsa-mg-2015-topps-five-star';
+UPDATE cards SET image = '2015_Topps-Five-Star-Emerald_FSA-MG-Fr.jpg' WHERE id = '2015-fsa-mg-2015-topps-five-star-emerald';
+UPDATE cards SET image = '2015_Donruss-Signature-Series-Blue_75-Fr.jpg', image_back = '2015_Donruss-Signature-Series-Blue_75-Bk.jpg' WHERE id = '2015-75-2015-donruss-signature-series-blue';
