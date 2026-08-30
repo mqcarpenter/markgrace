@@ -45,3 +45,4 @@ UPDATE cards SET image = '2007_Upper-Deck-Sweet-Spot-Classic-Classic-Memorabilia
 UPDATE cards SET image = '2008_SP-Legendary-Cuts-Legendary-Memorabilia-Blue_LM-MG-Fr.jpg' WHERE id = '2008-lm-mg-2008-sp-legendary-cuts-legendary-memorabilia-blue';
 UPDATE cards SET image = '2009_SP-Legendary-Cuts-Legendary-Memorabilia-Brown_LM-MG-Fr.jpg' WHERE id = '2009-lm-mg-2009-sp-legendary-cuts-legendary-memorabilia-brown';
 UPDATE cards SET image = '1999_Bowman''s-Best-Refractors_61-Fr.jpg' WHERE id = '1999-61-1999-bowman-s-best-refractors';
+UPDATE cards SET image = '2000_Fleer-Mystique-Gold_6-Fr.jpg' WHERE id = '2000-6-2000-fleer-mystique-gold';

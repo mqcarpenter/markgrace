@@ -156,3 +156,15 @@ DELETE FROM cards WHERE id = '1999-3-1999-topps-gold-label-class-2-one-t' AND ow
 DELETE FROM cards WHERE id = '1999-3-1999-topps-gold-label-class-2-red-o' AND owned = 0;
 DELETE FROM cards WHERE id = '1999-3-1999-topps-gold-label-class-3-one-t' AND owned = 0;
 DELETE FROM cards WHERE id = '1999-3-1999-topps-gold-label-class-3-red-o' AND owned = 0;
+
+-- 2000 chopped duplicate cleanup
+DELETE FROM cards WHERE id = '2000-61-2000-essential-crede' AND owned = 0;
+DELETE FROM cards WHERE id = '2000-64-2000-fleer-focus-masterpiece' AND owned = 0;
+DELETE FROM cards WHERE id = '2000-48-2000-pacific-crown-collection-plati' AND owned = 0;
+DELETE FROM cards WHERE id = '2000-48-2000-pacific-crown-collection-premi' AND owned = 0;
+DELETE FROM cards WHERE id = '2000-28-2000-pacific-invincible-platinum-bl' AND owned = 0;
+DELETE FROM cards WHERE id = '2000-43-2000-pacific-paramount-platinum-blu' AND owned = 0;
+DELETE FROM cards WHERE id = '2000-22-2000-pacific-private-stock-gold-por' AND owned = 0;
+DELETE FROM cards WHERE id = '2000-22-2000-pacific-private-stock-silver-p' AND owned = 0;
+DELETE FROM cards WHERE id = '2000-31-2000-pacific-revolution-premiere-da' AND owned = 0;
+DELETE FROM cards WHERE id = '2000-57-2000-pacific-vanguard-holographic-p' AND owned = 0;
