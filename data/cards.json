@@ -979,24 +979,6 @@
   "img_back": "1988-92_Star-Ad-Cards_NNO-Bk.jpg"
  },
  {
-  "id": "1989-29-1989-all-star-set-collec",
-  "year": "1989",
-  "num": "29",
-  "set": "1989 All-Star Set Collec",
-  "variant": null,
-  "full": "1989 All-Star Set Collec",
-  "img": "1989_All-Star-Set-Collec_29-Fr.jpg",
-  "owned": false,
-  "tags": [],
-  "auto": false,
-  "relic": false,
-  "parallel": false,
-  "insert": true,
-  "brand": "Star",
-  "brand_slug": "star",
-  "img_back": null
- },
- {
   "id": "1989-1389-1989-barry-colla-all-stars-8x10",
   "year": "1989",
   "num": "1389",
@@ -2273,24 +2255,6 @@
   "brand": null,
   "brand_slug": null,
   "img_back": "1990_ACE-MVP-Pins_NNO-Bk.jpg"
- },
- {
-  "id": "1990-12-1990-all-star-set-collec",
-  "year": "1990",
-  "num": "12",
-  "set": "1990 All-Star Set Collec",
-  "variant": null,
-  "full": "1990 All-Star Set Collec",
-  "img": "1990_All-Star-Set-Collec_12-Fr.jpg",
-  "owned": false,
-  "tags": [],
-  "auto": false,
-  "relic": false,
-  "parallel": false,
-  "insert": true,
-  "brand": "Star",
-  "brand_slug": "star",
-  "img_back": null
  },
  {
   "id": "1990-nno-1990-bandai-sport-stars-collector-coins",

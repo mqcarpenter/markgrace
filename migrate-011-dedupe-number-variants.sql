@@ -97,3 +97,5 @@ DELETE FROM cards WHERE id = '2002-cs-2002-fleer-platinum-cornerstones-n-24' AND
 
 -- Fix unclosed parenthesis syntax on 1995 Topps CyberStats:
 UPDATE cards SET set_name = '1995 Topps CyberStats (Spectralight)' WHERE id = '1995-061-1995-topps-cyberstats-spectralight';
+DELETE FROM cards WHERE id = '1989-29-1989-all-star-set-collec' AND owned = 0;
+DELETE FROM cards WHERE id = '1990-12-1990-all-star-set-collec' AND owned = 0;
