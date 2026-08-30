@@ -109,3 +109,12 @@ DELETE FROM cards WHERE id = '2000-24-2000-retro-mar' AND owned = 0;
 DELETE FROM cards WHERE id = '2000-24-2000-retro-stat-line-s' AND owned = 0;
 DELETE FROM cards WHERE id = '2001-97-2001-donruss-signature-hawaii-trade' AND owned = 0;
 DELETE FROM cards WHERE id = '2002-079-2002-donruss-diamond-kings-2002-hawaii-trade-conference-framed-blue' AND owned = 0;
+
+-- Truncated generic sample/convention duplicate cleanup
+DELETE FROM cards WHERE id = '2002-44-2002-donruss-elite-beckett-samples' AND owned = 0;
+DELETE FROM cards WHERE id = '2002-44-2002-donruss-elite-national-sports' AND owned = 0;
+DELETE FROM cards WHERE id = '2002-44-2002-donruss-studio-beckett-samples' AND owned = 0;
+DELETE FROM cards WHERE id = '2002-44-2002-donruss-studio-national-sports' AND owned = 0;
+DELETE FROM cards WHERE id = '2003-85-2003-donruss-elite-national-sports' AND owned = 0;
+DELETE FROM cards WHERE id = '2003-99-2003-donruss-studio-beckett-samples' AND owned = 0;
+DELETE FROM cards WHERE id = '2003-99-2003-donruss-studio-national-sports' AND owned = 0;
