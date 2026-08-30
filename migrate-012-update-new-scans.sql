@@ -28,3 +28,6 @@ UPDATE cards SET image = '2015_Topps-Archives-Fan-Favorites-Autographs-Gold_FFA-
 UPDATE cards SET image = '2015_Topps-Five-Star_FSA-MG-Fr.jpg' WHERE id = '2015-fsa-mg-2015-topps-five-star';
 UPDATE cards SET image = '2015_Topps-Five-Star-Emerald_FSA-MG-Fr.jpg' WHERE id = '2015-fsa-mg-2015-topps-five-star-emerald';
 UPDATE cards SET image = '2015_Donruss-Signature-Series-Blue_75-Fr.jpg', image_back = '2015_Donruss-Signature-Series-Blue_75-Bk.jpg' WHERE id = '2015-75-2015-donruss-signature-series-blue';
+UPDATE cards SET image = '1998_Studio-Studio-Proofs_40-Fr.jpg' WHERE id = '1998-40-1998-studio-studio-proofs';
+UPDATE cards SET image = '1998_Pacific-Invincible-Gems-of-the-Diamond_130-Fr.jpg' WHERE id = '1998-130-1998-pacific-invincible-gems-of-the';
+UPDATE cards SET image = '1999_Pacific-Omega-Gold_47-Fr.jpg' WHERE id = '1999-47-1999-pacific-omega-gold';
