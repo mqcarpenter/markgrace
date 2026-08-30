@@ -36,3 +36,5 @@ UPDATE cards SET image = '1997_Bowman-Chrome-Refractors_64-Fr.jpg' WHERE id = '1
 UPDATE cards SET image = '1998_Donruss-Elite-Aspirations_66-Fr.jpg' WHERE id = '1998-66-1998-donruss-elite-aspirations';
 UPDATE cards SET image = '2001_Donruss-Elite-Aspirations_38-Fr.jpg' WHERE id = '2001-38-2001-donruss-elite-aspirations';
 UPDATE cards SET image = '2003_Donruss-Signature-Autographs_6-Fr.jpg' WHERE id = '2003-6-2003-donruss-signature-autographs';
+UPDATE cards SET image = '2014_Panini-Elite-Extra-Edition-Historic-Picks-Signatures_8-Fr.jpg', image_back = '2014_Panini-Elite-Extra-Edition-Historic-Picks-Signatures_8-Bk.jpg' WHERE id = '2014-8-2014-panini-elite-extra-edition-historic-picks-signatures';
+UPDATE cards SET image = '2014_Panini-Immaculate-Collection-Immaculate-Autograph-Materials-Prime_9-Fr.jpg', image_back = '2014_Panini-Immaculate-Collection-Immaculate-Autograph-Materials-Prime_9-Bk.jpg' WHERE id = '2014-9-2014-panini-immaculate-collection-immaculate-autograph-materials-prime';
