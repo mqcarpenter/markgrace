@@ -10601,26 +10601,6 @@
   "img_back": "1997_Donruss-Limited-Fabric-of-the-Game_66-Bk.jpg"
  },
  {
-  "id": "1997-66-1997-donruss-limited-fabric-of-the",
-  "year": "1997",
-  "num": "66",
-  "set": "1997 Donruss Limited Fabric of the",
-  "variant": null,
-  "full": "1997 Donruss Limited Fabric of the",
-  "img": null,
-  "owned": false,
-  "tags": [
-   "SN500"
-  ],
-  "auto": false,
-  "relic": true,
-  "parallel": false,
-  "insert": false,
-  "brand": "Donruss",
-  "brand_slug": "donruss",
-  "img_back": null
- },
- {
   "id": "1997-84-1997-donruss-preferred",
   "year": "1997",
   "num": "84",
@@ -10681,7 +10661,7 @@
   "set": "1997 Donruss Signature Series",
   "variant": "Platinum Press Proofs",
   "full": "1997 Donruss Signature Series - Platinum Press Proofs",
-  "img": null,
+  "img": "1997_Donruss-Signature-Series-Platinum-Press-Proofs_42-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": true,
@@ -11323,24 +11303,6 @@
   "img_back": null
  },
  {
-  "id": "1997-250-1997-pacific-crown-collection-light",
-  "year": "1997",
-  "num": "250",
-  "set": "1997 Pacific Crown Collection Light",
-  "variant": null,
-  "full": "1997 Pacific Crown Collection Light",
-  "img": null,
-  "owned": false,
-  "tags": [],
-  "auto": false,
-  "relic": false,
-  "parallel": false,
-  "insert": false,
-  "brand": "Pacific",
-  "brand_slug": "pacific",
-  "img_back": null
- },
- {
   "id": "1997-84-1997-pacific-prism-invincible",
   "year": "1997",
   "num": "84",
@@ -11485,24 +11447,6 @@
   "img_back": "1997_Pinnacle-Inside-Club-Edition_96-Bk.jpg"
  },
  {
-  "id": "1997-96-1997-pinnacle-inside-diamond-editio",
-  "year": "1997",
-  "num": "96",
-  "set": "1997 Pinnacle Inside Diamond Editio",
-  "variant": null,
-  "full": "1997 Pinnacle Inside Diamond Editio",
-  "img": null,
-  "owned": false,
-  "tags": [],
-  "auto": false,
-  "relic": false,
-  "parallel": false,
-  "insert": false,
-  "brand": "Pinnacle",
-  "brand_slug": "pinnacle",
-  "img_back": null
- },
- {
   "id": "1997-106-1997-pinnacle-museum-collection",
   "year": "1997",
   "num": "106",
@@ -11519,24 +11463,6 @@
   "brand": "Pinnacle",
   "brand_slug": "pinnacle",
   "img_back": "1997_Pinnacle-Museum-Collection_106-Bk.jpg"
- },
- {
-  "id": "1997-106-1997-pinnacle-pre",
-  "year": "1997",
-  "num": "106",
-  "set": "1997 Pinnacle Pre",
-  "variant": null,
-  "full": "1997 Pinnacle Pre",
-  "img": null,
-  "owned": false,
-  "tags": [],
-  "auto": false,
-  "relic": false,
-  "parallel": false,
-  "insert": false,
-  "brand": "Pinnacle",
-  "brand_slug": "pinnacle",
-  "img_back": null
  },
  {
   "id": "1997-71-1997-pinnacle-x-press",
@@ -11941,7 +11867,7 @@
   "set": "1997 Topps Chrome Refractors",
   "variant": null,
   "full": "1997 Topps Chrome Refractors",
-  "img": null,
+  "img": "1997_Topps-Chrome-Refractors_13-Fr.jpg",
   "owned": false,
   "tags": [],
   "auto": false,
@@ -12713,24 +12639,6 @@
   "img_back": null
  },
  {
-  "id": "1998-70-1998-donruss-collections-donruss-pr-pc",
-  "year": "1998",
-  "num": "70",
-  "set": "1998 Donruss Collections Donruss Pr PC",
-  "variant": null,
-  "full": "1998 Donruss Collections Donruss Pr PC",
-  "img": null,
-  "owned": false,
-  "tags": [],
-  "auto": false,
-  "relic": false,
-  "parallel": false,
-  "insert": false,
-  "brand": "Donruss",
-  "brand_slug": "donruss",
-  "img_back": null
- },
- {
   "id": "1998-466-1998-donruss-collections-elite",
   "year": "1998",
   "num": "466",
@@ -12747,24 +12655,6 @@
   "brand": "Donruss",
   "brand_slug": "donruss",
   "img_back": "1998_Donruss-Collections-Elite_466-Bk.jpg"
- },
- {
-  "id": "1998-466-1998-donruss-collections-elite-priz-pc",
-  "year": "1998",
-  "num": "466",
-  "set": "1998 Donruss Collections Elite Priz PC",
-  "variant": null,
-  "full": "1998 Donruss Collections Elite Priz PC",
-  "img": null,
-  "owned": false,
-  "tags": [],
-  "auto": false,
-  "relic": false,
-  "parallel": false,
-  "insert": false,
-  "brand": "Donruss",
-  "brand_slug": "donruss",
-  "img_back": null
  },
  {
   "id": "1998-296-1998-donruss-collections-leaf",
@@ -12785,24 +12675,6 @@
   "img_back": "1998_Donruss-Collections-Leaf_296-Bk.jpg"
  },
  {
-  "id": "1998-296-1998-donruss-collections-leaf-prize-pc",
-  "year": "1998",
-  "num": "296",
-  "set": "1998 Donruss Collections Leaf Prize PC",
-  "variant": null,
-  "full": "1998 Donruss Collections Leaf Prize PC",
-  "img": null,
-  "owned": false,
-  "tags": [],
-  "auto": false,
-  "relic": false,
-  "parallel": false,
-  "insert": false,
-  "brand": "Donruss",
-  "brand_slug": "donruss",
-  "img_back": null
- },
- {
   "id": "1998-608-1998-donruss-collections-preferred",
   "year": "1998",
   "num": "608",
@@ -12821,44 +12693,6 @@
   "brand": "Donruss",
   "brand_slug": "donruss",
   "img_back": "1998_Donruss-Collections-Preferred_608-Bk.jpg"
- },
- {
-  "id": "1998-608-1998-donruss-collections-preferred-pc",
-  "year": "1998",
-  "num": "608",
-  "set": "1998 Donruss Collections Preferred",
-  "variant": "PC",
-  "full": "1998 Donruss Collections Preferred - PC",
-  "img": null,
-  "owned": false,
-  "tags": [
-   "PR55"
-  ],
-  "auto": false,
-  "relic": false,
-  "parallel": false,
-  "insert": false,
-  "brand": "Donruss",
-  "brand_slug": "donruss",
-  "img_back": null
- },
- {
-  "id": "1998-60-1998-donruss-crusade-red-executive",
-  "year": "1998",
-  "num": "60",
-  "set": "1998 Donruss Crusade Red Executive",
-  "variant": null,
-  "full": "1998 Donruss Crusade Red Executive",
-  "img": null,
-  "owned": false,
-  "tags": [],
-  "auto": false,
-  "relic": false,
-  "parallel": true,
-  "insert": false,
-  "brand": "Donruss",
-  "brand_slug": "donruss",
-  "img_back": null
  },
  {
   "id": "1998-66-1998-donruss-elite",

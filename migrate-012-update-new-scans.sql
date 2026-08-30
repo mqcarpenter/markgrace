@@ -46,3 +46,5 @@ UPDATE cards SET image = '2008_SP-Legendary-Cuts-Legendary-Memorabilia-Blue_LM-M
 UPDATE cards SET image = '2009_SP-Legendary-Cuts-Legendary-Memorabilia-Brown_LM-MG-Fr.jpg' WHERE id = '2009-lm-mg-2009-sp-legendary-cuts-legendary-memorabilia-brown';
 UPDATE cards SET image = '1999_Bowman''s-Best-Refractors_61-Fr.jpg' WHERE id = '1999-61-1999-bowman-s-best-refractors';
 UPDATE cards SET image = '2000_Fleer-Mystique-Gold_6-Fr.jpg' WHERE id = '2000-6-2000-fleer-mystique-gold';
+UPDATE cards SET image = '1997_Topps-Chrome-Refractors_13-Fr.jpg' WHERE id = '1997-13-1997-topps-chrome-refractors';
+UPDATE cards SET image = '1997_Donruss-Signature-Series-Platinum-Press-Proofs_42-Fr.jpg' WHERE id = '1997-42-1997-donruss-signature-series-platinum-press-proofs';

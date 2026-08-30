@@ -168,3 +168,14 @@ DELETE FROM cards WHERE id = '2000-22-2000-pacific-private-stock-gold-por' AND o
 DELETE FROM cards WHERE id = '2000-22-2000-pacific-private-stock-silver-p' AND owned = 0;
 DELETE FROM cards WHERE id = '2000-31-2000-pacific-revolution-premiere-da' AND owned = 0;
 DELETE FROM cards WHERE id = '2000-57-2000-pacific-vanguard-holographic-p' AND owned = 0;
+
+-- 1997-1998 chopped duplicate cleanup
+DELETE FROM cards WHERE id = '1997-66-1997-donruss-limited-fabric-of-the' AND owned = 0;
+DELETE FROM cards WHERE id = '1997-250-1997-pacific-crown-collection-light' AND owned = 0;
+DELETE FROM cards WHERE id = '1997-96-1997-pinnacle-inside-diamond-editio' AND owned = 0;
+DELETE FROM cards WHERE id = '1997-106-1997-pinnacle-pre' AND owned = 0;
+DELETE FROM cards WHERE id = '1998-60-1998-donruss-crusade-red-executive' AND owned = 0;
+DELETE FROM cards WHERE id = '1998-70-1998-donruss-collections-donruss-pr-pc' AND owned = 0;
+DELETE FROM cards WHERE id = '1998-466-1998-donruss-collections-elite-priz-pc' AND owned = 0;
+DELETE FROM cards WHERE id = '1998-296-1998-donruss-collections-leaf-prize-pc' AND owned = 0;
+DELETE FROM cards WHERE id = '1998-608-1998-donruss-collections-preferred-pc' AND owned = 0;
