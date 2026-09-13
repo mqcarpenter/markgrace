@@ -5,6 +5,9 @@
   var API = 'api/';
   var DATA = [];                       // sections from the server
   var fStatus = 'all', fYear = 'all', fQ = '', fType = 'all', fBrand = 'all';
+  // Default ON: the headline stat and the list's visual weight both favour
+  // base cards until the user asks to see everything on equal footing.
+  var baseOnly = true;
   var view = 'list';                   // 'list' | 'binder'
   var binderPage = 0;                  // which nine-pocket page is showing
   var devices = 0, writeWindow = 0, windowTimer = null;
@@ -402,8 +405,9 @@
       out.push('<h2 class="yr" data-sec="' + esc(sec.title) + '"><span>' + esc(sec.title) +
                '</span><em>' + oc + ' / ' + sec.cards.length + '</em></h2><ul>');
       slice.forEach(function (c) {
+        var liClass = (c.owned ? 'owned' : '') + (baseOnly && !isBase(c) ? ' dim' : '');
         out.push(
-          '<li class="' + (c.owned ? 'owned' : '') + '" data-id="' + esc(c.id) +
+          '<li class="' + liClass + '" data-id="' + esc(c.id) +
             '" role="button" tabindex="0" aria-pressed="' + (c.owned ? 'true' : 'false') + '">' +
           (c.img ? '<img class="thumb" loading="lazy" alt="" src="img/' + esc(c.img) + '">'
                  : '<div class="noimg">no img</div>') +
@@ -443,8 +447,9 @@
     var c = entry.card;
     var back = c.imgBack ? 'img/' + esc(c.imgBack) : '';
     var acquired = c.acquired_at ? String(c.acquired_at).slice(0, 10) : '';
+    var pocketClass = (c.owned ? ' filled' : '') + (baseOnly && !isBase(c) ? ' dim' : '');
     return '' +
-      '<div class="pocket' + (c.owned ? ' filled' : '') + '" data-id="' + esc(c.id) + '"' +
+      '<div class="pocket' + pocketClass + '" data-id="' + esc(c.id) + '"' +
         ' style="--i:' + i + '">' +
         '<div class="sleeve">' +
           '<div class="card3d">' +
@@ -549,9 +554,16 @@
 
   // Relics, autos and parallels are never hidden by default — this only
   // narrows the view when the user picks a type chip.
+  /** A "base" card: none of auto/relic/parallel/insert. Shared by the
+      "Base cards only" toggle and the "Cards only" type chip, so the two
+      controls can never disagree about what counts as base. */
+  function isBase(c) {
+    return !c.auto && !c.relic && !c.parallel && !c.insert;
+  }
+
   function typeOk(c) {
     switch (fType) {
-      case 'cards':    return !c.auto && !c.relic;
+      case 'cards':    return isBase(c);
       case 'auto':     return c.auto;
       case 'relic':    return c.relic;
       case 'parallel': return c.parallel;
@@ -559,15 +571,56 @@
     }
   }
 
+  /** Owned/total for exactly what's currently selected (year, brand, type,
+      search) -- deliberately NOT fStatus (Needed/Owned), since an
+      owned-vs-total ratio is meaningless once the list is pre-filtered to
+      one or the other. This is bar two; see stats(). */
+  function selectionStats() {
+    var q = fQ.trim().toLowerCase(), tot = 0, own = 0;
+    DATA.forEach(function (sec) {
+      if (fYear !== 'all' && sec.year !== fYear) return;
+      sec.cards.forEach(function (c) {
+        if (!typeOk(c)) return;
+        if (fBrand !== 'all' && (c.brandSlug || '') !== fBrand) return;
+        if (q && (sec.year + ' ' + c.num + ' ' + c.set + ' ' + (c.variant || '') +
+                  ' ' + (c.brand || '')).toLowerCase().indexOf(q) < 0) return;
+        tot++; if (c.owned) own++;
+      });
+    });
+    return { tot: tot, own: own };
+  }
+
   function stats() {
+    // Bar one: the overall stat, "like it does now" -- except its baseline
+    // shifts with the toggle. ON counts base cards only, so the headline
+    // number is "how much of the base set do I have", not diluted by
+    // however many parallels happen to be catalogued.
     var tot = 0, own = 0;
     DATA.forEach(function (s) {
-      s.cards.forEach(function (c) { tot++; if (c.owned) own++; });
+      s.cards.forEach(function (c) {
+        if (baseOnly && !isBase(c)) return;
+        tot++; if (c.owned) own++;
+      });
     });
     var p = tot ? Math.round(own / tot * 100) : 0;
     document.getElementById('pctNum').textContent = p + '%';
     document.getElementById('pctTxt').textContent = own + ' of ' + tot + ' owned';
     document.getElementById('fill').style.width = p + '%';
+
+    // Bar two: only worth a look once a selection actually narrows the
+    // view -- otherwise it would just repeat bar one back with different
+    // rounding, so it stays collapsed (zero height) until then.
+    var narrowed = fYear !== 'all' || fBrand !== 'all' || fType !== 'all' || fQ.trim() !== '';
+    var selRow = document.getElementById('selRow');
+    if (narrowed) {
+      var sel = selectionStats();
+      var sp = sel.tot ? Math.round(sel.own / sel.tot * 100) : 0;
+      document.getElementById('fillSel').style.width = sp + '%';
+      document.getElementById('selLabel').textContent = sel.own + ' / ' + sel.tot;
+      selRow.classList.remove('hide');
+    } else {
+      selRow.classList.add('hide');
+    }
   }
 
   function find(id) {
@@ -785,6 +838,17 @@
     var t = localStorage.getItem('markgrace.theme');
     if (t) document.documentElement.setAttribute('data-theme', t);
   } catch (e) {}
+
+  document.getElementById('baseOnly').addEventListener('change', function (e) {
+    baseOnly = e.target.checked;
+    try { localStorage.setItem('markgrace.baseOnly', baseOnly ? '1' : '0'); } catch (ex) {}
+    render();
+  });
+  try {
+    var bo = localStorage.getItem('markgrace.baseOnly');
+    if (bo !== null) baseOnly = bo === '1';
+  } catch (e) {}
+  document.getElementById('baseOnly').checked = baseOnly;
 
   function yearChips() {
     var yc = document.getElementById('yearChips');

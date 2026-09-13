@@ -238,6 +238,7 @@ install will silently not happen. The bundled `.htaccess` handles both.
 | `tools/fix-logo.py` | Prepares a brand logo for `img/brands/` |
 | `tools/match-thumbs.py` | Matches saved TCDB thumbnails to cards |
 | `cards-insert.sql` | Same data as plain SQL, for phpMyAdmin |
+| `missing-card-images.md` | Cards with no front image on file — year, brand, number only. See [Card images](#card-images) for how it's built |
 | `data/cards.json` | The card list |
 | `img/` | Card images (3,432 files, fronts and backs) |
 | `icons/` | App icons for the home screen |
@@ -273,7 +274,32 @@ Every card is included — autographs, relics and parallels among them. They
 aren't filtered out, they're **labelled**: each row carries `AUTO`, `RELIC`,
 `PARALLEL` or `INSERT` badges plus a serial-number chip (`/25`) where TCDB
 records one. The type chips above the list narrow to one kind; "Cards only"
-hides autos and relics without deleting them.
+matches the same definition of "base" as the toggle below (`isBase()` in
+`assets/app.js`: none of auto/relic/parallel/insert) — it hides everything
+else without deleting it.
+
+### Base cards only
+
+A switch next to the headline percentage — on by default. It never hides a
+row; parallels, relics, autos and inserts stay in the list (or the binder),
+just visually stepped back (dimmed, still tappable) so base cards read as
+the main event. It also decides what the headline stat itself means: on,
+"1,847 of 2,598 owned" counts base cards only; off, every card counts
+equally, same as before this existed. Flip it in the corner of the progress
+card — right where the number it changes lives — and the choice is
+remembered per device.
+
+### Two progress bars
+
+The top bar is the same headline stat as always, just reading off whichever
+baseline "Base cards only" has picked. A second, slimmer bar can appear
+directly beneath it: owned vs. total for whatever's currently selected —
+pick Topps and 2000, and it reads owned/total for exactly that, ignoring the
+Needed/Owned status chip (a ratio against "needed only" is always zero and
+tells you nothing). It only appears once a year, brand, type or search term
+actually narrows the view, so an unfiltered visit costs no extra space at
+all — nothing to look at until there's something the top bar alone
+couldn't tell you.
 
 Brands show as coloured wordmarks (`TOPPS`, `DONRUSS`, `TOYS R US`). To use
 real logos, just drop the file at `img/brands/<slug>.png` — it is picked up
@@ -307,6 +333,21 @@ It composes with the year, type and status filters, and with search, which
 also now matches the brand name.
 
 ## Card images
+
+`missing-card-images.md` lists every card with no front image (`image IS
+NULL`) — year, brand and card number only, nothing else, grouped the same
+way. Built by replaying `schema.sql` and every `migrate-*`/`cards-insert.sql`
+file in their actual historical order (not the order they'd sort in a file
+listing — `cleanup-stale.sql` in particular runs right after
+`cards-insert.sql`, not last, since it deletes anything not on a whitelist
+frozen at that point) against a throwaway local database, since there's no
+live DB access from outside the server. The reconstruction landed on 2,490
+cards after `migrate-012`, matching this README's own "Known gaps" count
+exactly — but the live site's current total is higher (whatever the
+masthead's running count says), meaning some cards were added directly on
+the server without a committed migration recording them. Re-run the replay
+after any such change, or export the real `cards` table and regenerate from
+that, for a fully current list.
 
 `tools/match-thumbs.py` matches locally saved TCDB thumbnails to cards. TCDB
 names its files `<sid>_<token><kind>.jpg`, where `sid` is the set id — and

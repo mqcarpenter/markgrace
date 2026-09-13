@@ -102,6 +102,28 @@ body{
   border:3px dashed rgba(204,52,51,.55);border-radius:50%;
 }
 .masthead .wrap{position:relative;z-index:1}
+
+/* Moved here from the footer -- a control you reach for constantly belongs
+   somewhere you don't have to scroll to find, and top-right of the masthead
+   is the first place a thumb lands on a phone. */
+.themeBtn{
+  position:absolute;top:calc(2px + env(safe-area-inset-top));right:14px;z-index:2;
+  width:38px;height:38px;border-radius:50%;
+  background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);
+  color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;
+  transition:background .14s;
+}
+.themeBtn:hover{background:rgba(255,255,255,.28)}
+.themeBtn svg{width:19px;height:19px}
+.themeBtn .i-moon{display:block}
+.themeBtn .i-sun{display:none}
+:root[data-theme="dark"] .themeBtn .i-moon{display:none}
+:root[data-theme="dark"] .themeBtn .i-sun{display:block}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) .themeBtn .i-moon{display:none}
+  :root:not([data-theme="light"]) .themeBtn .i-sun{display:block}
+}
+
 .brandline{
   display:inline-flex;align-items:center;gap:7px;
   background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.22);
@@ -125,11 +147,46 @@ h1 .thin{display:block;font-weight:500;font-size:15px;letter-spacing:.01em;
   color:var(--cubs-blue);font-variant-numeric:tabular-nums;
 }
 .pct span{color:var(--text-2);font-size:13px;font-weight:500;text-align:right}
+/* The count text and the toggle that decides what it means stack in the
+   same right-hand column, filling the height the big number already
+   claims -- the toggle costs no extra row of its own. */
+.pctRight{display:flex;flex-direction:column;align-items:flex-end;gap:5px}
+
+.baseToggle{display:flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;
+  color:var(--text-2);cursor:pointer;-webkit-user-select:none;user-select:none;white-space:nowrap}
+.baseToggle input{position:absolute;opacity:0;width:1px;height:1px}
+.baseToggle .switch{
+  position:relative;flex:none;width:30px;height:17px;border-radius:99px;
+  background:var(--surface-2);border:1.5px solid var(--line);transition:background .15s,border-color .15s;
+}
+.baseToggle .switch::before{
+  content:"";position:absolute;top:1px;left:1px;width:12px;height:12px;border-radius:50%;
+  background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s;
+}
+.baseToggle input:checked + .switch{background:var(--cubs-blue);border-color:var(--cubs-blue)}
+.baseToggle input:checked + .switch::before{transform:translateX(13px)}
+.baseToggle input:focus-visible + .switch{outline:2px solid var(--cubs-blue);outline-offset:2px}
+
 .track{height:9px;background:var(--surface-2);border-radius:99px;overflow:hidden}
 .fill{
   height:100%;border-radius:99px;transition:width .45s cubic-bezier(.4,0,.2,1);
   background:linear-gradient(90deg,var(--cubs-blue) 0%,var(--cubs-blue-l) 70%,var(--cubs-red) 100%);
 }
+
+/* Layer two: how much of the CURRENT selection (year/brand/type/search) is
+   owned -- "Topps, 2000" reads its own bar rather than the whole
+   collection's. Hidden with zero footprint until a selection actually
+   narrows the view (see stats() in app.js), so the common, unfiltered
+   view costs no extra space at all -- it only appears when it has
+   something a glance at the top bar couldn't already tell you. */
+.selrow{display:flex;align-items:center;gap:8px;margin-top:7px}
+.selrow.hide{display:none}
+.track-sel{height:6px;flex:1}
+.fill-sel{
+  height:100%;border-radius:99px;transition:width .35s cubic-bezier(.4,0,.2,1);
+  background:linear-gradient(90deg,var(--good) 0%,var(--cubs-blue-l) 100%);
+}
+.sellabel{flex:none;font-size:11px;font-weight:700;color:var(--text-2);font-variant-numeric:tabular-nums}
 
 /* ---------- sticky controls ---------- */
 .sticky{
@@ -213,6 +270,15 @@ li.owned::before{
   content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--good);
 }
 li.saving{opacity:.5}
+
+/* "Base cards only" toggle: parallels/relics/autos/inserts stay in the
+   list -- never hidden, still tappable -- just visually stepped back so
+   base cards read as the main event. A firmer dim on hover/focus is the
+   only sign it's still interactive, since a half-opacity row otherwise
+   looks disabled. */
+li.dim{opacity:.42}
+@media (hover:hover){ li.dim:hover{opacity:.72;background:var(--surface-2)} }
+li.dim:active{opacity:.72}
 
 .thumb{
   /* Held as variables so the landscape rule can swap them when it rotates. */
@@ -311,6 +377,9 @@ footer button:hover{border-color:var(--cubs-blue);color:var(--cubs-blue)}
   .thumb{--tw:42px; --th:59px}
   .noimg{width:42px;height:59px}
   .set{font-size:14px}
+  .themeBtn{width:34px;height:34px}
+  .themeBtn svg{width:17px;height:17px}
+  .baseToggle{font-size:10.5px}
 }
 @media (prefers-reduced-motion:reduce){
   *{transition:none !important;animation:none !important}
@@ -470,6 +539,12 @@ li.owned .variant{color:var(--good)}
 }
 
 .pocket{position:relative;aspect-ratio:5/7}
+/* Same "base cards only" step-back as the list view's li.dim, applied to
+   the sleeve/label rather than the whole pocket so the corner mark button
+   stays at full visibility -- it's the one thing on a dimmed pocket you'd
+   still reach for. */
+.pocket.dim .sleeve,.pocket.dim .plabel{opacity:.45}
+@media (hover:hover){ .pocket.dim:hover .sleeve,.pocket.dim:hover .plabel{opacity:.75} }
 .sleeve{
   position:absolute;inset:0;border-radius:7px;
   background:color-mix(in srgb,var(--text) 4%,var(--surface-2));

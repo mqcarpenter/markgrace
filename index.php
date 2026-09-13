@@ -10,7 +10,7 @@
 <meta name="apple-mobile-web-app-title" content="Grace">
 <meta name="description" content="Mark Grace baseball card collection tracker.">
 <title>Mark Grace Card Tracker</title>
-<link rel="stylesheet" href="assets/app.css?v=17">
+<link rel="stylesheet" href="assets/app.css?v=18">
 
 <!-- Installed-app behaviour -->
 <link rel="manifest" href="manifest.json">
@@ -35,6 +35,10 @@
 
   <div class="masthead">
     <div class="wrap">
+      <button id="theme" type="button" class="themeBtn" aria-label="Toggle theme" title="Toggle theme">
+        <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v3M12 18.5v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2.5 12h3M18.5 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+        <svg class="i-moon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 14.6A8.5 8.5 0 019.4 3.5a.75.75 0 00-.9-.98A9.9 9.9 0 1021.5 15.5a.75.75 0 00-1-.9z"/></svg>
+      </button>
       <span class="brandline"><span class="dot"></span>Chicago Cubs &middot; 1988&ndash;2003</span>
       <h1>Mark Grace
         <span class="thin">Card collection tracker</span>
@@ -46,9 +50,21 @@
     <div class="bar">
       <div class="pct">
         <b id="pctNum">&mdash;</b>
-        <span id="pctTxt">loading&hellip;</span>
+        <div class="pctRight">
+          <span id="pctTxt">loading&hellip;</span>
+          <label class="baseToggle" id="baseToggleLbl"
+                 title="On: parallels, relics, autos and inserts are dimmed and left out of the count above. Off: everything counts equally.">
+            <input type="checkbox" id="baseOnly" checked>
+            <span class="switch" aria-hidden="true"></span>
+            Base cards only
+          </label>
+        </div>
       </div>
       <div class="track"><div class="fill" id="fill" style="width:0"></div></div>
+      <div class="selrow hide" id="selRow">
+        <div class="track track-sel"><div class="fill fill-sel" id="fillSel" style="width:0"></div></div>
+        <span class="sellabel" id="selLabel"></span>
+      </div>
     </div>
 
     <div class="sticky">
@@ -92,12 +108,11 @@
     <footer>
       <div>Tap a card to mark it owned &mdash; in binder view, tap the card to flip it and the
         corner check to mark it. Saved to the database, so your marks show up on every device.</div>
-      <button id="theme" type="button">Toggle theme</button>
     </footer>
   </div>
 </div>
 
 <div id="toast" role="status" aria-live="polite"></div>
-<script src="assets/app.js?v=17"></script>
+<script src="assets/app.js?v=18"></script>
 </body>
 </html>
