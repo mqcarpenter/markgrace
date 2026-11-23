@@ -27,6 +27,12 @@
   </Files>
 </IfModule>
 
+# PHP under CGI/FastCGI (common on shared hosting) never sees the
+# Authorization header unless Apache hands it over. The agent API needs it.
+<IfModule mod_setenvif.c>
+  SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
+</IfModule>
+
 # Block the git directory and the raw card data outright.
 RedirectMatch 404 /\.git
 RedirectMatch 404 /data/

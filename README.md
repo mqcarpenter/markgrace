@@ -259,6 +259,50 @@ install will silently not happen. The bundled `.htaccess` handles both.
 | `GET api/?action=passkey-auth-options` | Challenge for proving possession |
 | `POST api/?action=passkey-auth` | Verifies a signature, opens the write window |
 | `POST api/?action=passkey-lock` | Closes the write window immediately |
+| `GET api/?action=agent-cards` | Flat card list for an agent. Needs the agent token. |
+| `GET api/?action=agent-card&id=...` | One card, same shape. Needs the agent token. |
+
+### Agent access (read-only)
+
+For an agent that looks cards up on eBay. It gets every card detail plus a
+ready-made eBay search, and it **cannot change anything**: no agent route
+writes, and the token doesn't count as the page passphrase or a passkey.
+
+1. Generate a token and put it in `config.php`:
+   ```bash
+   php -r 'echo bin2hex(random_bytes(24)), "\n";'
+   ```
+   ```php
+   'agent_token' => 'the-48-character-token',
+   ```
+   Agent access stays off while this is `null` (or shorter than 32 characters).
+2. Give the agent the URL and token. It sends the token as a header, never in
+   the URL:
+   ```bash
+   curl -H "Authorization: Bearer TOKEN" "https://yourhost/markgrace/api/?action=agent-cards&owned=0"
+   ```
+   `X-Agent-Token: TOKEN` works too, for hosts that strip `Authorization`.
+
+**Filters** (all optional, combinable): `owned=0|1`, `year=1988`,
+`from=1990&to=1995`, `brand=fleer` (brand slug), `base=1` (no
+auto/relic/parallel/insert), `q=refractor` (matches set, variant or number).
+**Paging:** `limit` (default 500, max 1000) and `offset`; the response's
+`next` is the offset for the following page, or `null` at the end.
+
+Each card carries:
+
+| Field | Notes |
+|---|---|
+| `title`, `year`, `set`, `variant`, `card_number`, `brand` | `card_number` is `null` for NNO cards |
+| `type` | `base`, `insert`, `parallel`, `relic` or `autograph`, plus the four `is_*` flags |
+| `serial_numbered_to` | `25` means stamped xx/25 (TCDB `SN25`) |
+| `print_run` | stated but not stamped (TCDB `PR500`) |
+| `rookie`, `exchange`, `tcdb_tags` | `tcdb_tags` is the raw list, for anything not decoded |
+| `owned`, `acquired_at`, `note` | |
+| `image_front`, `image_back`, `tcdb_url` | absolute URLs; set `public_url` in `config.php` if they come out wrong behind a proxy |
+| `ebay.query` | player + set + variant + number + `/serial` |
+| `ebay.exclude` | words the card is *not* (e.g. `auto`, `jersey`, `refractor` on a base card), so it isn't priced off the wrong card |
+| `ebay.query_full`, `ebay.sold_url`, `ebay.active_url` | query with `-exclusions`; sold/completed and live searches |
 
 ---
 

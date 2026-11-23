@@ -53,6 +53,18 @@ return [
     // Marking a stack of cards shouldn't prompt every single time.
     'passkey_ttl' => 900,
 
+    // ---- Agent access: read-only API for a price-checking agent ------
+    //
+    // GET api/?action=agent-cards with  Authorization: Bearer <token>.
+    // Reads only; it can't mark cards owned and doesn't unlock the page.
+    // Leave null to turn agent access off. Generate one with:
+    //   php -r 'echo bin2hex(random_bytes(24)), "\n";'
+    'agent_token' => null,
+
+    // Optional: the site's public address, used to build absolute image
+    // URLs for the agent. Detected from the request when unset.
+    // 'public_url' => 'https://example.com/markgrace',
+
     // Normally detected from the request. Set these only if the app is
     // reached at more than one hostname, or sits behind a proxy that
     // rewrites Host — a passkey is bound to exactly one domain.
