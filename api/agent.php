@@ -146,3 +146,92 @@ function agent_card(array $r): array {
         'updated_at'  => $r['updated_at'],
     ];
 }
+
+const AGENT_COLS = 'id, year, section, card_num, set_name, variant, brand, brand_slug,
+    image, image_back, is_auto, is_relic, is_parallel, is_insert, tags,
+    owned, acquired_at, note, updated_at';
+
+/** One card by id, or null. */
+function agent_get(string $id): ?array {
+    $st = db()->prepare('SELECT ' . AGENT_COLS . ' FROM cards WHERE id = ?');
+    $st->execute([$id]);
+    $row = $st->fetch();
+    return $row ? agent_card($row) : null;
+}
+
+/**
+ * Filtered, paged card list. $p takes owned, year, from, to, brand, base,
+ * q, limit, offset — as strings (query string) or typed (MCP arguments).
+ * Throws InvalidArgumentException on a bad filter.
+ */
+function agent_find(array $p, int $defaultLimit, int $maxLimit): array {
+    $has = static fn(string $k): bool => isset($p[$k]) && $p[$k] !== '' && $p[$k] !== null;
+    $where = [];
+    $args  = [];
+    if ($has('owned')) {
+        $where[] = 'owned = ?';
+        $args[]  = filter_var($p['owned'], FILTER_VALIDATE_BOOLEAN) ? 1 : 0;
+    }
+    foreach (['year' => 'year = ?', 'from' => 'year >= ?', 'to' => 'year <= ?'] as $k => $sql) {
+        if ($has($k)) {
+            if (!ctype_digit((string)$p[$k])) throw new InvalidArgumentException("$k must be a year.");
+            $where[] = $sql;
+            $args[]  = (int)$p[$k];
+        }
+    }
+    if ($has('brand')) {
+        // "Upper Deck", "upper deck" and "upperdeck" all mean slug upperdeck.
+        $where[] = '(brand_slug = ? OR brand = ?)';
+        $args[]  = strtolower(preg_replace('/[^a-z0-9]+/i', '', (string)$p['brand']));
+        $args[]  = trim((string)$p['brand']);
+    }
+    if ($has('base') && filter_var($p['base'], FILTER_VALIDATE_BOOLEAN)) {
+        $where[] = 'is_auto = 0 AND is_relic = 0 AND is_parallel = 0 AND is_insert = 0';
+    }
+    if ($has('q') && trim((string)$p['q']) !== '') {
+        $like    = '%' . str_replace(['\\', '%', '_'], ['\\\\', '\\%', '\\_'], trim((string)$p['q'])) . '%';
+        $where[] = '(set_name LIKE ? OR variant LIKE ? OR card_num LIKE ?)';
+        array_push($args, $like, $like, $like);
+    }
+    $sqlWhere = $where ? 'WHERE ' . implode(' AND ', $where) : '';
+
+    $limit  = max(1, min($maxLimit, $has('limit') ? (int)$p['limit'] : $defaultLimit));
+    $offset = max(0, $has('offset') ? (int)$p['offset'] : 0);
+
+    $count = db()->prepare("SELECT COUNT(*) FROM cards $sqlWhere");
+    $count->execute($args);
+    $total = (int)$count->fetchColumn();
+
+    // limit/offset are clamped ints, so inlining them is safe — and MySQL
+    // rejects them as quoted strings under emulated prepares.
+    $st = db()->prepare('SELECT ' . AGENT_COLS . " FROM cards $sqlWhere ORDER BY sort_order ASC LIMIT $limit OFFSET $offset");
+    $st->execute($args);
+    $cards = array_map('agent_card', $st->fetchAll());
+
+    return [
+        'total'  => $total,
+        'offset' => $offset,
+        'limit'  => $limit,
+        'next'   => $offset + count($cards) < $total ? $offset + count($cards) : null,
+        'cards'  => $cards,
+    ];
+}
+
+/** Owned / needed counts, overall and by type. */
+function agent_summary(): array {
+    $rows = db()->query(
+        "SELECT CASE WHEN is_auto=1 THEN 'autograph' WHEN is_relic=1 THEN 'relic'
+                     WHEN is_parallel=1 THEN 'parallel' WHEN is_insert=1 THEN 'insert'
+                     ELSE 'base' END AS type,
+                COUNT(*) AS total, SUM(owned) AS owned
+           FROM cards GROUP BY type"
+    )->fetchAll();
+    $out = ['total' => 0, 'owned' => 0, 'needed' => 0, 'by_type' => []];
+    foreach ($rows as $r) {
+        $t = (int)$r['total']; $o = (int)$r['owned'];
+        $out['by_type'][$r['type']] = ['total' => $t, 'owned' => $o, 'needed' => $t - $o];
+        $out['total'] += $t; $out['owned'] += $o;
+    }
+    $out['needed'] = $out['total'] - $out['owned'];
+    return $out;
+}

@@ -342,72 +342,25 @@ if ($action === 'logout') {
 // For a price-checking agent: every card detail needed to find the exact
 // card on eBay, as a flat list. Authenticated by 'agent_token' in
 // config.php, not by the passphrase or a passkey, and it can only read —
-// there is no agent route that writes anything.
+// there is no agent route that writes anything. api/mcp.php serves the
+// same data to MCP clients.
 if ($action === 'agent-cards' || $action === 'agent-card') {
     require_agent_token();
     if ($method !== 'GET') out(['error' => 'GET only.'], 405);
 
-    $cols = 'id, year, section, card_num, set_name, variant, brand, brand_slug,
-             image, image_back, is_auto, is_relic, is_parallel, is_insert, tags,
-             owned, acquired_at, note, updated_at';
-
     if ($action === 'agent-card') {
         $id = (string)($_GET['id'] ?? '');
         if ($id === '') out(['error' => 'Missing id.'], 400);
-        $st = db()->prepare("SELECT $cols FROM cards WHERE id = ?");
-        $st->execute([$id]);
-        $row = $st->fetch();
-        if (!$row) out(['error' => 'Unknown card.'], 404);
-        out(['card' => agent_card($row)]);
+        $card = agent_get((string)$id);
+        if (!$card) out(['error' => 'Unknown card.'], 404);
+        out(['card' => $card]);
     }
 
-    $where = [];
-    $args  = [];
-    if (isset($_GET['owned']) && $_GET['owned'] !== '') {
-        $where[] = 'owned = ?';
-        $args[]  = filter_var($_GET['owned'], FILTER_VALIDATE_BOOLEAN) ? 1 : 0;
+    try {
+        out(agent_find($_GET, 500, 1000));
+    } catch (InvalidArgumentException $e) {
+        out(['error' => $e->getMessage()], 400);
     }
-    foreach (['year' => 'year = ?', 'from' => 'year >= ?', 'to' => 'year <= ?'] as $k => $sql) {
-        if (isset($_GET[$k]) && $_GET[$k] !== '') {
-            if (!ctype_digit((string)$_GET[$k])) out(['error' => "$k must be a year."], 400);
-            $where[] = $sql;
-            $args[]  = (int)$_GET[$k];
-        }
-    }
-    if (isset($_GET['brand']) && $_GET['brand'] !== '') {
-        $where[] = 'brand_slug = ?';
-        $args[]  = (string)$_GET['brand'];
-    }
-    if (!empty($_GET['base'])) {
-        $where[] = 'is_auto = 0 AND is_relic = 0 AND is_parallel = 0 AND is_insert = 0';
-    }
-    if (isset($_GET['q']) && trim((string)$_GET['q']) !== '') {
-        $like    = '%' . str_replace(['\\', '%', '_'], ['\\\\', '\\%', '\\_'], trim((string)$_GET['q'])) . '%';
-        $where[] = '(set_name LIKE ? OR variant LIKE ? OR card_num LIKE ?)';
-        array_push($args, $like, $like, $like);
-    }
-    $sqlWhere = $where ? 'WHERE ' . implode(' AND ', $where) : '';
-
-    $limit  = max(1, min(1000, (int)($_GET['limit'] ?? 500)));
-    $offset = max(0, (int)($_GET['offset'] ?? 0));
-
-    $count = db()->prepare("SELECT COUNT(*) FROM cards $sqlWhere");
-    $count->execute($args);
-    $total = (int)$count->fetchColumn();
-
-    // limit/offset are clamped ints, so inlining them is safe — and MySQL
-    // rejects them as quoted strings under emulated prepares.
-    $st = db()->prepare("SELECT $cols FROM cards $sqlWhere ORDER BY sort_order ASC LIMIT $limit OFFSET $offset");
-    $st->execute($args);
-    $cards = array_map('agent_card', $st->fetchAll());
-
-    out([
-        'total'  => $total,
-        'offset' => $offset,
-        'limit'  => $limit,
-        'next'   => $offset + count($cards) < $total ? $offset + count($cards) : null,
-        'cards'  => $cards,
-    ]);
 }
 
 // ---- data ----------------------------------------------------------

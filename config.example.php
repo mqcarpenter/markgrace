@@ -61,6 +61,12 @@ return [
     //   php -r 'echo bin2hex(random_bytes(24)), "\n";'
     'agent_token' => null,
 
+    // The same read-only data as an MCP server, for agents that take a
+    // bare link (Tasks in Gemini): api/mcp.php?key=<mcp_key>.
+    // The key rides in the URL, so it lands in access logs — use a
+    // different value from agent_token. Leave null to turn MCP off.
+    'mcp_key' => null,
+
     // Optional: the site's public address, used to build absolute image
     // URLs for the agent. Detected from the request when unset.
     // 'public_url' => 'https://example.com/markgrace',

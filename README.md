@@ -304,6 +304,33 @@ Each card carries:
 | `ebay.exclude` | words the card is *not* (e.g. `auto`, `jersey`, `refractor` on a base card), so it isn't priced off the wrong card |
 | `ebay.query_full`, `ebay.sold_url`, `ebay.active_url` | query with `-exclusions`; sold/completed and live searches |
 
+### MCP server (Tasks in Gemini and other agents)
+
+`api/mcp.php` serves the same read-only data over MCP (Streamable HTTP,
+JSON responses), for agents that connect by link instead of making HTTP calls.
+
+1. Generate a key — a **different** value from `agent_token` — and add it:
+   ```php
+   'mcp_key' => 'another-48-character-token',
+   ```
+2. In the agent, add a custom app with the link:
+   ```
+   https://yourhost/markgrace/api/mcp.php?key=YOUR_MCP_KEY
+   ```
+   Leave any client ID / client secret fields empty.
+
+Tools, all read-only:
+
+| Tool | Does |
+|---|---|
+| `search_cards` | Same filters as `agent-cards` (`owned`, `year`, `from`, `to`, `brand` by name or slug, `base`, `q`); 25 per page, max 100 |
+| `get_card` | One card by id |
+| `collection_summary` | Tracked / owned / needed, overall and by type |
+
+The key travels in the URL because these clients take a bare link, so it
+shows up in the host's access logs. It unlocks reading the checklist and
+nothing else; to revoke it, change `mcp_key`.
+
 ---
 
 ## Set names and variants
